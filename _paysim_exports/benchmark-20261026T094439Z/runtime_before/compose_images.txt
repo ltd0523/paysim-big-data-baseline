@@ -1,0 +1,14 @@
+$ docker compose -f docker-compose.yml images
+(exit=0)
+CONTAINER                               REPOSITORY                           TAG                 PLATFORM            IMAGE ID            SIZE                CREATED
+ecstatic_lovelace                       <none>                               <none>              unknown             c9cbdeed2bdf        0B                  N/A
+paysim-big-data-baseline-datanode-1     paysim-big-data-baseline-datanode    latest              linux/amd64         e7b6ef8980cb        2.74GB              4 days ago
+paysim-big-data-baseline-hdfs-init-1    paysim-big-data-baseline-hdfs-init   latest              linux/amd64         77e8643b122f        2.74GB              4 days ago
+paysim-big-data-baseline-kafka-1        apache/kafka                         4.0.0               linux/amd64         3f7b939115cd        660MB               19 months ago
+paysim-big-data-baseline-kafka-init-1   apache/kafka                         4.0.0               linux/amd64         3f7b939115cd        660MB               19 months ago
+paysim-big-data-baseline-mongodb-1      mongo                                8.0                 linux/amd64         29c9d10d63d3        1.29GB              2 months ago
+paysim-big-data-baseline-namenode-1     paysim-big-data-baseline-namenode    latest              linux/amd64         1662bd347af8        2.74GB              4 days ago
+paysim-big-data-baseline-replayer-1     paysim-big-data-baseline-replayer    latest              linux/amd64         72954c5654a4        219MB               2 days ago
+paysim-big-data-baseline-spark-1        paysim-big-data-baseline-spark       latest              linux/amd64         bd4b0e372f5d        2.45GB              30 minutes ago
+paysim-big-data-baseline-streamlit-1    paysim-big-data-baseline-streamlit   latest              linux/amd64         10c6a05d36e6        822MB               31 hours ago
+

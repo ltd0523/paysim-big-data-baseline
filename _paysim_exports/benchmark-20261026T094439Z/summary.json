@@ -1,0 +1,23 @@
+{
+  "run_id": "bench-20261026T094439Z-12276",
+  "run_status": "completed",
+  "emitted": 5000,
+  "unique_events_emitted": 5000,
+  "processed": 5000,
+  "ground_truth_missing": 0,
+  "delivery_errors": 0,
+  "processed_equals_emitted_unique": true,
+  "fraud_alerts": 1046,
+  "batch_count_exported": 10,
+  "total_processed_rows_in_exported_batches": 5000,
+  "batch_duration_seconds_p50": 3.742339171000026,
+  "batch_duration_seconds_p95": 4.894656671699955,
+  "mean_processing_throughput_ev_s": 134.53300975676225,
+  "latest_processing_throughput_ev_s": 111.62301029852547,
+  "latest_end_to_end_latency_p95_ms": 10893,
+  "latest_ingest_latency_p95_ms": 13,
+  "latest_consumer_lag": 0,
+  "latest_small_file_count": 1833,
+  "latest_storage_bytes": 61258924,
+  "note": "Values are raw run telemetry from this fork, not independently measured UI response-time benchmarks. Latest p95 is per last micro-batch. The exported batch list is capped at 400."
+}

@@ -1,0 +1,332 @@
+[
+  {
+    "name": "/paysim-big-data-baseline-datanode-1",
+    "image": "paysim-big-data-baseline-datanode",
+    "state": {
+      "Status": "running",
+      "Running": true,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 1542,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-10-26T09:14:44.698647539Z",
+      "FinishedAt": "0001-01-01T00:00:00Z"
+    },
+    "memory_limit_bytes": 1073741824,
+    "command": [
+      "hdfs",
+      "datanode"
+    ]
+  },
+  {
+    "name": "/paysim-big-data-baseline-kafka-1",
+    "image": "apache/kafka:4.0.0",
+    "state": {
+      "Status": "running",
+      "Running": true,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 861,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-10-26T09:14:43.058625214Z",
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "Health": {
+        "Status": "healthy",
+        "FailingStreak": 0,
+        "Log": [
+          {
+            "Start": "2026-10-26T09:45:41.046773955Z",
+            "End": "2026-10-26T09:45:42.950908552Z",
+            "ExitCode": 0,
+            "Output": ""
+          },
+          {
+            "Start": "2026-10-26T09:45:52.951882004Z",
+            "End": "2026-10-26T09:45:54.869205077Z",
+            "ExitCode": 0,
+            "Output": ""
+          },
+          {
+            "Start": "2026-10-26T09:46:04.868958045Z",
+            "End": "2026-10-26T09:46:06.514875193Z",
+            "ExitCode": 0,
+            "Output": ""
+          },
+          {
+            "Start": "2026-10-26T09:46:16.516357173Z",
+            "End": "2026-10-26T09:46:18.216862167Z",
+            "ExitCode": 0,
+            "Output": ""
+          },
+          {
+            "Start": "2026-10-26T09:46:28.218497129Z",
+            "End": "2026-10-26T09:46:30.105867434Z",
+            "ExitCode": 0,
+            "Output": ""
+          }
+        ]
+      }
+    },
+    "memory_limit_bytes": 0,
+    "command": [
+      "/etc/kafka/docker/run"
+    ]
+  },
+  {
+    "name": "/paysim-big-data-baseline-mongodb-1",
+    "image": "mongo:8.0",
+    "state": {
+      "Status": "running",
+      "Running": true,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 1342,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-10-26T09:14:43.712090656Z",
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "Health": {
+        "Status": "healthy",
+        "FailingStreak": 0,
+        "Log": [
+          {
+            "Start": "2026-10-26T09:46:15.813893359Z",
+            "End": "2026-10-26T09:46:16.386101542Z",
+            "ExitCode": 0,
+            "Output": "1\n"
+          },
+          {
+            "Start": "2026-10-26T09:46:21.387323826Z",
+            "End": "2026-10-26T09:46:21.973208544Z",
+            "ExitCode": 0,
+            "Output": "1\n"
+          },
+          {
+            "Start": "2026-10-26T09:46:26.974112463Z",
+            "End": "2026-10-26T09:46:27.449171616Z",
+            "ExitCode": 0,
+            "Output": "1\n"
+          },
+          {
+            "Start": "2026-10-26T09:46:32.447389655Z",
+            "End": "2026-10-26T09:46:32.959146689Z",
+            "ExitCode": 0,
+            "Output": "1\n"
+          },
+          {
+            "Start": "2026-10-26T09:46:37.959727765Z",
+            "End": "2026-10-26T09:46:38.642451936Z",
+            "ExitCode": 0,
+            "Output": "1\n"
+          }
+        ]
+      }
+    },
+    "memory_limit_bytes": 0,
+    "command": [
+      "mongod",
+      "--bind_ip_all",
+      "--wiredTigerCacheSizeGB",
+      "0.25"
+    ]
+  },
+  {
+    "name": "/paysim-big-data-baseline-namenode-1",
+    "image": "paysim-big-data-baseline-namenode",
+    "state": {
+      "Status": "running",
+      "Running": true,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 1439,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-10-26T09:14:44.233931463Z",
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "Health": {
+        "Status": "healthy",
+        "FailingStreak": 0,
+        "Log": [
+          {
+            "Start": "2026-10-26T09:45:59.056904341Z",
+            "End": "2026-10-26T09:45:59.149336158Z",
+            "ExitCode": 0,
+            "Output": ""
+          },
+          {
+            "Start": "2026-10-26T09:46:09.15109152Z",
+            "End": "2026-10-26T09:46:09.249042195Z",
+            "ExitCode": 0,
+            "Output": ""
+          },
+          {
+            "Start": "2026-10-26T09:46:19.249758223Z",
+            "End": "2026-10-26T09:46:19.370046786Z",
+            "ExitCode": 0,
+            "Output": ""
+          },
+          {
+            "Start": "2026-10-26T09:46:29.36903354Z",
+            "End": "2026-10-26T09:46:29.480723381Z",
+            "ExitCode": 0,
+            "Output": ""
+          },
+          {
+            "Start": "2026-10-26T09:46:39.482535779Z",
+            "End": "2026-10-26T09:46:39.583460856Z",
+            "ExitCode": 0,
+            "Output": ""
+          }
+        ]
+      }
+    },
+    "memory_limit_bytes": 1073741824,
+    "command": [
+      "hdfs",
+      "namenode"
+    ]
+  },
+  {
+    "name": "/paysim-big-data-baseline-spark-1",
+    "image": "paysim-big-data-baseline-spark",
+    "state": {
+      "Status": "running",
+      "Running": true,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 3307,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-10-26T09:14:56.439991072Z",
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "Health": {
+        "Status": "healthy",
+        "FailingStreak": 0,
+        "Log": [
+          {
+            "Start": "2026-10-26T09:45:59.470819384Z",
+            "End": "2026-10-26T09:45:59.507154783Z",
+            "ExitCode": 0,
+            "Output": ""
+          },
+          {
+            "Start": "2026-10-26T09:46:09.507691096Z",
+            "End": "2026-10-26T09:46:09.543489587Z",
+            "ExitCode": 0,
+            "Output": ""
+          },
+          {
+            "Start": "2026-10-26T09:46:19.544650687Z",
+            "End": "2026-10-26T09:46:19.599250457Z",
+            "ExitCode": 0,
+            "Output": ""
+          },
+          {
+            "Start": "2026-10-26T09:46:29.598059145Z",
+            "End": "2026-10-26T09:46:29.643830267Z",
+            "ExitCode": 0,
+            "Output": ""
+          },
+          {
+            "Start": "2026-10-26T09:46:39.6446707Z",
+            "End": "2026-10-26T09:46:39.681999966Z",
+            "ExitCode": 0,
+            "Output": ""
+          }
+        ]
+      }
+    },
+    "memory_limit_bytes": 3221225472,
+    "command": [
+      "/opt/spark/bin/spark-submit",
+      "--master",
+      "local[2]",
+      "--driver-memory",
+      "2g",
+      "--conf",
+      "spark.sql.shuffle.partitions=4",
+      "--conf",
+      "spark.ui.requestHeaderSize=64k",
+      "--conf",
+      "spark.jars.ivy=/opt/spark/.ivy2",
+      "--packages",
+      "org.apache.spark:spark-sql-kafka-0-10_2.13:4.0.0",
+      "/opt/app/pipeline.py"
+    ]
+  },
+  {
+    "name": "/paysim-big-data-baseline-streamlit-1",
+    "image": "paysim-big-data-baseline-streamlit",
+    "state": {
+      "Status": "running",
+      "Running": true,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 6041,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-10-26T09:15:42.822196244Z",
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "Health": {
+        "Status": "healthy",
+        "FailingStreak": 0,
+        "Log": [
+          {
+            "Start": "2026-10-26T09:46:17.946818985Z",
+            "End": "2026-10-26T09:46:18.178059788Z",
+            "ExitCode": 0,
+            "Output": ""
+          },
+          {
+            "Start": "2026-10-26T09:46:23.179711898Z",
+            "End": "2026-10-26T09:46:23.441015671Z",
+            "ExitCode": 0,
+            "Output": ""
+          },
+          {
+            "Start": "2026-10-26T09:46:28.44007517Z",
+            "End": "2026-10-26T09:46:28.720183292Z",
+            "ExitCode": 0,
+            "Output": ""
+          },
+          {
+            "Start": "2026-10-26T09:46:33.721092296Z",
+            "End": "2026-10-26T09:46:33.933821358Z",
+            "ExitCode": 0,
+            "Output": ""
+          },
+          {
+            "Start": "2026-10-26T09:46:38.93469179Z",
+            "End": "2026-10-26T09:46:39.138431634Z",
+            "ExitCode": 0,
+            "Output": ""
+          }
+        ]
+      }
+    },
+    "memory_limit_bytes": 0,
+    "command": [
+      "streamlit",
+      "run",
+      "app.py",
+      "--server.address=0.0.0.0",
+      "--server.port=8501",
+      "--server.headless=true",
+      "--browser.gatherUsageStats=false"
+    ]
+  }
+]

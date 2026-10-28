@@ -1,0 +1,13 @@
+$ docker compose -f docker-compose.yml ps -a
+(exit=0)
+NAME                                    IMAGE                                COMMAND                  SERVICE      CREATED          STATUS                      PORTS
+paysim-big-data-baseline-datanode-1     paysim-big-data-baseline-datanode    "/usr/local/bin/hdfsâ€¦"   datanode     29 minutes ago   Up 29 minutes               0.0.0.0:9864->9864/tcp, [::]:9864->9864/tcp
+paysim-big-data-baseline-hdfs-init-1    paysim-big-data-baseline-hdfs-init   "/bin/sh -c 'chown -â€¦"   hdfs-init    30 minutes ago   Exited (0) 29 minutes ago   
+paysim-big-data-baseline-kafka-1        apache/kafka:4.0.0                   "/__cacert_entrypoinâ€¦"   kafka        30 minutes ago   Up 29 minutes (healthy)     0.0.0.0:29092->29092/tcp, [::]:29092->29092/tcp
+paysim-big-data-baseline-kafka-init-1   apache/kafka:4.0.0                   "/bin/bash -lc '/optâ€¦"   kafka-init   29 minutes ago   Exited (0) 29 minutes ago   
+paysim-big-data-baseline-mongodb-1      mongo:8.0                            "docker-entrypoint.sâ€¦"   mongodb      30 minutes ago   Up 29 minutes (healthy)     0.0.0.0:27017->27017/tcp, [::]:27017->27017/tcp
+paysim-big-data-baseline-namenode-1     paysim-big-data-baseline-namenode    "/usr/local/bin/hdfsâ€¦"   namenode     29 minutes ago   Up 29 minutes (healthy)     0.0.0.0:9000->9000/tcp, [::]:9000->9000/tcp, 0.0.0.0:9870->9870/tcp, [::]:9870->9870/tcp
+paysim-big-data-baseline-replayer-1     paysim-big-data-baseline-replayer    "python app.py"          replayer     29 minutes ago   Up 28 minutes               
+paysim-big-data-baseline-spark-1        paysim-big-data-baseline-spark       "/opt/app/entrypointâ€¦"   spark        29 minutes ago   Up 29 minutes (healthy)     0.0.0.0:4040->4040/tcp, [::]:4040->4040/tcp
+paysim-big-data-baseline-streamlit-1    paysim-big-data-baseline-streamlit   "streamlit run app.pâ€¦"   streamlit    29 minutes ago   Up 28 minutes (healthy)     0.0.0.0:8501->8501/tcp, [::]:8501->8501/tcp
+

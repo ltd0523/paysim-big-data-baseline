@@ -1,0 +1,130 @@
+{
+  "samples": [
+    {
+      "wall_clock_ms": 10.361267999996926,
+      "internal_query_ms": 10.329144999786877,
+      "run_id": "bench-20261026T094439Z-12276",
+      "freshness_seconds": 10.1464
+    },
+    {
+      "wall_clock_ms": 11.750102999940282,
+      "internal_query_ms": 11.532864999935555,
+      "run_id": "bench-20261026T094439Z-12276",
+      "freshness_seconds": 10.157968
+    },
+    {
+      "wall_clock_ms": 10.209633999920698,
+      "internal_query_ms": 9.984862000010253,
+      "run_id": "bench-20261026T094439Z-12276",
+      "freshness_seconds": 10.168174
+    },
+    {
+      "wall_clock_ms": 11.230606000026455,
+      "internal_query_ms": 10.897600000134844,
+      "run_id": "bench-20261026T094439Z-12276",
+      "freshness_seconds": 10.179391
+    },
+    {
+      "wall_clock_ms": 10.351098999990427,
+      "internal_query_ms": 10.158870999930514,
+      "run_id": "bench-20261026T094439Z-12276",
+      "freshness_seconds": 10.189796
+    },
+    {
+      "wall_clock_ms": 10.425434999888239,
+      "internal_query_ms": 10.2008129999831,
+      "run_id": "bench-20261026T094439Z-12276",
+      "freshness_seconds": 10.200192
+    },
+    {
+      "wall_clock_ms": 10.638673000130439,
+      "internal_query_ms": 10.388229999989562,
+      "run_id": "bench-20261026T094439Z-12276",
+      "freshness_seconds": 10.210813
+    },
+    {
+      "wall_clock_ms": 10.76297000008708,
+      "internal_query_ms": 10.480193000148574,
+      "run_id": "bench-20261026T094439Z-12276",
+      "freshness_seconds": 10.221543
+    },
+    {
+      "wall_clock_ms": 11.300290000008317,
+      "internal_query_ms": 11.073432000102912,
+      "run_id": "bench-20261026T094439Z-12276",
+      "freshness_seconds": 10.232904
+    },
+    {
+      "wall_clock_ms": 11.278223999852344,
+      "internal_query_ms": 11.039183000093544,
+      "run_id": "bench-20261026T094439Z-12276",
+      "freshness_seconds": 10.244172
+    },
+    {
+      "wall_clock_ms": 9.333795999964423,
+      "internal_query_ms": 9.114683999996487,
+      "run_id": "bench-20261026T094439Z-12276",
+      "freshness_seconds": 10.253529
+    },
+    {
+      "wall_clock_ms": 11.515912000049866,
+      "internal_query_ms": 11.268435000147292,
+      "run_id": "bench-20261026T094439Z-12276",
+      "freshness_seconds": 10.26502
+    },
+    {
+      "wall_clock_ms": 10.699645000158853,
+      "internal_query_ms": 10.182267000118372,
+      "run_id": "bench-20261026T094439Z-12276",
+      "freshness_seconds": 10.275458
+    },
+    {
+      "wall_clock_ms": 9.328062999884423,
+      "internal_query_ms": 9.108779999905892,
+      "run_id": "bench-20261026T094439Z-12276",
+      "freshness_seconds": 10.285085
+    },
+    {
+      "wall_clock_ms": 9.186242999930982,
+      "internal_query_ms": 8.968874999936816,
+      "run_id": "bench-20261026T094439Z-12276",
+      "freshness_seconds": 10.29428
+    },
+    {
+      "wall_clock_ms": 8.713352999848212,
+      "internal_query_ms": 8.438521000016408,
+      "run_id": "bench-20261026T094439Z-12276",
+      "freshness_seconds": 10.30294
+    },
+    {
+      "wall_clock_ms": 9.357200000067678,
+      "internal_query_ms": 9.140162999983659,
+      "run_id": "bench-20261026T094439Z-12276",
+      "freshness_seconds": 10.312357
+    },
+    {
+      "wall_clock_ms": 9.041157999945426,
+      "internal_query_ms": 8.797628999900553,
+      "run_id": "bench-20261026T094439Z-12276",
+      "freshness_seconds": 10.321374
+    },
+    {
+      "wall_clock_ms": 8.631680999997116,
+      "internal_query_ms": 8.445524000080695,
+      "run_id": "bench-20261026T094439Z-12276",
+      "freshness_seconds": 10.330065
+    },
+    {
+      "wall_clock_ms": 10.198006000109672,
+      "internal_query_ms": 9.943875999852025,
+      "run_id": "bench-20261026T094439Z-12276",
+      "freshness_seconds": 10.3402
+    }
+  ],
+  "sample_count": 20,
+  "internal_query_p50_ms": 10.170569000024443,
+  "internal_query_p95_ms": 11.281656500136705,
+  "wall_clock_p50_ms": 10.356183499993676,
+  "wall_clock_p95_ms": 11.527621550044387,
+  "measurement_scope": "20 serial calls to dashboard_core.load_snapshot() inside Streamlit container; not full browser render"
+}

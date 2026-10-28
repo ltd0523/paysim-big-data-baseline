@@ -1,0 +1,1 @@
+docker compose run --rm --no-deps (unique RUN_ID, bounded MAX_EVENTS, no fault injection)

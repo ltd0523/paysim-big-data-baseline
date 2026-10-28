@@ -1,0 +1,82 @@
+{
+  "sampled_at": "2026-10-26T09:44:42+00:00",
+  "containers": [
+    {
+      "BlockIO": "41MB / 70.8MB",
+      "CPUPerc": "0.45%",
+      "Container": "9daf5211571c6f0b0d45ea60838baf6c5647aaf625a620763bdec2cb1b0bf798",
+      "ID": "9daf5211571c",
+      "MemPerc": "20.83%",
+      "MemUsage": "213.3MiB / 1GiB",
+      "Name": "paysim-big-data-baseline-datanode-1",
+      "NetIO": "61.1MB / 3.01MB",
+      "PIDs": "51"
+    },
+    {
+      "BlockIO": "205MB / 34.9MB",
+      "CPUPerc": "212.27%",
+      "Container": "408e9599789a0e124612955257f9d0a65625bc0b884d118df2d64dea3e866067",
+      "ID": "408e9599789a",
+      "MemPerc": "6.81%",
+      "MemUsage": "513MiB / 7.355GiB",
+      "Name": "paysim-big-data-baseline-kafka-1",
+      "NetIO": "11.3MB / 10.8MB",
+      "PIDs": "144"
+    },
+    {
+      "BlockIO": "353MB / 89.9MB",
+      "CPUPerc": "1.52%",
+      "Container": "dbbcc8e9dc7124d53b42a3bdad236226892c1bfcb924ee0ee90a7159e493a6fc",
+      "ID": "dbbcc8e9dc71",
+      "MemPerc": "3.42%",
+      "MemUsage": "257.5MiB / 7.355GiB",
+      "Name": "paysim-big-data-baseline-mongodb-1",
+      "NetIO": "55.2MB / 99.8MB",
+      "PIDs": "55"
+    },
+    {
+      "BlockIO": "132MB / 69.7MB",
+      "CPUPerc": "0.93%",
+      "Container": "123e38e519e402930a25a079425d178a29c2c5ce256799d3f64c68e25842d3cc",
+      "ID": "123e38e519e4",
+      "MemPerc": "24.28%",
+      "MemUsage": "248.6MiB / 1GiB",
+      "Name": "paysim-big-data-baseline-namenode-1",
+      "NetIO": "11.6MB / 5.34MB",
+      "PIDs": "63"
+    },
+    {
+      "BlockIO": "16.6MB / 0B",
+      "CPUPerc": "0.59%",
+      "Container": "52e19ceb2a9d2dc6d2601371e52f3cb7e373f8ee1ea8de251b73a69e6da8af56",
+      "ID": "52e19ceb2a9d",
+      "MemPerc": "0.36%",
+      "MemUsage": "26.89MiB / 7.355GiB",
+      "Name": "paysim-big-data-baseline-replayer-1",
+      "NetIO": "6.84MB / 37.9MB",
+      "PIDs": "7"
+    },
+    {
+      "BlockIO": "83.3MB / 239MB",
+      "CPUPerc": "2.53%",
+      "Container": "bc78f9b96f9801d36f6e0bc54b429b4d994d874ad0b0e38080da7fa5c2af9865",
+      "ID": "bc78f9b96f98",
+      "MemPerc": "72.85%",
+      "MemUsage": "2.185GiB / 3GiB",
+      "Name": "paysim-big-data-baseline-spark-1",
+      "NetIO": "33.2MB / 97.9MB",
+      "PIDs": "319"
+    },
+    {
+      "BlockIO": "237MB / 0B",
+      "CPUPerc": "20.07%",
+      "Container": "ecad7cebe0da2fe135795cd4d8b9c70fc13f46c0c54965d4cd1aa42bcaac9405",
+      "ID": "ecad7cebe0da",
+      "MemPerc": "2.40%",
+      "MemUsage": "180.5MiB / 7.355GiB",
+      "Name": "paysim-big-data-baseline-streamlit-1",
+      "NetIO": "78.4MB / 18.6MB",
+      "PIDs": "23"
+    }
+  ]
+}

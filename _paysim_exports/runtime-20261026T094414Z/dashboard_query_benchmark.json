@@ -1,0 +1,130 @@
+{
+  "samples": [
+    {
+      "wall_clock_ms": 14.547951999929865,
+      "internal_query_ms": 14.521951000006084,
+      "run_id": "run-20261026-091544",
+      "freshness_seconds": 9.181001
+    },
+    {
+      "wall_clock_ms": 17.48684700010017,
+      "internal_query_ms": 17.189150999911362,
+      "run_id": "run-20261026-091544",
+      "freshness_seconds": 9.198219
+    },
+    {
+      "wall_clock_ms": 15.301726999950915,
+      "internal_query_ms": 15.088706999904389,
+      "run_id": "run-20261026-091544",
+      "freshness_seconds": 9.213611
+    },
+    {
+      "wall_clock_ms": 15.238198999895758,
+      "internal_query_ms": 14.998025999830134,
+      "run_id": "run-20261026-091544",
+      "freshness_seconds": 9.228823
+    },
+    {
+      "wall_clock_ms": 15.668404999814811,
+      "internal_query_ms": 15.415726999890467,
+      "run_id": "run-20261026-091544",
+      "freshness_seconds": 9.244485
+    },
+    {
+      "wall_clock_ms": 17.243336000092313,
+      "internal_query_ms": 17.012281000006624,
+      "run_id": "run-20261026-091544",
+      "freshness_seconds": 9.261753
+    },
+    {
+      "wall_clock_ms": 16.67470699999285,
+      "internal_query_ms": 16.40240000006088,
+      "run_id": "run-20261026-091544",
+      "freshness_seconds": 9.278398
+    },
+    {
+      "wall_clock_ms": 14.599291999957131,
+      "internal_query_ms": 14.37761500005763,
+      "run_id": "run-20261026-091544",
+      "freshness_seconds": 9.293043
+    },
+    {
+      "wall_clock_ms": 12.97402700015482,
+      "internal_query_ms": 12.734956000031161,
+      "run_id": "run-20261026-091544",
+      "freshness_seconds": 9.306003
+    },
+    {
+      "wall_clock_ms": 15.65488500000356,
+      "internal_query_ms": 15.35973200020635,
+      "run_id": "run-20261026-091544",
+      "freshness_seconds": 9.321608
+    },
+    {
+      "wall_clock_ms": 15.092767999931311,
+      "internal_query_ms": 14.874037000026874,
+      "run_id": "run-20261026-091544",
+      "freshness_seconds": 9.336779
+    },
+    {
+      "wall_clock_ms": 15.634497000064584,
+      "internal_query_ms": 15.360717000021396,
+      "run_id": "run-20261026-091544",
+      "freshness_seconds": 9.352364
+    },
+    {
+      "wall_clock_ms": 19.08940399994208,
+      "internal_query_ms": 18.846065000161616,
+      "run_id": "run-20261026-091544",
+      "freshness_seconds": 9.371486
+    },
+    {
+      "wall_clock_ms": 14.108509999914531,
+      "internal_query_ms": 13.874647999955414,
+      "run_id": "run-20261026-091544",
+      "freshness_seconds": 9.385606
+    },
+    {
+      "wall_clock_ms": 14.126114999953643,
+      "internal_query_ms": 13.914858999896751,
+      "run_id": "run-20261026-091544",
+      "freshness_seconds": 9.399757
+    },
+    {
+      "wall_clock_ms": 14.506754999956684,
+      "internal_query_ms": 14.20590199995786,
+      "run_id": "run-20261026-091544",
+      "freshness_seconds": 9.414177
+    },
+    {
+      "wall_clock_ms": 14.847765000013169,
+      "internal_query_ms": 14.586491000045498,
+      "run_id": "run-20261026-091544",
+      "freshness_seconds": 9.429068
+    },
+    {
+      "wall_clock_ms": 16.148777000125847,
+      "internal_query_ms": 15.804838999883941,
+      "run_id": "run-20261026-091544",
+      "freshness_seconds": 9.445139
+    },
+    {
+      "wall_clock_ms": 16.49568699986048,
+      "internal_query_ms": 16.254892999995718,
+      "run_id": "run-20261026-091544",
+      "freshness_seconds": 9.461741
+    },
+    {
+      "wall_clock_ms": 15.231222000011257,
+      "internal_query_ms": 14.9289260000387,
+      "run_id": "run-20261026-091544",
+      "freshness_seconds": 9.476916
+    }
+  ],
+  "sample_count": 20,
+  "internal_query_p50_ms": 15.043366499867261,
+  "internal_query_p95_ms": 17.271996699923875,
+  "wall_clock_p50_ms": 15.269962999923337,
+  "wall_clock_p95_ms": 17.566974850092265,
+  "measurement_scope": "20 serial calls to dashboard_core.load_snapshot() inside Streamlit container; not full browser render"
+}

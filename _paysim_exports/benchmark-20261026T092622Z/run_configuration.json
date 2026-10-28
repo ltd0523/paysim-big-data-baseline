@@ -1,0 +1,17 @@
+{
+  "run_id": "bench-20261026T092622Z-24200",
+  "started_at": "2026-10-26T09:26:24+00:00",
+  "events": 5000,
+  "rate": 50,
+  "start_row": 1,
+  "seed": 2026,
+  "injected_fault_rates": {
+    "duplicate": 0,
+    "null": 0,
+    "late": 0
+  },
+  "selected_by": "finite, one-off Docker Compose replayer",
+  "docker_memory_mode_guess": "standard",
+  "timeout_seconds": 1800,
+  "note": "Regular replayer will remain stopped after benchmark. Start it later via docker compose start replayer if needed."
+}

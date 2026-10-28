@@ -1,0 +1,23 @@
+{
+  "run_id": "run-20261026-091544",
+  "run_status": "running",
+  "emitted": 85200,
+  "unique_events_emitted": 85200,
+  "processed": 84800,
+  "ground_truth_missing": 0,
+  "delivery_errors": 0,
+  "processed_equals_emitted_unique": false,
+  "fraud_alerts": 5697,
+  "batch_count_exported": 171,
+  "total_processed_rows_in_exported_batches": 84800,
+  "batch_duration_seconds_p50": 3.63001530300005,
+  "batch_duration_seconds_p95": 5.416565857999984,
+  "mean_processing_throughput_ev_s": 135.41372874036574,
+  "latest_processing_throughput_ev_s": 163.43691178453295,
+  "latest_end_to_end_latency_p95_ms": 12164,
+  "latest_ingest_latency_p95_ms": 21,
+  "latest_consumer_lag": 100,
+  "latest_small_file_count": 1694,
+  "latest_storage_bytes": 56734701,
+  "note": "Values are raw run telemetry from this fork, not independently measured UI response-time benchmarks. Latest p95 is per last micro-batch. The exported batch list is capped at 400."
+}

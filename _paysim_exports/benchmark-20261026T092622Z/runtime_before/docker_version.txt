@@ -1,0 +1,4 @@
+$ docker version --format client={{.Client.Version}} server={{.Server.Version}}
+(exit=0)
+client=29.8.2 server=29.8.2
+

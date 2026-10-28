@@ -1,0 +1,4 @@
+$ docker info --format architecture={{.Architecture}} cpus={{.NCPU}} docker_memory_bytes={{.MemTotal}} os_type={{.OSType}}
+(exit=0)
+architecture=x86_64 cpus=16 docker_memory_bytes=7897509888 os_type=linux
+
