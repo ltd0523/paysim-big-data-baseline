@@ -1,0 +1,7 @@
+﻿paysim-big-data-baseline-streamlit-1 Up 2 minutes (healthy)
+paysim-big-data-baseline-mongodb-1 Up 6 hours (healthy)
+paysim-big-data-baseline-replayer-1 Up 6 hours
+paysim-big-data-baseline-spark-1 Up About an hour (healthy)
+paysim-big-data-baseline-datanode-1 Up 6 hours
+paysim-big-data-baseline-namenode-1 Up 6 hours (healthy)
+paysim-big-data-baseline-kafka-1 Up 6 hours (healthy)

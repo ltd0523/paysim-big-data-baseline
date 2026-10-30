@@ -1,0 +1,316 @@
+﻿diff --git a/dashboard/dashboard_core.py b/dashboard/dashboard_core.py
+index 41553db..7843c60 100644
+--- a/dashboard/dashboard_core.py
++++ b/dashboard/dashboard_core.py
+@@ -219,8 +219,8 @@ def load_snapshot():
+     )
+ 
+ 
+-def render_page(snapshot, page, *, transaction_renderer=None):
+-    """Render shared pages; optionally override transaction presentation only."""
++def render_page(snapshot, page, *, transaction_renderer=None, fraud_renderer=None):
++    """Render shared pages with optional presentation-only renderers."""
+     run = snapshot.run
+     run_id = snapshot.run_id
+     evaluation = snapshot.evaluation
+@@ -376,6 +376,9 @@ def render_page(snapshot, page, *, transaction_renderer=None):
+         ], f"Checkpoint HDFS active; processed={fmt_int(processed)}; lag={fmt_int(lag)}")
+ 
+     elif page == pages[2]:
++        if fraud_renderer is not None:
++            fraud_renderer(snapshot)
++            return
+         left, right = st.columns(2)
+         with left:
+             st.subheader("Rule baseline vs Spark MLlib")
+diff --git a/dashboard/view_operations.py b/dashboard/view_operations.py
+index 531c08a..7bd12a3 100644
+--- a/dashboard/view_operations.py
++++ b/dashboard/view_operations.py
+@@ -6,7 +6,10 @@ import altair as alt
+ import pandas as pd
+ import streamlit as st
+ from html import escape
+-from dashboard_core import PAGES, fmt_int, fmt_float, fmt_pct, render_page
++from dashboard_core import (
++    PAGES, fmt_int, fmt_float, fmt_pct, render_page,
++    detector_metrics, render_detector_comparison,
++)
+ 
+ PAGE_CONFIG = dict(page_title="PaySim | Operations", layout="wide", initial_sidebar_state="expanded")
+ 
+@@ -219,6 +222,14 @@ def setup():
+     .st-key-ops-detail [data-testid="stVegaLiteChart"] > .chart-wrapper {
+         border-radius:15px; overflow:hidden;
+     }
++    .st-key-ops-fraud-business {gap:28px;}
++    :is(.st-key-ops-fraud-performance,.st-key-ops-fraud-matrix,
++        .st-key-ops-fraud-alerts,.st-key-ops-fraud-risk) {
++        background:#FFFFFF; border:1px solid #DCE5EF; border-radius:15px;
++        padding:20px; min-width:0;
++    }
++    .st-key-ops-fraud-business h3 {font-size:18px;}
++    .st-key-ops-fraud-overview > [data-testid="stHorizontalBlock"] {gap:24px;}
+     #vg-tooltip-element {background:#FFFFFF; color:#0F172A; border-color:#DCE5EF; font-size:12px;}
+     #vg-tooltip-element td.key {color:#475569;}
+     @media (max-width:1100px) {
+@@ -227,6 +238,12 @@ def setup():
+             flex:1 1 100%; width:100%;
+         }
+     }
++    @media (max-width:1450px) {
++        .st-key-ops-fraud-overview > [data-testid="stHorizontalBlock"] {flex-wrap:wrap;}
++        .st-key-ops-fraud-overview > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"] {
++            flex:1 1 100%; width:100%;
++        }
++    }
+     @media (max-width:767px) {
+         [data-testid="stMainBlockContainer"] {padding:4.2rem 20px 28px;}
+         [data-testid="stHorizontalBlock"] {flex-wrap:wrap; gap:16px;}
+@@ -404,6 +421,145 @@ def transaction_distribution(frame):
+     )
+     st.altair_chart(chart_style((bars + counts).properties(height=300)),
+                     theme=None, use_container_width=True)
++
++
++DETECTORS = ['Spark MLlib', 'Rule Baseline']
++DETECTOR_COLORS = ['#2563EB', '#0F766E']
++TRANSACTION_COLORS = {
++    'CASH_OUT': '#2563EB', 'PAYMENT': '#0F766E', 'CASH_IN': '#0284C7',
++    'TRANSFER': '#E11D48', 'DEBIT': '#64748B',
++}
++
++
++def detector_color():
++    return alt.Color('Detector:N', title=None,
++        scale=alt.Scale(domain=DETECTORS, range=DETECTOR_COLORS),
++        legend=alt.Legend(orient='top', columns=1, labelLimit=160))
++
++
++def performance_comparison(evaluation):
++    st.subheader('Model Performance Comparison')
++    rows = []
++    for key, name in [('model', DETECTORS[0]), ('rule', DETECTORS[1])]:
++        values = detector_metrics(evaluation, key)
++        rows.extend({'Metric': metric, 'Detector': name, 'Value': values[metric]}
++                    for metric in ['Precision', 'Recall', 'F1'])
++    base = alt.Chart(pd.DataFrame(rows)).encode(
++        y=alt.Y('Metric:N', title=None, sort=['Precision', 'Recall', 'F1'], axis=alt.Axis(grid=False)),
++        yOffset=alt.YOffset('Detector:N', sort=DETECTORS),
++        x=alt.X('Value:Q', title='Giá trị (%)', scale=alt.Scale(domain=[0, 1],
++                range=[0, alt.ExprRef(expr='max(0, width - 58)')]),
++                axis=alt.Axis(format='.0%', tickCount=5)),
++        tooltip=[alt.Tooltip('Metric:N', title='Metric'), alt.Tooltip('Detector:N', title='Detector'),
++                 alt.Tooltip('Value:Q', title='Giá trị', format='.2%')],
++    )
++    bars = base.mark_bar().encode(color=detector_color())
++    labels = base.mark_text(align='left', dx=5, color='#0F172A', fontSize=11).encode(
++        text=alt.Text('Value:Q', format='.2%'))
++    st.altair_chart(chart_style((bars + labels).properties(height=270)), theme=None, use_container_width=True)
++    # Keep the canonical detailed table, including Alert rate, without duplicating formulas.
++    render_detector_comparison(evaluation)
++
++
++def confusion_matrix(model):
++    st.subheader('Confusion Matrix — Spark MLlib')
++    frame = pd.DataFrame([
++        {'Actual':'Fraud', 'Predicted':'Fraud', 'Count':model['TP'], 'Cell':'TP'},
++        {'Actual':'Fraud', 'Predicted':'Legitimate', 'Count':model['FN'], 'Cell':'FN'},
++        {'Actual':'Legitimate', 'Predicted':'Fraud', 'Count':model['FP'], 'Cell':'FP'},
++        {'Actual':'Legitimate', 'Predicted':'Legitimate', 'Count':model['TN'], 'Cell':'TN'},
++    ])
++    maximum = int(frame['Count'].max()) or 1
++    base = alt.Chart(frame).encode(
++        x=alt.X('Predicted:N', title='Predicted', sort=['Fraud', 'Legitimate'],
++                axis=alt.Axis(labelAngle=0, labelLimit=100, grid=False)),
++        y=alt.Y('Actual:N', title='Actual', sort=['Fraud', 'Legitimate'], axis=alt.Axis(grid=False)),
++        tooltip=[alt.Tooltip('Actual:N'), alt.Tooltip('Predicted:N'),
++                 alt.Tooltip('Count:Q', format=','), alt.Tooltip('Cell:N', title='Kết quả')],
++    )
++    cells = base.mark_rect(cornerRadius=5, stroke='#FFFFFF', strokeWidth=3).encode(
++        color=alt.Color('Count:Q', title='Số lượng', scale=alt.Scale(domain=[0,maximum],
++            range=['#EFF6FF','#1E40AF'], interpolate='rgb'),
++            legend=alt.Legend(orient='bottom', format='~s', gradientLength=140)))
++    ink = alt.condition(f'datum.Count > {maximum * .75}', alt.value('#FFFFFF'), alt.value('#0F172A'))
++    counts = base.mark_text(baseline='middle', dy=-9, fontSize=18, fontWeight=700).encode(
++        text=alt.Text('Count:Q', format=','), color=ink)
++    names = base.mark_text(baseline='middle', dy=15, fontSize=12, fontWeight=600).encode(
++        text='Cell:N', color=ink)
++    st.altair_chart(chart_style((cells + counts + names).properties(height=270)),
++                    theme=None, use_container_width=True)
++    st.caption('Actual: ground truth · Predicted: dự đoán. TP/TN: đúng; FP/FN: sai. '
++               'Các ô có cùng diện tích; số và màu biểu thị số lượng.')
++
++
++def alerts_by_type(aggregates):
++    st.subheader('Alerts by Transaction Type')
++    if not aggregates:
++        st.info('Đang chờ dữ liệu alerts theo loại giao dịch.')
++        return
++    frame = pd.DataFrame(aggregates)
++    order = frame.sort_values(['model_alerts', 'type'], ascending=[False, True])['type'].tolist()
++    plot = frame.melt(id_vars=['type'], value_vars=['model_alerts', 'rule_alerts'],
++                      var_name='Detector', value_name='Alerts')
++    plot['Detector'] = plot['Detector'].replace({'model_alerts':DETECTORS[0], 'rule_alerts':DETECTORS[1]})
++    maximum = float(plot['Alerts'].max()) or 1
++    base = alt.Chart(plot).encode(
++        y=alt.Y('type:N', title='Loại giao dịch', sort=order, axis=alt.Axis(grid=False, labelLimit=100)),
++        yOffset=alt.YOffset('Detector:N', sort=DETECTORS),
++        x=alt.X('Alerts:Q', title='Số alerts', scale=alt.Scale(zero=True, domain=[0,maximum],
++                range=[0, alt.ExprRef(expr='max(0, width - 65)')]), axis=alt.Axis(format='~s', tickCount=5)),
++        tooltip=[alt.Tooltip('type:N', title='Transaction type'), alt.Tooltip('Detector:N', title='Detector'),
++                 alt.Tooltip('Alerts:Q', title='Alerts', format=',')],
++    )
++    bars = base.mark_bar().encode(color=detector_color())
++    labels = base.mark_text(align='left', dx=5, fontSize=11, color='#0F172A').encode(
++        text=alt.Text('Alerts:Q', format=','))
++    st.altair_chart(chart_style((bars + labels).properties(height=330)), theme=None, use_container_width=True)
++
++
++def risk_score_analysis(recent_alerts):
++    st.subheader('Risk Score Analysis')
++    st.caption('Risk Score vs Amount · tối đa 300 alerts mới nhất · Amount dùng thang log.')
++    if not recent_alerts:
++        st.info('Đang chờ cảnh báo để hiển thị Risk Score vs Amount.')
++        return
++    frame = pd.DataFrame(recent_alerts)
++    amounts = pd.to_numeric(frame['amount'], errors='coerce')
++    invalid = ~(amounts.gt(0) & amounts.lt(float('inf')))
++    if invalid.any():
++        st.warning(f'{int(invalid.sum())} alerts có Amount ≤ 0, thiếu hoặc không hữu hạn. '
++                   'Trục log không thể hiển thị các điểm này; dữ liệu đầu vào được giữ nguyên, không lọc bản ghi.')
++    kinds = list(TRANSACTION_COLORS) + sorted(set(frame['type'].dropna()) - set(TRANSACTION_COLORS))
++    palette = [TRANSACTION_COLORS.get(kind, '#0891B2') for kind in kinds]
++    chart = alt.Chart(frame).mark_circle(size=65, opacity=.65, stroke='#FFFFFF', strokeWidth=.6).encode(
++        x=alt.X('amount:Q', title='Amount (log scale)', scale=alt.Scale(type='log'),
++                axis=alt.Axis(format='~s', tickCount=5)),
++        y=alt.Y('risk_score:Q', title='Risk Score', scale=alt.Scale(domain=[0,1]),
++                axis=alt.Axis(format='.1f', tickCount=5)),
++        color=alt.Color('type:N', title='Transaction type', scale=alt.Scale(domain=kinds, range=palette),
++                legend=alt.Legend(orient='top', columns=2, labelLimit=110)),
++        tooltip=[alt.Tooltip('event_id:N', title='Event ID'), alt.Tooltip('type:N', title='Transaction type'),
++                 alt.Tooltip('amount:Q', title='Amount', format=',.2f'),
++                 alt.Tooltip('risk_score:Q', title='Risk Score', format='.4f')],
++    ).properties(height=380).interactive(bind_y=False)
++    st.altair_chart(chart_style(chart), theme=None, use_container_width=True)
++
++
++def fraud_business(s):
++    with st.container(key='ops-fraud-business'):
++        st.subheader('Fraud Detection Performance')
++        with st.container(key='ops-fraud-overview'):
++            comparison, matrix = st.columns([3,2])
++            with comparison:
++                with st.container(key='ops-fraud-performance'):
++                    performance_comparison(s.evaluation)
++            with matrix:
++                with st.container(key='ops-fraud-matrix'):
++                    confusion_matrix(s.model)
++        with st.container(key='ops-fraud-alerts'):
++            alerts_by_type(s.aggregates)
++        with st.container(key='ops-fraud-risk'):
++            risk_score_analysis(s.recent_alerts)
+ # AFTER END — 9A.3
+ 
+ # BEFORE Start — 9A.4
+@@ -454,7 +610,7 @@ def render(s,page):
+                 with right: signal(s,['latency_p95_ms'],'End-to-End Latency p95','ms',220,time_domain=time_domain)
+             else:
+                 with st.container(key="ops-detail"):
+-                    render_page(s,page,transaction_renderer=transaction_distribution)
++                    render_page(s,page,transaction_renderer=transaction_distribution,fraud_renderer=fraud_business)
+         with aside:
+             watch(s)
+     if page==PAGES[0]:
+diff --git a/tests/test_dashboard.py b/tests/test_dashboard.py
+index b80c232..d992edb 100644
+--- a/tests/test_dashboard.py
++++ b/tests/test_dashboard.py
+@@ -172,3 +172,87 @@ def test_transaction_renderer_is_scoped_to_operations_and_ranks_by_count(view):
+         assert spec['encoding']['y']['field'] == 'transactions'
+     else:
+         assert spec['mark']['type'] == 'arc'
++
++
++def test_fraud_renderer_preserves_snapshot_and_all_chart_values():
++    import pandas as pd
++    db = fixture_database()
++    db.evaluation_totals.update_one({'_id':'ui-test'}, {'$set': {
++        'model':dict(tp=1, fp=9999, tn=20000, fn=3),
++        'rule':dict(tp=0, fp=0, tn=30000, fn=3)}})
++    db.live_aggregates.insert_one(dict(run_id='ui-test', type='PAYMENT', transactions=20,
++                                     model_alerts=10, rule_alerts=0, total_amount=1))
++    with patch.object(dashboard_core, 'get_database', return_value=db):
++        snapshot = dashboard_core.load_snapshot()
++    original = copy.deepcopy(vars(snapshot))
++    with patch.object(dashboard_core, 'load_snapshot', return_value=snapshot):
++        app = AppTest.from_string(app_source('operations')).run()
++        app.button_group[0].set_value([dashboard_core.PAGES[2]]).run()
++    assert not app.exception
++    assert vars(snapshot) == original
++    performance, matrix, alerts, scatter = chart_payloads(app)
++    spec, frames = performance
++    expected = {(name, metric): dashboard_core.detector_metrics(snapshot.evaluation, key)[metric]
++        for key, name in [('model','Spark MLlib'), ('rule','Rule Baseline')]
++        for metric in ['Precision','Recall','F1']}
++    assert {(r.Detector,r.Metric):r.Value for r in frames[0].itertuples()} == expected
++    bars, labels = spec['layer']
++    assert bars['encoding']['x']['scale']['domain'] == [0,1]
++    assert bars['encoding']['y']['sort'] == ['Precision','Recall','F1']
++    assert labels['encoding']['text']['format'] == '.2%'
++    assert bars['encoding']['color']['scale'] == {
++        'domain':['Spark MLlib','Rule Baseline'], 'range':['#2563EB','#0F766E']}
++    table = app.dataframe[0].value
++    for key, name in [('rule','Spark SQL rule'), ('model','Spark MLlib')]:
++        values = dashboard_core.detector_metrics(snapshot.evaluation, key)
++        row = table[table['Detector'] == name].iloc[0]
++        for metric, value in values.items():
++            assert row[metric] == (dashboard_core.fmt_pct(value) if metric in
++                ['Precision','Recall','F1','Alert rate'] else value)
++    spec, frames = matrix
++    assert {(r.Actual,r.Predicted):r.Count for r in frames[0].itertuples()} == {
++        ('Fraud','Fraud'):snapshot.model['TP'], ('Fraud','Legitimate'):snapshot.model['FN'],
++        ('Legitimate','Fraud'):snapshot.model['FP'], ('Legitimate','Legitimate'):snapshot.model['TN']}
++    assert set(frames[0]['Cell']) == {'TP','FN','FP','TN'}
++    assert spec['layer'][1]['encoding']['color']['value'] == '#0F172A'
++    assert spec['layer'][1]['encoding']['color']['condition']['value'] == '#FFFFFF'
++    spec, frames = alerts
++    assert {(r.type,r.Detector):r.Alerts for r in frames[0].itertuples()} == {
++        (r['type'],name):r[field] for r in snapshot.aggregates
++        for field,name in [('model_alerts','Spark MLlib'),('rule_alerts','Rule Baseline')]}
++    assert spec['layer'][0]['encoding']['y']['sort'] == ['PAYMENT','TRANSFER']
++    assert spec['layer'][0]['encoding']['x']['scale']['zero'] is True
++    spec, frames = scatter
++    # Arrow normalizes equivalent UTC timezone implementations during transport.
++    pd.testing.assert_frame_equal(frames[0], pd.DataFrame(snapshot.recent_alerts), check_dtype=False)
++    assert spec['encoding']['x']['scale']['type'] == 'log'
++    assert spec['encoding']['y']['scale']['domain'] == [0,1]
++    assert spec['mark']['opacity'] == .65
++    assert {t['field'] for t in spec['encoding']['tooltip']} == {'event_id','type','amount','risk_score'}
++    assert spec['encoding']['color']['scale']['domain'] == ['CASH_OUT','PAYMENT','CASH_IN','TRANSFER','DEBIT']
++
++
++@pytest.mark.parametrize('amounts', [[], [0, -1, None, float('inf'), 10]])
++def test_fraud_empty_counts_and_invalid_log_amounts_are_reported_without_filtering(amounts):
++    db = fixture_database()
++    with patch.object(dashboard_core, 'get_database', return_value=db):
++        snapshot = dashboard_core.load_snapshot()
++    snapshot.evaluation = {}
++    snapshot.model = dashboard_core.detector_metrics({}, 'model')
++    snapshot.aggregates = []
++    snapshot.recent_alerts = [dict(event_id=f'edge-{i}', type='TRANSFER', amount=amount, risk_score=.5)
++                              for i, amount in enumerate(amounts)]
++    original = copy.deepcopy(vars(snapshot))
++    with patch.object(dashboard_core, 'load_snapshot', return_value=snapshot):
++        app = AppTest.from_string(app_source('operations')).run()
++        app.button_group[0].set_value([dashboard_core.PAGES[2]]).run()
++    assert not app.exception and vars(snapshot) == original
++    charts = chart_payloads(app)
++    assert len(charts) == (3 if amounts else 2)
++    if amounts:
++        assert '4 alerts' in app.warning[0].value
++        assert len(charts[-1][1][0]) == len(amounts)
++    else:
++        assert not app.warning
++    assert set(charts[0][1][0]['Value']) == {0}
++    assert set(charts[1][1][0]['Count']) == {0}

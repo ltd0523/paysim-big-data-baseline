@@ -6,7 +6,10 @@ import altair as alt
 import pandas as pd
 import streamlit as st
 from html import escape
-from dashboard_core import PAGES, fmt_int, fmt_float, fmt_pct, render_page
+from dashboard_core import (
+    PAGES, fmt_int, fmt_float, fmt_pct, render_page,
+    detector_metrics, render_detector_comparison,
+)
 
 PAGE_CONFIG = dict(page_title="PaySim | Operations", layout="wide", initial_sidebar_state="expanded")
 
@@ -219,11 +222,25 @@ def setup():
     .st-key-ops-detail [data-testid="stVegaLiteChart"] > .chart-wrapper {
         border-radius:15px; overflow:hidden;
     }
+    .st-key-ops-fraud-business {gap:28px;}
+    :is(.st-key-ops-fraud-performance,.st-key-ops-fraud-matrix,
+        .st-key-ops-fraud-alerts,.st-key-ops-fraud-risk) {
+        background:#FFFFFF; border:1px solid #DCE5EF; border-radius:15px;
+        padding:20px; min-width:0;
+    }
+    .st-key-ops-fraud-business h3 {font-size:18px;}
+    .st-key-ops-fraud-overview > [data-testid="stHorizontalBlock"] {gap:24px;}
     #vg-tooltip-element {background:#FFFFFF; color:#0F172A; border-color:#DCE5EF; font-size:12px;}
     #vg-tooltip-element td.key {color:#475569;}
     @media (max-width:1100px) {
         .st-key-ops-workspace > [data-testid="stHorizontalBlock"] {flex-wrap:wrap;}
         .st-key-ops-workspace > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"] {
+            flex:1 1 100%; width:100%;
+        }
+    }
+    @media (max-width:1450px) {
+        .st-key-ops-fraud-overview > [data-testid="stHorizontalBlock"] {flex-wrap:wrap;}
+        .st-key-ops-fraud-overview > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"] {
             flex:1 1 100%; width:100%;
         }
     }
@@ -404,6 +421,145 @@ def transaction_distribution(frame):
     )
     st.altair_chart(chart_style((bars + counts).properties(height=300)),
                     theme=None, use_container_width=True)
+
+
+DETECTORS = ['Spark MLlib', 'Rule Baseline']
+DETECTOR_COLORS = ['#2563EB', '#0F766E']
+TRANSACTION_COLORS = {
+    'CASH_OUT': '#2563EB', 'PAYMENT': '#0F766E', 'CASH_IN': '#0284C7',
+    'TRANSFER': '#E11D48', 'DEBIT': '#64748B',
+}
+
+
+def detector_color():
+    return alt.Color('Detector:N', title=None,
+        scale=alt.Scale(domain=DETECTORS, range=DETECTOR_COLORS),
+        legend=alt.Legend(orient='top', columns=1, labelLimit=160))
+
+
+def performance_comparison(evaluation):
+    st.subheader('Model Performance Comparison')
+    rows = []
+    for key, name in [('model', DETECTORS[0]), ('rule', DETECTORS[1])]:
+        values = detector_metrics(evaluation, key)
+        rows.extend({'Metric': metric, 'Detector': name, 'Value': values[metric]}
+                    for metric in ['Precision', 'Recall', 'F1'])
+    base = alt.Chart(pd.DataFrame(rows)).encode(
+        y=alt.Y('Metric:N', title=None, sort=['Precision', 'Recall', 'F1'], axis=alt.Axis(grid=False)),
+        yOffset=alt.YOffset('Detector:N', sort=DETECTORS),
+        x=alt.X('Value:Q', title='Giá trị (%)', scale=alt.Scale(domain=[0, 1],
+                range=[0, alt.ExprRef(expr='max(0, width - 58)')]),
+                axis=alt.Axis(format='.0%', tickCount=5)),
+        tooltip=[alt.Tooltip('Metric:N', title='Metric'), alt.Tooltip('Detector:N', title='Detector'),
+                 alt.Tooltip('Value:Q', title='Giá trị', format='.2%')],
+    )
+    bars = base.mark_bar().encode(color=detector_color())
+    labels = base.mark_text(align='left', dx=5, color='#0F172A', fontSize=11).encode(
+        text=alt.Text('Value:Q', format='.2%'))
+    st.altair_chart(chart_style((bars + labels).properties(height=270)), theme=None, use_container_width=True)
+    # Keep the canonical detailed table, including Alert rate, without duplicating formulas.
+    render_detector_comparison(evaluation)
+
+
+def confusion_matrix(model):
+    st.subheader('Confusion Matrix — Spark MLlib')
+    frame = pd.DataFrame([
+        {'Actual':'Fraud', 'Predicted':'Fraud', 'Count':model['TP'], 'Cell':'TP'},
+        {'Actual':'Fraud', 'Predicted':'Legitimate', 'Count':model['FN'], 'Cell':'FN'},
+        {'Actual':'Legitimate', 'Predicted':'Fraud', 'Count':model['FP'], 'Cell':'FP'},
+        {'Actual':'Legitimate', 'Predicted':'Legitimate', 'Count':model['TN'], 'Cell':'TN'},
+    ])
+    maximum = int(frame['Count'].max()) or 1
+    base = alt.Chart(frame).encode(
+        x=alt.X('Predicted:N', title='Predicted', sort=['Fraud', 'Legitimate'],
+                axis=alt.Axis(labelAngle=0, labelLimit=100, grid=False)),
+        y=alt.Y('Actual:N', title='Actual', sort=['Fraud', 'Legitimate'], axis=alt.Axis(grid=False)),
+        tooltip=[alt.Tooltip('Actual:N'), alt.Tooltip('Predicted:N'),
+                 alt.Tooltip('Count:Q', format=','), alt.Tooltip('Cell:N', title='Kết quả')],
+    )
+    cells = base.mark_rect(cornerRadius=5, stroke='#FFFFFF', strokeWidth=3).encode(
+        color=alt.Color('Count:Q', title='Số lượng', scale=alt.Scale(domain=[0,maximum],
+            range=['#EFF6FF','#1E40AF'], interpolate='rgb'),
+            legend=alt.Legend(orient='bottom', format='~s', gradientLength=140)))
+    ink = alt.condition(f'datum.Count > {maximum * .75}', alt.value('#FFFFFF'), alt.value('#0F172A'))
+    counts = base.mark_text(baseline='middle', dy=-9, fontSize=18, fontWeight=700).encode(
+        text=alt.Text('Count:Q', format=','), color=ink)
+    names = base.mark_text(baseline='middle', dy=15, fontSize=12, fontWeight=600).encode(
+        text='Cell:N', color=ink)
+    st.altair_chart(chart_style((cells + counts + names).properties(height=270)),
+                    theme=None, use_container_width=True)
+    st.caption('Actual: ground truth · Predicted: dự đoán. TP/TN: đúng; FP/FN: sai. '
+               'Các ô có cùng diện tích; số và màu biểu thị số lượng.')
+
+
+def alerts_by_type(aggregates):
+    st.subheader('Alerts by Transaction Type')
+    if not aggregates:
+        st.info('Đang chờ dữ liệu alerts theo loại giao dịch.')
+        return
+    frame = pd.DataFrame(aggregates)
+    order = frame.sort_values(['model_alerts', 'type'], ascending=[False, True])['type'].tolist()
+    plot = frame.melt(id_vars=['type'], value_vars=['model_alerts', 'rule_alerts'],
+                      var_name='Detector', value_name='Alerts')
+    plot['Detector'] = plot['Detector'].replace({'model_alerts':DETECTORS[0], 'rule_alerts':DETECTORS[1]})
+    maximum = float(plot['Alerts'].max()) or 1
+    base = alt.Chart(plot).encode(
+        y=alt.Y('type:N', title='Loại giao dịch', sort=order, axis=alt.Axis(grid=False, labelLimit=100)),
+        yOffset=alt.YOffset('Detector:N', sort=DETECTORS),
+        x=alt.X('Alerts:Q', title='Số alerts', scale=alt.Scale(zero=True, domain=[0,maximum],
+                range=[0, alt.ExprRef(expr='max(0, width - 65)')]), axis=alt.Axis(format='~s', tickCount=5)),
+        tooltip=[alt.Tooltip('type:N', title='Transaction type'), alt.Tooltip('Detector:N', title='Detector'),
+                 alt.Tooltip('Alerts:Q', title='Alerts', format=',')],
+    )
+    bars = base.mark_bar().encode(color=detector_color())
+    labels = base.mark_text(align='left', dx=5, fontSize=11, color='#0F172A').encode(
+        text=alt.Text('Alerts:Q', format=','))
+    st.altair_chart(chart_style((bars + labels).properties(height=330)), theme=None, use_container_width=True)
+
+
+def risk_score_analysis(recent_alerts):
+    st.subheader('Risk Score Analysis')
+    st.caption('Risk Score vs Amount · tối đa 300 alerts mới nhất · Amount dùng thang log.')
+    if not recent_alerts:
+        st.info('Đang chờ cảnh báo để hiển thị Risk Score vs Amount.')
+        return
+    frame = pd.DataFrame(recent_alerts)
+    amounts = pd.to_numeric(frame['amount'], errors='coerce')
+    invalid = ~(amounts.gt(0) & amounts.lt(float('inf')))
+    if invalid.any():
+        st.warning(f'{int(invalid.sum())} alerts có Amount ≤ 0, thiếu hoặc không hữu hạn. '
+                   'Trục log không thể hiển thị các điểm này; dữ liệu đầu vào được giữ nguyên, không lọc bản ghi.')
+    kinds = list(TRANSACTION_COLORS) + sorted(set(frame['type'].dropna()) - set(TRANSACTION_COLORS))
+    palette = [TRANSACTION_COLORS.get(kind, '#0891B2') for kind in kinds]
+    chart = alt.Chart(frame).mark_circle(size=65, opacity=.65, stroke='#FFFFFF', strokeWidth=.6).encode(
+        x=alt.X('amount:Q', title='Amount (log scale)', scale=alt.Scale(type='log'),
+                axis=alt.Axis(format='~s', tickCount=5)),
+        y=alt.Y('risk_score:Q', title='Risk Score', scale=alt.Scale(domain=[0,1]),
+                axis=alt.Axis(format='.1f', tickCount=5)),
+        color=alt.Color('type:N', title='Transaction type', scale=alt.Scale(domain=kinds, range=palette),
+                legend=alt.Legend(orient='top', columns=2, labelLimit=110)),
+        tooltip=[alt.Tooltip('event_id:N', title='Event ID'), alt.Tooltip('type:N', title='Transaction type'),
+                 alt.Tooltip('amount:Q', title='Amount', format=',.2f'),
+                 alt.Tooltip('risk_score:Q', title='Risk Score', format='.4f')],
+    ).properties(height=380).interactive(bind_y=False)
+    st.altair_chart(chart_style(chart), theme=None, use_container_width=True)
+
+
+def fraud_business(s):
+    with st.container(key='ops-fraud-business'):
+        st.subheader('Fraud Detection Performance')
+        with st.container(key='ops-fraud-overview'):
+            comparison, matrix = st.columns([3,2])
+            with comparison:
+                with st.container(key='ops-fraud-performance'):
+                    performance_comparison(s.evaluation)
+            with matrix:
+                with st.container(key='ops-fraud-matrix'):
+                    confusion_matrix(s.model)
+        with st.container(key='ops-fraud-alerts'):
+            alerts_by_type(s.aggregates)
+        with st.container(key='ops-fraud-risk'):
+            risk_score_analysis(s.recent_alerts)
 # AFTER END — 9A.3
 
 # BEFORE Start — 9A.4
@@ -454,7 +610,7 @@ def render(s,page):
                 with right: signal(s,['latency_p95_ms'],'End-to-End Latency p95','ms',220,time_domain=time_domain)
             else:
                 with st.container(key="ops-detail"):
-                    render_page(s,page,transaction_renderer=transaction_distribution)
+                    render_page(s,page,transaction_renderer=transaction_distribution,fraud_renderer=fraud_business)
         with aside:
             watch(s)
     if page==PAGES[0]:

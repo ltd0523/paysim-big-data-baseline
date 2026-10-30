@@ -219,8 +219,8 @@ def load_snapshot():
     )
 
 
-def render_page(snapshot, page, *, transaction_renderer=None):
-    """Render shared pages; optionally override transaction presentation only."""
+def render_page(snapshot, page, *, transaction_renderer=None, fraud_renderer=None):
+    """Render shared pages with optional presentation-only renderers."""
     run = snapshot.run
     run_id = snapshot.run_id
     evaluation = snapshot.evaluation
@@ -376,6 +376,9 @@ def render_page(snapshot, page, *, transaction_renderer=None):
         ], f"Checkpoint HDFS active; processed={fmt_int(processed)}; lag={fmt_int(lag)}")
 
     elif page == pages[2]:
+        if fraud_renderer is not None:
+            fraud_renderer(snapshot)
+            return
         left, right = st.columns(2)
         with left:
             st.subheader("Rule baseline vs Spark MLlib")

@@ -1,0 +1,142 @@
+{
+  "detector_metrics": [
+    [
+      "Rule Baseline",
+      "F1",
+      0.12903225806451615
+    ],
+    [
+      "Rule Baseline",
+      "Precision",
+      0.1111111111111111
+    ],
+    [
+      "Rule Baseline",
+      "Recall",
+      0.15384615384615385
+    ],
+    [
+      "Spark MLlib",
+      "F1",
+      0.08062015503875969
+    ],
+    [
+      "Spark MLlib",
+      "Precision",
+      0.0420032310177706
+    ],
+    [
+      "Spark MLlib",
+      "Recall",
+      1.0
+    ]
+  ],
+  "alerts_by_type_before": [
+    [
+      "CASH_IN",
+      "Rule Baseline",
+      0
+    ],
+    [
+      "CASH_IN",
+      "Spark MLlib",
+      0
+    ],
+    [
+      "CASH_OUT",
+      "Rule Baseline",
+      4
+    ],
+    [
+      "CASH_OUT",
+      "Spark MLlib",
+      708
+    ],
+    [
+      "DEBIT",
+      "Rule Baseline",
+      0
+    ],
+    [
+      "DEBIT",
+      "Spark MLlib",
+      0
+    ],
+    [
+      "PAYMENT",
+      "Rule Baseline",
+      0
+    ],
+    [
+      "PAYMENT",
+      "Spark MLlib",
+      0
+    ],
+    [
+      "TRANSFER",
+      "Rule Baseline",
+      68
+    ],
+    [
+      "TRANSFER",
+      "Spark MLlib",
+      530
+    ]
+  ],
+  "alerts_by_type_after": [
+    [
+      "CASH_IN",
+      "Rule Baseline",
+      0
+    ],
+    [
+      "CASH_IN",
+      "Spark MLlib",
+      0
+    ],
+    [
+      "CASH_OUT",
+      "Rule Baseline",
+      4
+    ],
+    [
+      "CASH_OUT",
+      "Spark MLlib",
+      708
+    ],
+    [
+      "DEBIT",
+      "Rule Baseline",
+      0
+    ],
+    [
+      "DEBIT",
+      "Spark MLlib",
+      0
+    ],
+    [
+      "PAYMENT",
+      "Rule Baseline",
+      0
+    ],
+    [
+      "PAYMENT",
+      "Spark MLlib",
+      0
+    ],
+    [
+      "TRANSFER",
+      "Rule Baseline",
+      68
+    ],
+    [
+      "TRANSFER",
+      "Spark MLlib",
+      530
+    ]
+  ],
+  "scatter_input_equal": true,
+  "scatter_rows": 300,
+  "invalid_log_amount_event_ids": [],
+  "prior_charts_and_other_views_identical": true
+}

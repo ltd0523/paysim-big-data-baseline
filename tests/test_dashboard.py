@@ -172,3 +172,87 @@ def test_transaction_renderer_is_scoped_to_operations_and_ranks_by_count(view):
         assert spec['encoding']['y']['field'] == 'transactions'
     else:
         assert spec['mark']['type'] == 'arc'
+
+
+def test_fraud_renderer_preserves_snapshot_and_all_chart_values():
+    import pandas as pd
+    db = fixture_database()
+    db.evaluation_totals.update_one({'_id':'ui-test'}, {'$set': {
+        'model':dict(tp=1, fp=9999, tn=20000, fn=3),
+        'rule':dict(tp=0, fp=0, tn=30000, fn=3)}})
+    db.live_aggregates.insert_one(dict(run_id='ui-test', type='PAYMENT', transactions=20,
+                                     model_alerts=10, rule_alerts=0, total_amount=1))
+    with patch.object(dashboard_core, 'get_database', return_value=db):
+        snapshot = dashboard_core.load_snapshot()
+    original = copy.deepcopy(vars(snapshot))
+    with patch.object(dashboard_core, 'load_snapshot', return_value=snapshot):
+        app = AppTest.from_string(app_source('operations')).run()
+        app.button_group[0].set_value([dashboard_core.PAGES[2]]).run()
+    assert not app.exception
+    assert vars(snapshot) == original
+    performance, matrix, alerts, scatter = chart_payloads(app)
+    spec, frames = performance
+    expected = {(name, metric): dashboard_core.detector_metrics(snapshot.evaluation, key)[metric]
+        for key, name in [('model','Spark MLlib'), ('rule','Rule Baseline')]
+        for metric in ['Precision','Recall','F1']}
+    assert {(r.Detector,r.Metric):r.Value for r in frames[0].itertuples()} == expected
+    bars, labels = spec['layer']
+    assert bars['encoding']['x']['scale']['domain'] == [0,1]
+    assert bars['encoding']['y']['sort'] == ['Precision','Recall','F1']
+    assert labels['encoding']['text']['format'] == '.2%'
+    assert bars['encoding']['color']['scale'] == {
+        'domain':['Spark MLlib','Rule Baseline'], 'range':['#2563EB','#0F766E']}
+    table = app.dataframe[0].value
+    for key, name in [('rule','Spark SQL rule'), ('model','Spark MLlib')]:
+        values = dashboard_core.detector_metrics(snapshot.evaluation, key)
+        row = table[table['Detector'] == name].iloc[0]
+        for metric, value in values.items():
+            assert row[metric] == (dashboard_core.fmt_pct(value) if metric in
+                ['Precision','Recall','F1','Alert rate'] else value)
+    spec, frames = matrix
+    assert {(r.Actual,r.Predicted):r.Count for r in frames[0].itertuples()} == {
+        ('Fraud','Fraud'):snapshot.model['TP'], ('Fraud','Legitimate'):snapshot.model['FN'],
+        ('Legitimate','Fraud'):snapshot.model['FP'], ('Legitimate','Legitimate'):snapshot.model['TN']}
+    assert set(frames[0]['Cell']) == {'TP','FN','FP','TN'}
+    assert spec['layer'][1]['encoding']['color']['value'] == '#0F172A'
+    assert spec['layer'][1]['encoding']['color']['condition']['value'] == '#FFFFFF'
+    spec, frames = alerts
+    assert {(r.type,r.Detector):r.Alerts for r in frames[0].itertuples()} == {
+        (r['type'],name):r[field] for r in snapshot.aggregates
+        for field,name in [('model_alerts','Spark MLlib'),('rule_alerts','Rule Baseline')]}
+    assert spec['layer'][0]['encoding']['y']['sort'] == ['PAYMENT','TRANSFER']
+    assert spec['layer'][0]['encoding']['x']['scale']['zero'] is True
+    spec, frames = scatter
+    # Arrow normalizes equivalent UTC timezone implementations during transport.
+    pd.testing.assert_frame_equal(frames[0], pd.DataFrame(snapshot.recent_alerts), check_dtype=False)
+    assert spec['encoding']['x']['scale']['type'] == 'log'
+    assert spec['encoding']['y']['scale']['domain'] == [0,1]
+    assert spec['mark']['opacity'] == .65
+    assert {t['field'] for t in spec['encoding']['tooltip']} == {'event_id','type','amount','risk_score'}
+    assert spec['encoding']['color']['scale']['domain'] == ['CASH_OUT','PAYMENT','CASH_IN','TRANSFER','DEBIT']
+
+
+@pytest.mark.parametrize('amounts', [[], [0, -1, None, float('inf'), 10]])
+def test_fraud_empty_counts_and_invalid_log_amounts_are_reported_without_filtering(amounts):
+    db = fixture_database()
+    with patch.object(dashboard_core, 'get_database', return_value=db):
+        snapshot = dashboard_core.load_snapshot()
+    snapshot.evaluation = {}
+    snapshot.model = dashboard_core.detector_metrics({}, 'model')
+    snapshot.aggregates = []
+    snapshot.recent_alerts = [dict(event_id=f'edge-{i}', type='TRANSFER', amount=amount, risk_score=.5)
+                              for i, amount in enumerate(amounts)]
+    original = copy.deepcopy(vars(snapshot))
+    with patch.object(dashboard_core, 'load_snapshot', return_value=snapshot):
+        app = AppTest.from_string(app_source('operations')).run()
+        app.button_group[0].set_value([dashboard_core.PAGES[2]]).run()
+    assert not app.exception and vars(snapshot) == original
+    charts = chart_payloads(app)
+    assert len(charts) == (3 if amounts else 2)
+    if amounts:
+        assert '4 alerts' in app.warning[0].value
+        assert len(charts[-1][1][0]) == len(amounts)
+    else:
+        assert not app.warning
+    assert set(charts[0][1][0]['Value']) == {0}
+    assert set(charts[1][1][0]['Count']) == {0}

@@ -1,0 +1,914 @@
+{
+  "dashboard_fraud_ui_evidence_20261030_142433/after/alerts-1366x768.png": {
+    "bytes": 17176,
+    "sha256": "0fe398e7d9671ae836f85a2527e5e8c75f64ef6890dce86354177979458eb1c2"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/alerts-1440x900.png": {
+    "bytes": 17344,
+    "sha256": "c3073376dbeeec612cf2b7d1f2caef4011da77224512fb725d9a4464d6436785"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/alerts-1600x900.png": {
+    "bytes": 17617,
+    "sha256": "792414dcdc521a71db18c6115067a54f33eb324829ebaddeb4480b905a835790"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/alerts-390x844.png": {
+    "bytes": 15348,
+    "sha256": "da3b6b267becb044d4c56c39fd8eb999cd80e0425cafa35074e967a385fc9659"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/baseline-1-1366x768.png": {
+    "bytes": 159477,
+    "sha256": "11f0609130e282b577cede220be7e28b5f5f91938726d4068866524929ed7c25"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/baseline-1-1440x900.png": {
+    "bytes": 179894,
+    "sha256": "8eea1050f6fe073da31800f3c187035959c1240c018c8876f297a7e28c489aaf"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/baseline-1-1600x900.png": {
+    "bytes": 176934,
+    "sha256": "73d2c1578a936b25d5793b481be3f3bb8d41d35b98faf9f78b57d6490a437f0e"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/baseline-1-390x844.png": {
+    "bytes": 90609,
+    "sha256": "edc59e398607aa597b054e17ba4db28fb57160d462a0b6adc1ad68ad254ff509"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/baseline-2-1366x768.png": {
+    "bytes": 159481,
+    "sha256": "382bc408338fb4a1f2d6cfa6b25db78b007b141d04082e5580eda3c5b4d38d81"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/baseline-2-1440x900.png": {
+    "bytes": 177689,
+    "sha256": "1b1b029ce700482c58fa91dd495c7ebfabc80384069104a5a1a913ff9f36c18e"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/baseline-2-1600x900.png": {
+    "bytes": 175274,
+    "sha256": "9968502dc3f6c8f6fa7438dd987ca7a06b3e0c4569cc6b9833abe3a61c13ceb5"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/baseline-2-390x844.png": {
+    "bytes": 90623,
+    "sha256": "3759a2866015a0a49f38c2f672f93786b96fe574019fa9170d3f969fcdd6203f"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/baseline-3-1366x768.png": {
+    "bytes": 159198,
+    "sha256": "748646b3b8fd05f7117c20d65f8a110cee03c25265f458a9fe38f0cf18e63f4f"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/baseline-3-1440x900.png": {
+    "bytes": 187559,
+    "sha256": "894107834e48080816ba4f21409117e14f8429c2c9f5e1054407c05bb8f0f0ba"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/baseline-3-1600x900.png": {
+    "bytes": 185079,
+    "sha256": "ac03eb919b671e67a930c8034f2a27aa9f2362774d8d0e2a1ad4f774befaec3c"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/baseline-3-390x844.png": {
+    "bytes": 90637,
+    "sha256": "617c91671a74f63e268454e2377d197b90143cbce1e742f1469f85d34a95c3de"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/baseline-4-1366x768.png": {
+    "bytes": 147087,
+    "sha256": "7d4b47c5a13163613fec76094ca40333f41803e7766dd46730a6d4a251892706"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/baseline-4-1440x900.png": {
+    "bytes": 181094,
+    "sha256": "9ca88ec0a532c9538a81fd3f1fbb2c2d23e401820c224f336a39fd50de827af8"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/baseline-4-1600x900.png": {
+    "bytes": 178804,
+    "sha256": "5b16303dff5352dea95d551a89e01e491c27ea096c84538b009fb5dcb4645a61"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/baseline-4-390x844.png": {
+    "bytes": 90670,
+    "sha256": "26ffc0da81deb493a64a67819abba996fc3e1b725411edf877e468df7e17b120"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/baseline-server.log": {
+    "bytes": 101,
+    "sha256": "8ae6e076152dcdf63da4d9cd8e125726e6d78c62a3bde597bf4ad84120ed70bd"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/baseline.py": {
+    "bytes": 97,
+    "sha256": "9a027c37114903cb78806020f46db3ef3d8eba176b45b8b4c4157df96b5e229b"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/browser-results.json": {
+    "bytes": 134250,
+    "sha256": "283c8be9c6eb02f592b2f7982d5e70033d3648c61fb0781240c64c8880d7dab6"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/database-fingerprints.json": {
+    "bytes": 1316,
+    "sha256": "28048eb64703a4b6aa942440357ef9d7a6fed7a7d508a182c4cff7cfad393a37"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/distribution-1366x768.png": {
+    "bytes": 10918,
+    "sha256": "8a9c618b54e13b81087e95797586d8f4ddd5c48960073d3ddf1939e83adde538"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/distribution-1440x900.png": {
+    "bytes": 11002,
+    "sha256": "9cfa0bee3fac7218ed73924db76be6f37b4a73682361b54d7a4a291556bb8f36"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/distribution-1600x900.png": {
+    "bytes": 11187,
+    "sha256": "69b98de73a9dfaeb7ceab0eef0fbc233763a685e026a8ba6e58d0b39fda6fdb6"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/distribution-390x844.png": {
+    "bytes": 9981,
+    "sha256": "8122c11243ce99c9cf75c63407dea0a8bb3ddf9f61c9bba3e1c491a8064866aa"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/duration-1366x768.png": {
+    "bytes": 10982,
+    "sha256": "41cebdf641b3898977abe59578ae9b358dd0b1e1594e3633a4d43724ad27e45c"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/duration-1440x900.png": {
+    "bytes": 11121,
+    "sha256": "7299949da4f3c19ce35b08bbdbbe0d7ed77567d2ca4b914aa999905aa5e3c7bf"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/duration-1600x900.png": {
+    "bytes": 10979,
+    "sha256": "53dca7226cf64e1082400b803d261277703b21de33de8dad932d8f831b1350a2"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/duration-390x844.png": {
+    "bytes": 9150,
+    "sha256": "bfcd438c7238c03475065a243b87bb8c1d0ca795beebda78fa3c3331ac842dde"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/e2e-latency-1366x768.png": {
+    "bytes": 15378,
+    "sha256": "770608c3367b4d65b81fefb28193e369690dd168c6e7538fde4c7d732a36bcb6"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/e2e-latency-1440x900.png": {
+    "bytes": 14894,
+    "sha256": "e03d42acf7f02ca61e81d2a843280a0ca4d4e0485994cb48ef4aab546a10a69c"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/e2e-latency-1600x900.png": {
+    "bytes": 15855,
+    "sha256": "433e98271e1b108ff0bdcd52e1772fa87c1ebbbcdcaa5a39a84e1633b6cfc80a"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/e2e-latency-390x844.png": {
+    "bytes": 15231,
+    "sha256": "b513de80b1d5a5b8fcc8a63bc242887afca7851052751d33461ff48e9b713897"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/latency-1366x768.png": {
+    "bytes": 14390,
+    "sha256": "1eb885bcd9e54e2ca4280410191276285b7c3ed3af3f7e63598c8c20e41c7803"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/latency-1440x900.png": {
+    "bytes": 14407,
+    "sha256": "8cea2fe439587d2c7c2e3ac264879160f236ddf5dc221c2f0305db8234c7b90a"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/latency-1600x900.png": {
+    "bytes": 14806,
+    "sha256": "48a2aa693091069971a7fc317d9d440b6ea36d9159c3797a1d7fbab070f854ee"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/latency-390x844.png": {
+    "bytes": 14378,
+    "sha256": "c05514b02a77a7ee2feebe8fc3f2850921f0bd67542a0283a7d26819f94ed192"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/matrix-1366x768.png": {
+    "bytes": 22692,
+    "sha256": "e3378f3397b5bab7026b723c788fb85fada96cb97caaccbc55e373eefd29b71f"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/matrix-1440x900.png": {
+    "bytes": 22832,
+    "sha256": "5d6f35c2f854fc501d790a02294b767900c450b426dc5cf0f4927a62491c0f5c"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/matrix-1600x900.png": {
+    "bytes": 22946,
+    "sha256": "56be7a14b2bf5ac5f0770f82966ba4bd6b75b2f836cf1c5362f752a63746134d"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/matrix-390x844.png": {
+    "bytes": 22802,
+    "sha256": "a4b3a0f0563c5c6a20622a517556d0e5c37bdc1eeae93745bd29cba5667bd883"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/operations-1-1366x768-details.png": {
+    "bytes": 78171,
+    "sha256": "8b8ecfb5f4a0d224b3c3aee18e1c6796ba313818b7f325df3c68ff244a3ff621"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/operations-1-1366x768.png": {
+    "bytes": 317144,
+    "sha256": "385a18d3fdff0a0ab68d6dc2278e4f0ce6b640e4dff6c0f48493f9c8f550208d"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/operations-1-1440x900-details.png": {
+    "bytes": 79094,
+    "sha256": "a3c192936be3b80cc323bae3fd0d7be4f07d80e5962654b93eb45824ed30e235"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/operations-1-1440x900.png": {
+    "bytes": 321422,
+    "sha256": "e73c449d585ae01e213a0d9f005a1a009b5b5a64cfdff0c23019250145eb65dd"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/operations-1-1600x900-details.png": {
+    "bytes": 80017,
+    "sha256": "dafe75cb9f5981559e7a8892b5c5e39f5e435b9bb353598fd53c7342a37658f4"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/operations-1-1600x900.png": {
+    "bytes": 329405,
+    "sha256": "c2bd5765a5620fa7b8976c994315faebf727e9ee2cf01ec62851d53e60b073d6"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/operations-1-390x844-details.png": {
+    "bytes": 41053,
+    "sha256": "aa8874a7235247a66de80c7616bbb3096176562d39474d5899551ce379b04fa7"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/operations-1-390x844.png": {
+    "bytes": 126165,
+    "sha256": "757b27966547ebaaf83ef47ef20fd0ead40dc9fee8ce5d4584c15c1bee71e23d"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/operations-2-1366x768.png": {
+    "bytes": 318617,
+    "sha256": "98dec9d6eeb0d91df99275d8081dabb580594a4da042c9b4f66e933b639ebe3a"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/operations-2-1440x900.png": {
+    "bytes": 336138,
+    "sha256": "07ca20a93e7ca743575916d238c27049402faf9eac8813b3ae3829f2040a37a2"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/operations-2-1600x900.png": {
+    "bytes": 343987,
+    "sha256": "b581bc0fdba7f121d4fcb7a9f6cfa2cd8196267f9d66ab5af73fc45b6c6640ab"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/operations-2-390x844.png": {
+    "bytes": 126165,
+    "sha256": "757b27966547ebaaf83ef47ef20fd0ead40dc9fee8ce5d4584c15c1bee71e23d"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/operations-3-1366x768.png": {
+    "bytes": 321090,
+    "sha256": "e45d75ae4b241938e0b1f576a3d0fc0fcccee13edd1ed63c9a87842bf8f8ae40"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/operations-3-1440x900.png": {
+    "bytes": 339922,
+    "sha256": "1cc27656d5415e0943af7854413af0b8356b4ff55b60edbf9db001f3439a4819"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/operations-3-1600x900.png": {
+    "bytes": 352492,
+    "sha256": "bc9e272fa38619b23866e41702ce4b4d6c8b56f35b6c3c143234608f5ca2a7cc"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/operations-3-390x844.png": {
+    "bytes": 126221,
+    "sha256": "8bd7f1c4ebef94325ffc23dba27948edc29dd15f2295e444d9d6bdaa2e9b8cc0"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/operations-4-1366x768-details.png": {
+    "bytes": 96777,
+    "sha256": "d35630a26d97b72f4d26281e0d152716eaa966f8469abf4051e3a59d6a3c6cce"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/operations-4-1366x768.png": {
+    "bytes": 322723,
+    "sha256": "b935b9282ee9906416f91806359db15ddc3bb04126c24d721cac8bf32c3f173d"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/operations-4-1440x900-details.png": {
+    "bytes": 120255,
+    "sha256": "6d59f396b00719640b220c48ad6e5e104c8de41bb00d805d6f3f21c1c22bcdc9"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/operations-4-1440x900.png": {
+    "bytes": 346292,
+    "sha256": "a0cc378c9056cc134bec940237cf085bf79a470825c34ea113801afa7b029e0b"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/operations-4-1600x900-details.png": {
+    "bytes": 123905,
+    "sha256": "9850f26fd37fa3af15e0d3926c7b8dc4296bceec2129259f09bb5a1dc0a0ead1"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/operations-4-1600x900.png": {
+    "bytes": 356970,
+    "sha256": "c412cd193fd38de01626e4db590c84fa432070c7e6b6b8e593610c0d38109d5f"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/operations-4-390x844-details.png": {
+    "bytes": 35451,
+    "sha256": "d7e620874eefa2895688c79ed490590bc440d95bc61ee7591a3909aea438e07d"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/operations-4-390x844.png": {
+    "bytes": 126221,
+    "sha256": "8bd7f1c4ebef94325ffc23dba27948edc29dd15f2295e444d9d6bdaa2e9b8cc0"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/operations-server.log": {
+    "bytes": 101,
+    "sha256": "8ae6e076152dcdf63da4d9cd8e125726e6d78c62a3bde597bf4ad84120ed70bd"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/operations.py": {
+    "bytes": 132,
+    "sha256": "b072f9825ea57151631d8e05be68b7295453269f0fdffb7369c878e20870698a"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/performance-1366x768.png": {
+    "bytes": 23495,
+    "sha256": "cde4842d496f1320b2d9d34598f6c7c4ef0d23c439b52ce7624381cc34e216e2"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/performance-1440x900.png": {
+    "bytes": 23695,
+    "sha256": "a5e9202ba75ee6376243465f1ab69bcc54d1263323c41f22c98a4b37beea2e72"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/performance-1600x900.png": {
+    "bytes": 24928,
+    "sha256": "c2e41480b55a4f3171243bf4be4a3c4d5ab352825eac954e18c658203de317f8"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/performance-390x844.png": {
+    "bytes": 21328,
+    "sha256": "716f78fb18ebb36be461806ea3053ec9fe4fbf9862a6ffa29ea8888ff03f3413"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/report-1-1366x768.png": {
+    "bytes": 61199,
+    "sha256": "49be3f0bd01b2e22f6aab9a4c7dbe7a875a0aef9af4e59868317f2aef606a6a3"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/report-1-1440x900.png": {
+    "bytes": 72112,
+    "sha256": "246a4b73177afd75008de22959671761062f941b057ca59ed94f2a444ea02589"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/report-1-1600x900.png": {
+    "bytes": 72774,
+    "sha256": "fa71f1b2293bc811a110681f7f1f0bd6188aa6e8533c3a5a929567021439983d"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/report-1-390x844.png": {
+    "bytes": 41252,
+    "sha256": "d32d9d10d7f3d8cc3592ec358132d0d231203d1cf3c3e1241a1249bf7811505d"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/report-2-1366x768.png": {
+    "bytes": 56300,
+    "sha256": "76528396e872838be53c4268701e0fedd8011061769f3b5b92f6cbe2567dbd7a"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/report-2-1440x900.png": {
+    "bytes": 68276,
+    "sha256": "dd344b877ce503bb18e1e24c3f6c063af44a5e9648576f57c4d72db9c9128ddc"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/report-2-1600x900.png": {
+    "bytes": 68924,
+    "sha256": "1f1a34ee71af49b3cc091fb3ee658a44e3ac7506a7b3f97f751fcb9c51169a3f"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/report-2-390x844.png": {
+    "bytes": 41997,
+    "sha256": "5afbb4f13521c7d92ad79f10d11dbe67a5886fa4e1c83edcddbb18245d3e0e46"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/report-3-1366x768.png": {
+    "bytes": 69046,
+    "sha256": "8071f4a70a09591ddb96f85ace1abca426ff05e07d63da1acb6fed4fe1c5022c"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/report-3-1440x900.png": {
+    "bytes": 76295,
+    "sha256": "1fc91cb28755c928a3aee0a37db61644f640a0136ea959e09519cc72a9844d5b"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/report-3-1600x900.png": {
+    "bytes": 77054,
+    "sha256": "77589ab41edb51e96a674104362b42709e2bdb7cb2548746ab416f434ac7990a"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/report-3-390x844.png": {
+    "bytes": 41455,
+    "sha256": "21295c4bc501d5a4a6ca9e62903bcd2b152a187fec259a5369752791a772d65d"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/report-4-1366x768.png": {
+    "bytes": 63059,
+    "sha256": "6f892299c0ca2147e68d1928d5488aa0e08ec0fa06a9af58241fae8a418d15da"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/report-4-1440x900.png": {
+    "bytes": 77319,
+    "sha256": "ca938a22a3beee9a894139bbb7ff8f05c4cd5e6730e06a9a4391bec1c63763df"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/report-4-1600x900.png": {
+    "bytes": 78032,
+    "sha256": "0fefa4b16f3e64e4bd54622d661cf790b84f632d3cc813e327ad979e661ada5a"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/report-4-390x844.png": {
+    "bytes": 41315,
+    "sha256": "9d1b5f66d6be5415e702a0aa01ff8810e352064de472eacbbe885099c1e95dc5"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/report-server.log": {
+    "bytes": 101,
+    "sha256": "8ae6e076152dcdf63da4d9cd8e125726e6d78c62a3bde597bf4ad84120ed70bd"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/report.py": {
+    "bytes": 128,
+    "sha256": "7523b30d49c3d9ca5995f63297e20de4751001fcaa3ba894c007e9e941ce048a"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/risk-1366x768.png": {
+    "bytes": 29828,
+    "sha256": "e8968618b4956e8c96935d7d03fb93e4031e93f45b11281cb1bdb5864331b93e"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/risk-1440x900.png": {
+    "bytes": 30670,
+    "sha256": "57bc3ac5976f518175d964b0aff643abbeb11be3fe8f48561756ab90c3c70aa1"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/risk-1600x900.png": {
+    "bytes": 32010,
+    "sha256": "952b0e59bc484171dee7294b93020bba670195a6197d519adc3c91031b7fb058"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/risk-390x844.png": {
+    "bytes": 23323,
+    "sha256": "838779dc1a6635b5a150523c9ebfe0a1f1808819abb2733ccde3765f6aef3424"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/studio-1-1366x768.png": {
+    "bytes": 59283,
+    "sha256": "f57af2ba7b823d82de4472e3fcc9dc8744d50b2a2dd6fca86865087f6a4359ba"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/studio-1-1440x900.png": {
+    "bytes": 71044,
+    "sha256": "cea90b92e816bc69c824ae2d1a7ffa60057add5d85933914d2997b61552e27fd"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/studio-1-1600x900.png": {
+    "bytes": 72451,
+    "sha256": "0de5ac4a8a062c55816d11da1d5b806b166ca73e0c7c7ed77eb17584ba76c012"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/studio-1-390x844.png": {
+    "bytes": 43777,
+    "sha256": "7d14ff1e0e44f411ad4f7a2e4d9f9b97163d3d9d49f690cc1641e89e7aade10d"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/studio-2-1366x768.png": {
+    "bytes": 59138,
+    "sha256": "48157583d3d6ad2ae890c16275091224b7bca455db7dbff0f327e5ca9b6495ed"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/studio-2-1440x900.png": {
+    "bytes": 69062,
+    "sha256": "03d87fa94c054bf6e84fa1dd100da2bcf9ef42f555bf0f31044d59d4c687cbbb"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/studio-2-1600x900.png": {
+    "bytes": 69790,
+    "sha256": "c852d4e98501ebdbfbb7c52e269b657d5e232c8ce4cd5454e85cf56447e012c4"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/studio-2-390x844.png": {
+    "bytes": 43630,
+    "sha256": "9c342b830314ca7561144a7a283d5b294892aef1d8cb25e5f94d6ad5958fb292"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/studio-3-1366x768.png": {
+    "bytes": 61712,
+    "sha256": "65a53552a4ede7c93d40e834d9aed69e0362e1318be4fd2b426af7137902e190"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/studio-3-1440x900.png": {
+    "bytes": 66353,
+    "sha256": "8ce8a875c3879602260e4f62221603c49e6db3685204470af60dea00f7edcfda"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/studio-3-1600x900.png": {
+    "bytes": 67323,
+    "sha256": "7325226884718c1d6bb2866062f5535f34e7fb9b453501141707cc2387c6176b"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/studio-3-390x844.png": {
+    "bytes": 47002,
+    "sha256": "d342afa6159d96657c10281075cfabe70c5976efa1a8aede140b8d574b5ab199"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/studio-4-1366x768.png": {
+    "bytes": 96198,
+    "sha256": "42fef3da6a27476941054d1e3a4cf5754cd4867d70b85dbb3045d70b8fdc5ab0"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/studio-4-1440x900.png": {
+    "bytes": 118069,
+    "sha256": "2df40a215863b646c1c606a03adab392b114f4e0c630587936ac114b3f9a7467"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/studio-4-1600x900.png": {
+    "bytes": 122696,
+    "sha256": "ec1cc41bdb99b7a8eb90e19ff40506798b26877c747ab3815b120933d3f0221d"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/studio-4-390x844.png": {
+    "bytes": 53739,
+    "sha256": "4f951ce35fd933b1a0f5f4b3ae9812bbcd458fdd5d93642a1eff09cd86ec5b97"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/studio-server.log": {
+    "bytes": 101,
+    "sha256": "8ae6e076152dcdf63da4d9cd8e125726e6d78c62a3bde597bf4ad84120ed70bd"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after/studio.py": {
+    "bytes": 128,
+    "sha256": "e943ec013660f1c9fc2123766153946e7a9eb1a1b204fe5a4b7df75907cf5301"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/after-data.json": {
+    "bytes": 1112284,
+    "sha256": "8d7acf12370bcbbb3938f058ac4dfc0b1f35034cca7c6dabd8b85b1ee211e6a4"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/audit.py": {
+    "bytes": 10204,
+    "sha256": "cf43478142965df72265c74902a543130a727775f064cf9a4a2ea99afb590ff5"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/alerts-1366x768.png": {
+    "bytes": 10425,
+    "sha256": "1d5cd6344d0eb8c5e14a02f967fedbf49394172703ed12ac2fb843b3bbb41abf"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/alerts-1440x900.png": {
+    "bytes": 10517,
+    "sha256": "80374537be90da809af2c526e52ca649041055f9d29295a4191c6a75b2dd5608"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/alerts-1600x900.png": {
+    "bytes": 10889,
+    "sha256": "b92217290cde750b634433a2eea8ed64389a991c1a8aef21e07a2f253e10a0b9"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/alerts-390x844.png": {
+    "bytes": 8923,
+    "sha256": "38a81db26708a93b433b912b745638931349645f8f215244066eff0d9510ad7f"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/browser-results.json": {
+    "bytes": 33809,
+    "sha256": "694cd5ac88ceea7bfe9f01dae809ce151a44b4f34654cccd472c5cc3198f84e6"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/database-fingerprints.json": {
+    "bytes": 1316,
+    "sha256": "28048eb64703a4b6aa942440357ef9d7a6fed7a7d508a182c4cff7cfad393a37"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/distribution-1366x768.png": {
+    "bytes": 10918,
+    "sha256": "8a9c618b54e13b81087e95797586d8f4ddd5c48960073d3ddf1939e83adde538"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/distribution-1440x900.png": {
+    "bytes": 11002,
+    "sha256": "9cfa0bee3fac7218ed73924db76be6f37b4a73682361b54d7a4a291556bb8f36"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/distribution-1600x900.png": {
+    "bytes": 11187,
+    "sha256": "69b98de73a9dfaeb7ceab0eef0fbc233763a685e026a8ba6e58d0b39fda6fdb6"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/distribution-390x844.png": {
+    "bytes": 9981,
+    "sha256": "8122c11243ce99c9cf75c63407dea0a8bb3ddf9f61c9bba3e1c491a8064866aa"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/duration-1366x768.png": {
+    "bytes": 10631,
+    "sha256": "61f5796a4929b016defb4962cdb149cbfc934abad484e8c7f502672093972433"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/duration-1440x900.png": {
+    "bytes": 11121,
+    "sha256": "7299949da4f3c19ce35b08bbdbbe0d7ed77567d2ca4b914aa999905aa5e3c7bf"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/duration-1600x900.png": {
+    "bytes": 10979,
+    "sha256": "53dca7226cf64e1082400b803d261277703b21de33de8dad932d8f831b1350a2"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/duration-390x844.png": {
+    "bytes": 9150,
+    "sha256": "bfcd438c7238c03475065a243b87bb8c1d0ca795beebda78fa3c3331ac842dde"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/latency-1366x768.png": {
+    "bytes": 14390,
+    "sha256": "1eb885bcd9e54e2ca4280410191276285b7c3ed3af3f7e63598c8c20e41c7803"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/latency-1440x900.png": {
+    "bytes": 14407,
+    "sha256": "8cea2fe439587d2c7c2e3ac264879160f236ddf5dc221c2f0305db8234c7b90a"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/latency-1600x900.png": {
+    "bytes": 14806,
+    "sha256": "48a2aa693091069971a7fc317d9d440b6ea36d9159c3797a1d7fbab070f854ee"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/latency-390x844.png": {
+    "bytes": 14378,
+    "sha256": "c05514b02a77a7ee2feebe8fc3f2850921f0bd67542a0283a7d26819f94ed192"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/matrix-1366x768.png": {
+    "bytes": 11633,
+    "sha256": "48d7cc55d7896a9c250ea2c7d653c095367ec4a87a094c1f27e8b372463bd3f8"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/matrix-1440x900.png": {
+    "bytes": 11551,
+    "sha256": "ff4535dd8c222cf23170f51f0abf05209984e3b0353bdcd917e364b2f30a40b3"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/matrix-1600x900.png": {
+    "bytes": 11708,
+    "sha256": "0c259a4b6cc03778adf542cab51c96703116a47b9d3cba4b3ac775138deb3800"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/matrix-390x844.png": {
+    "bytes": 11290,
+    "sha256": "487f2362cb52bb3c16d8a8fbeae880913d07c26af8b91b90325000f2d7d01eaa"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/operations-1-1366x768-details.png": {
+    "bytes": 77723,
+    "sha256": "c2147485864abe539f4b3c0efa68a3efb5c64dfbb332f65a88e001d03d34874c"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/operations-1-1366x768.png": {
+    "bytes": 317144,
+    "sha256": "61d6a848e15c6a445902d791634d269fc49fa9a0058076d6978e3084552f0fc8"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/operations-1-1440x900-details.png": {
+    "bytes": 79094,
+    "sha256": "a3c192936be3b80cc323bae3fd0d7be4f07d80e5962654b93eb45824ed30e235"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/operations-1-1440x900.png": {
+    "bytes": 321422,
+    "sha256": "e73c449d585ae01e213a0d9f005a1a009b5b5a64cfdff0c23019250145eb65dd"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/operations-1-1600x900-details.png": {
+    "bytes": 80017,
+    "sha256": "dafe75cb9f5981559e7a8892b5c5e39f5e435b9bb353598fd53c7342a37658f4"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/operations-1-1600x900.png": {
+    "bytes": 329405,
+    "sha256": "c2bd5765a5620fa7b8976c994315faebf727e9ee2cf01ec62851d53e60b073d6"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/operations-1-390x844-details.png": {
+    "bytes": 41053,
+    "sha256": "aa8874a7235247a66de80c7616bbb3096176562d39474d5899551ce379b04fa7"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/operations-1-390x844.png": {
+    "bytes": 126165,
+    "sha256": "757b27966547ebaaf83ef47ef20fd0ead40dc9fee8ce5d4584c15c1bee71e23d"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/operations-2-1366x768.png": {
+    "bytes": 318609,
+    "sha256": "69221beef1ef00bd0a4e3679fb23b3d0ad5d960db8bc934b4ca2b75ca767ff00"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/operations-2-1440x900.png": {
+    "bytes": 336139,
+    "sha256": "221f28746ccf53f2a8525690aceb1846a0caa0a43b750abcff783f1833dbf67a"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/operations-2-1600x900.png": {
+    "bytes": 343990,
+    "sha256": "59b5f6ff7148723c1945b03fc9b7cb44793d3600b7e6e13e93fbf3d31ad4830e"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/operations-2-390x844.png": {
+    "bytes": 126165,
+    "sha256": "757b27966547ebaaf83ef47ef20fd0ead40dc9fee8ce5d4584c15c1bee71e23d"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/operations-3-1366x768.png": {
+    "bytes": 321747,
+    "sha256": "2ef4b79236098890cc8bb4eec2ce26c061ecd62f0e850f172d3aef11f4b46fd1"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/operations-3-1440x900.png": {
+    "bytes": 341654,
+    "sha256": "a92b9ec5ee48b01daa0acaf610456d3eee45cc3cba49740f957fe05516d948a3"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/operations-3-1600x900.png": {
+    "bytes": 350825,
+    "sha256": "eafbff16155a11b6b8a28740947111941f681b2278a961f8290ff30a5dcdc46b"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/operations-3-390x844.png": {
+    "bytes": 126165,
+    "sha256": "757b27966547ebaaf83ef47ef20fd0ead40dc9fee8ce5d4584c15c1bee71e23d"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/operations-4-1366x768-details.png": {
+    "bytes": 96774,
+    "sha256": "1b9ab5b07dc56f1def8171308721ca427916666c298d0e4886515c29ec4213b6"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/operations-4-1366x768.png": {
+    "bytes": 322723,
+    "sha256": "cc84da1593687573e300955ac9ec28cd9f634879334994b51fa4c8b320521dd8"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/operations-4-1440x900-details.png": {
+    "bytes": 120253,
+    "sha256": "71c5220e05620ba246094f90c7cb8b185505a057f26d47b5852123de1fafd10d"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/operations-4-1440x900.png": {
+    "bytes": 346289,
+    "sha256": "779c3688513a6d2695b3ee8b79e4aafee28c7ca4a1c64152b7d380f9a71887fd"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/operations-4-1600x900-details.png": {
+    "bytes": 123923,
+    "sha256": "0d6839d346425e453178248e65cb3ec36869dc7d9cb4c55579d1ddffed6a82ca"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/operations-4-1600x900.png": {
+    "bytes": 356980,
+    "sha256": "76b5ff9f54fe04c5e2753e27662b3b76b037f08c0fce7675900eeaabadf70433"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/operations-4-390x844-details.png": {
+    "bytes": 35451,
+    "sha256": "d7e620874eefa2895688c79ed490590bc440d95bc61ee7591a3909aea438e07d"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/operations-4-390x844.png": {
+    "bytes": 126221,
+    "sha256": "8bd7f1c4ebef94325ffc23dba27948edc29dd15f2295e444d9d6bdaa2e9b8cc0"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/operations-server.log": {
+    "bytes": 101,
+    "sha256": "8ae6e076152dcdf63da4d9cd8e125726e6d78c62a3bde597bf4ad84120ed70bd"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/operations.py": {
+    "bytes": 180,
+    "sha256": "9db52472971c4294f547b90da7fd7a4391043f0b6f205fcd2adeaf9990896941"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/performance-1366x768.png": {
+    "bytes": 6978,
+    "sha256": "2dbd01f370d6891f28bd1e1f0e7083cb999f844e81e52ae90b5f019c1a2bff60"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/performance-1440x900.png": {
+    "bytes": 7414,
+    "sha256": "4136ea49696a022fdc8ab42329943980e789551ca24bdc003da0c84e3d71f81a"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/performance-1600x900.png": {
+    "bytes": 8045,
+    "sha256": "ad408da3c749d5bbcd171ebd099e64d6d7820d4bf0bad92f89f1d83976f409ba"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/performance-390x844.png": {
+    "bytes": 6646,
+    "sha256": "96b6c2bc5f4855ce577606c0633e0b731283829759ba8828f015da2c710ed687"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/risk-1366x768.png": {
+    "bytes": 18253,
+    "sha256": "89ea8ba77233913b2506033c8de75da49dea989221ac956a3540bc6291ba19dd"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/risk-1440x900.png": {
+    "bytes": 18876,
+    "sha256": "500c7dfaad755382ec804fdeafdce813c7d1edca9fb62a4bcee6e9a13f371803"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/risk-1600x900.png": {
+    "bytes": 20375,
+    "sha256": "fa4b907d52a879f94208c70cf5e303441e1b5d8389d2a74fdccf86a5d47f1cb2"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before/risk-390x844.png": {
+    "bytes": 11297,
+    "sha256": "e1e91fb5b60ea2c603e1508e34e2865c7cd08224bd499048eeabda3f6d0f6a7f"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before-data.json": {
+    "bytes": 1093870,
+    "sha256": "a1ab0cb2e45b06227fde67bf8581d1a40c224f198d13e0287bd165deb48efb10"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before-source/app.py": {
+    "bytes": 588,
+    "sha256": "45049efe8632f5b88bd03656f36abf4a7be1742f1093c1b4f462929e05a192fc"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before-source/Banner.png": {
+    "bytes": 495788,
+    "sha256": "64bd6a62faabda6775c41c7f738e29faf182b0a613a586391c002d586019c848"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before-source/dashboard_core.py": {
+    "bytes": 30189,
+    "sha256": "76156c0bd84b6571b0d5e20a480e3050d0139da9e557f7e77af4942b117f15ed"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before-source/Dockerfile": {
+    "bytes": 405,
+    "sha256": "35474aaf7e86f44efa76305ce324d2d96225a14f17d69a5f53b27efab0c876b5"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before-source/requirements.txt": {
+    "bytes": 66,
+    "sha256": "c3789dab02a4de66a7fcd1b80ba2e49f07737bb04e4b3cada0d022860d38db24"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before-source/view_operations.py": {
+    "bytes": 27615,
+    "sha256": "12dbb75d82364b6bbfc1beaec07296ec70ccfb62a2d799e52c92e941cc25b247"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before-source/view_report.py": {
+    "bytes": 5522,
+    "sha256": "9bf392bcf1995d1db4431169ac145cae3cd7d49021a3ff1551cc748d31d9537a"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/before-source/view_studio.py": {
+    "bytes": 5818,
+    "sha256": "bc822147bbe6344fe46ecf9b4eb04e318e641d719a5e14cbac6c60c2051e24e9"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/capture.py": {
+    "bytes": 9777,
+    "sha256": "67808ea9246b5e18e9fd5c1d54e4398006c505044f4e539e3c086305502cc7db"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/chart-data-audit.json": {
+    "bytes": 1889,
+    "sha256": "7059f5c5fa5b7cf9f4fa67ed9cb80a1a39f24c64075d23239b2d669ca0062d5d"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/comparison-results.txt": {
+    "bytes": 134,
+    "sha256": "0334e9bf224c50fe21980fe0afaa0d9984561b7d88c579a6a23ac046a0e49ad6"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/confusion-matrix-comparison.json": {
+    "bytes": 516,
+    "sha256": "2a536800e8a49129e39613d105922ed3e596d8753ca98aca7f307791e9538599"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/deployment-verification.json": {
+    "bytes": 1478,
+    "sha256": "88a886ddfe33bf6041c56b0a498e68736a885b4d9bde4cfe6e10c6681e599e53"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/docker/live-page-1.png": {
+    "bytes": 349208,
+    "sha256": "39825af05bf2b362c4a09e81625b25b6bb126f1e681cabc58850ae52c1f913c3"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/docker/live-page-2.png": {
+    "bytes": 333040,
+    "sha256": "e09b3c68a17514306b4c647c015c33aed5051d7c29a745116d176858115ae2a9"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/docker/live-page-3.png": {
+    "bytes": 337873,
+    "sha256": "246b7c07d92c8182d9f7544e65e11f0aca2074d01fb6ff3351f1ee4caa500e10"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/docker/live-page-4.png": {
+    "bytes": 344561,
+    "sha256": "cedb302cfced427f1c69b8b88c3def363b83cec77a50ed5e1f14c3f21d3ae72c"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/docker/results.json": {
+    "bytes": 334,
+    "sha256": "5f57ff5523a55edbb9b54f378ffa71953b26f87a26adc88eb9f1d4ed114c2c04"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/docker_smoke.py": {
+    "bytes": 1851,
+    "sha256": "87eac5a064e7427ce75a63af3277693718c6cbf1c6a3a57c9eaf4c0dcc10b9c6"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/edge_browser.py": {
+    "bytes": 3807,
+    "sha256": "f9ee1fa58cbb907116378fa1b262446d5dcac910d53e8362bf4f37fc0244c609"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/edges/empty-alerts-1440.png": {
+    "bytes": 9205,
+    "sha256": "712c7221f855135aa5cdbc189c423e50025ba86995910766680b73a4f2804eb6"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/edges/empty-alerts-390.png": {
+    "bytes": 8601,
+    "sha256": "302720a1ec2b2033eaeecce0708172a12d69833ee69fcb23995a0629f26ba142"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/edges/empty-matrix-1440.png": {
+    "bytes": 20798,
+    "sha256": "671d1c4da5365a1e1da614b86182e416e966ab75dfbc67e34ec76fa942d82b50"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/edges/empty-matrix-390.png": {
+    "bytes": 20667,
+    "sha256": "531c985aa728881379bd0ec6111b850f2da1b85e72d68fe98f5c334a0dcc1d04"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/edges/empty-performance-1440.png": {
+    "bytes": 19701,
+    "sha256": "66d10f20a641f1efc0a03b4bd68ba383ab2671507d430953c89be008e29f4a1a"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/edges/empty-performance-390.png": {
+    "bytes": 17408,
+    "sha256": "50612f7cc49100b4d4995cb4f3586845de083bc4f1125cca4a21134c193590be"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/edges/empty-risk-1440.png": {
+    "bytes": 14533,
+    "sha256": "d849198dd5b42c0f7f2a6964a7054f34ba19dc38eaf33e8205672a5f3c75d74c"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/edges/empty-risk-390.png": {
+    "bytes": 14024,
+    "sha256": "7eff8f89e183221bd822aeb35dd936adfeb890834391754ce77bcfa34ecdcd1d"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/edges/entry.py": {
+    "bytes": 690,
+    "sha256": "ffe47442e1c32c0678e3bc3d88f22ed95b306b4190acc75eacccbe70aa67d1a3"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/edges/invalid-alerts-1440.png": {
+    "bytes": 12928,
+    "sha256": "5e3ac350b369ec9a600607972b88148db438a18da1d428951aef3166c8e1de94"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/edges/invalid-alerts-390.png": {
+    "bytes": 11527,
+    "sha256": "4e6835d26668f4c46e313e962650071445efe29800d838e4604172db229b7c4b"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/edges/invalid-matrix-1440.png": {
+    "bytes": 20798,
+    "sha256": "671d1c4da5365a1e1da614b86182e416e966ab75dfbc67e34ec76fa942d82b50"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/edges/invalid-matrix-390.png": {
+    "bytes": 20667,
+    "sha256": "531c985aa728881379bd0ec6111b850f2da1b85e72d68fe98f5c334a0dcc1d04"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/edges/invalid-performance-1440.png": {
+    "bytes": 19701,
+    "sha256": "66d10f20a641f1efc0a03b4bd68ba383ab2671507d430953c89be008e29f4a1a"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/edges/invalid-performance-390.png": {
+    "bytes": 17408,
+    "sha256": "50612f7cc49100b4d4995cb4f3586845de083bc4f1125cca4a21134c193590be"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/edges/invalid-risk-1440.png": {
+    "bytes": 31710,
+    "sha256": "a48f4d90f8550581d561af8db55718c44c267bbbb2387f10208557cfdc2152ef"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/edges/invalid-risk-390.png": {
+    "bytes": 30178,
+    "sha256": "5495b6bc115ed5d578ae55c9ff32f2ec885878c3ac12229429dee4247cd4e8dc"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/edges/results.json": {
+    "bytes": 460,
+    "sha256": "20f33547c17a8fc17a205c5ec74a3463aca03fecff45ee8c15134efa8e3f9ee5"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/edges/server.log": {
+    "bytes": 101,
+    "sha256": "4f088874006e0c56e1336c53ba847ac548bb8b85214315f018c6d99ae618a149"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/final-services.txt": {
+    "bytes": 391,
+    "sha256": "f426fe9dd585d94fe2d84c50eebd0a8ff235687ce53f043ceb6971301b42498c"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/finalize.py": {
+    "bytes": 4098,
+    "sha256": "bf85e43ff0b38d2f304a35deaf1f90fe2c7c188e628ae5bfa1e0af98b7d4100c"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/git-diff-before.txt": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/git-status-before.txt": {
+    "bytes": 52,
+    "sha256": "a11ccaf72bdf6370525fa3d5d9f60d7518612df97c31a6180e98d46f813cf303"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/kpi-comparison.json": {
+    "bytes": 21758,
+    "sha256": "83c2e89c9b64cc7190907cdbcd1bc4168ad7db00592260df333edff71dea13c7"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/README.md": {
+    "bytes": 2067,
+    "sha256": "cd342c48b8b5a33b222ef12129c41dca7f597a63d020822ac2d2a85c68be8718"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/runtime-sha256.txt": {
+    "bytes": 544,
+    "sha256": "936c3cccaa7f35cba5bcfb9882ca0c49392e06e89225379754e3f412713e778f"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/runtime-source-verification.json": {
+    "bytes": 1035,
+    "sha256": "2b4637936853c15a13cf5dce38cf1f656ee389c4637ad4183172c692e0266fb8"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/services-after-deploy.json": {
+    "bytes": 85328,
+    "sha256": "4556f79f7d995c3b1fd025e3781142ac47bc160b98a16379b35a639f4f9f90c0"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/services-before-deploy.json": {
+    "bytes": 85844,
+    "sha256": "68c785bb2aad996efbd7108f2fa15b664d4cd6cdc2f61eb1d4c9e2a87124310b"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/source-changes.diff": {
+    "bytes": 17498,
+    "sha256": "0a2644d194153d26e2583f3f59ff63b5b161de351da8ad6f4b00c5e43d65a257"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/syntax-results.txt": {
+    "bytes": 75,
+    "sha256": "de56b2c9cdfdbb62f950da2f7690bcc8fb770a64517df5e2f6958b0860643a63"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/test-results.txt": {
+    "bytes": 99,
+    "sha256": "db1ad837bcbe03b36fe3dcae56ddde5360d6ca27b515c9a834adef8a9d2d5d39"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/test_dashboard.before.py": {
+    "bytes": 9203,
+    "sha256": "9fe8016325566533dd2ca505d581be72a301e3faddecb2e9a18fd2f5be48d5af"
+  },
+  "dashboard_fraud_ui_evidence_20261030_142433/verification.json": {
+    "bytes": 25480,
+    "sha256": "74b25c039a645a613bc14fd91328d6d66ca0d5ba4e2438dce5ddd820b705d45f"
+  },
+  "fraud-business-ui-improvements.md": {
+    "bytes": 14692,
+    "sha256": "cd11e0edd617e10c3c15340131485027ca1f8da3ea056e17ad8b325e014bc1e8"
+  }
+}

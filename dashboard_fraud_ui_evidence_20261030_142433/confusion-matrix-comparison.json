@@ -1,0 +1,47 @@
+{
+  "before": [
+    [
+      "Fraud",
+      "Fraud",
+      52
+    ],
+    [
+      "Fraud",
+      "Legitimate",
+      0
+    ],
+    [
+      "Legitimate",
+      "Fraud",
+      1186
+    ],
+    [
+      "Legitimate",
+      "Legitimate",
+      4962
+    ]
+  ],
+  "after": [
+    [
+      "Fraud",
+      "Fraud",
+      52
+    ],
+    [
+      "Fraud",
+      "Legitimate",
+      0
+    ],
+    [
+      "Legitimate",
+      "Fraud",
+      1186
+    ],
+    [
+      "Legitimate",
+      "Legitimate",
+      4962
+    ]
+  ],
+  "equal": true
+}

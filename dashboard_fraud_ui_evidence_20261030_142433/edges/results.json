@@ -1,0 +1,38 @@
+[
+  {
+    "mode": "empty",
+    "viewport": [
+      1440,
+      900
+    ],
+    "errors": [],
+    "passed": true
+  },
+  {
+    "mode": "empty",
+    "viewport": [
+      390,
+      844
+    ],
+    "errors": [],
+    "passed": true
+  },
+  {
+    "mode": "invalid",
+    "viewport": [
+      1440,
+      900
+    ],
+    "errors": [],
+    "passed": true
+  },
+  {
+    "mode": "invalid",
+    "viewport": [
+      390,
+      844
+    ],
+    "errors": [],
+    "passed": true
+  }
+]
