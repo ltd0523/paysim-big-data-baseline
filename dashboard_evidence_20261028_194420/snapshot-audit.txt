@@ -1,0 +1,47 @@
+docker : 2026-10-28 12:50:02.178 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': 
+missing ScriptRunContext! This warning can be ignored when running in bare mode.
+At line:2 char:161
++ ... ttempt.txt; docker exec paysim-track9-20261028-194420 /tmp/track9-ven ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2026-10-28 12:5...g in bare mode.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+2026-10-28 12:50:02.788 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in 
+bare mode.
+2026-10-28 12:50:03.399 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in 
+bare mode.
+2026-10-28 12:50:04.342 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in 
+bare mode.
+{
+  "emitted": 6400,
+  "processed": 6200,
+  "lag": 200,
+  "alerts": 1238,
+  "ingest_events_per_second": 49.99073329275498,
+  "processing_events_per_second": 40.16720409761817,
+  "latency_p95_ms": 29763813.0,
+  "model": {
+    "TP": 52,
+    "FP": 1186,
+    "TN": 4962,
+    "FN": 0,
+    "Precision": 0.0420032310177706,
+    "Recall": 1.0,
+    "F1": 0.08062015503875969,
+    "Alert rate": 0.1996774193548387
+  },
+  "rule": {
+    "TP": 8,
+    "FP": 64,
+    "TN": 6084,
+    "FN": 44,
+    "Precision": 0.1111111111111111,
+    "Recall": 0.15384615384615385,
+    "F1": 0.12903225806451615,
+    "Alert rate": 0.011612903225806452
+  },
+  "transactions_loaded": 60,
+  "alerts_loaded": 300,
+  "micro_batches_loaded": 13
+}
+PASS: 16 real-snapshot AppTest pages; 12/12 AFTER comparisons; exact transaction tables and detector totals

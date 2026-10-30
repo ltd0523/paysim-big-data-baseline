@@ -1,0 +1,88 @@
+[
+  {
+    "viewport": [
+      1366,
+      768
+    ],
+    "workspace_border": {
+      "color": "rgb(48, 66, 88)",
+      "width": "1px"
+    },
+    "help_colors": [
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)"
+    ],
+    "tooltip_works": true,
+    "charts": [
+      {
+        "page": "fraud",
+        "chart": 0,
+        "radius": "15px",
+        "overflow": "hidden"
+      },
+      {
+        "page": "fraud",
+        "chart": 1,
+        "radius": "15px",
+        "overflow": "hidden"
+      },
+      {
+        "page": "fraud",
+        "chart": 2,
+        "radius": "15px",
+        "overflow": "hidden"
+      },
+      {
+        "page": "transactions",
+        "chart": 0,
+        "radius": "15px",
+        "overflow": "hidden"
+      }
+    ],
+    "browser_errors": []
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "workspace_border": {
+      "color": "rgb(48, 66, 88)",
+      "width": "1px"
+    },
+    "help_colors": [
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)"
+    ],
+    "tooltip_works": true,
+    "charts": [
+      {
+        "page": "fraud",
+        "chart": 0,
+        "radius": "15px",
+        "overflow": "hidden"
+      },
+      {
+        "page": "fraud",
+        "chart": 1,
+        "radius": "15px",
+        "overflow": "hidden"
+      },
+      {
+        "page": "fraud",
+        "chart": 2,
+        "radius": "15px",
+        "overflow": "hidden"
+      },
+      {
+        "page": "transactions",
+        "chart": 0,
+        "radius": "15px",
+        "overflow": "hidden"
+      }
+    ],
+    "browser_errors": []
+  }
+]

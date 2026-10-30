@@ -1,0 +1,136 @@
+﻿diff --git a/dashboard_evidence_20261030_charts/before-source/view_operations.py b/dashboard/view_operations.py
+index d94b630..531c08a 100644
+--- a/dashboard_evidence_20261030_charts/before-source/view_operations.py
++++ b/dashboard/view_operations.py
+@@ -311,7 +311,18 @@ def summary(s):
+ # Bốn biểu đồ đường cùng kích thước trên nền trắng.
+ # BEFORE END — 9A.3
+ # AFTER Start — 9A.3: biểu đồ tốc độ lớn, hai biểu đồ phụ trên nền sáng.
+-def signal(s, fields, title, unit, height=250):
++def chart_style(chart):
++    """Presentation shared only by Operations charts."""
++    return chart.configure(
++        background='#FFFFFF', view={'stroke':None}, font='Inter, Segoe UI, sans-serif',
++        axis={'labelColor':'#475569','titleColor':'#475569','gridColor':'#E2E8F0',
++              'gridOpacity':.5,'domainColor':'#DCE5EF','tickColor':'#DCE5EF',
++              'labelFontSize':12,'titleFontSize':12,'titleFontWeight':500,'labelPadding':8},
++        legend={'labelColor':'#475569','labelFontSize':12,'symbolStrokeWidth':2.5,'padding':0},
++    )
++
++
++def signal(s, fields, title, unit, height=250, time_domain=None):
+     frame=pd.DataFrame(s.metrics)
+     available=[f for f in fields if f in frame]
+     with st.container(key=f"ops-signal-{fields[0]}"):
+@@ -327,14 +338,17 @@ def signal(s, fields, title, unit, height=250):
+             'consumer_lag': ('Events đang chờ', '#64748B'),
+             'ingest_latency_p95_ms': ('Ingest p95', '#0284C7'),
+             'latency_p95_ms': ('End-to-end p95', '#E11D48'),
+-            'batch_duration_seconds': ('Batch duration', '#334155'),
+         }
+         data=frame[['created_at',*available]].melt('created_at',var_name='Metric',value_name='Value')
+         data['Metric']=data['Metric'].replace({field: label for field, (label, _) in series.items()})
+         data['Unit'] = unit
++        if unit == 'ms':
++            st.caption("Đơn vị: ms · Thang đo Y riêng cho từng metric.")
+         chart=alt.Chart(data).mark_line(point=alt.OverlayMarkDef(size=18, filled=True),strokeWidth=2.5).encode(
+-            x=alt.X('created_at:T',title=None, axis=alt.Axis(format='%H:%M', tickCount=4)),
+-            y=alt.Y('Value:Q',title=unit, axis=alt.Axis(tickCount=4)),
++            x=alt.X('created_at:T',title=None, axis=alt.Axis(format='%H:%M', tickCount=4),
++                    scale=alt.Scale(domain=time_domain) if time_domain else alt.Scale()),
++            y=alt.Y('Value:Q',title=unit, axis=alt.Axis(tickCount=4,
++                    format='~s' if unit == 'ms' else alt.Undefined)),
+             color=alt.Color('Metric:N', scale=alt.Scale(
+                 domain=[series[field][0] for field in available],
+                 range=[series[field][1] for field in available]),
+@@ -343,14 +357,53 @@ def signal(s, fields, title, unit, height=250):
+                      alt.Tooltip('Metric:N', title='Metric'),
+                      alt.Tooltip('Value:Q', title='Value', format=',.2f'),
+                      alt.Tooltip('Unit:N', title='Unit')],
+-        ).properties(height=height).configure(
+-            background='#FFFFFF', view={'stroke':None}, font='Inter, Segoe UI, sans-serif',
+-            axis={'labelColor':'#475569','titleColor':'#475569','gridColor':'#DCE5EF',
+-                  'gridOpacity':.5,'domainColor':'#DCE5EF','tickColor':'#DCE5EF',
+-                  'labelFontSize':12,'titleFontSize':12,'titleFontWeight':500,'labelPadding':8},
+-            legend={'labelColor':'#475569','labelFontSize':12,'symbolStrokeWidth':2.5,'padding':0},
+-        )
+-        st.altair_chart(chart, theme=None, use_container_width=True)
++        ).properties(height=height)
++        st.altair_chart(chart_style(chart), theme=None, use_container_width=True)
++
++
++def batch_duration(s):
++    with st.container(key="ops-signal-batch_duration_seconds"):
++        st.markdown("### Thời gian mỗi micro-batch")
++        frame = pd.DataFrame(s.metrics)
++        if frame.empty or 'batch_duration_seconds' not in frame:
++            with st.container(height=180, border=False):
++                st.info("Đang chờ micro-batch telemetry đầu tiên.")
++            return
++        chart = alt.Chart(frame).mark_bar(color='#2563EB').encode(
++            x=alt.X('batch_id:O', title='Batch ID', sort='ascending',
++                    axis=alt.Axis(labelAngle=0, labelOverlap=True, grid=False)),
++            y=alt.Y('batch_duration_seconds:Q', title='Duration (s)', scale=alt.Scale(zero=True),
++                    axis=alt.Axis(tickCount=4)),
++            tooltip=[alt.Tooltip('batch_id:O', title='Batch ID'),
++                     alt.Tooltip('created_at:T', title='Timestamp', format='%Y-%m-%d %H:%M:%S'),
++                     alt.Tooltip('batch_duration_seconds:Q', title='Duration (s)', format=',.6~f')],
++        ).properties(height=180)
++        st.altair_chart(chart_style(chart), theme=None, use_container_width=True)
++
++
++def transaction_distribution(frame):
++    """Render existing aggregates without changing their values or ranking metric."""
++    if frame.empty:
++        st.info("Đang chờ dữ liệu tổng hợp giao dịch.")
++        return
++    # Reserve label space in pixels; the data and bar ranking stay unchanged.
++    maximum = float(frame['transactions'].max())
++    base = alt.Chart(frame).encode(
++        y=alt.Y('type:N', title='Loại giao dịch', sort=alt.SortField(
++            field='transactions', order='descending'), axis=alt.Axis(labelLimit=100, grid=False)),
++        x=alt.X('transactions:Q', title='Số giao dịch', scale=alt.Scale(zero=True, domain=[0, maximum or 1],
++                                                                     range=[0, alt.ExprRef(expr='max(0, width - 85)')]),
++                axis=alt.Axis(format='~s', tickCount=4)),
++        tooltip=[alt.Tooltip('type:N', title='type'),
++                 alt.Tooltip('transactions:Q', title='transactions', format=','),
++                 alt.Tooltip('total_amount:Q', title='total_amount', format=',.2f')],
++    )
++    bars = base.mark_bar(color='#2563EB')
++    counts = base.mark_text(align='left', dx=6, color='#0F172A', fontSize=12).encode(
++        text=alt.Text('transactions:Q', format=','),
++    )
++    st.altair_chart(chart_style((bars + counts).properties(height=300)),
++                    theme=None, use_container_width=True)
+ # AFTER END — 9A.3
+ 
+ # BEFORE Start — 9A.4
+@@ -392,12 +445,16 @@ def render(s,page):
+         with main:
+             if page==PAGES[0]:
+                 signal(s,['ingest_throughput','processing_throughput'],'Tốc độ ingest và xử lý','Events/s',340)
++                signal(s,['consumer_lag'],'Kafka consumer lag','Events',220)
++                timestamps = pd.to_datetime(pd.DataFrame(s.metrics).get('created_at', pd.Series(dtype='datetime64[ns]')),
++                                            utc=True, errors='coerce').dropna()
++                time_domain = [timestamps.min().to_pydatetime(), timestamps.max().to_pydatetime()] if len(timestamps) else None
+                 left,right=st.columns(2)
+-                with left: signal(s,['consumer_lag'],'Kafka consumer lag','Events',220)
+-                with right: signal(s,['ingest_latency_p95_ms','latency_p95_ms'],'Latency p95','ms',220)
++                with left: signal(s,['ingest_latency_p95_ms'],'Ingest Latency p95','ms',220,time_domain=time_domain)
++                with right: signal(s,['latency_p95_ms'],'End-to-End Latency p95','ms',220,time_domain=time_domain)
+             else:
+                 with st.container(key="ops-detail"):
+-                    render_page(s,page)
++                    render_page(s,page,transaction_renderer=transaction_distribution)
+         with aside:
+             watch(s)
+     if page==PAGES[0]:
+@@ -405,7 +462,7 @@ def render(s,page):
+             st.markdown("### Micro-batch History")
+             st.caption("60 micro-batch gần nhất · Giữ nguyên đơn vị và dữ liệu telemetry.")
+             with st.expander("Batch Duration và nhật ký",expanded=True):
+-                signal(s,['batch_duration_seconds'],'Thời gian mỗi micro-batch','Seconds',150)
++                batch_duration(s)
+                 if s.metrics:
+                     frame=pd.DataFrame(s.metrics).sort_values('batch_id',ascending=False)
+                     columns=[c for c in ['batch_id','created_at','input_rows','processed_rows','consumer_lag','processing_throughput','latency_p95_ms','invalid_rows','duplicate_removed','alerts'] if c in frame]

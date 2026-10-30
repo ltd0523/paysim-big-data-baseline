@@ -1,0 +1,2197 @@
+﻿[
+    {
+        "Id": "5638c6d9d62516b7be629cdd68068f7cf57b9c036ca17c67b94fc4b58f9b8d20",
+        "Created": "2026-10-30T06:44:21.800291157Z",
+        "Path": "streamlit",
+        "Args": [
+            "run",
+            "app.py",
+            "--server.address=0.0.0.0",
+            "--server.port=8501",
+            "--server.headless=true",
+            "--browser.gatherUsageStats=false"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 93694,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-30T06:44:23.439314614Z",
+            "FinishedAt": "0001-01-01T00:00:00Z",
+            "Health": {
+                "Status": "healthy",
+                "FailingStreak": 0,
+                "Log": [
+                    {
+                        "Start": "2026-10-30T07:06:38.050710522Z",
+                        "End": "2026-10-30T07:06:38.274150359Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-10-30T07:06:43.275621182Z",
+                        "End": "2026-10-30T07:06:43.560709705Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-10-30T07:06:48.561818812Z",
+                        "End": "2026-10-30T07:06:48.785672662Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-10-30T07:06:53.785043807Z",
+                        "End": "2026-10-30T07:06:54.011399014Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-10-30T07:06:59.012470455Z",
+                        "End": "2026-10-30T07:06:59.243635266Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    }
+                ]
+            }
+        },
+        "Image": "sha256:b816612731f16c8e5aa037c5e105a8a0af9d4143de4b97baf8ebc103d3c8b632",
+        "ResolvConfPath": "/var/lib/docker/containers/5638c6d9d62516b7be629cdd68068f7cf57b9c036ca17c67b94fc4b58f9b8d20/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/5638c6d9d62516b7be629cdd68068f7cf57b9c036ca17c67b94fc4b58f9b8d20/hostname",
+        "HostsPath": "/var/lib/docker/containers/5638c6d9d62516b7be629cdd68068f7cf57b9c036ca17c67b94fc4b58f9b8d20/hosts",
+        "LogPath": "",
+        "Name": "/paysim-big-data-baseline-streamlit-1",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "local",
+                "Config": {}
+            },
+            "NetworkMode": "paysim-big-data-baseline_default",
+            "PortBindings": {
+                "8501/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "8501"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "streamlit",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "8501/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "MONGO_DATABASE=paysim",
+                "MONGO_URI=mongodb://mongodb:27017",
+                "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANG=C.UTF-8",
+                "GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D",
+                "PYTHON_VERSION=3.11.18",
+                "PYTHON_SHA256=9120e0a653868f6e3698d36cdd99e5a58903ec9469e448f21d98f7b16d8fa290",
+                "PYTHONDONTWRITEBYTECODE=1",
+                "PYTHONUNBUFFERED=1"
+            ],
+            "Cmd": [
+                "streamlit",
+                "run",
+                "app.py",
+                "--server.address=0.0.0.0",
+                "--server.port=8501",
+                "--server.headless=true",
+                "--browser.gatherUsageStats=false"
+            ],
+            "Healthcheck": {
+                "Test": [
+                    "CMD",
+                    "python",
+                    "-c",
+                    "import urllib.request; urllib.request.urlopen('http://localhost:8501/_stcore/health')"
+                ],
+                "Interval": 5000000000,
+                "Timeout": 5000000000,
+                "StartPeriod": 15000000000,
+                "Retries": 30
+            },
+            "Image": "paysim-big-data-baseline-streamlit",
+            "Volumes": null,
+            "WorkingDir": "/opt/app",
+            "Entrypoint": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "2ef16397eda5045fa18a2a6fc4dbd0b74a7e39690ec386e292b3e43fdb04ea71",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:873f373a2d5d383468654d01427d49a53a8e622259971b71291f0acd28bd700b",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "paysim-big-data-baseline",
+                "com.docker.compose.project.config_files": "D:\\BigData_PJ\\paysim-big-data-baseline\\docker-compose.yml",
+                "com.docker.compose.project.working_dir": "D:\\BigData_PJ\\paysim-big-data-baseline",
+                "com.docker.compose.replace": "streamlit-1",
+                "com.docker.compose.service": "streamlit",
+                "com.docker.compose.version": "5.6.0"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "a1e298b79cc41b03e9ea6b59af6ab4fb643d09cfd405987b7c8389ac77eee2c1",
+            "SandboxKey": "/var/run/docker/netns/a1e298b79cc4",
+            "Ports": {
+                "8501/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "8501"
+                    },
+                    {
+                        "HostIp": "::",
+                        "HostPort": "8501"
+                    }
+                ]
+            },
+            "Networks": {
+                "paysim-big-data-baseline_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "paysim-big-data-baseline-streamlit-1",
+                        "streamlit"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "530cf4d531d2be8425a9cb3fdfab4d3718d9dcadaf9fe9cd6c594d71b53ee174",
+                    "EndpointID": "cf4e8529ad8c03d2b032843586f3eb9fe9ad03840989b6fd0f46a394557e2bb4",
+                    "Gateway": "172.18.0.1",
+                    "IPAddress": "172.18.0.7",
+                    "MacAddress": "92:4a:72:6f:05:55",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "paysim-big-data-baseline-streamlit-1",
+                        "streamlit",
+                        "5638c6d9d625"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:873f373a2d5d383468654d01427d49a53a8e622259971b71291f0acd28bd700b",
+            "size": 2196,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "4e93dd258389880b0db4d24a7971f7bc91c48703ad50c43e72d223d761dba82d",
+        "Created": "2026-10-30T01:19:18.808964483Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "mongod",
+            "--bind_ip_all",
+            "--wiredTigerCacheSizeGB",
+            "0.25"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 9261,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-30T01:27:26.490833711Z",
+            "FinishedAt": "2026-10-30T01:26:57.216900554Z",
+            "Health": {
+                "Status": "healthy",
+                "FailingStreak": 0,
+                "Log": [
+                    {
+                        "Start": "2026-10-30T07:06:35.410616898Z",
+                        "End": "2026-10-30T07:06:35.897197093Z",
+                        "ExitCode": 0,
+                        "Output": "1\n"
+                    },
+                    {
+                        "Start": "2026-10-30T07:06:40.898023864Z",
+                        "End": "2026-10-30T07:06:41.38219998Z",
+                        "ExitCode": 0,
+                        "Output": "1\n"
+                    },
+                    {
+                        "Start": "2026-10-30T07:06:46.382976814Z",
+                        "End": "2026-10-30T07:06:46.902138658Z",
+                        "ExitCode": 0,
+                        "Output": "1\n"
+                    },
+                    {
+                        "Start": "2026-10-30T07:06:51.903200991Z",
+                        "End": "2026-10-30T07:06:52.425944397Z",
+                        "ExitCode": 0,
+                        "Output": "1\n"
+                    },
+                    {
+                        "Start": "2026-10-30T07:06:57.424687221Z",
+                        "End": "2026-10-30T07:06:57.971169159Z",
+                        "ExitCode": 0,
+                        "Output": "1\n"
+                    }
+                ]
+            }
+        },
+        "Image": "sha256:29c9d10d63d35eab99e0fa272eebefc551b991f5216bf2a572b1d3f36adc9568",
+        "ResolvConfPath": "/var/lib/docker/containers/4e93dd258389880b0db4d24a7971f7bc91c48703ad50c43e72d223d761dba82d/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/4e93dd258389880b0db4d24a7971f7bc91c48703ad50c43e72d223d761dba82d/hostname",
+        "HostsPath": "/var/lib/docker/containers/4e93dd258389880b0db4d24a7971f7bc91c48703ad50c43e72d223d761dba82d/hosts",
+        "LogPath": "",
+        "Name": "/paysim-big-data-baseline-mongodb-1",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "paysim-big-data-baseline_mongo_data:/data/db:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "local",
+                "Config": {}
+            },
+            "NetworkMode": "paysim-big-data-baseline_default",
+            "PortBindings": {
+                "27017/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "27017"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "Mounts": [
+                {
+                    "Type": "volume",
+                    "Source": "3bbb03be55451dce92ce360dca38ff6ece753215af5bb83e3313304acb5c257c",
+                    "Target": "/data/configdb"
+                }
+            ],
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "3bbb03be55451dce92ce360dca38ff6ece753215af5bb83e3313304acb5c257c",
+                "Source": "/var/lib/docker/volumes/3bbb03be55451dce92ce360dca38ff6ece753215af5bb83e3313304acb5c257c/_data",
+                "Destination": "/data/configdb",
+                "Driver": "local",
+                "Mode": "z",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "volume",
+                "Name": "paysim-big-data-baseline_mongo_data",
+                "Source": "/var/lib/docker/volumes/paysim-big-data-baseline_mongo_data/_data",
+                "Destination": "/data/db",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "mongodb",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "27017/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "GOSU_VERSION=1.19",
+                "JSYAML_VERSION=3.13.1",
+                "JSYAML_CHECKSUM=662e32319bdd378e91f67578e56a34954b0a2e33aca11d70ab9f4826af24b941",
+                "MONGO_PACKAGE=mongodb-org",
+                "MONGO_REPO=repo.mongodb.org",
+                "MONGO_MAJOR=8.0",
+                "MONGO_VERSION=8.0.29",
+                "HOME=/data/db",
+                "GLIBC_TUNABLES=glibc.pthread.rseq=0"
+            ],
+            "Cmd": [
+                "mongod",
+                "--bind_ip_all",
+                "--wiredTigerCacheSizeGB",
+                "0.25"
+            ],
+            "Healthcheck": {
+                "Test": [
+                    "CMD",
+                    "mongosh",
+                    "--quiet",
+                    "--eval",
+                    "db.adminCommand('ping').ok"
+                ],
+                "Interval": 5000000000,
+                "Timeout": 5000000000,
+                "StartPeriod": 15000000000,
+                "Retries": 30
+            },
+            "Image": "mongo:8.0",
+            "Volumes": {
+                "/data/configdb": {},
+                "/data/db": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "279eb50052c6cd34ac4fc8c696e6744732ea39df48da5cf71c6d4cc2b7ee36c5",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:8be83ffcebcaeb2aa1013b5a60418c6cc2521217bb079403ae4df79e2518678a",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "paysim-big-data-baseline",
+                "com.docker.compose.project.config_files": "D:\\BigData_PJ\\paysim-big-data-baseline\\docker-compose.yml",
+                "com.docker.compose.project.working_dir": "D:\\BigData_PJ\\paysim-big-data-baseline",
+                "com.docker.compose.replace": "mongodb-1",
+                "com.docker.compose.service": "mongodb",
+                "com.docker.compose.version": "5.6.0",
+                "org.opencontainers.image.version": "24.04"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "f2a129d21adf0bad5e47197534de2def4a53f85c617fbd6c83f722d79fdc1ec4",
+            "SandboxKey": "/var/run/docker/netns/f2a129d21adf",
+            "Ports": {
+                "27017/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "27017"
+                    },
+                    {
+                        "HostIp": "::",
+                        "HostPort": "27017"
+                    }
+                ]
+            },
+            "Networks": {
+                "paysim-big-data-baseline_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "paysim-big-data-baseline-mongodb-1",
+                        "mongodb"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "530cf4d531d2be8425a9cb3fdfab4d3718d9dcadaf9fe9cd6c594d71b53ee174",
+                    "EndpointID": "371d8aab9f9cfe5e19324464e4b43cc65f05d0e8cb2f00150265d806899ef486",
+                    "Gateway": "172.18.0.1",
+                    "IPAddress": "172.18.0.4",
+                    "MacAddress": "9a:ca:bd:80:c3:77",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "paysim-big-data-baseline-mongodb-1",
+                        "mongodb",
+                        "4e93dd258389"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:8be83ffcebcaeb2aa1013b5a60418c6cc2521217bb079403ae4df79e2518678a",
+            "size": 2476,
+            "annotations": {
+                "com.docker.official-images.bashbrew.arch": "amd64",
+                "org.opencontainers.image.base.digest": "sha256:019e8eb29a85e74d64925745884f2ec79aa27e3feab36353d24656f4d6b89467",
+                "org.opencontainers.image.base.name": "ubuntu:noble",
+                "org.opencontainers.image.created": "2026-08-11T18:31:07Z",
+                "org.opencontainers.image.revision": "7c24b37b8e53a41b56c450b653c582ff7c3f7fcb",
+                "org.opencontainers.image.source": "https://github.com/docker-library/mongo.git#7c24b37b8e53a41b56c450b653c582ff7c3f7fcb:8.0",
+                "org.opencontainers.image.url": "https://hub.docker.com/_/mongo",
+                "org.opencontainers.image.version": "8.0.29-noble"
+            },
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "bc78f9b96f9801d36f6e0bc54b429b4d994d874ad0b0e38080da7fa5c2af9865",
+        "Created": "2026-10-26T09:14:42.303754013Z",
+        "Path": "/opt/app/entrypoint.sh",
+        "Args": [
+            "/opt/spark/bin/spark-submit",
+            "--master",
+            "local[2]",
+            "--driver-memory",
+            "2g",
+            "--conf",
+            "spark.sql.shuffle.partitions=4",
+            "--conf",
+            "spark.ui.requestHeaderSize=64k",
+            "--conf",
+            "spark.jars.ivy=/opt/spark/.ivy2",
+            "--packages",
+            "org.apache.spark:spark-sql-kafka-0-10_2.13:4.0.0",
+            "/opt/app/pipeline.py"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 26235,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-30T06:23:38.434435131Z",
+            "FinishedAt": "2026-10-30T06:23:38.003257273Z",
+            "Health": {
+                "Status": "healthy",
+                "FailingStreak": 0,
+                "Log": [
+                    {
+                        "Start": "2026-10-30T07:06:15.100394437Z",
+                        "End": "2026-10-30T07:06:15.146995789Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-10-30T07:06:25.146444604Z",
+                        "End": "2026-10-30T07:06:25.189874317Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-10-30T07:06:35.191102559Z",
+                        "End": "2026-10-30T07:06:35.227860569Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-10-30T07:06:45.228563781Z",
+                        "End": "2026-10-30T07:06:45.263758787Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-10-30T07:06:55.263243023Z",
+                        "End": "2026-10-30T07:06:55.308052567Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    }
+                ]
+            }
+        },
+        "Image": "sha256:bd4b0e372f5ddff74c9c970b9c0fb5b9866964fd198029d61ac11c176ca84b80",
+        "ResolvConfPath": "/var/lib/docker/containers/bc78f9b96f9801d36f6e0bc54b429b4d994d874ad0b0e38080da7fa5c2af9865/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/bc78f9b96f9801d36f6e0bc54b429b4d994d874ad0b0e38080da7fa5c2af9865/hostname",
+        "HostsPath": "/var/lib/docker/containers/bc78f9b96f9801d36f6e0bc54b429b4d994d874ad0b0e38080da7fa5c2af9865/hosts",
+        "LogPath": "",
+        "Name": "/paysim-big-data-baseline-spark-1",
+        "RestartCount": 1,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "D:\\BigData_PJ\\paysim-big-data-baseline\\data\\paysim.csv:/data/paysim.csv:ro",
+                "D:\\BigData_PJ\\paysim-big-data-baseline\\hadoop\\core-site.xml:/opt/hadoop-conf/core-site.xml:ro",
+                "D:\\BigData_PJ\\paysim-big-data-baseline\\hadoop\\hdfs-site.xml:/opt/hadoop-conf/hdfs-site.xml:ro"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "local",
+                "Config": {}
+            },
+            "NetworkMode": "paysim-big-data-baseline_default",
+            "PortBindings": {
+                "4040/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "4040"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 3221225472,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 6442450944,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "D:\\BigData_PJ\\paysim-big-data-baseline\\data\\paysim.csv",
+                "Destination": "/data/paysim.csv",
+                "Mode": "ro",
+                "RW": false,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "D:\\BigData_PJ\\paysim-big-data-baseline\\hadoop\\core-site.xml",
+                "Destination": "/opt/hadoop-conf/core-site.xml",
+                "Mode": "ro",
+                "RW": false,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "D:\\BigData_PJ\\paysim-big-data-baseline\\hadoop\\hdfs-site.xml",
+                "Destination": "/opt/hadoop-conf/hdfs-site.xml",
+                "Mode": "ro",
+                "RW": false,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "spark",
+            "Domainname": "",
+            "User": "spark",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "4040/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "MODEL_THRESHOLD=0.50",
+                "KAFKA_TOPIC=paysim.transactions",
+                "MAX_OFFSETS_PER_TRIGGER=1000",
+                "HDFS_STARTUP_TIMEOUT_SECONDS=300",
+                "HADOOP_CONF_DIR=/opt/hadoop-conf",
+                "PYSPARK_PYTHON=python3",
+                "MONGO_DATABASE=paysim",
+                "MODEL_PATH=hdfs://namenode:9000/data/paysim/models/baseline",
+                "HDFS_BASE=hdfs://namenode:9000/data/paysim",
+                "HDFS_RETRY_INTERVAL_SECONDS=5",
+                "TRIGGER_SECONDS=10",
+                "KAFKA_BOOTSTRAP_SERVERS=kafka:9092",
+                "MONGO_URI=mongodb://mongodb:27017",
+                "DATA_PATH=file:///data/paysim.csv",
+                "CHECKPOINT_PATH=hdfs://namenode:9000/data/paysim/checkpoints/scoring",
+                "TRAIN_MAX_ROWS=300000",
+                "PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "JAVA_HOME=/opt/java/openjdk",
+                "LANG=en_US.UTF-8",
+                "LANGUAGE=en_US:en",
+                "LC_ALL=en_US.UTF-8",
+                "JAVA_VERSION=jdk-17.0.15+6",
+                "SPARK_TGZ_URL=https://www.apache.org/dyn/closer.lua/spark/spark-4.0.0/spark-4.0.0-bin-hadoop3.tgz?action=download",
+                "SPARK_TGZ_ASC_URL=https://www.apache.org/dyn/closer.lua/spark/spark-4.0.0/spark-4.0.0-bin-hadoop3.tgz.asc?action=download",
+                "GPG_KEY=4DC9676CEF9A83E98FCA02784D6620843CD87F5A",
+                "SPARK_HOME=/opt/spark",
+                "HOME=/opt/spark/home"
+            ],
+            "Cmd": [
+                "/opt/spark/bin/spark-submit",
+                "--master",
+                "local[2]",
+                "--driver-memory",
+                "2g",
+                "--conf",
+                "spark.sql.shuffle.partitions=4",
+                "--conf",
+                "spark.ui.requestHeaderSize=64k",
+                "--conf",
+                "spark.jars.ivy=/opt/spark/.ivy2",
+                "--packages",
+                "org.apache.spark:spark-sql-kafka-0-10_2.13:4.0.0",
+                "/opt/app/pipeline.py"
+            ],
+            "Healthcheck": {
+                "Test": [
+                    "CMD-SHELL",
+                    "test -f /tmp/pipeline-ready"
+                ],
+                "Interval": 10000000000,
+                "Timeout": 3000000000,
+                "StartPeriod": 60000000000,
+                "Retries": 90
+            },
+            "Image": "paysim-big-data-baseline-spark",
+            "Volumes": null,
+            "WorkingDir": "/opt/spark/work-dir",
+            "Entrypoint": [
+                "/opt/app/entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "1f8f1660ad921361e49bf964bb1a2376ce39bc5f43c28ba1e3a48b553228767e",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "mongodb:service_healthy:false,kafka-init:service_completed_successfully:false,namenode:service_healthy:false,datanode:service_started:false",
+                "com.docker.compose.image": "sha256:d736cf64431b59f9e3d1f9b395661c10081dc1308923be886124d08f0ef9d6c3",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "paysim-big-data-baseline",
+                "com.docker.compose.project.config_files": "D:\\BigData_PJ\\paysim-big-data-baseline\\docker-compose.yml",
+                "com.docker.compose.project.working_dir": "D:\\BigData_PJ\\paysim-big-data-baseline",
+                "com.docker.compose.service": "spark",
+                "com.docker.compose.version": "5.6.0",
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "22.04"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "f7489d8d42e82a5958aa3a525735d30ed33470c7f0a221ec74e24d89f3d24ce2",
+            "SandboxKey": "/var/run/docker/netns/f7489d8d42e8",
+            "Ports": {
+                "4040/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "4040"
+                    },
+                    {
+                        "HostIp": "::",
+                        "HostPort": "4040"
+                    }
+                ]
+            },
+            "Networks": {
+                "paysim-big-data-baseline_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "paysim-big-data-baseline-spark-1",
+                        "spark"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "530cf4d531d2be8425a9cb3fdfab4d3718d9dcadaf9fe9cd6c594d71b53ee174",
+                    "EndpointID": "bc76319ebb3085862db237716fe23e159a3bde33ea877bf31bdaf2b1d2bb4d41",
+                    "Gateway": "172.18.0.1",
+                    "IPAddress": "172.18.0.6",
+                    "MacAddress": "b6:5a:b8:5d:c7:b4",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "paysim-big-data-baseline-spark-1",
+                        "spark",
+                        "bc78f9b96f98"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:d736cf64431b59f9e3d1f9b395661c10081dc1308923be886124d08f0ef9d6c3",
+            "size": 3347,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "dcee8bcf2a6d7061978a0b2e9bd222630a1204fd065201ff200b9148357a0be5",
+        "Created": "2026-10-28T12:58:31.021327752Z",
+        "Path": "python",
+        "Args": [
+            "app.py"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 13946,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-30T01:28:36.81693416Z",
+            "FinishedAt": "2026-10-30T01:26:55.436991668Z"
+        },
+        "Image": "sha256:77690703aced2fcd700b6941b4a4367962cf384241c289a3e51e516adc479c2e",
+        "ResolvConfPath": "/var/lib/docker/containers/dcee8bcf2a6d7061978a0b2e9bd222630a1204fd065201ff200b9148357a0be5/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/dcee8bcf2a6d7061978a0b2e9bd222630a1204fd065201ff200b9148357a0be5/hostname",
+        "HostsPath": "/var/lib/docker/containers/dcee8bcf2a6d7061978a0b2e9bd222630a1204fd065201ff200b9148357a0be5/hosts",
+        "LogPath": "",
+        "Name": "/paysim-big-data-baseline-replayer-1",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "D:\\BigData_PJ\\paysim-big-data-baseline\\data\\paysim.csv:/data/paysim.csv:ro"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "local",
+                "Config": {}
+            },
+            "NetworkMode": "paysim-big-data-baseline_default",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "D:\\BigData_PJ\\paysim-big-data-baseline\\data\\paysim.csv",
+                "Destination": "/data/paysim.csv",
+                "Mode": "ro",
+                "RW": false,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "dcee8bcf2a6d",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "RUN_ID=",
+                "EVENTS_PER_SECOND=50",
+                "LOOP_DATASET=true",
+                "NULL_RATE=0",
+                "DUPLICATE_RATE=0",
+                "MONGO_URI=mongodb://mongodb:27017",
+                "MAX_EVENTS=0",
+                "RANDOM_SEED=2026",
+                "KAFKA_BOOTSTRAP_SERVERS=kafka:9092",
+                "DATASET_ROWS=6362620",
+                "MONGO_DATABASE=paysim",
+                "START_ROW=1",
+                "DATA_PATH=/data/paysim.csv",
+                "KAFKA_TOPIC=paysim.transactions",
+                "LATE_EVENT_RATE=0",
+                "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANG=C.UTF-8",
+                "GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D",
+                "PYTHON_VERSION=3.11.18",
+                "PYTHON_SHA256=9120e0a653868f6e3698d36cdd99e5a58903ec9469e448f21d98f7b16d8fa290",
+                "PYTHONDONTWRITEBYTECODE=1",
+                "PYTHONUNBUFFERED=1"
+            ],
+            "Cmd": [
+                "python",
+                "app.py"
+            ],
+            "Image": "paysim-big-data-baseline-replayer",
+            "Volumes": null,
+            "WorkingDir": "/opt/app",
+            "Entrypoint": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "04fd44561c53ada79ab64467ebb70ac17cf25aa0fb6d10b0275cca9e20d51c2c",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "spark:service_healthy:false,mongodb:service_healthy:false",
+                "com.docker.compose.image": "sha256:8466cc121bae2a007b0bd124ec48c2ce9b373bef8def1bc2c30c54e061239d54",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "paysim-big-data-baseline",
+                "com.docker.compose.project.config_files": "D:\\BigData_PJ\\paysim-big-data-baseline\\docker-compose.yml",
+                "com.docker.compose.project.working_dir": "D:\\BigData_PJ\\paysim-big-data-baseline",
+                "com.docker.compose.replace": "replayer-1",
+                "com.docker.compose.service": "replayer",
+                "com.docker.compose.version": "5.6.0"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "d1b5152cb58fbf36a516709133a0586eec278538009b8dbb416b90afeaf4f99a",
+            "SandboxKey": "/var/run/docker/netns/d1b5152cb58f",
+            "Ports": {},
+            "Networks": {
+                "paysim-big-data-baseline_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "paysim-big-data-baseline-replayer-1",
+                        "replayer"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "530cf4d531d2be8425a9cb3fdfab4d3718d9dcadaf9fe9cd6c594d71b53ee174",
+                    "EndpointID": "1758af740016403e02e6750ba065908dcbdb021abaa5e53651089591dcd69423",
+                    "Gateway": "172.18.0.1",
+                    "IPAddress": "172.18.0.8",
+                    "MacAddress": "5e:31:8b:bb:65:d5",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "paysim-big-data-baseline-replayer-1",
+                        "replayer",
+                        "dcee8bcf2a6d"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:8466cc121bae2a007b0bd124ec48c2ce9b373bef8def1bc2c30c54e061239d54",
+            "size": 1812,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "408e9599789a0e124612955257f9d0a65625bc0b884d118df2d64dea3e866067",
+        "Created": "2026-10-26T09:14:41.622389514Z",
+        "Path": "/__cacert_entrypoint.sh",
+        "Args": [
+            "/etc/kafka/docker/run"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 8795,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-30T01:27:25.862252047Z",
+            "FinishedAt": "2026-10-30T01:26:58.140248266Z",
+            "Health": {
+                "Status": "healthy",
+                "FailingStreak": 0,
+                "Log": [
+                    {
+                        "Start": "2026-10-30T07:06:09.772935969Z",
+                        "End": "2026-10-30T07:06:12.731483179Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-10-30T07:06:22.732331844Z",
+                        "End": "2026-10-30T07:06:25.490995304Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-10-30T07:06:35.492663223Z",
+                        "End": "2026-10-30T07:06:37.322845195Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-10-30T07:06:47.323812102Z",
+                        "End": "2026-10-30T07:06:49.08404607Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-10-30T07:06:59.083054022Z",
+                        "End": "2026-10-30T07:07:00.824102662Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    }
+                ]
+            }
+        },
+        "Image": "sha256:3f7b939115cd4872e9cee9369d80bd69712fde55f9902f46d793f64848dedc75",
+        "ResolvConfPath": "/var/lib/docker/containers/408e9599789a0e124612955257f9d0a65625bc0b884d118df2d64dea3e866067/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/408e9599789a0e124612955257f9d0a65625bc0b884d118df2d64dea3e866067/hostname",
+        "HostsPath": "/var/lib/docker/containers/408e9599789a0e124612955257f9d0a65625bc0b884d118df2d64dea3e866067/hosts",
+        "LogPath": "",
+        "Name": "/paysim-big-data-baseline-kafka-1",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "paysim-big-data-baseline_kafka_data:/var/lib/kafka/data:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "local",
+                "Config": {}
+            },
+            "NetworkMode": "paysim-big-data-baseline_default",
+            "PortBindings": {
+                "29092/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "29092"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "9813dc5d39754b4e5a0ff8fe81145780b26c6cd9774a7a9d3565a89baf9fa6df",
+                "Source": "/var/lib/docker/volumes/9813dc5d39754b4e5a0ff8fe81145780b26c6cd9774a7a9d3565a89baf9fa6df/_data",
+                "Destination": "/etc/kafka/secrets",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "volume",
+                "Name": "5de968ac1c47ee3e202ef7c441a8c4c382717171a104ccbb1ae821417c9ef3ec",
+                "Source": "/var/lib/docker/volumes/5de968ac1c47ee3e202ef7c441a8c4c382717171a104ccbb1ae821417c9ef3ec/_data",
+                "Destination": "/mnt/shared/config",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "volume",
+                "Name": "paysim-big-data-baseline_kafka_data",
+                "Source": "/var/lib/docker/volumes/paysim-big-data-baseline_kafka_data/_data",
+                "Destination": "/var/lib/kafka/data",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "kafka",
+            "Domainname": "",
+            "User": "appuser",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "29092/tcp": {},
+                "9092/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR=1",
+                "KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR=1",
+                "KAFKA_LISTENERS=CONTROLLER://:9093,PLAINTEXT://:9092,PLAINTEXT_HOST://:29092",
+                "KAFKA_LOG_DIRS=/var/lib/kafka/data",
+                "KAFKA_NODE_ID=1",
+                "KAFKA_TRANSACTION_STATE_LOG_MIN_ISR=1",
+                "CLUSTER_ID=MkU3OEVBNTcwNTJENDM2Qk",
+                "KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS=0",
+                "KAFKA_CONTROLLER_QUORUM_VOTERS=1@kafka:9093",
+                "KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://kafka:9092,PLAINTEXT_HOST://localhost:29092",
+                "KAFKA_AUTO_CREATE_TOPICS_ENABLE=true",
+                "KAFKA_PROCESS_ROLES=broker,controller",
+                "KAFKA_LISTENER_SECURITY_PROTOCOL_MAP=CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT",
+                "KAFKA_CONTROLLER_LISTENER_NAMES=CONTROLLER",
+                "KAFKA_NUM_PARTITIONS=3",
+                "KAFKA_HEAP_OPTS=-Xms256m -Xmx512m",
+                "KAFKA_INTER_BROKER_LISTENER_NAME=PLAINTEXT",
+                "PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "JAVA_HOME=/opt/java/openjdk",
+                "LANG=en_US.UTF-8",
+                "LANGUAGE=en_US:en",
+                "LC_ALL=en_US.UTF-8",
+                "JAVA_VERSION=jdk-21.0.6+7"
+            ],
+            "Cmd": [
+                "/etc/kafka/docker/run"
+            ],
+            "Healthcheck": {
+                "Test": [
+                    "CMD-SHELL",
+                    "/opt/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --list \u003e/dev/null 2\u003e\u00261"
+                ],
+                "Interval": 10000000000,
+                "Timeout": 20000000000,
+                "StartPeriod": 60000000000,
+                "Retries": 30
+            },
+            "Image": "apache/kafka:4.0.0",
+            "Volumes": {
+                "/etc/kafka/secrets": {},
+                "/mnt/shared/config": {},
+                "/var/lib/kafka/data": {}
+            },
+            "WorkingDir": "/",
+            "Entrypoint": [
+                "/__cacert_entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "4735c9a24d95958b082904093a5f01797814266afc0a23d3f054fec9624a692f",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:01b9a4030e54c6068e66eb3ba4cb82c0d89238629ef1c30d79b86036bf89b1b7",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "paysim-big-data-baseline",
+                "com.docker.compose.project.config_files": "D:\\BigData_PJ\\paysim-big-data-baseline\\docker-compose.yml",
+                "com.docker.compose.project.working_dir": "D:\\BigData_PJ\\paysim-big-data-baseline",
+                "com.docker.compose.service": "kafka",
+                "com.docker.compose.version": "5.6.0",
+                "maintainer": "Apache Kafka",
+                "org.label-schema.build-date": "2025-03-14",
+                "org.label-schema.description": "Apache Kafka",
+                "org.label-schema.name": "kafka",
+                "org.label-schema.vcs-url": "https://github.com/apache/kafka"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "ed9d7a451170432e6dd4084c20022fe29b66291a1e5b9c15d4c7a2dce017db24",
+            "SandboxKey": "/var/run/docker/netns/ed9d7a451170",
+            "Ports": {
+                "29092/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "29092"
+                    },
+                    {
+                        "HostIp": "::",
+                        "HostPort": "29092"
+                    }
+                ]
+            },
+            "Networks": {
+                "paysim-big-data-baseline_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "paysim-big-data-baseline-kafka-1",
+                        "kafka"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "530cf4d531d2be8425a9cb3fdfab4d3718d9dcadaf9fe9cd6c594d71b53ee174",
+                    "EndpointID": "718e07ba4411837481c78ef9535f0a154fa53d921b67b72d036b3aba015c9819",
+                    "Gateway": "172.18.0.1",
+                    "IPAddress": "172.18.0.2",
+                    "MacAddress": "ee:4d:68:78:66:11",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "paysim-big-data-baseline-kafka-1",
+                        "kafka",
+                        "408e9599789a"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:01b9a4030e54c6068e66eb3ba4cb82c0d89238629ef1c30d79b86036bf89b1b7",
+            "size": 2390,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "123e38e519e402930a25a079425d178a29c2c5ce256799d3f64c68e25842d3cc",
+        "Created": "2026-10-26T09:14:42.057632071Z",
+        "Path": "/usr/local/bin/hdfs-entrypoint",
+        "Args": [
+            "hdfs",
+            "namenode"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 9392,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-30T01:27:27.6546786Z",
+            "FinishedAt": "2026-10-30T01:26:58.361624372Z",
+            "Health": {
+                "Status": "healthy",
+                "FailingStreak": 0,
+                "Log": [
+                    {
+                        "Start": "2026-10-30T07:06:18.361302697Z",
+                        "End": "2026-10-30T07:06:18.502131437Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-10-30T07:06:28.501767319Z",
+                        "End": "2026-10-30T07:06:28.603154778Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-10-30T07:06:38.603912987Z",
+                        "End": "2026-10-30T07:06:38.73273172Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-10-30T07:06:48.733903772Z",
+                        "End": "2026-10-30T07:06:48.834751716Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-10-30T07:06:58.833977659Z",
+                        "End": "2026-10-30T07:06:58.925514979Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    }
+                ]
+            }
+        },
+        "Image": "sha256:1662bd347af8b0aa3d2140a6e0c40eb35a8ee97443e510892fca9320d1b65829",
+        "ResolvConfPath": "/var/lib/docker/containers/123e38e519e402930a25a079425d178a29c2c5ce256799d3f64c68e25842d3cc/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/123e38e519e402930a25a079425d178a29c2c5ce256799d3f64c68e25842d3cc/hostname",
+        "HostsPath": "/var/lib/docker/containers/123e38e519e402930a25a079425d178a29c2c5ce256799d3f64c68e25842d3cc/hosts",
+        "LogPath": "",
+        "Name": "/paysim-big-data-baseline-namenode-1",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "paysim-big-data-baseline_hdfs_namenode:/data/name:rw",
+                "/run/desktop/mnt/host/d/BigData_PJ/paysim-big-data-baseline/hadoop/core-site.xml:/opt/hadoop/etc/hadoop/core-site.xml:ro",
+                "/run/desktop/mnt/host/d/BigData_PJ/paysim-big-data-baseline/hadoop/hdfs-site.xml:/opt/hadoop/etc/hadoop/hdfs-site.xml:ro"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "local",
+                "Config": {}
+            },
+            "NetworkMode": "paysim-big-data-baseline_default",
+            "PortBindings": {
+                "9000/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "9000"
+                    }
+                ],
+                "9870/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "9870"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 1073741824,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 2147483648,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ],
+            "Init": true
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "paysim-big-data-baseline_hdfs_namenode",
+                "Source": "/var/lib/docker/volumes/paysim-big-data-baseline_hdfs_namenode/_data",
+                "Destination": "/data/name",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "bind",
+                "Source": "/run/desktop/mnt/host/d/BigData_PJ/paysim-big-data-baseline/hadoop/core-site.xml",
+                "Destination": "/opt/hadoop/etc/hadoop/core-site.xml",
+                "Mode": "ro",
+                "RW": false,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/run/desktop/mnt/host/d/BigData_PJ/paysim-big-data-baseline/hadoop/hdfs-site.xml",
+                "Destination": "/opt/hadoop/etc/hadoop/hdfs-site.xml",
+                "Mode": "ro",
+                "RW": false,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "namenode",
+            "Domainname": "",
+            "User": "1000:100",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "9000/tcp": {},
+                "9870/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/opt/hadoop/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "JAVA_HOME=/opt/java/openjdk",
+                "LANG=en_US.UTF-8",
+                "LANGUAGE=en_US:en",
+                "LC_ALL=en_US.UTF-8",
+                "JAVA_VERSION=jdk-11.0.32.1+1",
+                "HADOOP_HOME=/opt/hadoop",
+                "HADOOP_CONF_DIR=/opt/hadoop/etc/hadoop",
+                "HADOOP_LOG_DIR=/tmp/hadoop-logs",
+                "HADOOP_HEAPSIZE_MAX=512"
+            ],
+            "Cmd": [
+                "hdfs",
+                "namenode"
+            ],
+            "Healthcheck": {
+                "Test": [
+                    "CMD",
+                    "python3",
+                    "/usr/local/bin/hdfs-healthcheck"
+                ],
+                "Interval": 10000000000,
+                "Timeout": 30000000000,
+                "StartPeriod": 60000000000,
+                "Retries": 60
+            },
+            "Image": "paysim-big-data-baseline-namenode",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/usr/local/bin/hdfs-entrypoint"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "55d3d833cff3dec5ac80de6a94fa3d97a3dddb6a2829fa1db29ea96f68feb80f",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "hdfs-init:service_completed_successfully:false",
+                "com.docker.compose.image": "sha256:f1ce7d616a12270ebb91f7ddc87a326de1a55f232c9453d125d95e689343139e",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "paysim-big-data-baseline",
+                "com.docker.compose.project.config_files": "D:\\BigData_PJ\\paysim-big-data-baseline\\docker-compose.yml",
+                "com.docker.compose.project.working_dir": "D:\\BigData_PJ\\paysim-big-data-baseline",
+                "com.docker.compose.service": "namenode",
+                "com.docker.compose.version": "5.6.0",
+                "org.opencontainers.image.version": "24.04"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "159f5578f7d2b5899bb9e3888f8f1f671d69b0c0a4b33b61722222212575207e",
+            "SandboxKey": "/var/run/docker/netns/159f5578f7d2",
+            "Ports": {
+                "9000/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "9000"
+                    },
+                    {
+                        "HostIp": "::",
+                        "HostPort": "9000"
+                    }
+                ],
+                "9870/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "9870"
+                    },
+                    {
+                        "HostIp": "::",
+                        "HostPort": "9870"
+                    }
+                ]
+            },
+            "Networks": {
+                "paysim-big-data-baseline_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "paysim-big-data-baseline-namenode-1",
+                        "namenode"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "530cf4d531d2be8425a9cb3fdfab4d3718d9dcadaf9fe9cd6c594d71b53ee174",
+                    "EndpointID": "47ce43c5c77e292d9080ce2ef10269e50f7254265bc88b7ded82b170257d19b8",
+                    "Gateway": "172.18.0.1",
+                    "IPAddress": "172.18.0.3",
+                    "MacAddress": "92:9f:17:96:b1:af",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "paysim-big-data-baseline-namenode-1",
+                        "namenode",
+                        "123e38e519e4"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:f1ce7d616a12270ebb91f7ddc87a326de1a55f232c9453d125d95e689343139e",
+            "size": 2384,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "9daf5211571c6f0b0d45ea60838baf6c5647aaf625a620763bdec2cb1b0bf798",
+        "Created": "2026-10-26T09:14:42.209668926Z",
+        "Path": "/usr/local/bin/hdfs-entrypoint",
+        "Args": [
+            "hdfs",
+            "datanode"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 9546,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-30T01:27:28.05870452Z",
+            "FinishedAt": "2026-10-30T01:26:57.496715871Z"
+        },
+        "Image": "sha256:e7b6ef8980cbff36d440163f2b55a2d9b917b2db64e634bbfec91c8e473716a0",
+        "ResolvConfPath": "/var/lib/docker/containers/9daf5211571c6f0b0d45ea60838baf6c5647aaf625a620763bdec2cb1b0bf798/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/9daf5211571c6f0b0d45ea60838baf6c5647aaf625a620763bdec2cb1b0bf798/hostname",
+        "HostsPath": "/var/lib/docker/containers/9daf5211571c6f0b0d45ea60838baf6c5647aaf625a620763bdec2cb1b0bf798/hosts",
+        "LogPath": "",
+        "Name": "/paysim-big-data-baseline-datanode-1",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "paysim-big-data-baseline_hdfs_datanode:/data/data:rw",
+                "/run/desktop/mnt/host/d/BigData_PJ/paysim-big-data-baseline/hadoop/core-site.xml:/opt/hadoop/etc/hadoop/core-site.xml:ro",
+                "/run/desktop/mnt/host/d/BigData_PJ/paysim-big-data-baseline/hadoop/hdfs-site.xml:/opt/hadoop/etc/hadoop/hdfs-site.xml:ro"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "local",
+                "Config": {}
+            },
+            "NetworkMode": "paysim-big-data-baseline_default",
+            "PortBindings": {
+                "9864/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "9864"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 1073741824,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 2147483648,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ],
+            "Init": true
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "paysim-big-data-baseline_hdfs_datanode",
+                "Source": "/var/lib/docker/volumes/paysim-big-data-baseline_hdfs_datanode/_data",
+                "Destination": "/data/data",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "bind",
+                "Source": "/run/desktop/mnt/host/d/BigData_PJ/paysim-big-data-baseline/hadoop/core-site.xml",
+                "Destination": "/opt/hadoop/etc/hadoop/core-site.xml",
+                "Mode": "ro",
+                "RW": false,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/run/desktop/mnt/host/d/BigData_PJ/paysim-big-data-baseline/hadoop/hdfs-site.xml",
+                "Destination": "/opt/hadoop/etc/hadoop/hdfs-site.xml",
+                "Mode": "ro",
+                "RW": false,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "datanode",
+            "Domainname": "",
+            "User": "1000:100",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "9864/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/opt/hadoop/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "JAVA_HOME=/opt/java/openjdk",
+                "LANG=en_US.UTF-8",
+                "LANGUAGE=en_US:en",
+                "LC_ALL=en_US.UTF-8",
+                "JAVA_VERSION=jdk-11.0.32.1+1",
+                "HADOOP_HOME=/opt/hadoop",
+                "HADOOP_CONF_DIR=/opt/hadoop/etc/hadoop",
+                "HADOOP_LOG_DIR=/tmp/hadoop-logs",
+                "HADOOP_HEAPSIZE_MAX=512"
+            ],
+            "Cmd": [
+                "hdfs",
+                "datanode"
+            ],
+            "Image": "paysim-big-data-baseline-datanode",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/usr/local/bin/hdfs-entrypoint"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "54bcf03f1672a872fdce692d1eccf2c826ac620c2328a053d8a5b7310063ba3d",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "namenode:service_started:false",
+                "com.docker.compose.image": "sha256:de5f1d07cb4721298889163c8351fa0525b64b7adbb171ca4f00b8bc1bea65ea",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "paysim-big-data-baseline",
+                "com.docker.compose.project.config_files": "D:\\BigData_PJ\\paysim-big-data-baseline\\docker-compose.yml",
+                "com.docker.compose.project.working_dir": "D:\\BigData_PJ\\paysim-big-data-baseline",
+                "com.docker.compose.service": "datanode",
+                "com.docker.compose.version": "5.6.0",
+                "org.opencontainers.image.version": "24.04"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "c2ff27fe5992c6cc0eee8112e0f6b1379858322c8adf7f94d6d7871defafb3a5",
+            "SandboxKey": "/var/run/docker/netns/c2ff27fe5992",
+            "Ports": {
+                "9864/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "9864"
+                    },
+                    {
+                        "HostIp": "::",
+                        "HostPort": "9864"
+                    }
+                ]
+            },
+            "Networks": {
+                "paysim-big-data-baseline_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "paysim-big-data-baseline-datanode-1",
+                        "datanode"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "530cf4d531d2be8425a9cb3fdfab4d3718d9dcadaf9fe9cd6c594d71b53ee174",
+                    "EndpointID": "93d1fa448e4c790030a1d6de7f2f7b7ded77f47fcc2df08db155730058eeb3b4",
+                    "Gateway": "172.18.0.1",
+                    "IPAddress": "172.18.0.5",
+                    "MacAddress": "8e:b0:08:5f:9b:47",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "paysim-big-data-baseline-datanode-1",
+                        "datanode",
+                        "9daf5211571c"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:de5f1d07cb4721298889163c8351fa0525b64b7adbb171ca4f00b8bc1bea65ea",
+            "size": 2384,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    }
+]

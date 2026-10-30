@@ -1,0 +1,22 @@
+﻿[
+    {
+        "Algorithm":  "SHA256",
+        "Hash":  "B556177B5D83B1E56D1EA3E09D976944583F8EE91C29D9EA699B7D551527E959",
+        "Path":  "D:\\BigData_PJ\\paysim-big-data-baseline\\dashboard\\dashboard_core.py"
+    },
+    {
+        "Algorithm":  "SHA256",
+        "Hash":  "45049EFE8632F5B88BD03656F36ABF4A7BE1742F1093C1B4F462929E05A192FC",
+        "Path":  "D:\\BigData_PJ\\paysim-big-data-baseline\\dashboard\\app.py"
+    },
+    {
+        "Algorithm":  "SHA256",
+        "Hash":  "771861DEC141B0B25D708CFFCB23AFE2E569DC58141E4761AEB363E5B7D993B4",
+        "Path":  "D:\\BigData_PJ\\paysim-big-data-baseline\\tests\\test_dashboard.py"
+    },
+    {
+        "Algorithm":  "SHA256",
+        "Hash":  "EAAE0DCE0533BE11CF18CFD01E6BAD6F2938E2F13E7729A552BCDFFD5F16228F",
+        "Path":  "D:\\BigData_PJ\\paysim-big-data-baseline\\dashboard\\view_operations.py"
+    }
+]

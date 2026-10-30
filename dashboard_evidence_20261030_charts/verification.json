@@ -1,0 +1,1445 @@
+{
+  "snapshot": {
+    "run_id": "run-20261028-042515",
+    "model": {
+      "TP": 52,
+      "FP": 1186,
+      "TN": 4962,
+      "FN": 0,
+      "Precision": 0.0420032310177706,
+      "Recall": 1.0,
+      "F1": 0.08062015503875969,
+      "Alert rate": 0.1996774193548387
+    },
+    "rule": {
+      "TP": 8,
+      "FP": 64,
+      "TN": 6084,
+      "FN": 44,
+      "Precision": 0.1111111111111111,
+      "Recall": 0.15384615384615385,
+      "F1": 0.12903225806451615,
+      "Alert rate": 0.011612903225806452
+    },
+    "metrics": 13,
+    "transactions": 60,
+    "alerts": 300,
+    "display_correct": true
+  },
+  "pages": [
+    {
+      "view_page": "baseline/1",
+      "metrics_equal": true,
+      "tables_equal": true,
+      "chart_data_preserved": true,
+      "metrics": [
+        [
+          "End-to-end latency p95",
+          "29,763,813 ms",
+          ""
+        ],
+        [
+          "Fraud alerts",
+          "1,238",
+          "19.97%"
+        ],
+        [
+          "Ingest hiện tại",
+          "50.0 ev/s",
+          ""
+        ],
+        [
+          "Nguồn đã phát",
+          "6,400",
+          ""
+        ],
+        [
+          "Processing throughput",
+          "40.2 ev/s",
+          ""
+        ],
+        [
+          "Spark đã xử lý",
+          "6,200",
+          "200 đang chờ"
+        ]
+      ]
+    },
+    {
+      "view_page": "baseline/2",
+      "metrics_equal": true,
+      "tables_equal": true,
+      "chart_data_preserved": true,
+      "metrics": [
+        [
+          "Aggregate correctness",
+          "PASS",
+          ""
+        ],
+        [
+          "Alert rate",
+          "19.97%",
+          ""
+        ],
+        [
+          "Alert volume",
+          "1,238",
+          ""
+        ],
+        [
+          "Bad record rate",
+          "0.00%",
+          ""
+        ],
+        [
+          "Compression ratio",
+          "0.12×",
+          ""
+        ],
+        [
+          "Consumer lag",
+          "200",
+          ""
+        ],
+        [
+          "Display correctness",
+          "PASS",
+          ""
+        ],
+        [
+          "Duplicates after restart",
+          "0",
+          ""
+        ],
+        [
+          "Duplicates removed",
+          "0",
+          ""
+        ],
+        [
+          "End-to-end latency p95",
+          "29,763,813 ms",
+          ""
+        ],
+        [
+          "Event completeness",
+          "100.00%",
+          ""
+        ],
+        [
+          "Event loss",
+          "0",
+          ""
+        ],
+        [
+          "F1",
+          "8.06%",
+          ""
+        ],
+        [
+          "Fraud alerts",
+          "1,238",
+          "19.97%"
+        ],
+        [
+          "Fraud in Top-K",
+          "6/100",
+          ""
+        ],
+        [
+          "Ingest hiện tại",
+          "50.0 ev/s",
+          ""
+        ],
+        [
+          "Ingest latency p95",
+          "28 ms",
+          ""
+        ],
+        [
+          "Ingest throughput",
+          "50.0 ev/s",
+          ""
+        ],
+        [
+          "Late event rate",
+          "0.00%",
+          ""
+        ],
+        [
+          "Late events handled",
+          "0",
+          ""
+        ],
+        [
+          "Micro-batch",
+          "12.45 s",
+          ""
+        ],
+        [
+          "Mongo write latency",
+          "496.1 ms",
+          ""
+        ],
+        [
+          "Nguồn đã phát",
+          "6,400",
+          ""
+        ],
+        [
+          "PR-AUC",
+          "70.45%",
+          ""
+        ],
+        [
+          "Partition pruning",
+          "run_id / type",
+          ""
+        ],
+        [
+          "Pipeline status",
+          "RUNNING",
+          ""
+        ],
+        [
+          "Precision@K",
+          "6.00%",
+          ""
+        ],
+        [
+          "Precision@K",
+          "6.00%",
+          ""
+        ],
+        [
+          "Processing latency p95",
+          "29,763,813 ms",
+          ""
+        ],
+        [
+          "Processing throughput",
+          "40.2 ev/s",
+          ""
+        ],
+        [
+          "Processing throughput",
+          "40.2 ev/s",
+          ""
+        ],
+        [
+          "Query duration",
+          "344.4 ms",
+          ""
+        ],
+        [
+          "Read duration",
+          "Benchmark-only",
+          ""
+        ],
+        [
+          "Recall@K",
+          "100.00%",
+          ""
+        ],
+        [
+          "Recall@K",
+          "100.00%",
+          ""
+        ],
+        [
+          "Recovery time",
+          "16.3 s",
+          ""
+        ],
+        [
+          "Scan size",
+          "Benchmark-only",
+          ""
+        ],
+        [
+          "Scoring latency",
+          "3,535.7 ms/1K",
+          ""
+        ],
+        [
+          "Small files",
+          "1,972",
+          ""
+        ],
+        [
+          "Spark starts",
+          "3",
+          ""
+        ],
+        [
+          "Spark đã xử lý",
+          "6,200",
+          "200 đang chờ"
+        ],
+        [
+          "Storage size",
+          "62.7 MB",
+          ""
+        ],
+        [
+          "Transformation",
+          "PASS",
+          ""
+        ],
+        [
+          "Write duration",
+          "4.42 s",
+          ""
+        ],
+        [
+          "Write success",
+          "100.00%",
+          ""
+        ]
+      ]
+    },
+    {
+      "view_page": "baseline/3",
+      "metrics_equal": true,
+      "tables_equal": true,
+      "chart_data_preserved": true,
+      "metrics": [
+        [
+          "End-to-end latency p95",
+          "29,763,813 ms",
+          ""
+        ],
+        [
+          "Fraud alerts",
+          "1,238",
+          "19.97%"
+        ],
+        [
+          "Ingest hiện tại",
+          "50.0 ev/s",
+          ""
+        ],
+        [
+          "Nguồn đã phát",
+          "6,400",
+          ""
+        ],
+        [
+          "Processing throughput",
+          "40.2 ev/s",
+          ""
+        ],
+        [
+          "Spark đã xử lý",
+          "6,200",
+          "200 đang chờ"
+        ]
+      ]
+    },
+    {
+      "view_page": "baseline/4",
+      "metrics_equal": true,
+      "tables_equal": true,
+      "chart_data_preserved": true,
+      "metrics": [
+        [
+          "End-to-end latency p95",
+          "29,763,813 ms",
+          ""
+        ],
+        [
+          "Fraud alerts",
+          "1,238",
+          "19.97%"
+        ],
+        [
+          "Ingest hiện tại",
+          "50.0 ev/s",
+          ""
+        ],
+        [
+          "Nguồn đã phát",
+          "6,400",
+          ""
+        ],
+        [
+          "Processing throughput",
+          "40.2 ev/s",
+          ""
+        ],
+        [
+          "Spark đã xử lý",
+          "6,200",
+          "200 đang chờ"
+        ]
+      ]
+    },
+    {
+      "view_page": "operations/1",
+      "metrics_equal": true,
+      "tables_equal": true,
+      "chart_data_preserved": true,
+      "metrics": [
+        [
+          "Alert rate",
+          "19.97%",
+          ""
+        ],
+        [
+          "End-to-end latency p95",
+          "29,763,813 ms",
+          ""
+        ],
+        [
+          "Fraud alerts",
+          "1,238",
+          ""
+        ],
+        [
+          "Ingest hiện tại",
+          "50.0 ev/s",
+          ""
+        ],
+        [
+          "Nguồn đã phát",
+          "6,400",
+          ""
+        ],
+        [
+          "Processing throughput",
+          "40.2 ev/s",
+          ""
+        ],
+        [
+          "Spark đã xử lý",
+          "6,200",
+          "200 đang chờ"
+        ]
+      ]
+    },
+    {
+      "view_page": "operations/2",
+      "metrics_equal": true,
+      "tables_equal": true,
+      "chart_data_preserved": true,
+      "metrics": [
+        [
+          "Aggregate correctness",
+          "PASS",
+          ""
+        ],
+        [
+          "Alert rate",
+          "19.97%",
+          ""
+        ],
+        [
+          "Alert rate",
+          "19.97%",
+          ""
+        ],
+        [
+          "Alert volume",
+          "1,238",
+          ""
+        ],
+        [
+          "Bad record rate",
+          "0.00%",
+          ""
+        ],
+        [
+          "Compression ratio",
+          "0.12×",
+          ""
+        ],
+        [
+          "Consumer lag",
+          "200",
+          ""
+        ],
+        [
+          "Display correctness",
+          "PASS",
+          ""
+        ],
+        [
+          "Duplicates after restart",
+          "0",
+          ""
+        ],
+        [
+          "Duplicates removed",
+          "0",
+          ""
+        ],
+        [
+          "End-to-end latency p95",
+          "29,763,813 ms",
+          ""
+        ],
+        [
+          "Event completeness",
+          "100.00%",
+          ""
+        ],
+        [
+          "Event loss",
+          "0",
+          ""
+        ],
+        [
+          "F1",
+          "8.06%",
+          ""
+        ],
+        [
+          "Fraud alerts",
+          "1,238",
+          ""
+        ],
+        [
+          "Fraud in Top-K",
+          "6/100",
+          ""
+        ],
+        [
+          "Ingest hiện tại",
+          "50.0 ev/s",
+          ""
+        ],
+        [
+          "Ingest latency p95",
+          "28 ms",
+          ""
+        ],
+        [
+          "Ingest throughput",
+          "50.0 ev/s",
+          ""
+        ],
+        [
+          "Late event rate",
+          "0.00%",
+          ""
+        ],
+        [
+          "Late events handled",
+          "0",
+          ""
+        ],
+        [
+          "Micro-batch",
+          "12.45 s",
+          ""
+        ],
+        [
+          "Mongo write latency",
+          "496.1 ms",
+          ""
+        ],
+        [
+          "Nguồn đã phát",
+          "6,400",
+          ""
+        ],
+        [
+          "PR-AUC",
+          "70.45%",
+          ""
+        ],
+        [
+          "Partition pruning",
+          "run_id / type",
+          ""
+        ],
+        [
+          "Pipeline status",
+          "RUNNING",
+          ""
+        ],
+        [
+          "Precision@K",
+          "6.00%",
+          ""
+        ],
+        [
+          "Precision@K",
+          "6.00%",
+          ""
+        ],
+        [
+          "Processing latency p95",
+          "29,763,813 ms",
+          ""
+        ],
+        [
+          "Processing throughput",
+          "40.2 ev/s",
+          ""
+        ],
+        [
+          "Processing throughput",
+          "40.2 ev/s",
+          ""
+        ],
+        [
+          "Query duration",
+          "344.4 ms",
+          ""
+        ],
+        [
+          "Read duration",
+          "Benchmark-only",
+          ""
+        ],
+        [
+          "Recall@K",
+          "100.00%",
+          ""
+        ],
+        [
+          "Recall@K",
+          "100.00%",
+          ""
+        ],
+        [
+          "Recovery time",
+          "16.3 s",
+          ""
+        ],
+        [
+          "Scan size",
+          "Benchmark-only",
+          ""
+        ],
+        [
+          "Scoring latency",
+          "3,535.7 ms/1K",
+          ""
+        ],
+        [
+          "Small files",
+          "1,972",
+          ""
+        ],
+        [
+          "Spark starts",
+          "3",
+          ""
+        ],
+        [
+          "Spark đã xử lý",
+          "6,200",
+          "200 đang chờ"
+        ],
+        [
+          "Storage size",
+          "62.7 MB",
+          ""
+        ],
+        [
+          "Transformation",
+          "PASS",
+          ""
+        ],
+        [
+          "Write duration",
+          "4.42 s",
+          ""
+        ],
+        [
+          "Write success",
+          "100.00%",
+          ""
+        ]
+      ]
+    },
+    {
+      "view_page": "operations/3",
+      "metrics_equal": true,
+      "tables_equal": true,
+      "chart_data_preserved": true,
+      "metrics": [
+        [
+          "Alert rate",
+          "19.97%",
+          ""
+        ],
+        [
+          "End-to-end latency p95",
+          "29,763,813 ms",
+          ""
+        ],
+        [
+          "Fraud alerts",
+          "1,238",
+          ""
+        ],
+        [
+          "Ingest hiện tại",
+          "50.0 ev/s",
+          ""
+        ],
+        [
+          "Nguồn đã phát",
+          "6,400",
+          ""
+        ],
+        [
+          "Processing throughput",
+          "40.2 ev/s",
+          ""
+        ],
+        [
+          "Spark đã xử lý",
+          "6,200",
+          "200 đang chờ"
+        ]
+      ]
+    },
+    {
+      "view_page": "operations/4",
+      "metrics_equal": true,
+      "tables_equal": true,
+      "chart_data_preserved": true,
+      "metrics": [
+        [
+          "Alert rate",
+          "19.97%",
+          ""
+        ],
+        [
+          "End-to-end latency p95",
+          "29,763,813 ms",
+          ""
+        ],
+        [
+          "Fraud alerts",
+          "1,238",
+          ""
+        ],
+        [
+          "Ingest hiện tại",
+          "50.0 ev/s",
+          ""
+        ],
+        [
+          "Nguồn đã phát",
+          "6,400",
+          ""
+        ],
+        [
+          "Processing throughput",
+          "40.2 ev/s",
+          ""
+        ],
+        [
+          "Spark đã xử lý",
+          "6,200",
+          "200 đang chờ"
+        ]
+      ]
+    },
+    {
+      "view_page": "report/1",
+      "metrics_equal": true,
+      "tables_equal": true,
+      "chart_data_preserved": true,
+      "metrics": [
+        [
+          "End-to-end latency p95",
+          "29,763,813 ms",
+          ""
+        ],
+        [
+          "Fraud alerts",
+          "1,238",
+          "19.97%"
+        ],
+        [
+          "Ingest hiện tại",
+          "50.0 ev/s",
+          ""
+        ],
+        [
+          "Nguồn đã phát",
+          "6,400",
+          ""
+        ],
+        [
+          "Processing throughput",
+          "40.2 ev/s",
+          ""
+        ],
+        [
+          "Spark đã xử lý",
+          "6,200",
+          "200 đang chờ"
+        ]
+      ]
+    },
+    {
+      "view_page": "report/2",
+      "metrics_equal": true,
+      "tables_equal": true,
+      "chart_data_preserved": true,
+      "metrics": [
+        [
+          "Aggregate correctness",
+          "PASS",
+          ""
+        ],
+        [
+          "Alert rate",
+          "19.97%",
+          ""
+        ],
+        [
+          "Alert volume",
+          "1,238",
+          ""
+        ],
+        [
+          "Bad record rate",
+          "0.00%",
+          ""
+        ],
+        [
+          "Compression ratio",
+          "0.12×",
+          ""
+        ],
+        [
+          "Consumer lag",
+          "200",
+          ""
+        ],
+        [
+          "Display correctness",
+          "PASS",
+          ""
+        ],
+        [
+          "Duplicates after restart",
+          "0",
+          ""
+        ],
+        [
+          "Duplicates removed",
+          "0",
+          ""
+        ],
+        [
+          "End-to-end latency p95",
+          "29,763,813 ms",
+          ""
+        ],
+        [
+          "Event completeness",
+          "100.00%",
+          ""
+        ],
+        [
+          "Event loss",
+          "0",
+          ""
+        ],
+        [
+          "F1",
+          "8.06%",
+          ""
+        ],
+        [
+          "Fraud alerts",
+          "1,238",
+          "19.97%"
+        ],
+        [
+          "Fraud in Top-K",
+          "6/100",
+          ""
+        ],
+        [
+          "Ingest hiện tại",
+          "50.0 ev/s",
+          ""
+        ],
+        [
+          "Ingest latency p95",
+          "28 ms",
+          ""
+        ],
+        [
+          "Ingest throughput",
+          "50.0 ev/s",
+          ""
+        ],
+        [
+          "Late event rate",
+          "0.00%",
+          ""
+        ],
+        [
+          "Late events handled",
+          "0",
+          ""
+        ],
+        [
+          "Micro-batch",
+          "12.45 s",
+          ""
+        ],
+        [
+          "Mongo write latency",
+          "496.1 ms",
+          ""
+        ],
+        [
+          "Nguồn đã phát",
+          "6,400",
+          ""
+        ],
+        [
+          "PR-AUC",
+          "70.45%",
+          ""
+        ],
+        [
+          "Partition pruning",
+          "run_id / type",
+          ""
+        ],
+        [
+          "Pipeline status",
+          "RUNNING",
+          ""
+        ],
+        [
+          "Precision@K",
+          "6.00%",
+          ""
+        ],
+        [
+          "Precision@K",
+          "6.00%",
+          ""
+        ],
+        [
+          "Processing latency p95",
+          "29,763,813 ms",
+          ""
+        ],
+        [
+          "Processing throughput",
+          "40.2 ev/s",
+          ""
+        ],
+        [
+          "Processing throughput",
+          "40.2 ev/s",
+          ""
+        ],
+        [
+          "Query duration",
+          "344.4 ms",
+          ""
+        ],
+        [
+          "Read duration",
+          "Benchmark-only",
+          ""
+        ],
+        [
+          "Recall@K",
+          "100.00%",
+          ""
+        ],
+        [
+          "Recall@K",
+          "100.00%",
+          ""
+        ],
+        [
+          "Recovery time",
+          "16.3 s",
+          ""
+        ],
+        [
+          "Scan size",
+          "Benchmark-only",
+          ""
+        ],
+        [
+          "Scoring latency",
+          "3,535.7 ms/1K",
+          ""
+        ],
+        [
+          "Small files",
+          "1,972",
+          ""
+        ],
+        [
+          "Spark starts",
+          "3",
+          ""
+        ],
+        [
+          "Spark đã xử lý",
+          "6,200",
+          "200 đang chờ"
+        ],
+        [
+          "Storage size",
+          "62.7 MB",
+          ""
+        ],
+        [
+          "Transformation",
+          "PASS",
+          ""
+        ],
+        [
+          "Write duration",
+          "4.42 s",
+          ""
+        ],
+        [
+          "Write success",
+          "100.00%",
+          ""
+        ]
+      ]
+    },
+    {
+      "view_page": "report/3",
+      "metrics_equal": true,
+      "tables_equal": true,
+      "chart_data_preserved": true,
+      "metrics": [
+        [
+          "End-to-end latency p95",
+          "29,763,813 ms",
+          ""
+        ],
+        [
+          "Fraud alerts",
+          "1,238",
+          "19.97%"
+        ],
+        [
+          "Ingest hiện tại",
+          "50.0 ev/s",
+          ""
+        ],
+        [
+          "Nguồn đã phát",
+          "6,400",
+          ""
+        ],
+        [
+          "Processing throughput",
+          "40.2 ev/s",
+          ""
+        ],
+        [
+          "Spark đã xử lý",
+          "6,200",
+          "200 đang chờ"
+        ]
+      ]
+    },
+    {
+      "view_page": "report/4",
+      "metrics_equal": true,
+      "tables_equal": true,
+      "chart_data_preserved": true,
+      "metrics": [
+        [
+          "End-to-end latency p95",
+          "29,763,813 ms",
+          ""
+        ],
+        [
+          "Fraud alerts",
+          "1,238",
+          "19.97%"
+        ],
+        [
+          "Ingest hiện tại",
+          "50.0 ev/s",
+          ""
+        ],
+        [
+          "Nguồn đã phát",
+          "6,400",
+          ""
+        ],
+        [
+          "Processing throughput",
+          "40.2 ev/s",
+          ""
+        ],
+        [
+          "Spark đã xử lý",
+          "6,200",
+          "200 đang chờ"
+        ]
+      ]
+    },
+    {
+      "view_page": "studio/1",
+      "metrics_equal": true,
+      "tables_equal": true,
+      "chart_data_preserved": true,
+      "metrics": [
+        [
+          "End-to-end latency p95",
+          "29,763,813 ms",
+          ""
+        ],
+        [
+          "Fraud alerts",
+          "1,238",
+          "19.97%"
+        ],
+        [
+          "Ingest hiện tại",
+          "50.0 ev/s",
+          ""
+        ],
+        [
+          "Nguồn đã phát",
+          "6,400",
+          ""
+        ],
+        [
+          "Processing throughput",
+          "40.2 ev/s",
+          ""
+        ],
+        [
+          "Spark đã xử lý",
+          "6,200",
+          "200 đang chờ"
+        ]
+      ]
+    },
+    {
+      "view_page": "studio/2",
+      "metrics_equal": true,
+      "tables_equal": true,
+      "chart_data_preserved": true,
+      "metrics": [
+        [
+          "Aggregate correctness",
+          "PASS",
+          ""
+        ],
+        [
+          "Alert rate",
+          "19.97%",
+          ""
+        ],
+        [
+          "Alert volume",
+          "1,238",
+          ""
+        ],
+        [
+          "Bad record rate",
+          "0.00%",
+          ""
+        ],
+        [
+          "Compression ratio",
+          "0.12×",
+          ""
+        ],
+        [
+          "Consumer lag",
+          "200",
+          ""
+        ],
+        [
+          "Display correctness",
+          "PASS",
+          ""
+        ],
+        [
+          "Duplicates after restart",
+          "0",
+          ""
+        ],
+        [
+          "Duplicates removed",
+          "0",
+          ""
+        ],
+        [
+          "End-to-end latency p95",
+          "29,763,813 ms",
+          ""
+        ],
+        [
+          "Event completeness",
+          "100.00%",
+          ""
+        ],
+        [
+          "Event loss",
+          "0",
+          ""
+        ],
+        [
+          "F1",
+          "8.06%",
+          ""
+        ],
+        [
+          "Fraud alerts",
+          "1,238",
+          "19.97%"
+        ],
+        [
+          "Fraud in Top-K",
+          "6/100",
+          ""
+        ],
+        [
+          "Ingest hiện tại",
+          "50.0 ev/s",
+          ""
+        ],
+        [
+          "Ingest latency p95",
+          "28 ms",
+          ""
+        ],
+        [
+          "Ingest throughput",
+          "50.0 ev/s",
+          ""
+        ],
+        [
+          "Late event rate",
+          "0.00%",
+          ""
+        ],
+        [
+          "Late events handled",
+          "0",
+          ""
+        ],
+        [
+          "Micro-batch",
+          "12.45 s",
+          ""
+        ],
+        [
+          "Mongo write latency",
+          "496.1 ms",
+          ""
+        ],
+        [
+          "Nguồn đã phát",
+          "6,400",
+          ""
+        ],
+        [
+          "PR-AUC",
+          "70.45%",
+          ""
+        ],
+        [
+          "Partition pruning",
+          "run_id / type",
+          ""
+        ],
+        [
+          "Pipeline status",
+          "RUNNING",
+          ""
+        ],
+        [
+          "Precision@K",
+          "6.00%",
+          ""
+        ],
+        [
+          "Precision@K",
+          "6.00%",
+          ""
+        ],
+        [
+          "Processing latency p95",
+          "29,763,813 ms",
+          ""
+        ],
+        [
+          "Processing throughput",
+          "40.2 ev/s",
+          ""
+        ],
+        [
+          "Processing throughput",
+          "40.2 ev/s",
+          ""
+        ],
+        [
+          "Query duration",
+          "344.4 ms",
+          ""
+        ],
+        [
+          "Read duration",
+          "Benchmark-only",
+          ""
+        ],
+        [
+          "Recall@K",
+          "100.00%",
+          ""
+        ],
+        [
+          "Recall@K",
+          "100.00%",
+          ""
+        ],
+        [
+          "Recovery time",
+          "16.3 s",
+          ""
+        ],
+        [
+          "Scan size",
+          "Benchmark-only",
+          ""
+        ],
+        [
+          "Scoring latency",
+          "3,535.7 ms/1K",
+          ""
+        ],
+        [
+          "Small files",
+          "1,972",
+          ""
+        ],
+        [
+          "Spark starts",
+          "3",
+          ""
+        ],
+        [
+          "Spark đã xử lý",
+          "6,200",
+          "200 đang chờ"
+        ],
+        [
+          "Storage size",
+          "62.7 MB",
+          ""
+        ],
+        [
+          "Transformation",
+          "PASS",
+          ""
+        ],
+        [
+          "Write duration",
+          "4.42 s",
+          ""
+        ],
+        [
+          "Write success",
+          "100.00%",
+          ""
+        ]
+      ]
+    },
+    {
+      "view_page": "studio/3",
+      "metrics_equal": true,
+      "tables_equal": true,
+      "chart_data_preserved": true,
+      "metrics": [
+        [
+          "End-to-end latency p95",
+          "29,763,813 ms",
+          ""
+        ],
+        [
+          "Fraud alerts",
+          "1,238",
+          "19.97%"
+        ],
+        [
+          "Ingest hiện tại",
+          "50.0 ev/s",
+          ""
+        ],
+        [
+          "Nguồn đã phát",
+          "6,400",
+          ""
+        ],
+        [
+          "Processing throughput",
+          "40.2 ev/s",
+          ""
+        ],
+        [
+          "Spark đã xử lý",
+          "6,200",
+          "200 đang chờ"
+        ]
+      ]
+    },
+    {
+      "view_page": "studio/4",
+      "metrics_equal": true,
+      "tables_equal": true,
+      "chart_data_preserved": true,
+      "metrics": [
+        [
+          "End-to-end latency p95",
+          "29,763,813 ms",
+          ""
+        ],
+        [
+          "Fraud alerts",
+          "1,238",
+          "19.97%"
+        ],
+        [
+          "Ingest hiện tại",
+          "50.0 ev/s",
+          ""
+        ],
+        [
+          "Nguồn đã phát",
+          "6,400",
+          ""
+        ],
+        [
+          "Processing throughput",
+          "40.2 ev/s",
+          ""
+        ],
+        [
+          "Spark đã xử lý",
+          "6,200",
+          "200 đang chờ"
+        ]
+      ]
+    }
+  ],
+  "browser_before": 12,
+  "browser_after": 48,
+  "business_logic_ast_unchanged": true,
+  "frozen_database_unchanged": true,
+  "other_views_chart_specs_and_data_identical": true,
+  "studio_note": "Existing custom transaction page uses a vertical bar, not a donut; preserved unchanged."
+}

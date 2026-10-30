@@ -1,0 +1,14 @@
+docker : 2026-10-28 13:00:17.104 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': 
+missing ScriptRunContext! This warning can be ignored when running in bare mode.
+At line:2 char:1
++ docker exec paysim-track9-20261028-194420 /tmp/track9-venv/bin/python ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2026-10-28 13:0...g in bare mode.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Traceback (most recent call last):
+  File "/evidence/audit_visual_data.py", line 35, in <module>
+    frames.append(dataframe_util.convert_arrow_bytes_to_pandas(dataset.data.data))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'streamlit.dataframe_util' has no attribute 'convert_arrow_bytes_to_pandas'. Did you mean: 
+'convert_arrow_bytes_to_pandas_df'?

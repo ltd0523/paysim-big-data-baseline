@@ -1,0 +1,42 @@
+[
+  {
+    "mode": "empty",
+    "viewport": [
+      1440,
+      900
+    ],
+    "exceptions": [],
+    "errors": [],
+    "passed": true
+  },
+  {
+    "mode": "empty",
+    "viewport": [
+      390,
+      844
+    ],
+    "exceptions": [],
+    "errors": [],
+    "passed": true
+  },
+  {
+    "mode": "one",
+    "viewport": [
+      1440,
+      900
+    ],
+    "exceptions": [],
+    "errors": [],
+    "passed": true
+  },
+  {
+    "mode": "one",
+    "viewport": [
+      390,
+      844
+    ],
+    "exceptions": [],
+    "errors": [],
+    "passed": true
+  }
+]

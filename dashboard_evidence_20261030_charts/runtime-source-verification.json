@@ -1,0 +1,32 @@
+﻿[
+    {
+        "File":  "app.py",
+        "Sha256":  "45049efe8632f5b88bd03656f36abf4a7be1742f1093c1b4f462929e05a192fc",
+        "RuntimeMatches":  true
+    },
+    {
+        "File":  "dashboard_core.py",
+        "Sha256":  "76156c0bd84b6571b0d5e20a480e3050d0139da9e557f7e77af4942b117f15ed",
+        "RuntimeMatches":  true
+    },
+    {
+        "File":  "view_operations.py",
+        "Sha256":  "12dbb75d82364b6bbfc1beaec07296ec70ccfb62a2d799e52c92e941cc25b247",
+        "RuntimeMatches":  true
+    },
+    {
+        "File":  "view_report.py",
+        "Sha256":  "9bf392bcf1995d1db4431169ac145cae3cd7d49021a3ff1551cc748d31d9537a",
+        "RuntimeMatches":  true
+    },
+    {
+        "File":  "view_studio.py",
+        "Sha256":  "bc822147bbe6344fe46ecf9b4eb04e318e641d719a5e14cbac6c60c2051e24e9",
+        "RuntimeMatches":  true
+    },
+    {
+        "File":  "Banner.png",
+        "Sha256":  "64bd6a62faabda6775c41c7f738e29faf182b0a613a586391c002d586019c848",
+        "RuntimeMatches":  true
+    }
+]

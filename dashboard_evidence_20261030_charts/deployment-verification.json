@@ -1,0 +1,51 @@
+﻿[
+    {
+        "Name":  "/paysim-big-data-baseline-streamlit-1",
+        "ContainerIdUnchanged":  false,
+        "StartedAtUnchanged":  false,
+        "Status":  "running",
+        "Health":  "healthy"
+    },
+    {
+        "Name":  "/paysim-big-data-baseline-mongodb-1",
+        "ContainerIdUnchanged":  true,
+        "StartedAtUnchanged":  true,
+        "Status":  "running",
+        "Health":  "healthy"
+    },
+    {
+        "Name":  "/paysim-big-data-baseline-spark-1",
+        "ContainerIdUnchanged":  true,
+        "StartedAtUnchanged":  true,
+        "Status":  "running",
+        "Health":  "healthy"
+    },
+    {
+        "Name":  "/paysim-big-data-baseline-replayer-1",
+        "ContainerIdUnchanged":  true,
+        "StartedAtUnchanged":  true,
+        "Status":  "running",
+        "Health":  null
+    },
+    {
+        "Name":  "/paysim-big-data-baseline-kafka-1",
+        "ContainerIdUnchanged":  true,
+        "StartedAtUnchanged":  true,
+        "Status":  "running",
+        "Health":  "healthy"
+    },
+    {
+        "Name":  "/paysim-big-data-baseline-namenode-1",
+        "ContainerIdUnchanged":  true,
+        "StartedAtUnchanged":  true,
+        "Status":  "running",
+        "Health":  "healthy"
+    },
+    {
+        "Name":  "/paysim-big-data-baseline-datanode-1",
+        "ContainerIdUnchanged":  true,
+        "StartedAtUnchanged":  true,
+        "Status":  "running",
+        "Health":  null
+    }
+]

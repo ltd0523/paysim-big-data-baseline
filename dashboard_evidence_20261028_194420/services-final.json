@@ -1,0 +1,299 @@
+[
+  {
+    "Command": "\"/usr/local/bin/hdfs…\"",
+    "CreatedAt": "2026-10-26 16:14:42 +0700 +07",
+    "Engine": "",
+    "ExitCode": 0,
+    "Health": "",
+    "ID": "9daf5211571c",
+    "Image": "sha256:e7b6ef8980cbff36d440163f2b55a2d9b917b2db64e634bbfec91c8e473716a0",
+    "Labels": "com.docker.compose.container-number=1,com.docker.compose.oneoff=False,com.docker.compose.version=5.6.0,desktop.docker.io/binds/2/Source=D:\\BigData_PJ\\paysim-big-data-baseline\\hadoop\\hdfs-site.xml,desktop.docker.io/binds/2/Target=/opt/hadoop/etc/hadoop/hdfs-site.xml,desktop.docker.io/ports/9864/tcp=:9864,com.docker.compose.image=sha256:de5f1d07cb4721298889163c8351fa0525b64b7adbb171ca4f00b8bc1bea65ea,com.docker.compose.project.working_dir=D:\\BigData_PJ\\paysim-big-data-baseline,com.docker.compose.service=datanode,desktop.docker.io/binds/1/SourceKind=hostFile,desktop.docker.io/binds/1/Target=/opt/hadoop/etc/hadoop/core-site.xml,desktop.docker.io/ports.scheme=v2,com.docker.compose.depends_on=namenode:service_started:false,desktop.docker.io/binds/2/SourceKind=hostFile,org.opencontainers.image.version=24.04,com.docker.compose.config-hash=54bcf03f1672a872fdce692d1eccf2c826ac620c2328a053d8a5b7310063ba3d,com.docker.compose.project=paysim-big-data-baseline,com.docker.compose.project.config_files=D:\\BigData_PJ\\paysim-big-data-baseline\\docker-compose.yml,desktop.docker.io/binds/1/Source=D:\\BigData_PJ\\paysim-big-data-baseline\\hadoop\\core-site.xml",
+    "LocalVolumes": "1",
+    "Mounts": "paysim-big-dat…,/run/desktop/m…,/run/desktop/m…",
+    "Name": "paysim-big-data-baseline-datanode-1",
+    "Names": "paysim-big-data-baseline-datanode-1",
+    "Networks": "paysim-big-data-baseline_default",
+    "Ports": "0.0.0.0:9864->9864/tcp, [::]:9864->9864/tcp",
+    "Project": "paysim-big-data-baseline",
+    "Publishers": [
+      {
+        "URL": "0.0.0.0",
+        "TargetPort": 9864,
+        "PublishedPort": 9864,
+        "Protocol": "tcp"
+      },
+      {
+        "URL": "::",
+        "TargetPort": 9864,
+        "PublishedPort": 9864,
+        "Protocol": "tcp"
+      }
+    ],
+    "RunningFor": "2 days ago",
+    "Service": "datanode",
+    "Size": "0B",
+    "State": "running",
+    "Status": "Up 14 minutes"
+  },
+  {
+    "Command": "\"/bin/sh -c 'chown -…\"",
+    "CreatedAt": "2026-10-26 16:14:41 +0700 +07",
+    "Engine": "",
+    "ExitCode": 0,
+    "Health": "",
+    "ID": "6ac75de0d99a",
+    "Image": "sha256:77e8643b122fd8bdb35e35565759b907b9aa2d0909d1a526a6b16d9d3d6336e4",
+    "Labels": "com.docker.compose.version=5.6.0,com.docker.compose.config-hash=31b4741a1b793ce584eca54cd2ab90f8f161c07dda9c759150d0228a9027fbd3,com.docker.compose.container-number=1,com.docker.compose.project=paysim-big-data-baseline,com.docker.compose.service=hdfs-init,desktop.docker.io/ports.scheme=v2,org.opencontainers.image.version=24.04,com.docker.compose.depends_on=,com.docker.compose.image=sha256:a9f0239ddafc27222bfeeb222a5ad0421d1827e92058eeec75178ae4245bb69e,com.docker.compose.oneoff=False,com.docker.compose.project.config_files=D:\\BigData_PJ\\paysim-big-data-baseline\\docker-compose.yml,com.docker.compose.project.working_dir=D:\\BigData_PJ\\paysim-big-data-baseline",
+    "LocalVolumes": "2",
+    "Mounts": "paysim-big-dat…,paysim-big-dat…",
+    "Name": "paysim-big-data-baseline-hdfs-init-1",
+    "Names": "paysim-big-data-baseline-hdfs-init-1",
+    "Networks": "paysim-big-data-baseline_default",
+    "Ports": "",
+    "Project": "paysim-big-data-baseline",
+    "Publishers": [],
+    "RunningFor": "2 days ago",
+    "Service": "hdfs-init",
+    "Size": "0B",
+    "State": "exited",
+    "Status": "Exited (0) 14 minutes ago"
+  },
+  {
+    "Command": "\"/__cacert_entrypoin…\"",
+    "CreatedAt": "2026-10-26 16:14:41 +0700 +07",
+    "Engine": "",
+    "ExitCode": 0,
+    "Health": "healthy",
+    "ID": "408e9599789a",
+    "Image": "apache/kafka:4.0.0",
+    "Labels": "com.docker.compose.container-number=1,com.docker.compose.oneoff=False,com.docker.compose.project.config_files=D:\\BigData_PJ\\paysim-big-data-baseline\\docker-compose.yml,com.docker.compose.version=5.6.0,desktop.docker.io/ports/29092/tcp=:29092,com.docker.compose.project.working_dir=D:\\BigData_PJ\\paysim-big-data-baseline,com.docker.compose.service=kafka,maintainer=Apache Kafka,org.label-schema.build-date=2025-03-14,com.docker.compose.config-hash=4735c9a24d95958b082904093a5f01797814266afc0a23d3f054fec9624a692f,com.docker.compose.depends_on=,com.docker.compose.project=paysim-big-data-baseline,desktop.docker.io/ports.scheme=v2,com.docker.compose.image=sha256:01b9a4030e54c6068e66eb3ba4cb82c0d89238629ef1c30d79b86036bf89b1b7,org.label-schema.description=Apache Kafka,org.label-schema.name=kafka,org.label-schema.vcs-url=https://github.com/apache/kafka",
+    "LocalVolumes": "3",
+    "Mounts": "9813dc5d39754b…,5de968ac1c47ee…,paysim-big-dat…",
+    "Name": "paysim-big-data-baseline-kafka-1",
+    "Names": "paysim-big-data-baseline-kafka-1",
+    "Networks": "paysim-big-data-baseline_default",
+    "Ports": "0.0.0.0:29092->29092/tcp, [::]:29092->29092/tcp",
+    "Project": "paysim-big-data-baseline",
+    "Publishers": [
+      {
+        "URL": "0.0.0.0",
+        "TargetPort": 29092,
+        "PublishedPort": 29092,
+        "Protocol": "tcp"
+      },
+      {
+        "URL": "::",
+        "TargetPort": 29092,
+        "PublishedPort": 29092,
+        "Protocol": "tcp"
+      }
+    ],
+    "RunningFor": "2 days ago",
+    "Service": "kafka",
+    "Size": "0B",
+    "State": "running",
+    "Status": "Up 14 minutes (healthy)"
+  },
+  {
+    "Command": "\"/bin/bash -lc '/opt…\"",
+    "CreatedAt": "2026-10-26 16:14:42 +0700 +07",
+    "Engine": "",
+    "ExitCode": 0,
+    "Health": "",
+    "ID": "258d57ec357f",
+    "Image": "apache/kafka:4.0.0",
+    "Labels": "org.label-schema.name=kafka,org.label-schema.vcs-url=https://github.com/apache/kafka,com.docker.compose.config-hash=33ca2d0b9e94188ebe9864af9f788ac75a4977ecae25987688b200e2ed7b822c,com.docker.compose.depends_on=kafka:service_healthy:false,com.docker.compose.oneoff=False,maintainer=Apache Kafka,com.docker.compose.project=paysim-big-data-baseline,org.label-schema.description=Apache Kafka,com.docker.compose.project.working_dir=D:\\BigData_PJ\\paysim-big-data-baseline,com.docker.compose.service=kafka-init,com.docker.compose.version=5.6.0,desktop.docker.io/ports.scheme=v2,com.docker.compose.container-number=1,com.docker.compose.image=sha256:01b9a4030e54c6068e66eb3ba4cb82c0d89238629ef1c30d79b86036bf89b1b7,com.docker.compose.project.config_files=D:\\BigData_PJ\\paysim-big-data-baseline\\docker-compose.yml,org.label-schema.build-date=2025-03-14",
+    "LocalVolumes": "3",
+    "Mounts": "59fadd41b119b1…,3f607de9974069…,8d5e46c73d369c…",
+    "Name": "paysim-big-data-baseline-kafka-init-1",
+    "Names": "paysim-big-data-baseline-kafka-init-1",
+    "Networks": "paysim-big-data-baseline_default",
+    "Ports": "",
+    "Project": "paysim-big-data-baseline",
+    "Publishers": [],
+    "RunningFor": "2 days ago",
+    "Service": "kafka-init",
+    "Size": "0B",
+    "State": "exited",
+    "Status": "Exited (0) 14 minutes ago"
+  },
+  {
+    "Command": "\"docker-entrypoint.s…\"",
+    "CreatedAt": "2026-10-28 11:23:49 +0700 +07",
+    "Engine": "",
+    "ExitCode": 0,
+    "Health": "healthy",
+    "ID": "92600cd1eeca",
+    "Image": "mongo:8.0",
+    "Labels": "com.docker.compose.version=5.6.0,desktop.docker.io/ports.scheme=v2,com.docker.compose.image=sha256:8be83ffcebcaeb2aa1013b5a60418c6cc2521217bb079403ae4df79e2518678a,com.docker.compose.oneoff=False,com.docker.compose.project.config_files=D:\\BigData_PJ\\paysim-big-data-baseline\\docker-compose.yml,com.docker.compose.service=mongodb,desktop.docker.io/ports/27017/tcp=:27017,org.opencontainers.image.version=24.04,com.docker.compose.config-hash=279eb50052c6cd34ac4fc8c696e6744732ea39df48da5cf71c6d4cc2b7ee36c5,com.docker.compose.container-number=1,com.docker.compose.depends_on=,com.docker.compose.project=paysim-big-data-baseline,com.docker.compose.project.working_dir=D:\\BigData_PJ\\paysim-big-data-baseline,com.docker.compose.replace=mongodb-1",
+    "LocalVolumes": "2",
+    "Mounts": "3bbb03be55451d…,paysim-big-dat…",
+    "Name": "paysim-big-data-baseline-mongodb-1",
+    "Names": "paysim-big-data-baseline-mongodb-1",
+    "Networks": "paysim-big-data-baseline_default",
+    "Ports": "0.0.0.0:27017->27017/tcp, [::]:27017->27017/tcp",
+    "Project": "paysim-big-data-baseline",
+    "Publishers": [
+      {
+        "URL": "0.0.0.0",
+        "TargetPort": 27017,
+        "PublishedPort": 27017,
+        "Protocol": "tcp"
+      },
+      {
+        "URL": "::",
+        "TargetPort": 27017,
+        "PublishedPort": 27017,
+        "Protocol": "tcp"
+      }
+    ],
+    "RunningFor": "9 hours ago",
+    "Service": "mongodb",
+    "Size": "0B",
+    "State": "running",
+    "Status": "Up 31 minutes (healthy)"
+  },
+  {
+    "Command": "\"/usr/local/bin/hdfs…\"",
+    "CreatedAt": "2026-10-26 16:14:42 +0700 +07",
+    "Engine": "",
+    "ExitCode": 0,
+    "Health": "healthy",
+    "ID": "123e38e519e4",
+    "Image": "sha256:1662bd347af8b0aa3d2140a6e0c40eb35a8ee97443e510892fca9320d1b65829",
+    "Labels": "desktop.docker.io/ports/9000/tcp=:9000,org.opencontainers.image.version=24.04,com.docker.compose.container-number=1,com.docker.compose.service=namenode,desktop.docker.io/binds/1/SourceKind=hostFile,desktop.docker.io/binds/2/Source=D:\\BigData_PJ\\paysim-big-data-baseline\\hadoop\\hdfs-site.xml,desktop.docker.io/binds/2/Target=/opt/hadoop/etc/hadoop/hdfs-site.xml,desktop.docker.io/ports.scheme=v2,desktop.docker.io/ports/9870/tcp=:9870,com.docker.compose.oneoff=False,com.docker.compose.project.config_files=D:\\BigData_PJ\\paysim-big-data-baseline\\docker-compose.yml,desktop.docker.io/binds/1/Target=/opt/hadoop/etc/hadoop/core-site.xml,com.docker.compose.config-hash=55d3d833cff3dec5ac80de6a94fa3d97a3dddb6a2829fa1db29ea96f68feb80f,com.docker.compose.project.working_dir=D:\\BigData_PJ\\paysim-big-data-baseline,com.docker.compose.depends_on=hdfs-init:service_completed_successfully:false,com.docker.compose.image=sha256:f1ce7d616a12270ebb91f7ddc87a326de1a55f232c9453d125d95e689343139e,com.docker.compose.project=paysim-big-data-baseline,com.docker.compose.version=5.6.0,desktop.docker.io/binds/1/Source=D:\\BigData_PJ\\paysim-big-data-baseline\\hadoop\\core-site.xml,desktop.docker.io/binds/2/SourceKind=hostFile",
+    "LocalVolumes": "1",
+    "Mounts": "paysim-big-dat…,/run/desktop/m…,/run/desktop/m…",
+    "Name": "paysim-big-data-baseline-namenode-1",
+    "Names": "paysim-big-data-baseline-namenode-1",
+    "Networks": "paysim-big-data-baseline_default",
+    "Ports": "0.0.0.0:9000->9000/tcp, [::]:9000->9000/tcp, 0.0.0.0:9870->9870/tcp, [::]:9870->9870/tcp",
+    "Project": "paysim-big-data-baseline",
+    "Publishers": [
+      {
+        "URL": "0.0.0.0",
+        "TargetPort": 9000,
+        "PublishedPort": 9000,
+        "Protocol": "tcp"
+      },
+      {
+        "URL": "::",
+        "TargetPort": 9000,
+        "PublishedPort": 9000,
+        "Protocol": "tcp"
+      },
+      {
+        "URL": "0.0.0.0",
+        "TargetPort": 9870,
+        "PublishedPort": 9870,
+        "Protocol": "tcp"
+      },
+      {
+        "URL": "::",
+        "TargetPort": 9870,
+        "PublishedPort": 9870,
+        "Protocol": "tcp"
+      }
+    ],
+    "RunningFor": "2 days ago",
+    "Service": "namenode",
+    "Size": "0B",
+    "State": "running",
+    "Status": "Up 14 minutes (healthy)"
+  },
+  {
+    "Command": "\"python app.py\"",
+    "CreatedAt": "2026-10-28 19:58:31 +0700 +07",
+    "Engine": "",
+    "ExitCode": 0,
+    "Health": "",
+    "ID": "dcee8bcf2a6d",
+    "Image": "paysim-big-data-baseline-replayer",
+    "Labels": "com.docker.compose.depends_on=spark:service_healthy:false,mongodb:service_healthy:false,com.docker.compose.project.config_files=D:\\BigData_PJ\\paysim-big-data-baseline\\docker-compose.yml,desktop.docker.io/binds/0/SourceKind=hostFile,com.docker.compose.container-number=1,com.docker.compose.oneoff=False,com.docker.compose.project.working_dir=D:\\BigData_PJ\\paysim-big-data-baseline,com.docker.compose.service=replayer,com.docker.compose.version=5.6.0,desktop.docker.io/binds/0/Source=D:\\BigData_PJ\\paysim-big-data-baseline\\data\\paysim.csv,desktop.docker.io/binds/0/Target=/data/paysim.csv,com.docker.compose.project=paysim-big-data-baseline,com.docker.compose.replace=replayer-1,com.docker.compose.image=sha256:8466cc121bae2a007b0bd124ec48c2ce9b373bef8def1bc2c30c54e061239d54,desktop.docker.io/ports.scheme=v2,com.docker.compose.config-hash=04fd44561c53ada79ab64467ebb70ac17cf25aa0fb6d10b0275cca9e20d51c2c",
+    "LocalVolumes": "0",
+    "Mounts": "/run/desktop/m…",
+    "Name": "paysim-big-data-baseline-replayer-1",
+    "Names": "paysim-big-data-baseline-replayer-1",
+    "Networks": "paysim-big-data-baseline_default",
+    "Ports": "",
+    "Project": "paysim-big-data-baseline",
+    "Publishers": [],
+    "RunningFor": "14 minutes ago",
+    "Service": "replayer",
+    "Size": "0B",
+    "State": "running",
+    "Status": "Up 13 minutes"
+  },
+  {
+    "Command": "\"/opt/app/entrypoint…\"",
+    "CreatedAt": "2026-10-26 16:14:42 +0700 +07",
+    "Engine": "",
+    "ExitCode": 0,
+    "Health": "healthy",
+    "ID": "bc78f9b96f98",
+    "Image": "sha256:bd4b0e372f5ddff74c9c970b9c0fb5b9866964fd198029d61ac11c176ca84b80",
+    "Labels": "desktop.docker.io/binds/0/Target=/data/paysim.csv,desktop.docker.io/binds/1/Target=/opt/hadoop-conf/core-site.xml,desktop.docker.io/ports.scheme=v2,com.docker.compose.config-hash=1f8f1660ad921361e49bf964bb1a2376ce39bc5f43c28ba1e3a48b553228767e,com.docker.compose.depends_on=mongodb:service_healthy:false,kafka-init:service_completed_successfully:false,namenode:service_healthy:false,datanode:service_started:false,com.docker.compose.image=sha256:d736cf64431b59f9e3d1f9b395661c10081dc1308923be886124d08f0ef9d6c3,com.docker.compose.service=spark,desktop.docker.io/binds/1/SourceKind=hostFile,desktop.docker.io/binds/2/Source=D:\\BigData_PJ\\paysim-big-data-baseline\\hadoop\\hdfs-site.xml,desktop.docker.io/binds/2/SourceKind=hostFile,com.docker.compose.oneoff=False,com.docker.compose.project=paysim-big-data-baseline,desktop.docker.io/binds/2/Target=/opt/hadoop-conf/hdfs-site.xml,com.docker.compose.container-number=1,com.docker.compose.project.config_files=D:\\BigData_PJ\\paysim-big-data-baseline\\docker-compose.yml,desktop.docker.io/binds/0/Source=D:\\BigData_PJ\\paysim-big-data-baseline\\data\\paysim.csv,desktop.docker.io/binds/0/SourceKind=hostFile,desktop.docker.io/binds/1/Source=D:\\BigData_PJ\\paysim-big-data-baseline\\hadoop\\core-site.xml,desktop.docker.io/ports/4040/tcp=:4040,org.opencontainers.image.ref.name=ubuntu,org.opencontainers.image.version=22.04,com.docker.compose.project.working_dir=D:\\BigData_PJ\\paysim-big-data-baseline,com.docker.compose.version=5.6.0",
+    "LocalVolumes": "0",
+    "Mounts": "/run/desktop/m…,/run/desktop/m…,/run/desktop/m…",
+    "Name": "paysim-big-data-baseline-spark-1",
+    "Names": "paysim-big-data-baseline-spark-1",
+    "Networks": "paysim-big-data-baseline_default",
+    "Ports": "0.0.0.0:4040->4040/tcp, [::]:4040->4040/tcp",
+    "Project": "paysim-big-data-baseline",
+    "Publishers": [
+      {
+        "URL": "0.0.0.0",
+        "TargetPort": 4040,
+        "PublishedPort": 4040,
+        "Protocol": "tcp"
+      },
+      {
+        "URL": "::",
+        "TargetPort": 4040,
+        "PublishedPort": 4040,
+        "Protocol": "tcp"
+      }
+    ],
+    "RunningFor": "2 days ago",
+    "Service": "spark",
+    "Size": "0B",
+    "State": "running",
+    "Status": "Up 14 minutes (healthy)"
+  },
+  {
+    "Command": "\"streamlit run app.p…\"",
+    "CreatedAt": "2026-10-28 19:58:30 +0700 +07",
+    "Engine": "",
+    "ExitCode": 0,
+    "Health": "healthy",
+    "ID": "278ea6689421",
+    "Image": "paysim-big-data-baseline-streamlit",
+    "Labels": "com.docker.compose.project.working_dir=D:\\BigData_PJ\\paysim-big-data-baseline,com.docker.compose.replace=streamlit-1,com.docker.compose.service=streamlit,desktop.docker.io/ports/8501/tcp=:8501,com.docker.compose.container-number=1,com.docker.compose.oneoff=False,com.docker.compose.project.config_files=D:\\BigData_PJ\\paysim-big-data-baseline\\docker-compose.yml,com.docker.compose.version=5.6.0,desktop.docker.io/ports.scheme=v2,com.docker.compose.config-hash=a2bfcd9fc6a8c0e31c4b7c80ffd9498d764865b7eabff2604dfd8c1594e4510b,com.docker.compose.depends_on=spark:service_healthy:false,mongodb:service_healthy:false,com.docker.compose.image=sha256:458aeb84aa80804f9f083da1b33e70cf7c93245e8cb043ecebdf348fdfec3636,com.docker.compose.project=paysim-big-data-baseline",
+    "LocalVolumes": "0",
+    "Mounts": "",
+    "Name": "paysim-big-data-baseline-streamlit-1",
+    "Names": "paysim-big-data-baseline-streamlit-1",
+    "Networks": "paysim-big-data-baseline_default",
+    "Ports": "0.0.0.0:8501->8501/tcp, [::]:8501->8501/tcp",
+    "Project": "paysim-big-data-baseline",
+    "Publishers": [
+      {
+        "URL": "0.0.0.0",
+        "TargetPort": 8501,
+        "PublishedPort": 8501,
+        "Protocol": "tcp"
+      },
+      {
+        "URL": "::",
+        "TargetPort": 8501,
+        "PublishedPort": 8501,
+        "Protocol": "tcp"
+      }
+    ],
+    "RunningFor": "14 minutes ago",
+    "Service": "streamlit",
+    "Size": "0B",
+    "State": "running",
+    "Status": "Up 13 minutes (healthy)"
+  }
+]

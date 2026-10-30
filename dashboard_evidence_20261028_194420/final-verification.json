@@ -1,0 +1,113 @@
+{
+  "verified_at": "2026-10-28T13:15:14.770668+00:00",
+  "source_database_checks": {
+    "runs": {
+      "before": {
+        "count": 1,
+        "sha256": "6b1fdd42a8ae979558e8391e99a44d0afd18084956af7ec8bb12ad24a26018b6"
+      },
+      "after": {
+        "count": 1,
+        "sha256": "6b1fdd42a8ae979558e8391e99a44d0afd18084956af7ec8bb12ad24a26018b6"
+      },
+      "unchanged": true
+    },
+    "evaluation_totals": {
+      "before": {
+        "count": 1,
+        "sha256": "1ef47e7d6c24fd9f16eca35fce7184853d0600f86913cdc66526d54748b8ccd3"
+      },
+      "after": {
+        "count": 1,
+        "sha256": "d9c1fcf572b63cb0a08ae0b437802bfe5038a43bb56a965e836ba90dd1beb5a9"
+      },
+      "unchanged": false
+    },
+    "pipeline_metrics": {
+      "before": {
+        "count": 13,
+        "sha256": "4503b7e9da23a7808fdd586c2815ec64a87c9e05e2da321f603a154c9f683991"
+      },
+      "after": {
+        "count": 14,
+        "sha256": "2a8ae397e8e6159584ba0110771303c66b8b8ac8c72600887e952bcec90f3a21"
+      },
+      "unchanged": false
+    },
+    "live_aggregates": {
+      "before": {
+        "count": 5,
+        "sha256": "f5b085248ad360f60e494073da01eb0c6d1820e3ceae84b907ad247c870fb913"
+      },
+      "after": {
+        "count": 5,
+        "sha256": "4dc989e421eafefc05546ba87a80a98e5f38efec294b8e95b5648f18e0fcb6a5"
+      },
+      "unchanged": false
+    },
+    "fraud_alerts": {
+      "before": {
+        "count": 1238,
+        "sha256": "4350f756ca13311d23ce679ea14dc6a6669fe006c2a5256846a005a67657c7b5"
+      },
+      "after": {
+        "count": 1276,
+        "sha256": "2f65756b730dd47b23db47e2000af8e9b58cf1c6f0642df2a6dc08adbb6629b6"
+      },
+      "unchanged": false
+    },
+    "recent_transactions": {
+      "before": {
+        "count": 2000,
+        "sha256": "38e709c141c6b8539421304b9e77060ec842e9935f20811dee5eb0e57de34131"
+      },
+      "after": {
+        "count": 2000,
+        "sha256": "e98334463027594556b2fadd76fd01a7fb688ac6ab846f19f193613f5a854e28"
+      },
+      "unchanged": false
+    },
+    "system_metrics": {
+      "before": {
+        "count": 1,
+        "sha256": "cae724a4e33edca13241f07f8f3edd1abf3e21a2b448884334a65ec0f0cd5380"
+      },
+      "after": {
+        "count": 1,
+        "sha256": "acda357ba3dbffd3f9b72bcfd981c3637986d26ec5bf6db7f4356a1278b27b15"
+      },
+      "unchanged": false
+    }
+  },
+  "evidence_database_unchanged": {
+    "runs": true,
+    "evaluation_totals": true,
+    "pipeline_metrics": true,
+    "live_aggregates": true,
+    "fraud_alerts": true,
+    "recent_transactions": true,
+    "system_metrics": true
+  },
+  "source_sha256_final": {
+    "dashboard/app.py": "0bebb82a03d433cc30ba582b90546f6b6c4e17108f3d6984284c47a843335259",
+    "dashboard/dashboard_core.py": "b556177b5d83b1e56d1ea3e09d976944583f8ee91c29d9ea699b7d551527e959",
+    "dashboard/view_operations.py": "eaae0dce0533be11cf18cfd01e6bad6f2938e2f13e7729a552bcdffd5f16228f",
+    "dashboard/view_report.py": "9bf392bcf1995d1db4431169ac145cae3cd7d49021a3ff1551cc748d31d9537a",
+    "dashboard/view_studio.py": "bc822147bbe6344fe46ecf9b4eb04e318e641d719a5e14cbac6c60c2051e24e9",
+    "tests/test_dashboard.py": "771861dec141b0b25d708cffcb23afe2e569dc58141e4761aeb363e5b7d993b4",
+    "tests/snapshot_dashboard.py": "dfb130f9892c10ed05b84cd5dfc580dcadfa580de943a7fca1bc84f84ac51bee",
+    "tests/capture_dashboard.py": "3c4d5f829b075b45ab859133e76ef5f2f995107b105268b8ee1e2a119f036110",
+    "spark/pipeline.py": "6774589943823fee9200408f0eb34017bc884463d925a28f2e8afdc3066eb2fd",
+    "docker-compose.yml": "e3c04a4c7bdddecd715ea2c531283db67b473a06d06885526ea883a67d6ee89a",
+    "docs/05_Huong_Dan_Cai_Tien_Dashboard.md": "8aa2538c8165c6d8c81e8ae282dd802b0af1253cee6aa505445a768e3c699cd2",
+    "docs/06_Kiem_Thu_Dashboard_Va_Khoi_Dong.md": "ea28507a62b494e57509174c71c843fca3139b3df3ee2680e384cc4764a21ff2"
+  },
+  "live_source_unchanged_since_copy": false,
+  "source_note": "Live stack restarted after snapshot. Changes in paysim do not affect the isolated evidence database.",
+  "business_logic_and_view_source_unchanged": true,
+  "routing_changed_externally_and_preserved": true,
+  "desktop_pages": 16,
+  "mobile_pages": 16,
+  "png_files": 36,
+  "required_deliverables_present": true
+}

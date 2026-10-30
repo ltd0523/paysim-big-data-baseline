@@ -1,0 +1,42 @@
+docker : 2026-10-28 13:03:42.533 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': 
+missing ScriptRunContext! This warning can be ignored when running in bare mode.
+At line:2 char:166
++ ... ttempt.txt; docker exec paysim-track9-20261028-194420 /tmp/track9-ven ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2026-10-28 13:0...g in bare mode.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+2026-10-28 13:03:43.139 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in 
+bare mode.
+2026-10-28 13:03:43.540 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in 
+bare mode.
+2026-10-28 13:03:44.082 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in 
+bare mode.
+2026-10-28 13:03:44.583 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in 
+bare mode.
+Traceback (most recent call last):
+  File "/evidence/audit_visual_data.py", line 49, in <module>
+    app.selectbox[0].set_value(index).run()
+  File "/usr/local/lib/python3.11/site-packages/streamlit/testing/v1/element_tree.py", line 151, in run
+    return self.root.run(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/streamlit/testing/v1/element_tree.py", line 1909, in run
+    widget_states = self.get_widget_states()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/streamlit/testing/v1/element_tree.py", line 1892, in get_widget_states
+    w = get_widget_state(node)
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/streamlit/testing/v1/element_tree.py", line 1836, in get_widget_state
+    return node._widget_state
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/streamlit/testing/v1/element_tree.py", line 715, in _widget_state
+    ws.int_array_value.data[:] = self.indices
+                                 ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/streamlit/testing/v1/element_tree.py", line 730, in indices
+    return [self.options.index(self.format_func(v)) for v in self.value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/streamlit/testing/v1/element_tree.py", line 730, in <listcomp>
+    return [self.options.index(self.format_func(v)) for v in self.value]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: content_icon: "🔎"
+ is not in list

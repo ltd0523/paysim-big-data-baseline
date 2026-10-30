@@ -1,0 +1,146 @@
+[
+  {
+    "view": "operations",
+    "page": "📡 Live Control Room",
+    "device": "desktop",
+    "six_kpis_and_deltas_equal_before": true
+  },
+  {
+    "view": "operations",
+    "page": "🎯 Metrics theo 10 tracks",
+    "device": "desktop",
+    "six_kpis_and_deltas_equal_before": true
+  },
+  {
+    "view": "operations",
+    "page": "🛡️ Fraud & Business",
+    "device": "desktop",
+    "six_kpis_and_deltas_equal_before": true
+  },
+  {
+    "view": "operations",
+    "page": "🔎 Dòng dữ liệu mới",
+    "device": "desktop",
+    "six_kpis_and_deltas_equal_before": true
+  },
+  {
+    "view": "report",
+    "page": "📡 Live Control Room",
+    "device": "desktop",
+    "six_kpis_and_deltas_equal_before": true
+  },
+  {
+    "view": "report",
+    "page": "🎯 Metrics theo 10 tracks",
+    "device": "desktop",
+    "six_kpis_and_deltas_equal_before": true
+  },
+  {
+    "view": "report",
+    "page": "🛡️ Fraud & Business",
+    "device": "desktop",
+    "six_kpis_and_deltas_equal_before": true
+  },
+  {
+    "view": "report",
+    "page": "🔎 Dòng dữ liệu mới",
+    "device": "desktop",
+    "six_kpis_and_deltas_equal_before": true
+  },
+  {
+    "view": "studio",
+    "page": "📡 Live Control Room",
+    "device": "desktop",
+    "six_kpis_and_deltas_equal_before": true
+  },
+  {
+    "view": "studio",
+    "page": "🎯 Metrics theo 10 tracks",
+    "device": "desktop",
+    "six_kpis_and_deltas_equal_before": true
+  },
+  {
+    "view": "studio",
+    "page": "🛡️ Fraud & Business",
+    "device": "desktop",
+    "six_kpis_and_deltas_equal_before": true
+  },
+  {
+    "view": "studio",
+    "page": "🔎 Dòng dữ liệu mới",
+    "device": "desktop",
+    "six_kpis_and_deltas_equal_before": true
+  },
+  {
+    "view": "operations",
+    "page": "📡 Live Control Room",
+    "device": "mobile",
+    "six_kpis_and_deltas_equal_before": true
+  },
+  {
+    "view": "operations",
+    "page": "🎯 Metrics theo 10 tracks",
+    "device": "mobile",
+    "six_kpis_and_deltas_equal_before": true
+  },
+  {
+    "view": "operations",
+    "page": "🛡️ Fraud & Business",
+    "device": "mobile",
+    "six_kpis_and_deltas_equal_before": true
+  },
+  {
+    "view": "operations",
+    "page": "🔎 Dòng dữ liệu mới",
+    "device": "mobile",
+    "six_kpis_and_deltas_equal_before": true
+  },
+  {
+    "view": "report",
+    "page": "📡 Live Control Room",
+    "device": "mobile",
+    "six_kpis_and_deltas_equal_before": true
+  },
+  {
+    "view": "report",
+    "page": "🎯 Metrics theo 10 tracks",
+    "device": "mobile",
+    "six_kpis_and_deltas_equal_before": true
+  },
+  {
+    "view": "report",
+    "page": "🛡️ Fraud & Business",
+    "device": "mobile",
+    "six_kpis_and_deltas_equal_before": true
+  },
+  {
+    "view": "report",
+    "page": "🔎 Dòng dữ liệu mới",
+    "device": "mobile",
+    "six_kpis_and_deltas_equal_before": true
+  },
+  {
+    "view": "studio",
+    "page": "📡 Live Control Room",
+    "device": "mobile",
+    "six_kpis_and_deltas_equal_before": true
+  },
+  {
+    "view": "studio",
+    "page": "🎯 Metrics theo 10 tracks",
+    "device": "mobile",
+    "six_kpis_and_deltas_equal_before": true
+  },
+  {
+    "view": "studio",
+    "page": "🛡️ Fraud & Business",
+    "device": "mobile",
+    "six_kpis_and_deltas_equal_before": true
+  },
+  {
+    "view": "studio",
+    "page": "🔎 Dòng dữ liệu mới",
+    "device": "mobile",
+    "six_kpis_and_deltas_equal_before": true
+  }
+]

@@ -1,0 +1,4874 @@
+[
+  {
+    "page": "📡 Live Control Room",
+    "viewport": [
+      1366,
+      768
+    ],
+    "screenshot": "1-1366x768.png",
+    "browser_errors": [],
+    "streamlit_exceptions": [],
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ",
+        "rect": {
+          "x": 280,
+          "y": 192.375,
+          "width": 339.328125,
+          "height": 137.390625,
+          "top": 192.375,
+          "right": 619.328125,
+          "bottom": 329.765625,
+          "left": 280
+        },
+        "overflow": false
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 639.328125,
+          "y": 192.375,
+          "width": 339.34375,
+          "height": 136,
+          "top": 192.375,
+          "right": 978.671875,
+          "bottom": 328.375,
+          "left": 639.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 998.671875,
+          "y": 192.375,
+          "width": 339.328125,
+          "height": 136,
+          "top": 192.375,
+          "right": 1338,
+          "bottom": 328.375,
+          "left": 998.671875
+        },
+        "overflow": false
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "19.97%",
+        "rect": {
+          "x": 1083.5,
+          "y": 386.953125,
+          "width": 254.5,
+          "height": 129.390625,
+          "top": 386.953125,
+          "right": 1338,
+          "bottom": 516.34375,
+          "left": 1083.5
+        },
+        "overflow": false
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "rect": {
+          "x": 1083.5,
+          "y": 590.71875,
+          "width": 254.5,
+          "height": 126,
+          "top": 590.71875,
+          "right": 1338,
+          "bottom": 716.71875,
+          "left": 1083.5
+        },
+        "overflow": false
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": "",
+        "rect": {
+          "x": 1083.5,
+          "y": 734.71875,
+          "width": 254.5,
+          "height": 126,
+          "top": 734.71875,
+          "right": 1338,
+          "bottom": 860.71875,
+          "left": 1083.5
+        },
+        "overflow": false
+      }
+    ],
+    "documentWidth": 1366,
+    "viewportWidth": 1366,
+    "sidebarWidth": 252,
+    "captionsOpaque": true,
+    "charts": [
+      {
+        "x": 301,
+        "y": 404.359375,
+        "width": 741.5,
+        "height": 340,
+        "top": 404.359375,
+        "right": 1042.5,
+        "bottom": 744.359375,
+        "left": 301
+      },
+      {
+        "x": 301,
+        "y": 827.953125,
+        "width": 339.75,
+        "height": 220,
+        "top": 827.953125,
+        "right": 640.75,
+        "bottom": 1047.953125,
+        "left": 301
+      },
+      {
+        "x": 702.75,
+        "y": 827.953125,
+        "width": 339.75,
+        "height": 220,
+        "top": 827.953125,
+        "right": 1042.5,
+        "bottom": 1047.953125,
+        "left": 702.75
+      },
+      {
+        "x": 322,
+        "y": 1411.203125,
+        "width": 974,
+        "height": 150,
+        "top": 1411.203125,
+        "right": 1296,
+        "bottom": 1561.203125,
+        "left": 322
+      }
+    ],
+    "expanderStyle": {
+      "color": "rgb(241, 245, 249)",
+      "background": "rgb(27, 43, 64)"
+    },
+    "body": "PAYSIM / OPERATIONS\nOperations Center\nPaySim Big Data / Stream Monitoring\nRUN · STOPPED\nRun ID · run-20261028-042515\nChu kỳ cập nhật · 2 giây\n\nSpark đã xử lý\n\n6,200\n200 đang chờ\n\nIngest hiện tại\n\n50.0 ev/s\n\nProcessing throughput\n\n40.2 ev/s\nTốc độ ingest và xử lý\n06:00\n09:00\n12:00\n0\n20\n40\n60\n80\n100\n120\nEvents/s\nIngest\nProcessing\nKafka consumer lag\n06:00\n09:00\n12:00\n0\n200\n400\n600\nEvents\nEvents đang chờ\nLatency p95\n06:00\n09:00\n12:00\n0\n10,000,000\n20,000,000\n30,000,000\nms\nIngest p95\nEnd-to-end p95\nGiám sát\n\nFraud alerts\n\n1,238\n19.97%\n\nAlert rate · Cảnh báo cần xem xét, chưa phải gian lận đã xác nhận.\n\nEnd-to-end latency p95\n\n29,763,813 ms\n\nNguồn đã phát\n\n6,400\n\nTiến độ vòng dữ liệu\n\nVòng dữ liệu 1\n\n0.10%\n\nDòng 6,400/6,362,620\n\nĐối soát dữ liệu\n\nPASS\nKiểm tra tổng aggregate và số alerts với evaluation của run.\nMicro-batch History\n\n60 micro-batch gần nhất · Giữ nguyên đơn vị và dữ liệu telemetry.\n\nkeyboard_arrow_down\n\nBatch Duration và nhật ký\n\nThời gian mỗi micro-batch\n06:00\n09:00\n12:00\n0\n5\n10\n15\nSeconds\nBatch duration"
+  },
+  {
+    "page": "🎯 Metrics theo 10 tracks",
+    "viewport": [
+      1366,
+      768
+    ],
+    "screenshot": "2-1366x768.png",
+    "browser_errors": [],
+    "streamlit_exceptions": [],
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ",
+        "rect": {
+          "x": 280,
+          "y": 192.375,
+          "width": 339.328125,
+          "height": 137.390625,
+          "top": 192.375,
+          "right": 619.328125,
+          "bottom": 329.765625,
+          "left": 280
+        },
+        "overflow": false
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 639.328125,
+          "y": 192.375,
+          "width": 339.34375,
+          "height": 136,
+          "top": 192.375,
+          "right": 978.671875,
+          "bottom": 328.375,
+          "left": 639.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 998.671875,
+          "y": 192.375,
+          "width": 339.328125,
+          "height": 136,
+          "top": 192.375,
+          "right": 1338,
+          "bottom": 328.375,
+          "left": 998.671875
+        },
+        "overflow": false
+      },
+      {
+        "label": "Ingest throughput",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 554.546875,
+          "width": 237.15625,
+          "height": 136,
+          "top": 554.546875,
+          "right": 533.15625,
+          "bottom": 690.546875,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Consumer lag",
+        "value": "200",
+        "delta": "",
+        "rect": {
+          "x": 553.15625,
+          "y": 554.546875,
+          "width": 237.171875,
+          "height": 136,
+          "top": 554.546875,
+          "right": 790.328125,
+          "bottom": 690.546875,
+          "left": 553.15625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Ingest latency p95",
+        "value": "28 ms",
+        "delta": "",
+        "rect": {
+          "x": 810.328125,
+          "y": 554.546875,
+          "width": 237.171875,
+          "height": 136,
+          "top": 554.546875,
+          "right": 1047.5,
+          "bottom": 690.546875,
+          "left": 810.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Storage size",
+        "value": "62.7 MB",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 883.703125,
+          "width": 237.15625,
+          "height": 136,
+          "top": 883.703125,
+          "right": 533.15625,
+          "bottom": 1019.703125,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Read duration",
+        "value": "Benchmark-only",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 1058.890625,
+          "width": 237.15625,
+          "height": 160,
+          "top": 1058.890625,
+          "right": 533.15625,
+          "bottom": 1218.890625,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Compression ratio",
+        "value": "0.12×",
+        "delta": "",
+        "rect": {
+          "x": 553.15625,
+          "y": 883.703125,
+          "width": 237.171875,
+          "height": 136,
+          "top": 883.703125,
+          "right": 790.328125,
+          "bottom": 1019.703125,
+          "left": 553.15625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Small files",
+        "value": "1,972",
+        "delta": "",
+        "rect": {
+          "x": 553.15625,
+          "y": 1058.890625,
+          "width": 237.171875,
+          "height": 136,
+          "top": 1058.890625,
+          "right": 790.328125,
+          "bottom": 1194.890625,
+          "left": 553.15625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Write duration",
+        "value": "4.42 s",
+        "delta": "",
+        "rect": {
+          "x": 810.328125,
+          "y": 883.703125,
+          "width": 237.171875,
+          "height": 136,
+          "top": 883.703125,
+          "right": 1047.5,
+          "bottom": 1019.703125,
+          "left": 810.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Bad record rate",
+        "value": "0.00%",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 1412.046875,
+          "width": 237.15625,
+          "height": 136,
+          "top": 1412.046875,
+          "right": 533.15625,
+          "bottom": 1548.046875,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Event completeness",
+        "value": "100.00%",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 1587.234375,
+          "width": 237.15625,
+          "height": 136,
+          "top": 1587.234375,
+          "right": 533.15625,
+          "bottom": 1723.234375,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Duplicates removed",
+        "value": "0",
+        "delta": "",
+        "rect": {
+          "x": 553.15625,
+          "y": 1412.046875,
+          "width": 237.171875,
+          "height": 136,
+          "top": 1412.046875,
+          "right": 790.328125,
+          "bottom": 1548.046875,
+          "left": 553.15625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Transformation",
+        "value": "PASS",
+        "delta": "",
+        "rect": {
+          "x": 553.15625,
+          "y": 1587.234375,
+          "width": 237.171875,
+          "height": 136,
+          "top": 1587.234375,
+          "right": 790.328125,
+          "bottom": 1723.234375,
+          "left": 553.15625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Late event rate",
+        "value": "0.00%",
+        "delta": "",
+        "rect": {
+          "x": 810.328125,
+          "y": 1412.046875,
+          "width": 237.171875,
+          "height": 136,
+          "top": 1412.046875,
+          "right": 1047.5,
+          "bottom": 1548.046875,
+          "left": 810.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Micro-batch",
+        "value": "12.45 s",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 1916.390625,
+          "width": 237.15625,
+          "height": 136,
+          "top": 1916.390625,
+          "right": 533.15625,
+          "bottom": 2052.390625,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Late events handled",
+        "value": "0",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 2091.578125,
+          "width": 237.15625,
+          "height": 136,
+          "top": 2091.578125,
+          "right": 533.15625,
+          "bottom": 2227.578125,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 553.15625,
+          "y": 1916.390625,
+          "width": 237.171875,
+          "height": 136,
+          "top": 1916.390625,
+          "right": 790.328125,
+          "bottom": 2052.390625,
+          "left": 553.15625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Processing latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "rect": {
+          "x": 810.328125,
+          "y": 1916.390625,
+          "width": 237.171875,
+          "height": 160,
+          "top": 1916.390625,
+          "right": 1047.5,
+          "bottom": 2076.390625,
+          "left": 810.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Query duration",
+        "value": "344.4 ms",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 2420.734375,
+          "width": 237.15625,
+          "height": 136,
+          "top": 2420.734375,
+          "right": 533.15625,
+          "bottom": 2556.734375,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Partition pruning",
+        "value": "run_id / type",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 2595.921875,
+          "width": 237.15625,
+          "height": 136,
+          "top": 2595.921875,
+          "right": 533.15625,
+          "bottom": 2731.921875,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Aggregate correctness",
+        "value": "PASS",
+        "delta": "",
+        "rect": {
+          "x": 553.15625,
+          "y": 2420.734375,
+          "width": 237.171875,
+          "height": 136,
+          "top": 2420.734375,
+          "right": 790.328125,
+          "bottom": 2556.734375,
+          "left": 553.15625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Scan size",
+        "value": "Benchmark-only",
+        "delta": "",
+        "rect": {
+          "x": 810.328125,
+          "y": 2420.734375,
+          "width": 237.171875,
+          "height": 160,
+          "top": 2420.734375,
+          "right": 1047.5,
+          "bottom": 2580.734375,
+          "left": 810.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "PR-AUC",
+        "value": "70.45%",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 2925.078125,
+          "width": 237.15625,
+          "height": 136,
+          "top": 2925.078125,
+          "right": 533.15625,
+          "bottom": 3061.078125,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "F1",
+        "value": "8.06%",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 3100.265625,
+          "width": 237.15625,
+          "height": 136,
+          "top": 3100.265625,
+          "right": 533.15625,
+          "bottom": 3236.265625,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Recall@K",
+        "value": "100.00%",
+        "delta": "",
+        "rect": {
+          "x": 553.15625,
+          "y": 2925.078125,
+          "width": 237.171875,
+          "height": 136,
+          "top": 2925.078125,
+          "right": 790.328125,
+          "bottom": 3061.078125,
+          "left": 553.15625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Scoring latency",
+        "value": "3,535.7 ms/1K",
+        "delta": "",
+        "rect": {
+          "x": 553.15625,
+          "y": 3100.265625,
+          "width": 237.171875,
+          "height": 160,
+          "top": 3100.265625,
+          "right": 790.328125,
+          "bottom": 3260.265625,
+          "left": 553.15625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Precision@K",
+        "value": "6.00%",
+        "delta": "",
+        "rect": {
+          "x": 810.328125,
+          "y": 2925.078125,
+          "width": 237.171875,
+          "height": 136,
+          "top": 2925.078125,
+          "right": 1047.5,
+          "bottom": 3061.078125,
+          "left": 810.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Precision@K",
+        "value": "6.00%",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 3453.421875,
+          "width": 237.15625,
+          "height": 136,
+          "top": 3453.421875,
+          "right": 533.15625,
+          "bottom": 3589.421875,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Alert volume",
+        "value": "1,238",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 3628.609375,
+          "width": 237.15625,
+          "height": 136,
+          "top": 3628.609375,
+          "right": 533.15625,
+          "bottom": 3764.609375,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Recall@K",
+        "value": "100.00%",
+        "delta": "",
+        "rect": {
+          "x": 553.15625,
+          "y": 3453.421875,
+          "width": 237.171875,
+          "height": 136,
+          "top": 3453.421875,
+          "right": 790.328125,
+          "bottom": 3589.421875,
+          "left": 553.15625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Alert rate",
+        "value": "19.97%",
+        "delta": "",
+        "rect": {
+          "x": 553.15625,
+          "y": 3628.609375,
+          "width": 237.171875,
+          "height": 136,
+          "top": 3628.609375,
+          "right": 790.328125,
+          "bottom": 3764.609375,
+          "left": 553.15625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Fraud in Top-K",
+        "value": "6/100",
+        "delta": "",
+        "rect": {
+          "x": 810.328125,
+          "y": 3453.421875,
+          "width": 237.171875,
+          "height": 136,
+          "top": 3453.421875,
+          "right": 1047.5,
+          "bottom": 3589.421875,
+          "left": 810.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Mongo write latency",
+        "value": "496.1 ms",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 3957.765625,
+          "width": 237.15625,
+          "height": 136,
+          "top": 3957.765625,
+          "right": 533.15625,
+          "bottom": 4093.765625,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Query latency",
+        "value": "12.3 ms",
+        "delta": "",
+        "rect": {
+          "x": 553.15625,
+          "y": 3957.765625,
+          "width": 237.171875,
+          "height": 136,
+          "top": 3957.765625,
+          "right": 790.328125,
+          "bottom": 4093.765625,
+          "left": 553.15625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Write success",
+        "value": "100.00%",
+        "delta": "",
+        "rect": {
+          "x": 810.328125,
+          "y": 3957.765625,
+          "width": 237.171875,
+          "height": 136,
+          "top": 3957.765625,
+          "right": 1047.5,
+          "bottom": 4093.765625,
+          "left": 810.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Dashboard freshness",
+        "value": "73,953.2 s",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 4286.921875,
+          "width": 237.15625,
+          "height": 136,
+          "top": 4286.921875,
+          "right": 533.15625,
+          "bottom": 4422.921875,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Snapshot response",
+        "value": "12.3 ms",
+        "delta": "",
+        "rect": {
+          "x": 553.15625,
+          "y": 4286.921875,
+          "width": 237.171875,
+          "height": 136,
+          "top": 4286.921875,
+          "right": 790.328125,
+          "bottom": 4422.921875,
+          "left": 553.15625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Display correctness",
+        "value": "PASS",
+        "delta": "",
+        "rect": {
+          "x": 810.328125,
+          "y": 4286.921875,
+          "width": 237.171875,
+          "height": 136,
+          "top": 4286.921875,
+          "right": 1047.5,
+          "bottom": 4422.921875,
+          "left": 810.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Recovery time",
+        "value": "16.3 s",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 4616.078125,
+          "width": 237.15625,
+          "height": 136,
+          "top": 4616.078125,
+          "right": 533.15625,
+          "bottom": 4752.078125,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Pipeline status",
+        "value": "RUNNING",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 4791.265625,
+          "width": 237.15625,
+          "height": 136,
+          "top": 4791.265625,
+          "right": 533.15625,
+          "bottom": 4927.265625,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Event loss",
+        "value": "0",
+        "delta": "",
+        "rect": {
+          "x": 553.15625,
+          "y": 4616.078125,
+          "width": 237.171875,
+          "height": 136,
+          "top": 4616.078125,
+          "right": 790.328125,
+          "bottom": 4752.078125,
+          "left": 553.15625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Spark starts",
+        "value": "3",
+        "delta": "",
+        "rect": {
+          "x": 553.15625,
+          "y": 4791.265625,
+          "width": 237.171875,
+          "height": 136,
+          "top": 4791.265625,
+          "right": 790.328125,
+          "bottom": 4927.265625,
+          "left": 553.15625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Duplicates after restart",
+        "value": "0",
+        "delta": "",
+        "rect": {
+          "x": 810.328125,
+          "y": 4616.078125,
+          "width": 237.171875,
+          "height": 136,
+          "top": 4616.078125,
+          "right": 1047.5,
+          "bottom": 4752.078125,
+          "left": 810.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "19.97%",
+        "rect": {
+          "x": 1083.5,
+          "y": 386.953125,
+          "width": 254.5,
+          "height": 129.390625,
+          "top": 386.953125,
+          "right": 1338,
+          "bottom": 516.34375,
+          "left": 1083.5
+        },
+        "overflow": false
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "rect": {
+          "x": 1083.5,
+          "y": 590.71875,
+          "width": 254.5,
+          "height": 126,
+          "top": 590.71875,
+          "right": 1338,
+          "bottom": 716.71875,
+          "left": 1083.5
+        },
+        "overflow": false
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": "",
+        "rect": {
+          "x": 1083.5,
+          "y": 734.71875,
+          "width": 254.5,
+          "height": 126,
+          "top": 734.71875,
+          "right": 1338,
+          "bottom": 860.71875,
+          "left": 1083.5
+        },
+        "overflow": false
+      }
+    ],
+    "documentWidth": 1366,
+    "viewportWidth": 1366,
+    "sidebarWidth": 252,
+    "captionsOpaque": true,
+    "charts": [],
+    "expanderStyle": null,
+    "body": "PAYSIM / OPERATIONS\nOperations Center\nPaySim Big Data / Stream Monitoring\nRUN · STOPPED\nRun ID · run-20261028-042515\nChu kỳ cập nhật · 2 giây\n\nSpark đã xử lý\n\n6,200\n200 đang chờ\n\nIngest hiện tại\n\n50.0 ev/s\n\nProcessing throughput\n\n40.2 ev/s\n\nMetric live thay đổi theo từng micro-batch. Những metric ghi “Benchmark-only” cần chạy protocol before/after riêng và không được giả lập từ live telemetry.\n\n01. Ingestion\n\nReplayer → Kafka → Spark consumer\n\nIngest throughput\n\n50.0 ev/s\ningest_throughput\n\nConsumer lag\n\n200\nconsumer_lag\n\nIngest latency p95\n\n28 ms\ningest_latency_p95\n\nGuardrail: Delivery errors=0; duplicates injected=0\n\n02. Storage\n\nHDFS Bronze / Silver / Gold\n\nStorage size\n\n62.7 MB\nstorage_size\n\nRead duration\n\nBenchmark-only\nread_duration\n\nCompression ratio\n\n0.12×\ncompression_ratio\n\nSmall files\n\n1,972\nsmall_file_count\n\nWrite duration\n\n4.42 s\nwrite_duration\n\nGuardrail: Processed records=6,200; HDFS record guardrail được đối chiếu qua pipeline count\n\n03. Data Quality\n\nValidate, deduplicate, null và late event\n\nBad record rate\n\n0.00%\nbad_record_rate\n\nEvent completeness\n\n100.00%\nevent_completeness\n\nDuplicates removed\n\n0\nduplicate_removed\n\nTransformation\n\nPASS\ntransformation_correctness\n\nLate event rate\n\n0.00%\nlate_event_rate\n\nGuardrail: Ground truth missing=0\n\n04. Stream Processing\n\nSpark Structured Streaming\n\nMicro-batch\n\n12.45 s\nmicrobatch_duration\n\nLate events handled\n\n0\nlate_event_handling\n\nProcessing throughput\n\n40.2 ev/s\nprocessing_throughput\n\nProcessing latency p95\n\n29,763,813 ms\nprocessing_latency_p95\n\nGuardrail: Lag=200; duplicates removed=0\n\n05. SQL Analytics\n\nSpark SQL rule và aggregate nghiệp vụ\n\nQuery duration\n\n344.4 ms\nquery_duration\n\nPartition pruning\n\nrun_id / type\npartition_pruning\n\nAggregate correctness\n\nPASS\naggregate_correctness\n\nScan size\n\nBenchmark-only\nscan_size\n\nGuardrail: Semantics aggregate giữ nguyên; expected output khớp processed count\n\n06. Fraud Detection\n\nSpark MLlib model và feature\n\nPR-AUC\n\n70.45%\npr_auc (latest batch)\n\nF1\n\n8.06%\nf1\n\nRecall@K\n\n100.00%\nrecall_at_k\n\nScoring latency\n\n3,535.7 ms/1K\nscoring_latency\n\nPrecision@K\n\n6.00%\nprecision_at_k\n\nGuardrail: Alert rate=19.97%; feature set không dùng label\n\n07. Alert Optimization\n\nRisk score, threshold và Top-K\n\nPrecision@K\n\n6.00%\nprecision_at_k\n\nAlert volume\n\n1,238\nalert_volume\n\nRecall@K\n\n100.00%\nrecall_at_k\n\nAlert rate\n\n19.97%\nalert_rate\n\nFraud in Top-K\n\n6/100\nfraud_in_top_k\n\nGuardrail: Threshold=0.50; recall tổng và evaluation set không bị thay đổi\n\n08. Serving\n\nMongoDB document, index và query\n\nMongo write latency\n\n496.1 ms\nmongo_write_latency\n\nQuery latency\n\n12.3 ms\nquery_latency (snapshot)\n\nWrite success\n\n100.00%\nwrite_success_rate\n\nGuardrail: Alert count=1,238; Gold-to-serving count được kiểm tra live\n\n09. Dashboard\n\nStreamlit query, cache và hiển thị\n\nDashboard freshness\n\n73,953.2 s\ndashboard_freshness\n\nSnapshot response\n\n12.3 ms\ndashboard_response_time\n\nDisplay correctness\n\nPASS\ndisplay_correctness\n\nGuardrail: Refresh 2 giây; metric definitions lấy trực tiếp từ telemetry canonical\n\n10. Reliability\n\nCheckpoint, persistence và restart\n\nRecovery time\n\n16.3 s\nrecovery_time\n\nPipeline status\n\nRUNNING\npipeline_run_success\n\nEvent loss\n\n0\nevent_loss_after_restart\n\nSpark starts\n\n3\nrestart_count\n\nDuplicates after restart\n\n0\nduplicate_after_restart\n\nGuardrail: Checkpoint HDFS active; processed=6,200; lag=200\n\nGiám sát\n\nFraud alerts\n\n1,238\n19.97%\n\nAlert rate · Cảnh báo cần xem xét, chưa phải gian lận đã xác nhận.\n\nEnd-to-end latency p95\n\n29,763,813 ms\n\nNguồn đã phát\n\n6,400\n\nTiến độ vòng dữ liệu\n\nVòng dữ liệu 1\n\n0.10%\n\nDòng 6,400/6,362,620\n\nĐối soát dữ liệu\n\nPASS\nKiểm tra tổng aggregate và số alerts với evaluation của run."
+  },
+  {
+    "page": "🛡️ Fraud & Business",
+    "viewport": [
+      1366,
+      768
+    ],
+    "screenshot": "3-1366x768.png",
+    "browser_errors": [],
+    "streamlit_exceptions": [],
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ",
+        "rect": {
+          "x": 280,
+          "y": 192.375,
+          "width": 339.328125,
+          "height": 137.390625,
+          "top": 192.375,
+          "right": 619.328125,
+          "bottom": 329.765625,
+          "left": 280
+        },
+        "overflow": false
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 639.328125,
+          "y": 192.375,
+          "width": 339.34375,
+          "height": 136,
+          "top": 192.375,
+          "right": 978.671875,
+          "bottom": 328.375,
+          "left": 639.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 998.671875,
+          "y": 192.375,
+          "width": 339.328125,
+          "height": 136,
+          "top": 192.375,
+          "right": 1338,
+          "bottom": 328.375,
+          "left": 998.671875
+        },
+        "overflow": false
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "19.97%",
+        "rect": {
+          "x": 1083.5,
+          "y": 386.953125,
+          "width": 254.5,
+          "height": 129.390625,
+          "top": 386.953125,
+          "right": 1338,
+          "bottom": 516.34375,
+          "left": 1083.5
+        },
+        "overflow": false
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "rect": {
+          "x": 1083.5,
+          "y": 590.71875,
+          "width": 254.5,
+          "height": 126,
+          "top": 590.71875,
+          "right": 1338,
+          "bottom": 716.71875,
+          "left": 1083.5
+        },
+        "overflow": false
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": "",
+        "rect": {
+          "x": 1083.5,
+          "y": 734.71875,
+          "width": 254.5,
+          "height": 126,
+          "top": 734.71875,
+          "right": 1338,
+          "bottom": 860.71875,
+          "left": 1083.5
+        },
+        "overflow": false
+      }
+    ],
+    "documentWidth": 1366,
+    "viewportWidth": 1366,
+    "sidebarWidth": 252,
+    "captionsOpaque": true,
+    "charts": [
+      {
+        "x": 681.75,
+        "y": 386.953125,
+        "width": 381.75,
+        "height": 260,
+        "top": 386.953125,
+        "right": 1063.5,
+        "bottom": 646.953125,
+        "left": 681.75
+      },
+      {
+        "x": 280,
+        "y": 692.140625,
+        "width": 783.5,
+        "height": 310,
+        "top": 692.140625,
+        "right": 1063.5,
+        "bottom": 1002.140625,
+        "left": 280
+      },
+      {
+        "x": 280,
+        "y": 1047.328125,
+        "width": 783.5,
+        "height": 360,
+        "top": 1047.328125,
+        "right": 1063.5,
+        "bottom": 1407.328125,
+        "left": 280
+      }
+    ],
+    "expanderStyle": null,
+    "body": "PAYSIM / OPERATIONS\nOperations Center\nPaySim Big Data / Stream Monitoring\nRUN · STOPPED\nRun ID · run-20261028-042515\nChu kỳ cập nhật · 2 giây\n\nSpark đã xử lý\n\n6,200\n200 đang chờ\n\nIngest hiện tại\n\n50.0 ev/s\n\nProcessing throughput\n\n40.2 ev/s\nRule baseline vs Spark MLlib\nConfusion matrix — Spark MLlib\n52\n0\n1,186\n4,962\n0\n2,000\n4,000\nCount\nFraud\nLegitimate\nModel dự đoán\nFraud\nLegitimate\nGround truth\nGiao dịch và alerts theo nghiệp vụ\nCASH_OUT\nTRANSFER\nCASH_IN\nDEBIT\nPAYMENT\nLoại giao dịch\n0\n200\n400\n600\n800\nSố alerts\nmodel_alerts\nrule_alerts\nDetector\nRisk score và giá trị giao dịch — 300 alerts mới nhất\n1,000\n2,000\n10,000\n20,000\n100,000\n200,000\n1,000,000\n2,000,000\n10,000,000\nSố tiền\n0.0\n0.1\n0.2\n0.3\n0.4\n0.5\n0.6\n0.7\n0.8\n0.9\n1.0\nRisk score\nCASH_OUT\nTRANSFER\nLoại giao dịch\nGiám sát\n\nFraud alerts\n\n1,238\n19.97%\n\nAlert rate · Cảnh báo cần xem xét, chưa phải gian lận đã xác nhận.\n\nEnd-to-end latency p95\n\n29,763,813 ms\n\nNguồn đã phát\n\n6,400\n\nTiến độ vòng dữ liệu\n\nVòng dữ liệu 1\n\n0.10%\n\nDòng 6,400/6,362,620\n\nĐối soát dữ liệu\n\nPASS\nKiểm tra tổng aggregate và số alerts với evaluation của run."
+  },
+  {
+    "page": "🔎 Dòng dữ liệu mới",
+    "viewport": [
+      1366,
+      768
+    ],
+    "screenshot": "4-1366x768.png",
+    "browser_errors": [],
+    "streamlit_exceptions": [],
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ",
+        "rect": {
+          "x": 280,
+          "y": 192.375,
+          "width": 339.328125,
+          "height": 137.390625,
+          "top": 192.375,
+          "right": 619.328125,
+          "bottom": 329.765625,
+          "left": 280
+        },
+        "overflow": false
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 639.328125,
+          "y": 192.375,
+          "width": 339.34375,
+          "height": 136,
+          "top": 192.375,
+          "right": 978.671875,
+          "bottom": 328.375,
+          "left": 639.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 998.671875,
+          "y": 192.375,
+          "width": 339.328125,
+          "height": 136,
+          "top": 192.375,
+          "right": 1338,
+          "bottom": 328.375,
+          "left": 998.671875
+        },
+        "overflow": false
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "19.97%",
+        "rect": {
+          "x": 1083.5,
+          "y": 386.953125,
+          "width": 254.5,
+          "height": 129.390625,
+          "top": 386.953125,
+          "right": 1338,
+          "bottom": 516.34375,
+          "left": 1083.5
+        },
+        "overflow": false
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "rect": {
+          "x": 1083.5,
+          "y": 590.71875,
+          "width": 254.5,
+          "height": 126,
+          "top": 590.71875,
+          "right": 1338,
+          "bottom": 716.71875,
+          "left": 1083.5
+        },
+        "overflow": false
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": "",
+        "rect": {
+          "x": 1083.5,
+          "y": 734.71875,
+          "width": 254.5,
+          "height": 126,
+          "top": 734.71875,
+          "right": 1338,
+          "bottom": 860.71875,
+          "left": 1083.5
+        },
+        "overflow": false
+      }
+    ],
+    "documentWidth": 1366,
+    "viewportWidth": 1366,
+    "sidebarWidth": 252,
+    "captionsOpaque": true,
+    "charts": [
+      {
+        "x": 280,
+        "y": 877.71875,
+        "width": 783.5,
+        "height": 350,
+        "top": 877.71875,
+        "right": 1063.5,
+        "bottom": 1227.71875,
+        "left": 280
+      }
+    ],
+    "expanderStyle": null,
+    "body": "PAYSIM / OPERATIONS\nOperations Center\nPaySim Big Data / Stream Monitoring\nRUN · STOPPED\nRun ID · run-20261028-042515\nChu kỳ cập nhật · 2 giây\n\nSpark đã xử lý\n\n6,200\n200 đang chờ\n\nIngest hiện tại\n\n50.0 ev/s\n\nProcessing throughput\n\n40.2 ev/s\nGiao dịch vừa đi qua Spark\n\nBảng tự đổi sau mỗi micro-batch; dòng mới nhất nằm trên cùng.\n\nTổng hợp live theo transaction type\nCASH_IN\nCASH_OUT\nDEBIT\nPAYMENT\nTRANSFER\ntype\nGiám sát\n\nFraud alerts\n\n1,238\n19.97%\n\nAlert rate · Cảnh báo cần xem xét, chưa phải gian lận đã xác nhận.\n\nEnd-to-end latency p95\n\n29,763,813 ms\n\nNguồn đã phát\n\n6,400\n\nTiến độ vòng dữ liệu\n\nVòng dữ liệu 1\n\n0.10%\n\nDòng 6,400/6,362,620\n\nĐối soát dữ liệu\n\nPASS\nKiểm tra tổng aggregate và số alerts với evaluation của run."
+  },
+  {
+    "page": "📡 Live Control Room",
+    "viewport": [
+      1440,
+      900
+    ],
+    "screenshot": "1-1440x900.png",
+    "browser_errors": [],
+    "streamlit_exceptions": [],
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ",
+        "rect": {
+          "x": 280,
+          "y": 192.375,
+          "width": 364,
+          "height": 137.390625,
+          "top": 192.375,
+          "right": 644,
+          "bottom": 329.765625,
+          "left": 280
+        },
+        "overflow": false
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 664,
+          "y": 192.375,
+          "width": 364,
+          "height": 136,
+          "top": 192.375,
+          "right": 1028,
+          "bottom": 328.375,
+          "left": 664
+        },
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 1048,
+          "y": 192.375,
+          "width": 364,
+          "height": 136,
+          "top": 192.375,
+          "right": 1412,
+          "bottom": 328.375,
+          "left": 1048
+        },
+        "overflow": false
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "19.97%",
+        "rect": {
+          "x": 1139,
+          "y": 386.953125,
+          "width": 273,
+          "height": 129.390625,
+          "top": 386.953125,
+          "right": 1412,
+          "bottom": 516.34375,
+          "left": 1139
+        },
+        "overflow": false
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "rect": {
+          "x": 1139,
+          "y": 590.71875,
+          "width": 273,
+          "height": 126,
+          "top": 590.71875,
+          "right": 1412,
+          "bottom": 716.71875,
+          "left": 1139
+        },
+        "overflow": false
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": "",
+        "rect": {
+          "x": 1139,
+          "y": 734.71875,
+          "width": 273,
+          "height": 126,
+          "top": 734.71875,
+          "right": 1412,
+          "bottom": 860.71875,
+          "left": 1139
+        },
+        "overflow": false
+      }
+    ],
+    "documentWidth": 1440,
+    "viewportWidth": 1440,
+    "sidebarWidth": 252,
+    "captionsOpaque": true,
+    "charts": [
+      {
+        "x": 301,
+        "y": 404.359375,
+        "width": 797,
+        "height": 340,
+        "top": 404.359375,
+        "right": 1098,
+        "bottom": 744.359375,
+        "left": 301
+      },
+      {
+        "x": 301,
+        "y": 827.953125,
+        "width": 367.5,
+        "height": 220,
+        "top": 827.953125,
+        "right": 668.5,
+        "bottom": 1047.953125,
+        "left": 301
+      },
+      {
+        "x": 730.5,
+        "y": 827.953125,
+        "width": 367.5,
+        "height": 220,
+        "top": 827.953125,
+        "right": 1098,
+        "bottom": 1047.953125,
+        "left": 730.5
+      },
+      {
+        "x": 322,
+        "y": 1411.203125,
+        "width": 1048,
+        "height": 150,
+        "top": 1411.203125,
+        "right": 1370,
+        "bottom": 1561.203125,
+        "left": 322
+      }
+    ],
+    "expanderStyle": {
+      "color": "rgb(241, 245, 249)",
+      "background": "rgb(27, 43, 64)"
+    },
+    "body": "PAYSIM / OPERATIONS\nOperations Center\nPaySim Big Data / Stream Monitoring\nRUN · STOPPED\nRun ID · run-20261028-042515\nChu kỳ cập nhật · 2 giây\n\nSpark đã xử lý\n\n6,200\n200 đang chờ\n\nIngest hiện tại\n\n50.0 ev/s\n\nProcessing throughput\n\n40.2 ev/s\nTốc độ ingest và xử lý\n06:00\n09:00\n12:00\n0\n20\n40\n60\n80\n100\n120\nEvents/s\nIngest\nProcessing\nKafka consumer lag\n06:00\n09:00\n12:00\n0\n200\n400\n600\nEvents\nEvents đang chờ\nLatency p95\n06:00\n09:00\n12:00\n0\n10,000,000\n20,000,000\n30,000,000\nms\nIngest p95\nEnd-to-end p95\nGiám sát\n\nFraud alerts\n\n1,238\n19.97%\n\nAlert rate · Cảnh báo cần xem xét, chưa phải gian lận đã xác nhận.\n\nEnd-to-end latency p95\n\n29,763,813 ms\n\nNguồn đã phát\n\n6,400\n\nTiến độ vòng dữ liệu\n\nVòng dữ liệu 1\n\n0.10%\n\nDòng 6,400/6,362,620\n\nĐối soát dữ liệu\n\nPASS\nKiểm tra tổng aggregate và số alerts với evaluation của run.\nMicro-batch History\n\n60 micro-batch gần nhất · Giữ nguyên đơn vị và dữ liệu telemetry.\n\nkeyboard_arrow_down\n\nBatch Duration và nhật ký\n\nThời gian mỗi micro-batch\n06:00\n09:00\n12:00\n0\n5\n10\n15\nSeconds\nBatch duration"
+  },
+  {
+    "page": "🎯 Metrics theo 10 tracks",
+    "viewport": [
+      1440,
+      900
+    ],
+    "screenshot": "2-1440x900.png",
+    "browser_errors": [],
+    "streamlit_exceptions": [],
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ",
+        "rect": {
+          "x": 280,
+          "y": 192.375,
+          "width": 364,
+          "height": 137.390625,
+          "top": 192.375,
+          "right": 644,
+          "bottom": 329.765625,
+          "left": 280
+        },
+        "overflow": false
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 664,
+          "y": 192.375,
+          "width": 364,
+          "height": 136,
+          "top": 192.375,
+          "right": 1028,
+          "bottom": 328.375,
+          "left": 664
+        },
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 1048,
+          "y": 192.375,
+          "width": 364,
+          "height": 136,
+          "top": 192.375,
+          "right": 1412,
+          "bottom": 328.375,
+          "left": 1048
+        },
+        "overflow": false
+      },
+      {
+        "label": "Ingest throughput",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 554.546875,
+          "width": 255.65625,
+          "height": 136,
+          "top": 554.546875,
+          "right": 551.65625,
+          "bottom": 690.546875,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Consumer lag",
+        "value": "200",
+        "delta": "",
+        "rect": {
+          "x": 571.65625,
+          "y": 554.546875,
+          "width": 255.671875,
+          "height": 136,
+          "top": 554.546875,
+          "right": 827.328125,
+          "bottom": 690.546875,
+          "left": 571.65625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Ingest latency p95",
+        "value": "28 ms",
+        "delta": "",
+        "rect": {
+          "x": 847.328125,
+          "y": 554.546875,
+          "width": 255.671875,
+          "height": 136,
+          "top": 554.546875,
+          "right": 1103,
+          "bottom": 690.546875,
+          "left": 847.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Storage size",
+        "value": "62.7 MB",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 883.703125,
+          "width": 255.65625,
+          "height": 136,
+          "top": 883.703125,
+          "right": 551.65625,
+          "bottom": 1019.703125,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Read duration",
+        "value": "Benchmark-only",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 1058.890625,
+          "width": 255.65625,
+          "height": 160,
+          "top": 1058.890625,
+          "right": 551.65625,
+          "bottom": 1218.890625,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Compression ratio",
+        "value": "0.12×",
+        "delta": "",
+        "rect": {
+          "x": 571.65625,
+          "y": 883.703125,
+          "width": 255.671875,
+          "height": 136,
+          "top": 883.703125,
+          "right": 827.328125,
+          "bottom": 1019.703125,
+          "left": 571.65625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Small files",
+        "value": "1,972",
+        "delta": "",
+        "rect": {
+          "x": 571.65625,
+          "y": 1058.890625,
+          "width": 255.671875,
+          "height": 136,
+          "top": 1058.890625,
+          "right": 827.328125,
+          "bottom": 1194.890625,
+          "left": 571.65625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Write duration",
+        "value": "4.42 s",
+        "delta": "",
+        "rect": {
+          "x": 847.328125,
+          "y": 883.703125,
+          "width": 255.671875,
+          "height": 136,
+          "top": 883.703125,
+          "right": 1103,
+          "bottom": 1019.703125,
+          "left": 847.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Bad record rate",
+        "value": "0.00%",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 1412.046875,
+          "width": 255.65625,
+          "height": 136,
+          "top": 1412.046875,
+          "right": 551.65625,
+          "bottom": 1548.046875,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Event completeness",
+        "value": "100.00%",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 1587.234375,
+          "width": 255.65625,
+          "height": 136,
+          "top": 1587.234375,
+          "right": 551.65625,
+          "bottom": 1723.234375,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Duplicates removed",
+        "value": "0",
+        "delta": "",
+        "rect": {
+          "x": 571.65625,
+          "y": 1412.046875,
+          "width": 255.671875,
+          "height": 136,
+          "top": 1412.046875,
+          "right": 827.328125,
+          "bottom": 1548.046875,
+          "left": 571.65625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Transformation",
+        "value": "PASS",
+        "delta": "",
+        "rect": {
+          "x": 571.65625,
+          "y": 1587.234375,
+          "width": 255.671875,
+          "height": 136,
+          "top": 1587.234375,
+          "right": 827.328125,
+          "bottom": 1723.234375,
+          "left": 571.65625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Late event rate",
+        "value": "0.00%",
+        "delta": "",
+        "rect": {
+          "x": 847.328125,
+          "y": 1412.046875,
+          "width": 255.671875,
+          "height": 136,
+          "top": 1412.046875,
+          "right": 1103,
+          "bottom": 1548.046875,
+          "left": 847.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Micro-batch",
+        "value": "12.45 s",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 1916.390625,
+          "width": 255.65625,
+          "height": 136,
+          "top": 1916.390625,
+          "right": 551.65625,
+          "bottom": 2052.390625,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Late events handled",
+        "value": "0",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 2091.578125,
+          "width": 255.65625,
+          "height": 136,
+          "top": 2091.578125,
+          "right": 551.65625,
+          "bottom": 2227.578125,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 571.65625,
+          "y": 1916.390625,
+          "width": 255.671875,
+          "height": 136,
+          "top": 1916.390625,
+          "right": 827.328125,
+          "bottom": 2052.390625,
+          "left": 571.65625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Processing latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "rect": {
+          "x": 847.328125,
+          "y": 1916.390625,
+          "width": 255.671875,
+          "height": 160,
+          "top": 1916.390625,
+          "right": 1103,
+          "bottom": 2076.390625,
+          "left": 847.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Query duration",
+        "value": "344.4 ms",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 2420.734375,
+          "width": 255.65625,
+          "height": 136,
+          "top": 2420.734375,
+          "right": 551.65625,
+          "bottom": 2556.734375,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Partition pruning",
+        "value": "run_id / type",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 2595.921875,
+          "width": 255.65625,
+          "height": 136,
+          "top": 2595.921875,
+          "right": 551.65625,
+          "bottom": 2731.921875,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Aggregate correctness",
+        "value": "PASS",
+        "delta": "",
+        "rect": {
+          "x": 571.65625,
+          "y": 2420.734375,
+          "width": 255.671875,
+          "height": 136,
+          "top": 2420.734375,
+          "right": 827.328125,
+          "bottom": 2556.734375,
+          "left": 571.65625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Scan size",
+        "value": "Benchmark-only",
+        "delta": "",
+        "rect": {
+          "x": 847.328125,
+          "y": 2420.734375,
+          "width": 255.671875,
+          "height": 160,
+          "top": 2420.734375,
+          "right": 1103,
+          "bottom": 2580.734375,
+          "left": 847.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "PR-AUC",
+        "value": "70.45%",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 2925.078125,
+          "width": 255.65625,
+          "height": 136,
+          "top": 2925.078125,
+          "right": 551.65625,
+          "bottom": 3061.078125,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "F1",
+        "value": "8.06%",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 3100.265625,
+          "width": 255.65625,
+          "height": 136,
+          "top": 3100.265625,
+          "right": 551.65625,
+          "bottom": 3236.265625,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Recall@K",
+        "value": "100.00%",
+        "delta": "",
+        "rect": {
+          "x": 571.65625,
+          "y": 2925.078125,
+          "width": 255.671875,
+          "height": 136,
+          "top": 2925.078125,
+          "right": 827.328125,
+          "bottom": 3061.078125,
+          "left": 571.65625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Scoring latency",
+        "value": "3,535.7 ms/1K",
+        "delta": "",
+        "rect": {
+          "x": 571.65625,
+          "y": 3100.265625,
+          "width": 255.671875,
+          "height": 136,
+          "top": 3100.265625,
+          "right": 827.328125,
+          "bottom": 3236.265625,
+          "left": 571.65625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Precision@K",
+        "value": "6.00%",
+        "delta": "",
+        "rect": {
+          "x": 847.328125,
+          "y": 2925.078125,
+          "width": 255.671875,
+          "height": 136,
+          "top": 2925.078125,
+          "right": 1103,
+          "bottom": 3061.078125,
+          "left": 847.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Precision@K",
+        "value": "6.00%",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 3429.421875,
+          "width": 255.65625,
+          "height": 136,
+          "top": 3429.421875,
+          "right": 551.65625,
+          "bottom": 3565.421875,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Alert volume",
+        "value": "1,238",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 3604.609375,
+          "width": 255.65625,
+          "height": 136,
+          "top": 3604.609375,
+          "right": 551.65625,
+          "bottom": 3740.609375,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Recall@K",
+        "value": "100.00%",
+        "delta": "",
+        "rect": {
+          "x": 571.65625,
+          "y": 3429.421875,
+          "width": 255.671875,
+          "height": 136,
+          "top": 3429.421875,
+          "right": 827.328125,
+          "bottom": 3565.421875,
+          "left": 571.65625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Alert rate",
+        "value": "19.97%",
+        "delta": "",
+        "rect": {
+          "x": 571.65625,
+          "y": 3604.609375,
+          "width": 255.671875,
+          "height": 136,
+          "top": 3604.609375,
+          "right": 827.328125,
+          "bottom": 3740.609375,
+          "left": 571.65625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Fraud in Top-K",
+        "value": "6/100",
+        "delta": "",
+        "rect": {
+          "x": 847.328125,
+          "y": 3429.421875,
+          "width": 255.671875,
+          "height": 136,
+          "top": 3429.421875,
+          "right": 1103,
+          "bottom": 3565.421875,
+          "left": 847.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Mongo write latency",
+        "value": "496.1 ms",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 3933.765625,
+          "width": 255.65625,
+          "height": 136,
+          "top": 3933.765625,
+          "right": 551.65625,
+          "bottom": 4069.765625,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Query latency",
+        "value": "12.8 ms",
+        "delta": "",
+        "rect": {
+          "x": 571.65625,
+          "y": 3933.765625,
+          "width": 255.671875,
+          "height": 136,
+          "top": 3933.765625,
+          "right": 827.328125,
+          "bottom": 4069.765625,
+          "left": 571.65625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Write success",
+        "value": "100.00%",
+        "delta": "",
+        "rect": {
+          "x": 847.328125,
+          "y": 3933.765625,
+          "width": 255.671875,
+          "height": 136,
+          "top": 3933.765625,
+          "right": 1103,
+          "bottom": 4069.765625,
+          "left": 847.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Dashboard freshness",
+        "value": "73,960.0 s",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 4262.921875,
+          "width": 255.65625,
+          "height": 136,
+          "top": 4262.921875,
+          "right": 551.65625,
+          "bottom": 4398.921875,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Snapshot response",
+        "value": "12.8 ms",
+        "delta": "",
+        "rect": {
+          "x": 571.65625,
+          "y": 4262.921875,
+          "width": 255.671875,
+          "height": 136,
+          "top": 4262.921875,
+          "right": 827.328125,
+          "bottom": 4398.921875,
+          "left": 571.65625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Display correctness",
+        "value": "PASS",
+        "delta": "",
+        "rect": {
+          "x": 847.328125,
+          "y": 4262.921875,
+          "width": 255.671875,
+          "height": 136,
+          "top": 4262.921875,
+          "right": 1103,
+          "bottom": 4398.921875,
+          "left": 847.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Recovery time",
+        "value": "16.3 s",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 4592.078125,
+          "width": 255.65625,
+          "height": 136,
+          "top": 4592.078125,
+          "right": 551.65625,
+          "bottom": 4728.078125,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Pipeline status",
+        "value": "RUNNING",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 4767.265625,
+          "width": 255.65625,
+          "height": 136,
+          "top": 4767.265625,
+          "right": 551.65625,
+          "bottom": 4903.265625,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Event loss",
+        "value": "0",
+        "delta": "",
+        "rect": {
+          "x": 571.65625,
+          "y": 4592.078125,
+          "width": 255.671875,
+          "height": 136,
+          "top": 4592.078125,
+          "right": 827.328125,
+          "bottom": 4728.078125,
+          "left": 571.65625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Spark starts",
+        "value": "3",
+        "delta": "",
+        "rect": {
+          "x": 571.65625,
+          "y": 4767.265625,
+          "width": 255.671875,
+          "height": 136,
+          "top": 4767.265625,
+          "right": 827.328125,
+          "bottom": 4903.265625,
+          "left": 571.65625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Duplicates after restart",
+        "value": "0",
+        "delta": "",
+        "rect": {
+          "x": 847.328125,
+          "y": 4592.078125,
+          "width": 255.671875,
+          "height": 136,
+          "top": 4592.078125,
+          "right": 1103,
+          "bottom": 4728.078125,
+          "left": 847.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "19.97%",
+        "rect": {
+          "x": 1139,
+          "y": 386.953125,
+          "width": 273,
+          "height": 129.390625,
+          "top": 386.953125,
+          "right": 1412,
+          "bottom": 516.34375,
+          "left": 1139
+        },
+        "overflow": false
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "rect": {
+          "x": 1139,
+          "y": 590.71875,
+          "width": 273,
+          "height": 126,
+          "top": 590.71875,
+          "right": 1412,
+          "bottom": 716.71875,
+          "left": 1139
+        },
+        "overflow": false
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": "",
+        "rect": {
+          "x": 1139,
+          "y": 734.71875,
+          "width": 273,
+          "height": 126,
+          "top": 734.71875,
+          "right": 1412,
+          "bottom": 860.71875,
+          "left": 1139
+        },
+        "overflow": false
+      }
+    ],
+    "documentWidth": 1440,
+    "viewportWidth": 1440,
+    "sidebarWidth": 252,
+    "captionsOpaque": true,
+    "charts": [],
+    "expanderStyle": null,
+    "body": "PAYSIM / OPERATIONS\nOperations Center\nPaySim Big Data / Stream Monitoring\nRUN · STOPPED\nRun ID · run-20261028-042515\nChu kỳ cập nhật · 2 giây\n\nSpark đã xử lý\n\n6,200\n200 đang chờ\n\nIngest hiện tại\n\n50.0 ev/s\n\nProcessing throughput\n\n40.2 ev/s\n\nMetric live thay đổi theo từng micro-batch. Những metric ghi “Benchmark-only” cần chạy protocol before/after riêng và không được giả lập từ live telemetry.\n\n01. Ingestion\n\nReplayer → Kafka → Spark consumer\n\nIngest throughput\n\n50.0 ev/s\ningest_throughput\n\nConsumer lag\n\n200\nconsumer_lag\n\nIngest latency p95\n\n28 ms\ningest_latency_p95\n\nGuardrail: Delivery errors=0; duplicates injected=0\n\n02. Storage\n\nHDFS Bronze / Silver / Gold\n\nStorage size\n\n62.7 MB\nstorage_size\n\nRead duration\n\nBenchmark-only\nread_duration\n\nCompression ratio\n\n0.12×\ncompression_ratio\n\nSmall files\n\n1,972\nsmall_file_count\n\nWrite duration\n\n4.42 s\nwrite_duration\n\nGuardrail: Processed records=6,200; HDFS record guardrail được đối chiếu qua pipeline count\n\n03. Data Quality\n\nValidate, deduplicate, null và late event\n\nBad record rate\n\n0.00%\nbad_record_rate\n\nEvent completeness\n\n100.00%\nevent_completeness\n\nDuplicates removed\n\n0\nduplicate_removed\n\nTransformation\n\nPASS\ntransformation_correctness\n\nLate event rate\n\n0.00%\nlate_event_rate\n\nGuardrail: Ground truth missing=0\n\n04. Stream Processing\n\nSpark Structured Streaming\n\nMicro-batch\n\n12.45 s\nmicrobatch_duration\n\nLate events handled\n\n0\nlate_event_handling\n\nProcessing throughput\n\n40.2 ev/s\nprocessing_throughput\n\nProcessing latency p95\n\n29,763,813 ms\nprocessing_latency_p95\n\nGuardrail: Lag=200; duplicates removed=0\n\n05. SQL Analytics\n\nSpark SQL rule và aggregate nghiệp vụ\n\nQuery duration\n\n344.4 ms\nquery_duration\n\nPartition pruning\n\nrun_id / type\npartition_pruning\n\nAggregate correctness\n\nPASS\naggregate_correctness\n\nScan size\n\nBenchmark-only\nscan_size\n\nGuardrail: Semantics aggregate giữ nguyên; expected output khớp processed count\n\n06. Fraud Detection\n\nSpark MLlib model và feature\n\nPR-AUC\n\n70.45%\npr_auc (latest batch)\n\nF1\n\n8.06%\nf1\n\nRecall@K\n\n100.00%\nrecall_at_k\n\nScoring latency\n\n3,535.7 ms/1K\nscoring_latency\n\nPrecision@K\n\n6.00%\nprecision_at_k\n\nGuardrail: Alert rate=19.97%; feature set không dùng label\n\n07. Alert Optimization\n\nRisk score, threshold và Top-K\n\nPrecision@K\n\n6.00%\nprecision_at_k\n\nAlert volume\n\n1,238\nalert_volume\n\nRecall@K\n\n100.00%\nrecall_at_k\n\nAlert rate\n\n19.97%\nalert_rate\n\nFraud in Top-K\n\n6/100\nfraud_in_top_k\n\nGuardrail: Threshold=0.50; recall tổng và evaluation set không bị thay đổi\n\n08. Serving\n\nMongoDB document, index và query\n\nMongo write latency\n\n496.1 ms\nmongo_write_latency\n\nQuery latency\n\n12.8 ms\nquery_latency (snapshot)\n\nWrite success\n\n100.00%\nwrite_success_rate\n\nGuardrail: Alert count=1,238; Gold-to-serving count được kiểm tra live\n\n09. Dashboard\n\nStreamlit query, cache và hiển thị\n\nDashboard freshness\n\n73,960.0 s\ndashboard_freshness\n\nSnapshot response\n\n12.8 ms\ndashboard_response_time\n\nDisplay correctness\n\nPASS\ndisplay_correctness\n\nGuardrail: Refresh 2 giây; metric definitions lấy trực tiếp từ telemetry canonical\n\n10. Reliability\n\nCheckpoint, persistence và restart\n\nRecovery time\n\n16.3 s\nrecovery_time\n\nPipeline status\n\nRUNNING\npipeline_run_success\n\nEvent loss\n\n0\nevent_loss_after_restart\n\nSpark starts\n\n3\nrestart_count\n\nDuplicates after restart\n\n0\nduplicate_after_restart\n\nGuardrail: Checkpoint HDFS active; processed=6,200; lag=200\n\nGiám sát\n\nFraud alerts\n\n1,238\n19.97%\n\nAlert rate · Cảnh báo cần xem xét, chưa phải gian lận đã xác nhận.\n\nEnd-to-end latency p95\n\n29,763,813 ms\n\nNguồn đã phát\n\n6,400\n\nTiến độ vòng dữ liệu\n\nVòng dữ liệu 1\n\n0.10%\n\nDòng 6,400/6,362,620\n\nĐối soát dữ liệu\n\nPASS\nKiểm tra tổng aggregate và số alerts với evaluation của run."
+  },
+  {
+    "page": "🛡️ Fraud & Business",
+    "viewport": [
+      1440,
+      900
+    ],
+    "screenshot": "3-1440x900.png",
+    "browser_errors": [],
+    "streamlit_exceptions": [],
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ",
+        "rect": {
+          "x": 280,
+          "y": 192.375,
+          "width": 364,
+          "height": 137.390625,
+          "top": 192.375,
+          "right": 644,
+          "bottom": 329.765625,
+          "left": 280
+        },
+        "overflow": false
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 664,
+          "y": 192.375,
+          "width": 364,
+          "height": 136,
+          "top": 192.375,
+          "right": 1028,
+          "bottom": 328.375,
+          "left": 664
+        },
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 1048,
+          "y": 192.375,
+          "width": 364,
+          "height": 136,
+          "top": 192.375,
+          "right": 1412,
+          "bottom": 328.375,
+          "left": 1048
+        },
+        "overflow": false
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "19.97%",
+        "rect": {
+          "x": 1139,
+          "y": 386.953125,
+          "width": 273,
+          "height": 129.390625,
+          "top": 386.953125,
+          "right": 1412,
+          "bottom": 516.34375,
+          "left": 1139
+        },
+        "overflow": false
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "rect": {
+          "x": 1139,
+          "y": 590.71875,
+          "width": 273,
+          "height": 126,
+          "top": 590.71875,
+          "right": 1412,
+          "bottom": 716.71875,
+          "left": 1139
+        },
+        "overflow": false
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": "",
+        "rect": {
+          "x": 1139,
+          "y": 734.71875,
+          "width": 273,
+          "height": 126,
+          "top": 734.71875,
+          "right": 1412,
+          "bottom": 860.71875,
+          "left": 1139
+        },
+        "overflow": false
+      }
+    ],
+    "documentWidth": 1440,
+    "viewportWidth": 1440,
+    "sidebarWidth": 252,
+    "captionsOpaque": true,
+    "charts": [
+      {
+        "x": 709.5,
+        "y": 386.953125,
+        "width": 409.5,
+        "height": 260,
+        "top": 386.953125,
+        "right": 1119,
+        "bottom": 646.953125,
+        "left": 709.5
+      },
+      {
+        "x": 280,
+        "y": 692.140625,
+        "width": 839,
+        "height": 310,
+        "top": 692.140625,
+        "right": 1119,
+        "bottom": 1002.140625,
+        "left": 280
+      },
+      {
+        "x": 280,
+        "y": 1047.328125,
+        "width": 839,
+        "height": 360,
+        "top": 1047.328125,
+        "right": 1119,
+        "bottom": 1407.328125,
+        "left": 280
+      }
+    ],
+    "expanderStyle": null,
+    "body": "PAYSIM / OPERATIONS\nOperations Center\nPaySim Big Data / Stream Monitoring\nRUN · STOPPED\nRun ID · run-20261028-042515\nChu kỳ cập nhật · 2 giây\n\nSpark đã xử lý\n\n6,200\n200 đang chờ\n\nIngest hiện tại\n\n50.0 ev/s\n\nProcessing throughput\n\n40.2 ev/s\nRule baseline vs Spark MLlib\nConfusion matrix — Spark MLlib\n52\n0\n1,186\n4,962\n0\n2,000\n4,000\nCount\nFraud\nLegitimate\nModel dự đoán\nFraud\nLegitimate\nGround truth\nGiao dịch và alerts theo nghiệp vụ\nCASH_OUT\nTRANSFER\nCASH_IN\nDEBIT\nPAYMENT\nLoại giao dịch\n0\n200\n400\n600\n800\nSố alerts\nmodel_alerts\nrule_alerts\nDetector\nRisk score và giá trị giao dịch — 300 alerts mới nhất\n1,000\n2,000\n10,000\n20,000\n100,000\n200,000\n1,000,000\n2,000,000\n10,000,000\nSố tiền\n0.0\n0.1\n0.2\n0.3\n0.4\n0.5\n0.6\n0.7\n0.8\n0.9\n1.0\nRisk score\nCASH_OUT\nTRANSFER\nLoại giao dịch\nGiám sát\n\nFraud alerts\n\n1,238\n19.97%\n\nAlert rate · Cảnh báo cần xem xét, chưa phải gian lận đã xác nhận.\n\nEnd-to-end latency p95\n\n29,763,813 ms\n\nNguồn đã phát\n\n6,400\n\nTiến độ vòng dữ liệu\n\nVòng dữ liệu 1\n\n0.10%\n\nDòng 6,400/6,362,620\n\nĐối soát dữ liệu\n\nPASS\nKiểm tra tổng aggregate và số alerts với evaluation của run."
+  },
+  {
+    "page": "🔎 Dòng dữ liệu mới",
+    "viewport": [
+      1440,
+      900
+    ],
+    "screenshot": "4-1440x900.png",
+    "browser_errors": [],
+    "streamlit_exceptions": [],
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ",
+        "rect": {
+          "x": 280,
+          "y": 192.375,
+          "width": 364,
+          "height": 137.390625,
+          "top": 192.375,
+          "right": 644,
+          "bottom": 329.765625,
+          "left": 280
+        },
+        "overflow": false
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 664,
+          "y": 192.375,
+          "width": 364,
+          "height": 136,
+          "top": 192.375,
+          "right": 1028,
+          "bottom": 328.375,
+          "left": 664
+        },
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 1048,
+          "y": 192.375,
+          "width": 364,
+          "height": 136,
+          "top": 192.375,
+          "right": 1412,
+          "bottom": 328.375,
+          "left": 1048
+        },
+        "overflow": false
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "19.97%",
+        "rect": {
+          "x": 1139,
+          "y": 386.953125,
+          "width": 273,
+          "height": 129.390625,
+          "top": 386.953125,
+          "right": 1412,
+          "bottom": 516.34375,
+          "left": 1139
+        },
+        "overflow": false
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "rect": {
+          "x": 1139,
+          "y": 590.71875,
+          "width": 273,
+          "height": 126,
+          "top": 590.71875,
+          "right": 1412,
+          "bottom": 716.71875,
+          "left": 1139
+        },
+        "overflow": false
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": "",
+        "rect": {
+          "x": 1139,
+          "y": 734.71875,
+          "width": 273,
+          "height": 126,
+          "top": 734.71875,
+          "right": 1412,
+          "bottom": 860.71875,
+          "left": 1139
+        },
+        "overflow": false
+      }
+    ],
+    "documentWidth": 1440,
+    "viewportWidth": 1440,
+    "sidebarWidth": 252,
+    "captionsOpaque": true,
+    "charts": [
+      {
+        "x": 280,
+        "y": 877.71875,
+        "width": 839,
+        "height": 350,
+        "top": 877.71875,
+        "right": 1119,
+        "bottom": 1227.71875,
+        "left": 280
+      }
+    ],
+    "expanderStyle": null,
+    "body": "PAYSIM / OPERATIONS\nOperations Center\nPaySim Big Data / Stream Monitoring\nRUN · STOPPED\nRun ID · run-20261028-042515\nChu kỳ cập nhật · 2 giây\n\nSpark đã xử lý\n\n6,200\n200 đang chờ\n\nIngest hiện tại\n\n50.0 ev/s\n\nProcessing throughput\n\n40.2 ev/s\nGiao dịch vừa đi qua Spark\n\nBảng tự đổi sau mỗi micro-batch; dòng mới nhất nằm trên cùng.\n\nTổng hợp live theo transaction type\nCASH_IN\nCASH_OUT\nDEBIT\nPAYMENT\nTRANSFER\ntype\nGiám sát\n\nFraud alerts\n\n1,238\n19.97%\n\nAlert rate · Cảnh báo cần xem xét, chưa phải gian lận đã xác nhận.\n\nEnd-to-end latency p95\n\n29,763,813 ms\n\nNguồn đã phát\n\n6,400\n\nTiến độ vòng dữ liệu\n\nVòng dữ liệu 1\n\n0.10%\n\nDòng 6,400/6,362,620\n\nĐối soát dữ liệu\n\nPASS\nKiểm tra tổng aggregate và số alerts với evaluation của run."
+  },
+  {
+    "page": "📡 Live Control Room",
+    "viewport": [
+      1600,
+      900
+    ],
+    "screenshot": "1-1600x900.png",
+    "browser_errors": [],
+    "streamlit_exceptions": [],
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ",
+        "rect": {
+          "x": 280,
+          "y": 192.375,
+          "width": 417.328125,
+          "height": 137.390625,
+          "top": 192.375,
+          "right": 697.328125,
+          "bottom": 329.765625,
+          "left": 280
+        },
+        "overflow": false
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 717.328125,
+          "y": 192.375,
+          "width": 417.34375,
+          "height": 136,
+          "top": 192.375,
+          "right": 1134.671875,
+          "bottom": 328.375,
+          "left": 717.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 1154.671875,
+          "y": 192.375,
+          "width": 417.328125,
+          "height": 136,
+          "top": 192.375,
+          "right": 1572,
+          "bottom": 328.375,
+          "left": 1154.671875
+        },
+        "overflow": false
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "19.97%",
+        "rect": {
+          "x": 1259,
+          "y": 386.953125,
+          "width": 313,
+          "height": 129.390625,
+          "top": 386.953125,
+          "right": 1572,
+          "bottom": 516.34375,
+          "left": 1259
+        },
+        "overflow": false
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "rect": {
+          "x": 1259,
+          "y": 590.71875,
+          "width": 313,
+          "height": 126,
+          "top": 590.71875,
+          "right": 1572,
+          "bottom": 716.71875,
+          "left": 1259
+        },
+        "overflow": false
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": "",
+        "rect": {
+          "x": 1259,
+          "y": 734.71875,
+          "width": 313,
+          "height": 126,
+          "top": 734.71875,
+          "right": 1572,
+          "bottom": 860.71875,
+          "left": 1259
+        },
+        "overflow": false
+      }
+    ],
+    "documentWidth": 1600,
+    "viewportWidth": 1600,
+    "sidebarWidth": 252,
+    "captionsOpaque": true,
+    "charts": [
+      {
+        "x": 301,
+        "y": 404.359375,
+        "width": 917,
+        "height": 340,
+        "top": 404.359375,
+        "right": 1218,
+        "bottom": 744.359375,
+        "left": 301
+      },
+      {
+        "x": 301,
+        "y": 827.953125,
+        "width": 427.5,
+        "height": 220,
+        "top": 827.953125,
+        "right": 728.5,
+        "bottom": 1047.953125,
+        "left": 301
+      },
+      {
+        "x": 790.5,
+        "y": 827.953125,
+        "width": 427.5,
+        "height": 220,
+        "top": 827.953125,
+        "right": 1218,
+        "bottom": 1047.953125,
+        "left": 790.5
+      },
+      {
+        "x": 322,
+        "y": 1411.203125,
+        "width": 1208,
+        "height": 150,
+        "top": 1411.203125,
+        "right": 1530,
+        "bottom": 1561.203125,
+        "left": 322
+      }
+    ],
+    "expanderStyle": {
+      "color": "rgb(241, 245, 249)",
+      "background": "rgb(27, 43, 64)"
+    },
+    "body": "PAYSIM / OPERATIONS\nOperations Center\nPaySim Big Data / Stream Monitoring\nRUN · STOPPED\nRun ID · run-20261028-042515\nChu kỳ cập nhật · 2 giây\n\nSpark đã xử lý\n\n6,200\n200 đang chờ\n\nIngest hiện tại\n\n50.0 ev/s\n\nProcessing throughput\n\n40.2 ev/s\nTốc độ ingest và xử lý\n06:00\n09:00\n12:00\n0\n20\n40\n60\n80\n100\n120\nEvents/s\nIngest\nProcessing\nKafka consumer lag\n06:00\n09:00\n12:00\n0\n200\n400\n600\nEvents\nEvents đang chờ\nLatency p95\n06:00\n09:00\n12:00\n0\n10,000,000\n20,000,000\n30,000,000\nms\nIngest p95\nEnd-to-end p95\nGiám sát\n\nFraud alerts\n\n1,238\n19.97%\n\nAlert rate · Cảnh báo cần xem xét, chưa phải gian lận đã xác nhận.\n\nEnd-to-end latency p95\n\n29,763,813 ms\n\nNguồn đã phát\n\n6,400\n\nTiến độ vòng dữ liệu\n\nVòng dữ liệu 1\n\n0.10%\n\nDòng 6,400/6,362,620\n\nĐối soát dữ liệu\n\nPASS\nKiểm tra tổng aggregate và số alerts với evaluation của run.\nMicro-batch History\n\n60 micro-batch gần nhất · Giữ nguyên đơn vị và dữ liệu telemetry.\n\nkeyboard_arrow_down\n\nBatch Duration và nhật ký\n\nThời gian mỗi micro-batch\n06:00\n09:00\n12:00\n0\n5\n10\n15\nSeconds\nBatch duration"
+  },
+  {
+    "page": "🎯 Metrics theo 10 tracks",
+    "viewport": [
+      1600,
+      900
+    ],
+    "screenshot": "2-1600x900.png",
+    "browser_errors": [],
+    "streamlit_exceptions": [],
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ",
+        "rect": {
+          "x": 280,
+          "y": 192.375,
+          "width": 417.328125,
+          "height": 137.390625,
+          "top": 192.375,
+          "right": 697.328125,
+          "bottom": 329.765625,
+          "left": 280
+        },
+        "overflow": false
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 717.328125,
+          "y": 192.375,
+          "width": 417.34375,
+          "height": 136,
+          "top": 192.375,
+          "right": 1134.671875,
+          "bottom": 328.375,
+          "left": 717.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 1154.671875,
+          "y": 192.375,
+          "width": 417.328125,
+          "height": 136,
+          "top": 192.375,
+          "right": 1572,
+          "bottom": 328.375,
+          "left": 1154.671875
+        },
+        "overflow": false
+      },
+      {
+        "label": "Ingest throughput",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 554.546875,
+          "width": 295.65625,
+          "height": 136,
+          "top": 554.546875,
+          "right": 591.65625,
+          "bottom": 690.546875,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Consumer lag",
+        "value": "200",
+        "delta": "",
+        "rect": {
+          "x": 611.65625,
+          "y": 554.546875,
+          "width": 295.671875,
+          "height": 136,
+          "top": 554.546875,
+          "right": 907.328125,
+          "bottom": 690.546875,
+          "left": 611.65625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Ingest latency p95",
+        "value": "28 ms",
+        "delta": "",
+        "rect": {
+          "x": 927.328125,
+          "y": 554.546875,
+          "width": 295.671875,
+          "height": 136,
+          "top": 554.546875,
+          "right": 1223,
+          "bottom": 690.546875,
+          "left": 927.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Storage size",
+        "value": "62.7 MB",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 883.703125,
+          "width": 295.65625,
+          "height": 136,
+          "top": 883.703125,
+          "right": 591.65625,
+          "bottom": 1019.703125,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Read duration",
+        "value": "Benchmark-only",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 1058.890625,
+          "width": 295.65625,
+          "height": 136,
+          "top": 1058.890625,
+          "right": 591.65625,
+          "bottom": 1194.890625,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Compression ratio",
+        "value": "0.12×",
+        "delta": "",
+        "rect": {
+          "x": 611.65625,
+          "y": 883.703125,
+          "width": 295.671875,
+          "height": 136,
+          "top": 883.703125,
+          "right": 907.328125,
+          "bottom": 1019.703125,
+          "left": 611.65625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Small files",
+        "value": "1,972",
+        "delta": "",
+        "rect": {
+          "x": 611.65625,
+          "y": 1058.890625,
+          "width": 295.671875,
+          "height": 136,
+          "top": 1058.890625,
+          "right": 907.328125,
+          "bottom": 1194.890625,
+          "left": 611.65625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Write duration",
+        "value": "4.42 s",
+        "delta": "",
+        "rect": {
+          "x": 927.328125,
+          "y": 883.703125,
+          "width": 295.671875,
+          "height": 136,
+          "top": 883.703125,
+          "right": 1223,
+          "bottom": 1019.703125,
+          "left": 927.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Bad record rate",
+        "value": "0.00%",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 1388.046875,
+          "width": 295.65625,
+          "height": 136,
+          "top": 1388.046875,
+          "right": 591.65625,
+          "bottom": 1524.046875,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Event completeness",
+        "value": "100.00%",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 1563.234375,
+          "width": 295.65625,
+          "height": 136,
+          "top": 1563.234375,
+          "right": 591.65625,
+          "bottom": 1699.234375,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Duplicates removed",
+        "value": "0",
+        "delta": "",
+        "rect": {
+          "x": 611.65625,
+          "y": 1388.046875,
+          "width": 295.671875,
+          "height": 136,
+          "top": 1388.046875,
+          "right": 907.328125,
+          "bottom": 1524.046875,
+          "left": 611.65625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Transformation",
+        "value": "PASS",
+        "delta": "",
+        "rect": {
+          "x": 611.65625,
+          "y": 1563.234375,
+          "width": 295.671875,
+          "height": 136,
+          "top": 1563.234375,
+          "right": 907.328125,
+          "bottom": 1699.234375,
+          "left": 611.65625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Late event rate",
+        "value": "0.00%",
+        "delta": "",
+        "rect": {
+          "x": 927.328125,
+          "y": 1388.046875,
+          "width": 295.671875,
+          "height": 136,
+          "top": 1388.046875,
+          "right": 1223,
+          "bottom": 1524.046875,
+          "left": 927.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Micro-batch",
+        "value": "12.45 s",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 1892.390625,
+          "width": 295.65625,
+          "height": 136,
+          "top": 1892.390625,
+          "right": 591.65625,
+          "bottom": 2028.390625,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Late events handled",
+        "value": "0",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 2067.578125,
+          "width": 295.65625,
+          "height": 136,
+          "top": 2067.578125,
+          "right": 591.65625,
+          "bottom": 2203.578125,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 611.65625,
+          "y": 1892.390625,
+          "width": 295.671875,
+          "height": 136,
+          "top": 1892.390625,
+          "right": 907.328125,
+          "bottom": 2028.390625,
+          "left": 611.65625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Processing latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "rect": {
+          "x": 927.328125,
+          "y": 1892.390625,
+          "width": 295.671875,
+          "height": 136,
+          "top": 1892.390625,
+          "right": 1223,
+          "bottom": 2028.390625,
+          "left": 927.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Query duration",
+        "value": "344.4 ms",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 2396.734375,
+          "width": 295.65625,
+          "height": 136,
+          "top": 2396.734375,
+          "right": 591.65625,
+          "bottom": 2532.734375,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Partition pruning",
+        "value": "run_id / type",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 2571.921875,
+          "width": 295.65625,
+          "height": 136,
+          "top": 2571.921875,
+          "right": 591.65625,
+          "bottom": 2707.921875,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Aggregate correctness",
+        "value": "PASS",
+        "delta": "",
+        "rect": {
+          "x": 611.65625,
+          "y": 2396.734375,
+          "width": 295.671875,
+          "height": 136,
+          "top": 2396.734375,
+          "right": 907.328125,
+          "bottom": 2532.734375,
+          "left": 611.65625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Scan size",
+        "value": "Benchmark-only",
+        "delta": "",
+        "rect": {
+          "x": 927.328125,
+          "y": 2396.734375,
+          "width": 295.671875,
+          "height": 136,
+          "top": 2396.734375,
+          "right": 1223,
+          "bottom": 2532.734375,
+          "left": 927.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "PR-AUC",
+        "value": "70.45%",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 2901.078125,
+          "width": 295.65625,
+          "height": 136,
+          "top": 2901.078125,
+          "right": 591.65625,
+          "bottom": 3037.078125,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "F1",
+        "value": "8.06%",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 3076.265625,
+          "width": 295.65625,
+          "height": 136,
+          "top": 3076.265625,
+          "right": 591.65625,
+          "bottom": 3212.265625,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Recall@K",
+        "value": "100.00%",
+        "delta": "",
+        "rect": {
+          "x": 611.65625,
+          "y": 2901.078125,
+          "width": 295.671875,
+          "height": 136,
+          "top": 2901.078125,
+          "right": 907.328125,
+          "bottom": 3037.078125,
+          "left": 611.65625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Scoring latency",
+        "value": "3,535.7 ms/1K",
+        "delta": "",
+        "rect": {
+          "x": 611.65625,
+          "y": 3076.265625,
+          "width": 295.671875,
+          "height": 136,
+          "top": 3076.265625,
+          "right": 907.328125,
+          "bottom": 3212.265625,
+          "left": 611.65625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Precision@K",
+        "value": "6.00%",
+        "delta": "",
+        "rect": {
+          "x": 927.328125,
+          "y": 2901.078125,
+          "width": 295.671875,
+          "height": 136,
+          "top": 2901.078125,
+          "right": 1223,
+          "bottom": 3037.078125,
+          "left": 927.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Precision@K",
+        "value": "6.00%",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 3405.421875,
+          "width": 295.65625,
+          "height": 136,
+          "top": 3405.421875,
+          "right": 591.65625,
+          "bottom": 3541.421875,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Alert volume",
+        "value": "1,238",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 3580.609375,
+          "width": 295.65625,
+          "height": 136,
+          "top": 3580.609375,
+          "right": 591.65625,
+          "bottom": 3716.609375,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Recall@K",
+        "value": "100.00%",
+        "delta": "",
+        "rect": {
+          "x": 611.65625,
+          "y": 3405.421875,
+          "width": 295.671875,
+          "height": 136,
+          "top": 3405.421875,
+          "right": 907.328125,
+          "bottom": 3541.421875,
+          "left": 611.65625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Alert rate",
+        "value": "19.97%",
+        "delta": "",
+        "rect": {
+          "x": 611.65625,
+          "y": 3580.609375,
+          "width": 295.671875,
+          "height": 136,
+          "top": 3580.609375,
+          "right": 907.328125,
+          "bottom": 3716.609375,
+          "left": 611.65625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Fraud in Top-K",
+        "value": "6/100",
+        "delta": "",
+        "rect": {
+          "x": 927.328125,
+          "y": 3405.421875,
+          "width": 295.671875,
+          "height": 136,
+          "top": 3405.421875,
+          "right": 1223,
+          "bottom": 3541.421875,
+          "left": 927.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Mongo write latency",
+        "value": "496.1 ms",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 3909.765625,
+          "width": 295.65625,
+          "height": 136,
+          "top": 3909.765625,
+          "right": 591.65625,
+          "bottom": 4045.765625,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Query latency",
+        "value": "13.1 ms",
+        "delta": "",
+        "rect": {
+          "x": 611.65625,
+          "y": 3909.765625,
+          "width": 295.671875,
+          "height": 136,
+          "top": 3909.765625,
+          "right": 907.328125,
+          "bottom": 4045.765625,
+          "left": 611.65625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Write success",
+        "value": "100.00%",
+        "delta": "",
+        "rect": {
+          "x": 927.328125,
+          "y": 3909.765625,
+          "width": 295.671875,
+          "height": 136,
+          "top": 3909.765625,
+          "right": 1223,
+          "bottom": 4045.765625,
+          "left": 927.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Dashboard freshness",
+        "value": "73,967.5 s",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 4238.921875,
+          "width": 295.65625,
+          "height": 136,
+          "top": 4238.921875,
+          "right": 591.65625,
+          "bottom": 4374.921875,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Snapshot response",
+        "value": "13.1 ms",
+        "delta": "",
+        "rect": {
+          "x": 611.65625,
+          "y": 4238.921875,
+          "width": 295.671875,
+          "height": 136,
+          "top": 4238.921875,
+          "right": 907.328125,
+          "bottom": 4374.921875,
+          "left": 611.65625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Display correctness",
+        "value": "PASS",
+        "delta": "",
+        "rect": {
+          "x": 927.328125,
+          "y": 4238.921875,
+          "width": 295.671875,
+          "height": 136,
+          "top": 4238.921875,
+          "right": 1223,
+          "bottom": 4374.921875,
+          "left": 927.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Recovery time",
+        "value": "16.3 s",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 4568.078125,
+          "width": 295.65625,
+          "height": 136,
+          "top": 4568.078125,
+          "right": 591.65625,
+          "bottom": 4704.078125,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Pipeline status",
+        "value": "RUNNING",
+        "delta": "",
+        "rect": {
+          "x": 296,
+          "y": 4743.265625,
+          "width": 295.65625,
+          "height": 136,
+          "top": 4743.265625,
+          "right": 591.65625,
+          "bottom": 4879.265625,
+          "left": 296
+        },
+        "overflow": false
+      },
+      {
+        "label": "Event loss",
+        "value": "0",
+        "delta": "",
+        "rect": {
+          "x": 611.65625,
+          "y": 4568.078125,
+          "width": 295.671875,
+          "height": 136,
+          "top": 4568.078125,
+          "right": 907.328125,
+          "bottom": 4704.078125,
+          "left": 611.65625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Spark starts",
+        "value": "3",
+        "delta": "",
+        "rect": {
+          "x": 611.65625,
+          "y": 4743.265625,
+          "width": 295.671875,
+          "height": 136,
+          "top": 4743.265625,
+          "right": 907.328125,
+          "bottom": 4879.265625,
+          "left": 611.65625
+        },
+        "overflow": false
+      },
+      {
+        "label": "Duplicates after restart",
+        "value": "0",
+        "delta": "",
+        "rect": {
+          "x": 927.328125,
+          "y": 4568.078125,
+          "width": 295.671875,
+          "height": 136,
+          "top": 4568.078125,
+          "right": 1223,
+          "bottom": 4704.078125,
+          "left": 927.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "19.97%",
+        "rect": {
+          "x": 1259,
+          "y": 386.953125,
+          "width": 313,
+          "height": 129.390625,
+          "top": 386.953125,
+          "right": 1572,
+          "bottom": 516.34375,
+          "left": 1259
+        },
+        "overflow": false
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "rect": {
+          "x": 1259,
+          "y": 590.71875,
+          "width": 313,
+          "height": 126,
+          "top": 590.71875,
+          "right": 1572,
+          "bottom": 716.71875,
+          "left": 1259
+        },
+        "overflow": false
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": "",
+        "rect": {
+          "x": 1259,
+          "y": 734.71875,
+          "width": 313,
+          "height": 126,
+          "top": 734.71875,
+          "right": 1572,
+          "bottom": 860.71875,
+          "left": 1259
+        },
+        "overflow": false
+      }
+    ],
+    "documentWidth": 1600,
+    "viewportWidth": 1600,
+    "sidebarWidth": 252,
+    "captionsOpaque": true,
+    "charts": [],
+    "expanderStyle": null,
+    "body": "PAYSIM / OPERATIONS\nOperations Center\nPaySim Big Data / Stream Monitoring\nRUN · STOPPED\nRun ID · run-20261028-042515\nChu kỳ cập nhật · 2 giây\n\nSpark đã xử lý\n\n6,200\n200 đang chờ\n\nIngest hiện tại\n\n50.0 ev/s\n\nProcessing throughput\n\n40.2 ev/s\n\nMetric live thay đổi theo từng micro-batch. Những metric ghi “Benchmark-only” cần chạy protocol before/after riêng và không được giả lập từ live telemetry.\n\n01. Ingestion\n\nReplayer → Kafka → Spark consumer\n\nIngest throughput\n\n50.0 ev/s\ningest_throughput\n\nConsumer lag\n\n200\nconsumer_lag\n\nIngest latency p95\n\n28 ms\ningest_latency_p95\n\nGuardrail: Delivery errors=0; duplicates injected=0\n\n02. Storage\n\nHDFS Bronze / Silver / Gold\n\nStorage size\n\n62.7 MB\nstorage_size\n\nRead duration\n\nBenchmark-only\nread_duration\n\nCompression ratio\n\n0.12×\ncompression_ratio\n\nSmall files\n\n1,972\nsmall_file_count\n\nWrite duration\n\n4.42 s\nwrite_duration\n\nGuardrail: Processed records=6,200; HDFS record guardrail được đối chiếu qua pipeline count\n\n03. Data Quality\n\nValidate, deduplicate, null và late event\n\nBad record rate\n\n0.00%\nbad_record_rate\n\nEvent completeness\n\n100.00%\nevent_completeness\n\nDuplicates removed\n\n0\nduplicate_removed\n\nTransformation\n\nPASS\ntransformation_correctness\n\nLate event rate\n\n0.00%\nlate_event_rate\n\nGuardrail: Ground truth missing=0\n\n04. Stream Processing\n\nSpark Structured Streaming\n\nMicro-batch\n\n12.45 s\nmicrobatch_duration\n\nLate events handled\n\n0\nlate_event_handling\n\nProcessing throughput\n\n40.2 ev/s\nprocessing_throughput\n\nProcessing latency p95\n\n29,763,813 ms\nprocessing_latency_p95\n\nGuardrail: Lag=200; duplicates removed=0\n\n05. SQL Analytics\n\nSpark SQL rule và aggregate nghiệp vụ\n\nQuery duration\n\n344.4 ms\nquery_duration\n\nPartition pruning\n\nrun_id / type\npartition_pruning\n\nAggregate correctness\n\nPASS\naggregate_correctness\n\nScan size\n\nBenchmark-only\nscan_size\n\nGuardrail: Semantics aggregate giữ nguyên; expected output khớp processed count\n\n06. Fraud Detection\n\nSpark MLlib model và feature\n\nPR-AUC\n\n70.45%\npr_auc (latest batch)\n\nF1\n\n8.06%\nf1\n\nRecall@K\n\n100.00%\nrecall_at_k\n\nScoring latency\n\n3,535.7 ms/1K\nscoring_latency\n\nPrecision@K\n\n6.00%\nprecision_at_k\n\nGuardrail: Alert rate=19.97%; feature set không dùng label\n\n07. Alert Optimization\n\nRisk score, threshold và Top-K\n\nPrecision@K\n\n6.00%\nprecision_at_k\n\nAlert volume\n\n1,238\nalert_volume\n\nRecall@K\n\n100.00%\nrecall_at_k\n\nAlert rate\n\n19.97%\nalert_rate\n\nFraud in Top-K\n\n6/100\nfraud_in_top_k\n\nGuardrail: Threshold=0.50; recall tổng và evaluation set không bị thay đổi\n\n08. Serving\n\nMongoDB document, index và query\n\nMongo write latency\n\n496.1 ms\nmongo_write_latency\n\nQuery latency\n\n13.1 ms\nquery_latency (snapshot)\n\nWrite success\n\n100.00%\nwrite_success_rate\n\nGuardrail: Alert count=1,238; Gold-to-serving count được kiểm tra live\n\n09. Dashboard\n\nStreamlit query, cache và hiển thị\n\nDashboard freshness\n\n73,967.5 s\ndashboard_freshness\n\nSnapshot response\n\n13.1 ms\ndashboard_response_time\n\nDisplay correctness\n\nPASS\ndisplay_correctness\n\nGuardrail: Refresh 2 giây; metric definitions lấy trực tiếp từ telemetry canonical\n\n10. Reliability\n\nCheckpoint, persistence và restart\n\nRecovery time\n\n16.3 s\nrecovery_time\n\nPipeline status\n\nRUNNING\npipeline_run_success\n\nEvent loss\n\n0\nevent_loss_after_restart\n\nSpark starts\n\n3\nrestart_count\n\nDuplicates after restart\n\n0\nduplicate_after_restart\n\nGuardrail: Checkpoint HDFS active; processed=6,200; lag=200\n\nGiám sát\n\nFraud alerts\n\n1,238\n19.97%\n\nAlert rate · Cảnh báo cần xem xét, chưa phải gian lận đã xác nhận.\n\nEnd-to-end latency p95\n\n29,763,813 ms\n\nNguồn đã phát\n\n6,400\n\nTiến độ vòng dữ liệu\n\nVòng dữ liệu 1\n\n0.10%\n\nDòng 6,400/6,362,620\n\nĐối soát dữ liệu\n\nPASS\nKiểm tra tổng aggregate và số alerts với evaluation của run."
+  },
+  {
+    "page": "🛡️ Fraud & Business",
+    "viewport": [
+      1600,
+      900
+    ],
+    "screenshot": "3-1600x900.png",
+    "browser_errors": [],
+    "streamlit_exceptions": [],
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ",
+        "rect": {
+          "x": 280,
+          "y": 192.375,
+          "width": 417.328125,
+          "height": 137.390625,
+          "top": 192.375,
+          "right": 697.328125,
+          "bottom": 329.765625,
+          "left": 280
+        },
+        "overflow": false
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 717.328125,
+          "y": 192.375,
+          "width": 417.34375,
+          "height": 136,
+          "top": 192.375,
+          "right": 1134.671875,
+          "bottom": 328.375,
+          "left": 717.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 1154.671875,
+          "y": 192.375,
+          "width": 417.328125,
+          "height": 136,
+          "top": 192.375,
+          "right": 1572,
+          "bottom": 328.375,
+          "left": 1154.671875
+        },
+        "overflow": false
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "19.97%",
+        "rect": {
+          "x": 1259,
+          "y": 386.953125,
+          "width": 313,
+          "height": 129.390625,
+          "top": 386.953125,
+          "right": 1572,
+          "bottom": 516.34375,
+          "left": 1259
+        },
+        "overflow": false
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "rect": {
+          "x": 1259,
+          "y": 590.71875,
+          "width": 313,
+          "height": 126,
+          "top": 590.71875,
+          "right": 1572,
+          "bottom": 716.71875,
+          "left": 1259
+        },
+        "overflow": false
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": "",
+        "rect": {
+          "x": 1259,
+          "y": 734.71875,
+          "width": 313,
+          "height": 126,
+          "top": 734.71875,
+          "right": 1572,
+          "bottom": 860.71875,
+          "left": 1259
+        },
+        "overflow": false
+      }
+    ],
+    "documentWidth": 1600,
+    "viewportWidth": 1600,
+    "sidebarWidth": 252,
+    "captionsOpaque": true,
+    "charts": [
+      {
+        "x": 769.5,
+        "y": 386.953125,
+        "width": 469.5,
+        "height": 260,
+        "top": 386.953125,
+        "right": 1239,
+        "bottom": 646.953125,
+        "left": 769.5
+      },
+      {
+        "x": 280,
+        "y": 692.140625,
+        "width": 959,
+        "height": 310,
+        "top": 692.140625,
+        "right": 1239,
+        "bottom": 1002.140625,
+        "left": 280
+      },
+      {
+        "x": 280,
+        "y": 1047.328125,
+        "width": 959,
+        "height": 360,
+        "top": 1047.328125,
+        "right": 1239,
+        "bottom": 1407.328125,
+        "left": 280
+      }
+    ],
+    "expanderStyle": null,
+    "body": "PAYSIM / OPERATIONS\nOperations Center\nPaySim Big Data / Stream Monitoring\nRUN · STOPPED\nRun ID · run-20261028-042515\nChu kỳ cập nhật · 2 giây\n\nSpark đã xử lý\n\n6,200\n200 đang chờ\n\nIngest hiện tại\n\n50.0 ev/s\n\nProcessing throughput\n\n40.2 ev/s\nRule baseline vs Spark MLlib\nConfusion matrix — Spark MLlib\n52\n0\n1,186\n4,962\n0\n2,000\n4,000\nCount\nFraud\nLegitimate\nModel dự đoán\nFraud\nLegitimate\nGround truth\nGiao dịch và alerts theo nghiệp vụ\nCASH_OUT\nTRANSFER\nCASH_IN\nDEBIT\nPAYMENT\nLoại giao dịch\n0\n200\n400\n600\n800\nSố alerts\nmodel_alerts\nrule_alerts\nDetector\nRisk score và giá trị giao dịch — 300 alerts mới nhất\n1,000\n2,000\n10,000\n20,000\n100,000\n200,000\n1,000,000\n2,000,000\n10,000,000\nSố tiền\n0.0\n0.1\n0.2\n0.3\n0.4\n0.5\n0.6\n0.7\n0.8\n0.9\n1.0\nRisk score\nCASH_OUT\nTRANSFER\nLoại giao dịch\nGiám sát\n\nFraud alerts\n\n1,238\n19.97%\n\nAlert rate · Cảnh báo cần xem xét, chưa phải gian lận đã xác nhận.\n\nEnd-to-end latency p95\n\n29,763,813 ms\n\nNguồn đã phát\n\n6,400\n\nTiến độ vòng dữ liệu\n\nVòng dữ liệu 1\n\n0.10%\n\nDòng 6,400/6,362,620\n\nĐối soát dữ liệu\n\nPASS\nKiểm tra tổng aggregate và số alerts với evaluation của run."
+  },
+  {
+    "page": "🔎 Dòng dữ liệu mới",
+    "viewport": [
+      1600,
+      900
+    ],
+    "screenshot": "4-1600x900.png",
+    "browser_errors": [],
+    "streamlit_exceptions": [],
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ",
+        "rect": {
+          "x": 280,
+          "y": 192.375,
+          "width": 417.328125,
+          "height": 137.390625,
+          "top": 192.375,
+          "right": 697.328125,
+          "bottom": 329.765625,
+          "left": 280
+        },
+        "overflow": false
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 717.328125,
+          "y": 192.375,
+          "width": 417.34375,
+          "height": 136,
+          "top": 192.375,
+          "right": 1134.671875,
+          "bottom": 328.375,
+          "left": 717.328125
+        },
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 1154.671875,
+          "y": 192.375,
+          "width": 417.328125,
+          "height": 136,
+          "top": 192.375,
+          "right": 1572,
+          "bottom": 328.375,
+          "left": 1154.671875
+        },
+        "overflow": false
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "19.97%",
+        "rect": {
+          "x": 1259,
+          "y": 386.953125,
+          "width": 313,
+          "height": 129.390625,
+          "top": 386.953125,
+          "right": 1572,
+          "bottom": 516.34375,
+          "left": 1259
+        },
+        "overflow": false
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "rect": {
+          "x": 1259,
+          "y": 590.71875,
+          "width": 313,
+          "height": 126,
+          "top": 590.71875,
+          "right": 1572,
+          "bottom": 716.71875,
+          "left": 1259
+        },
+        "overflow": false
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": "",
+        "rect": {
+          "x": 1259,
+          "y": 734.71875,
+          "width": 313,
+          "height": 126,
+          "top": 734.71875,
+          "right": 1572,
+          "bottom": 860.71875,
+          "left": 1259
+        },
+        "overflow": false
+      }
+    ],
+    "documentWidth": 1600,
+    "viewportWidth": 1600,
+    "sidebarWidth": 252,
+    "captionsOpaque": true,
+    "charts": [
+      {
+        "x": 280,
+        "y": 877.71875,
+        "width": 959,
+        "height": 350,
+        "top": 877.71875,
+        "right": 1239,
+        "bottom": 1227.71875,
+        "left": 280
+      }
+    ],
+    "expanderStyle": null,
+    "body": "PAYSIM / OPERATIONS\nOperations Center\nPaySim Big Data / Stream Monitoring\nRUN · STOPPED\nRun ID · run-20261028-042515\nChu kỳ cập nhật · 2 giây\n\nSpark đã xử lý\n\n6,200\n200 đang chờ\n\nIngest hiện tại\n\n50.0 ev/s\n\nProcessing throughput\n\n40.2 ev/s\nGiao dịch vừa đi qua Spark\n\nBảng tự đổi sau mỗi micro-batch; dòng mới nhất nằm trên cùng.\n\nTổng hợp live theo transaction type\nCASH_IN\nCASH_OUT\nDEBIT\nPAYMENT\nTRANSFER\ntype\nGiám sát\n\nFraud alerts\n\n1,238\n19.97%\n\nAlert rate · Cảnh báo cần xem xét, chưa phải gian lận đã xác nhận.\n\nEnd-to-end latency p95\n\n29,763,813 ms\n\nNguồn đã phát\n\n6,400\n\nTiến độ vòng dữ liệu\n\nVòng dữ liệu 1\n\n0.10%\n\nDòng 6,400/6,362,620\n\nĐối soát dữ liệu\n\nPASS\nKiểm tra tổng aggregate và số alerts với evaluation của run."
+  },
+  {
+    "page": "📡 Live Control Room",
+    "viewport": [
+      390,
+      844
+    ],
+    "screenshot": "1-390x844.png",
+    "browser_errors": [],
+    "streamlit_exceptions": [],
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ",
+        "rect": {
+          "x": 20,
+          "y": 285.953125,
+          "width": 350,
+          "height": 137.390625,
+          "top": 285.953125,
+          "right": 370,
+          "bottom": 423.34375,
+          "left": 20
+        },
+        "overflow": false
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 20,
+          "y": 439.34375,
+          "width": 350,
+          "height": 136,
+          "top": 439.34375,
+          "right": 370,
+          "bottom": 575.34375,
+          "left": 20
+        },
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 20,
+          "y": 591.34375,
+          "width": 350,
+          "height": 136,
+          "top": 591.34375,
+          "right": 370,
+          "bottom": 727.34375,
+          "left": 20
+        },
+        "overflow": false
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "19.97%",
+        "rect": {
+          "x": 20,
+          "y": 1787.3125,
+          "width": 350,
+          "height": 129.390625,
+          "top": 1787.3125,
+          "right": 370,
+          "bottom": 1916.703125,
+          "left": 20
+        },
+        "overflow": false
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "rect": {
+          "x": 20,
+          "y": 1991.078125,
+          "width": 350,
+          "height": 126,
+          "top": 1991.078125,
+          "right": 370,
+          "bottom": 2117.078125,
+          "left": 20
+        },
+        "overflow": false
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": "",
+        "rect": {
+          "x": 20,
+          "y": 2135.078125,
+          "width": 350,
+          "height": 126,
+          "top": 2135.078125,
+          "right": 370,
+          "bottom": 2261.078125,
+          "left": 20
+        },
+        "overflow": false
+      }
+    ],
+    "documentWidth": 390,
+    "viewportWidth": 390,
+    "sidebarWidth": 252,
+    "captionsOpaque": true,
+    "charts": [
+      {
+        "x": 37,
+        "y": 797.9375,
+        "width": 316,
+        "height": 340,
+        "top": 797.9375,
+        "right": 353,
+        "bottom": 1137.9375,
+        "left": 37
+      },
+      {
+        "x": 37,
+        "y": 1213.53125,
+        "width": 316,
+        "height": 220,
+        "top": 1213.53125,
+        "right": 353,
+        "bottom": 1433.53125,
+        "left": 37
+      },
+      {
+        "x": 37,
+        "y": 1507.125,
+        "width": 316,
+        "height": 220,
+        "top": 1507.125,
+        "right": 353,
+        "bottom": 1727.125,
+        "left": 37
+      },
+      {
+        "x": 58,
+        "y": 2807.5625,
+        "width": 274,
+        "height": 150,
+        "top": 2807.5625,
+        "right": 332,
+        "bottom": 2957.5625,
+        "left": 58
+      }
+    ],
+    "expanderStyle": {
+      "color": "rgb(241, 245, 249)",
+      "background": "rgb(27, 43, 64)"
+    },
+    "body": "PAYSIM / OPERATIONS\nOperations Center\nPaySim Big Data / Stream Monitoring\nRUN · STOPPED\nRun ID · run-20261028-042515\nChu kỳ cập nhật · 2 giây\n\nSpark đã xử lý\n\n6,200\n200 đang chờ\n\nIngest hiện tại\n\n50.0 ev/s\n\nProcessing throughput\n\n40.2 ev/s\nTốc độ ingest và xử lý\n06:00\n09:00\n12:00\n0\n20\n40\n60\n80\n100\n120\nEvents/s\nIngest\nProcessing\nKafka consumer lag\n06:00\n09:00\n12:00\n0\n200\n400\n600\nEvents\nEvents đang chờ\nLatency p95\n06:00\n09:00\n12:00\n0\n10,000,000\n20,000,000\n30,000,000\nms\nIngest p95\nEnd-to-end p95\nGiám sát\n\nFraud alerts\n\n1,238\n19.97%\n\nAlert rate · Cảnh báo cần xem xét, chưa phải gian lận đã xác nhận.\n\nEnd-to-end latency p95\n\n29,763,813 ms\n\nNguồn đã phát\n\n6,400\n\nTiến độ vòng dữ liệu\n\nVòng dữ liệu 1\n\n0.10%\n\nDòng 6,400/6,362,620\n\nĐối soát dữ liệu\n\nPASS\nKiểm tra tổng aggregate và số alerts với evaluation của run.\nMicro-batch History\n\n60 micro-batch gần nhất · Giữ nguyên đơn vị và dữ liệu telemetry.\n\nkeyboard_arrow_down\n\nBatch Duration và nhật ký\n\nThời gian mỗi micro-batch\n06:00\n09:00\n12:00\n0\n5\n10\n15\nSeconds\nBatch duration"
+  },
+  {
+    "page": "🎯 Metrics theo 10 tracks",
+    "viewport": [
+      390,
+      844
+    ],
+    "screenshot": "2-390x844.png",
+    "browser_errors": [],
+    "streamlit_exceptions": [],
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ",
+        "rect": {
+          "x": 20,
+          "y": 285.953125,
+          "width": 350,
+          "height": 137.390625,
+          "top": 285.953125,
+          "right": 370,
+          "bottom": 423.34375,
+          "left": 20
+        },
+        "overflow": false
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 20,
+          "y": 439.34375,
+          "width": 350,
+          "height": 136,
+          "top": 439.34375,
+          "right": 370,
+          "bottom": 575.34375,
+          "left": 20
+        },
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 20,
+          "y": 591.34375,
+          "width": 350,
+          "height": 136,
+          "top": 591.34375,
+          "right": 370,
+          "bottom": 727.34375,
+          "left": 20
+        },
+        "overflow": false
+      },
+      {
+        "label": "Ingest throughput",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 994.125,
+          "width": 318,
+          "height": 136,
+          "top": 994.125,
+          "right": 354,
+          "bottom": 1130.125,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Consumer lag",
+        "value": "200",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 1167.3125,
+          "width": 318,
+          "height": 136,
+          "top": 1167.3125,
+          "right": 354,
+          "bottom": 1303.3125,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Ingest latency p95",
+        "value": "28 ms",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 1340.5,
+          "width": 318,
+          "height": 136,
+          "top": 1340.5,
+          "right": 354,
+          "bottom": 1476.5,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Storage size",
+        "value": "62.7 MB",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 1669.65625,
+          "width": 318,
+          "height": 136,
+          "top": 1669.65625,
+          "right": 354,
+          "bottom": 1805.65625,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Read duration",
+        "value": "Benchmark-only",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 1844.84375,
+          "width": 318,
+          "height": 136,
+          "top": 1844.84375,
+          "right": 354,
+          "bottom": 1980.84375,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Compression ratio",
+        "value": "0.12×",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 2018.03125,
+          "width": 318,
+          "height": 136,
+          "top": 2018.03125,
+          "right": 354,
+          "bottom": 2154.03125,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Small files",
+        "value": "1,972",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 2193.21875,
+          "width": 318,
+          "height": 136,
+          "top": 2193.21875,
+          "right": 354,
+          "bottom": 2329.21875,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Write duration",
+        "value": "4.42 s",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 2366.40625,
+          "width": 318,
+          "height": 136,
+          "top": 2366.40625,
+          "right": 354,
+          "bottom": 2502.40625,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Bad record rate",
+        "value": "0.00%",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 2714.75,
+          "width": 318,
+          "height": 136,
+          "top": 2714.75,
+          "right": 354,
+          "bottom": 2850.75,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Event completeness",
+        "value": "100.00%",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 2889.9375,
+          "width": 318,
+          "height": 136,
+          "top": 2889.9375,
+          "right": 354,
+          "bottom": 3025.9375,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Duplicates removed",
+        "value": "0",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 3063.125,
+          "width": 318,
+          "height": 136,
+          "top": 3063.125,
+          "right": 354,
+          "bottom": 3199.125,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Transformation",
+        "value": "PASS",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 3238.3125,
+          "width": 318,
+          "height": 136,
+          "top": 3238.3125,
+          "right": 354,
+          "bottom": 3374.3125,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Late event rate",
+        "value": "0.00%",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 3411.5,
+          "width": 318,
+          "height": 136,
+          "top": 3411.5,
+          "right": 354,
+          "bottom": 3547.5,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Micro-batch",
+        "value": "12.45 s",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 3740.65625,
+          "width": 318,
+          "height": 136,
+          "top": 3740.65625,
+          "right": 354,
+          "bottom": 3876.65625,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Late events handled",
+        "value": "0",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 3915.84375,
+          "width": 318,
+          "height": 136,
+          "top": 3915.84375,
+          "right": 354,
+          "bottom": 4051.84375,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 4089.03125,
+          "width": 318,
+          "height": 136,
+          "top": 4089.03125,
+          "right": 354,
+          "bottom": 4225.03125,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Processing latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 4262.21875,
+          "width": 318,
+          "height": 136,
+          "top": 4262.21875,
+          "right": 354,
+          "bottom": 4398.21875,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Query duration",
+        "value": "344.4 ms",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 4591.375,
+          "width": 318,
+          "height": 136,
+          "top": 4591.375,
+          "right": 354,
+          "bottom": 4727.375,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Partition pruning",
+        "value": "run_id / type",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 4766.5625,
+          "width": 318,
+          "height": 136,
+          "top": 4766.5625,
+          "right": 354,
+          "bottom": 4902.5625,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Aggregate correctness",
+        "value": "PASS",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 4939.75,
+          "width": 318,
+          "height": 136,
+          "top": 4939.75,
+          "right": 354,
+          "bottom": 5075.75,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Scan size",
+        "value": "Benchmark-only",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 5112.9375,
+          "width": 318,
+          "height": 136,
+          "top": 5112.9375,
+          "right": 354,
+          "bottom": 5248.9375,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "PR-AUC",
+        "value": "70.45%",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 5461.28125,
+          "width": 318,
+          "height": 136,
+          "top": 5461.28125,
+          "right": 354,
+          "bottom": 5597.28125,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "F1",
+        "value": "8.06%",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 5636.46875,
+          "width": 318,
+          "height": 136,
+          "top": 5636.46875,
+          "right": 354,
+          "bottom": 5772.46875,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Recall@K",
+        "value": "100.00%",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 5809.65625,
+          "width": 318,
+          "height": 136,
+          "top": 5809.65625,
+          "right": 354,
+          "bottom": 5945.65625,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Scoring latency",
+        "value": "3,535.7 ms/1K",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 5984.84375,
+          "width": 318,
+          "height": 136,
+          "top": 5984.84375,
+          "right": 354,
+          "bottom": 6120.84375,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Precision@K",
+        "value": "6.00%",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 6158.03125,
+          "width": 318,
+          "height": 136,
+          "top": 6158.03125,
+          "right": 354,
+          "bottom": 6294.03125,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Precision@K",
+        "value": "6.00%",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 6487.1875,
+          "width": 318,
+          "height": 136,
+          "top": 6487.1875,
+          "right": 354,
+          "bottom": 6623.1875,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Alert volume",
+        "value": "1,238",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 6662.375,
+          "width": 318,
+          "height": 136,
+          "top": 6662.375,
+          "right": 354,
+          "bottom": 6798.375,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Recall@K",
+        "value": "100.00%",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 6835.5625,
+          "width": 318,
+          "height": 136,
+          "top": 6835.5625,
+          "right": 354,
+          "bottom": 6971.5625,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Alert rate",
+        "value": "19.97%",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 7010.75,
+          "width": 318,
+          "height": 136,
+          "top": 7010.75,
+          "right": 354,
+          "bottom": 7146.75,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Fraud in Top-K",
+        "value": "6/100",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 7183.9375,
+          "width": 318,
+          "height": 136,
+          "top": 7183.9375,
+          "right": 354,
+          "bottom": 7319.9375,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Mongo write latency",
+        "value": "496.1 ms",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 7532.28125,
+          "width": 318,
+          "height": 136,
+          "top": 7532.28125,
+          "right": 354,
+          "bottom": 7668.28125,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Query latency",
+        "value": "14.2 ms",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 7705.46875,
+          "width": 318,
+          "height": 136,
+          "top": 7705.46875,
+          "right": 354,
+          "bottom": 7841.46875,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Write success",
+        "value": "100.00%",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 7878.65625,
+          "width": 318,
+          "height": 136,
+          "top": 7878.65625,
+          "right": 354,
+          "bottom": 8014.65625,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Dashboard freshness",
+        "value": "73,975.1 s",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 8227,
+          "width": 318,
+          "height": 136,
+          "top": 8227,
+          "right": 354,
+          "bottom": 8363,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Snapshot response",
+        "value": "14.2 ms",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 8400.1875,
+          "width": 318,
+          "height": 136,
+          "top": 8400.1875,
+          "right": 354,
+          "bottom": 8536.1875,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Display correctness",
+        "value": "PASS",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 8573.375,
+          "width": 318,
+          "height": 136,
+          "top": 8573.375,
+          "right": 354,
+          "bottom": 8709.375,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Recovery time",
+        "value": "16.3 s",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 8921.71875,
+          "width": 318,
+          "height": 136,
+          "top": 8921.71875,
+          "right": 354,
+          "bottom": 9057.71875,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Pipeline status",
+        "value": "RUNNING",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 9096.90625,
+          "width": 318,
+          "height": 136,
+          "top": 9096.90625,
+          "right": 354,
+          "bottom": 9232.90625,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Event loss",
+        "value": "0",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 9270.09375,
+          "width": 318,
+          "height": 136,
+          "top": 9270.09375,
+          "right": 354,
+          "bottom": 9406.09375,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Spark starts",
+        "value": "3",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 9445.28125,
+          "width": 318,
+          "height": 136,
+          "top": 9445.28125,
+          "right": 354,
+          "bottom": 9581.28125,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Duplicates after restart",
+        "value": "0",
+        "delta": "",
+        "rect": {
+          "x": 36,
+          "y": 9618.46875,
+          "width": 318,
+          "height": 136,
+          "top": 9618.46875,
+          "right": 354,
+          "bottom": 9754.46875,
+          "left": 36
+        },
+        "overflow": false
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "19.97%",
+        "rect": {
+          "x": 20,
+          "y": 9891.21875,
+          "width": 350,
+          "height": 129.390625,
+          "top": 9891.21875,
+          "right": 370,
+          "bottom": 10020.609375,
+          "left": 20
+        },
+        "overflow": false
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "rect": {
+          "x": 20,
+          "y": 10094.984375,
+          "width": 350,
+          "height": 126,
+          "top": 10094.984375,
+          "right": 370,
+          "bottom": 10220.984375,
+          "left": 20
+        },
+        "overflow": false
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": "",
+        "rect": {
+          "x": 20,
+          "y": 10238.984375,
+          "width": 350,
+          "height": 126,
+          "top": 10238.984375,
+          "right": 370,
+          "bottom": 10364.984375,
+          "left": 20
+        },
+        "overflow": false
+      }
+    ],
+    "documentWidth": 390,
+    "viewportWidth": 390,
+    "sidebarWidth": 252,
+    "captionsOpaque": true,
+    "charts": [],
+    "expanderStyle": null,
+    "body": "PAYSIM / OPERATIONS\nOperations Center\nPaySim Big Data / Stream Monitoring\nRUN · STOPPED\nRun ID · run-20261028-042515\nChu kỳ cập nhật · 2 giây\n\nSpark đã xử lý\n\n6,200\n200 đang chờ\n\nIngest hiện tại\n\n50.0 ev/s\n\nProcessing throughput\n\n40.2 ev/s\n\nMetric live thay đổi theo từng micro-batch. Những metric ghi “Benchmark-only” cần chạy protocol before/after riêng và không được giả lập từ live telemetry.\n\n01. Ingestion\n\nReplayer → Kafka → Spark consumer\n\nIngest throughput\n\n50.0 ev/s\ningest_throughput\n\nConsumer lag\n\n200\nconsumer_lag\n\nIngest latency p95\n\n28 ms\ningest_latency_p95\n\nGuardrail: Delivery errors=0; duplicates injected=0\n\n02. Storage\n\nHDFS Bronze / Silver / Gold\n\nStorage size\n\n62.7 MB\nstorage_size\n\nRead duration\n\nBenchmark-only\nread_duration\n\nCompression ratio\n\n0.12×\ncompression_ratio\n\nSmall files\n\n1,972\nsmall_file_count\n\nWrite duration\n\n4.42 s\nwrite_duration\n\nGuardrail: Processed records=6,200; HDFS record guardrail được đối chiếu qua pipeline count\n\n03. Data Quality\n\nValidate, deduplicate, null và late event\n\nBad record rate\n\n0.00%\nbad_record_rate\n\nEvent completeness\n\n100.00%\nevent_completeness\n\nDuplicates removed\n\n0\nduplicate_removed\n\nTransformation\n\nPASS\ntransformation_correctness\n\nLate event rate\n\n0.00%\nlate_event_rate\n\nGuardrail: Ground truth missing=0\n\n04. Stream Processing\n\nSpark Structured Streaming\n\nMicro-batch\n\n12.45 s\nmicrobatch_duration\n\nLate events handled\n\n0\nlate_event_handling\n\nProcessing throughput\n\n40.2 ev/s\nprocessing_throughput\n\nProcessing latency p95\n\n29,763,813 ms\nprocessing_latency_p95\n\nGuardrail: Lag=200; duplicates removed=0\n\n05. SQL Analytics\n\nSpark SQL rule và aggregate nghiệp vụ\n\nQuery duration\n\n344.4 ms\nquery_duration\n\nPartition pruning\n\nrun_id / type\npartition_pruning\n\nAggregate correctness\n\nPASS\naggregate_correctness\n\nScan size\n\nBenchmark-only\nscan_size\n\nGuardrail: Semantics aggregate giữ nguyên; expected output khớp processed count\n\n06. Fraud Detection\n\nSpark MLlib model và feature\n\nPR-AUC\n\n70.45%\npr_auc (latest batch)\n\nF1\n\n8.06%\nf1\n\nRecall@K\n\n100.00%\nrecall_at_k\n\nScoring latency\n\n3,535.7 ms/1K\nscoring_latency\n\nPrecision@K\n\n6.00%\nprecision_at_k\n\nGuardrail: Alert rate=19.97%; feature set không dùng label\n\n07. Alert Optimization\n\nRisk score, threshold và Top-K\n\nPrecision@K\n\n6.00%\nprecision_at_k\n\nAlert volume\n\n1,238\nalert_volume\n\nRecall@K\n\n100.00%\nrecall_at_k\n\nAlert rate\n\n19.97%\nalert_rate\n\nFraud in Top-K\n\n6/100\nfraud_in_top_k\n\nGuardrail: Threshold=0.50; recall tổng và evaluation set không bị thay đổi\n\n08. Serving\n\nMongoDB document, index và query\n\nMongo write latency\n\n496.1 ms\nmongo_write_latency\n\nQuery latency\n\n14.2 ms\nquery_latency (snapshot)\n\nWrite success\n\n100.00%\nwrite_success_rate\n\nGuardrail: Alert count=1,238; Gold-to-serving count được kiểm tra live\n\n09. Dashboard\n\nStreamlit query, cache và hiển thị\n\nDashboard freshness\n\n73,975.1 s\ndashboard_freshness\n\nSnapshot response\n\n14.2 ms\ndashboard_response_time\n\nDisplay correctness\n\nPASS\ndisplay_correctness\n\nGuardrail: Refresh 2 giây; metric definitions lấy trực tiếp từ telemetry canonical\n\n10. Reliability\n\nCheckpoint, persistence và restart\n\nRecovery time\n\n16.3 s\nrecovery_time\n\nPipeline status\n\nRUNNING\npipeline_run_success\n\nEvent loss\n\n0\nevent_loss_after_restart\n\nSpark starts\n\n3\nrestart_count\n\nDuplicates after restart\n\n0\nduplicate_after_restart\n\nGuardrail: Checkpoint HDFS active; processed=6,200; lag=200\n\nGiám sát\n\nFraud alerts\n\n1,238\n19.97%\n\nAlert rate · Cảnh báo cần xem xét, chưa phải gian lận đã xác nhận.\n\nEnd-to-end latency p95\n\n29,763,813 ms\n\nNguồn đã phát\n\n6,400\n\nTiến độ vòng dữ liệu\n\nVòng dữ liệu 1\n\n0.10%\n\nDòng 6,400/6,362,620\n\nĐối soát dữ liệu\n\nPASS\nKiểm tra tổng aggregate và số alerts với evaluation của run."
+  },
+  {
+    "page": "🛡️ Fraud & Business",
+    "viewport": [
+      390,
+      844
+    ],
+    "screenshot": "3-390x844.png",
+    "browser_errors": [],
+    "streamlit_exceptions": [],
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ",
+        "rect": {
+          "x": 20,
+          "y": 285.953125,
+          "width": 350,
+          "height": 137.390625,
+          "top": 285.953125,
+          "right": 370,
+          "bottom": 423.34375,
+          "left": 20
+        },
+        "overflow": false
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 20,
+          "y": 439.34375,
+          "width": 350,
+          "height": 136,
+          "top": 439.34375,
+          "right": 370,
+          "bottom": 575.34375,
+          "left": 20
+        },
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 20,
+          "y": 591.34375,
+          "width": 350,
+          "height": 136,
+          "top": 591.34375,
+          "right": 370,
+          "bottom": 727.34375,
+          "left": 20
+        },
+        "overflow": false
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "19.97%",
+        "rect": {
+          "x": 20,
+          "y": 2057.046875,
+          "width": 350,
+          "height": 129.390625,
+          "top": 2057.046875,
+          "right": 370,
+          "bottom": 2186.4375,
+          "left": 20
+        },
+        "overflow": false
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "rect": {
+          "x": 20,
+          "y": 2260.8125,
+          "width": 350,
+          "height": 126,
+          "top": 2260.8125,
+          "right": 370,
+          "bottom": 2386.8125,
+          "left": 20
+        },
+        "overflow": false
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": "",
+        "rect": {
+          "x": 20,
+          "y": 2404.8125,
+          "width": 350,
+          "height": 126,
+          "top": 2404.8125,
+          "right": 370,
+          "bottom": 2530.8125,
+          "left": 20
+        },
+        "overflow": false
+      }
+    ],
+    "documentWidth": 390,
+    "viewportWidth": 390,
+    "sidebarWidth": 252,
+    "captionsOpaque": true,
+    "charts": [
+      {
+        "x": 20,
+        "y": 943.109375,
+        "width": 350,
+        "height": 260,
+        "top": 943.109375,
+        "right": 370,
+        "bottom": 1203.109375,
+        "left": 20
+      },
+      {
+        "x": 20,
+        "y": 1273.484375,
+        "width": 350,
+        "height": 310,
+        "top": 1273.484375,
+        "right": 370,
+        "bottom": 1583.484375,
+        "left": 20
+      },
+      {
+        "x": 20,
+        "y": 1653.859375,
+        "width": 350,
+        "height": 360,
+        "top": 1653.859375,
+        "right": 370,
+        "bottom": 2013.859375,
+        "left": 20
+      }
+    ],
+    "expanderStyle": null,
+    "body": "PAYSIM / OPERATIONS\nOperations Center\nPaySim Big Data / Stream Monitoring\nRUN · STOPPED\nRun ID · run-20261028-042515\nChu kỳ cập nhật · 2 giây\n\nSpark đã xử lý\n\n6,200\n200 đang chờ\n\nIngest hiện tại\n\n50.0 ev/s\n\nProcessing throughput\n\n40.2 ev/s\nRule baseline vs Spark MLlib\nConfusion matrix — Spark MLlib\n52\n0\n1,186\n4,962\n0\n2,000\n4,000\nCount\nFraud\nLegitimate\nModel dự đoán\nFraud\nLegitimate\nGround truth\nGiao dịch và alerts theo nghiệp vụ\nCASH_OUT\nTRANSFER\nCASH_IN\nDEBIT\nPAYMENT\nLoại giao dịch\n0\n200\n400\n600\n800\nSố alerts\nmodel_alerts\nrule_alerts\nDetector\nRisk score và giá trị giao dịch — 300 alerts mới nhất\n1,000\n2,000\n10,000\n20,000\n100,000\n200,000\n1,000,000\n2,000,000\n10,000,000\nSố tiền\n0.0\n0.1\n0.2\n0.3\n0.4\n0.5\n0.6\n0.7\n0.8\n0.9\n1.0\nRisk score\nCASH_OUT\nTRANSFER\nLoại giao dịch\nGiám sát\n\nFraud alerts\n\n1,238\n19.97%\n\nAlert rate · Cảnh báo cần xem xét, chưa phải gian lận đã xác nhận.\n\nEnd-to-end latency p95\n\n29,763,813 ms\n\nNguồn đã phát\n\n6,400\n\nTiến độ vòng dữ liệu\n\nVòng dữ liệu 1\n\n0.10%\n\nDòng 6,400/6,362,620\n\nĐối soát dữ liệu\n\nPASS\nKiểm tra tổng aggregate và số alerts với evaluation của run."
+  },
+  {
+    "page": "🔎 Dòng dữ liệu mới",
+    "viewport": [
+      390,
+      844
+    ],
+    "screenshot": "4-390x844.png",
+    "browser_errors": [],
+    "streamlit_exceptions": [],
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ",
+        "rect": {
+          "x": 20,
+          "y": 285.953125,
+          "width": 350,
+          "height": 137.390625,
+          "top": 285.953125,
+          "right": 370,
+          "bottom": 423.34375,
+          "left": 20
+        },
+        "overflow": false
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 20,
+          "y": 439.34375,
+          "width": 350,
+          "height": 136,
+          "top": 439.34375,
+          "right": 370,
+          "bottom": 575.34375,
+          "left": 20
+        },
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "rect": {
+          "x": 20,
+          "y": 591.34375,
+          "width": 350,
+          "height": 136,
+          "top": 591.34375,
+          "right": 370,
+          "bottom": 727.34375,
+          "left": 20
+        },
+        "overflow": false
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "19.97%",
+        "rect": {
+          "x": 20,
+          "y": 1693.671875,
+          "width": 350,
+          "height": 129.390625,
+          "top": 1693.671875,
+          "right": 370,
+          "bottom": 1823.0625,
+          "left": 20
+        },
+        "overflow": false
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "rect": {
+          "x": 20,
+          "y": 1897.4375,
+          "width": 350,
+          "height": 126,
+          "top": 1897.4375,
+          "right": 370,
+          "bottom": 2023.4375,
+          "left": 20
+        },
+        "overflow": false
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": "",
+        "rect": {
+          "x": 20,
+          "y": 2041.4375,
+          "width": 350,
+          "height": 126,
+          "top": 2041.4375,
+          "right": 370,
+          "bottom": 2167.4375,
+          "left": 20
+        },
+        "overflow": false
+      }
+    ],
+    "documentWidth": 390,
+    "viewportWidth": 390,
+    "sidebarWidth": 252,
+    "captionsOpaque": true,
+    "charts": [
+      {
+        "x": 20,
+        "y": 1300.484375,
+        "width": 350,
+        "height": 350,
+        "top": 1300.484375,
+        "right": 370,
+        "bottom": 1650.484375,
+        "left": 20
+      }
+    ],
+    "expanderStyle": null,
+    "body": "PAYSIM / OPERATIONS\nOperations Center\nPaySim Big Data / Stream Monitoring\nRUN · STOPPED\nRun ID · run-20261028-042515\nChu kỳ cập nhật · 2 giây\n\nSpark đã xử lý\n\n6,200\n200 đang chờ\n\nIngest hiện tại\n\n50.0 ev/s\n\nProcessing throughput\n\n40.2 ev/s\nGiao dịch vừa đi qua Spark\n\nBảng tự đổi sau mỗi micro-batch; dòng mới nhất nằm trên cùng.\n\nTổng hợp live theo transaction type\nCASH_IN\nCASH_OUT\nDEBIT\nPAYMENT\nTRANSFER\ntype\nGiám sát\n\nFraud alerts\n\n1,238\n19.97%\n\nAlert rate · Cảnh báo cần xem xét, chưa phải gian lận đã xác nhận.\n\nEnd-to-end latency p95\n\n29,763,813 ms\n\nNguồn đã phát\n\n6,400\n\nTiến độ vòng dữ liệu\n\nVòng dữ liệu 1\n\n0.10%\n\nDòng 6,400/6,362,620\n\nĐối soát dữ liệu\n\nPASS\nKiểm tra tổng aggregate và số alerts với evaluation của run."
+  }
+]

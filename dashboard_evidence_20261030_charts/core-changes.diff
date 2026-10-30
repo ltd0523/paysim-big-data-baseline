@@ -1,0 +1,24 @@
+﻿diff --git a/dashboard_evidence_20261030_charts/before-source/dashboard_core.py b/dashboard/dashboard_core.py
+index 254470c..41553db 100644
+--- a/dashboard_evidence_20261030_charts/before-source/dashboard_core.py
++++ b/dashboard/dashboard_core.py
+@@ -219,7 +219,8 @@ def load_snapshot():
+     )
+ 
+ 
+-def render_page(snapshot, page):
++def render_page(snapshot, page, *, transaction_renderer=None):
++    """Render shared pages; optionally override transaction presentation only."""
+     run = snapshot.run
+     run_id = snapshot.run_id
+     evaluation = snapshot.evaluation
+@@ -439,6 +440,9 @@ def render_page(snapshot, page):
+         if aggregates:
+             st.subheader("Tổng hợp live theo transaction type")
+             aggregate_frame = pd.DataFrame(aggregates).sort_values("transactions", ascending=False)
++            if transaction_renderer is not None:
++                transaction_renderer(aggregate_frame)
++                return
+             donut = (
+                 alt.Chart(aggregate_frame).mark_arc(innerRadius=70).encode(
+                     theta=alt.Theta("transactions:Q"),

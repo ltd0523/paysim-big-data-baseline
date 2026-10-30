@@ -1,0 +1,122 @@
+[
+  {
+    "viewport": [
+      1366,
+      768
+    ],
+    "page": 1,
+    "badge": {
+      "x": 1177.34375,
+      "y": 90,
+      "width": 160.65625,
+      "height": 38
+    },
+    "above_header": true,
+    "right_aligned": true
+  },
+  {
+    "viewport": [
+      1366,
+      768
+    ],
+    "page": 2,
+    "badge": {
+      "x": 1177.34375,
+      "y": 90,
+      "width": 160.65625,
+      "height": 38
+    },
+    "above_header": true,
+    "right_aligned": true
+  },
+  {
+    "viewport": [
+      1366,
+      768
+    ],
+    "page": 3,
+    "badge": {
+      "x": 1177.34375,
+      "y": 90,
+      "width": 160.65625,
+      "height": 38
+    },
+    "above_header": true,
+    "right_aligned": true
+  },
+  {
+    "viewport": [
+      1366,
+      768
+    ],
+    "page": 4,
+    "badge": {
+      "x": 1177.34375,
+      "y": 90,
+      "width": 160.65625,
+      "height": 38
+    },
+    "above_header": true,
+    "right_aligned": true
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "page": 1,
+    "badge": {
+      "x": 209.34375,
+      "y": 85.1875,
+      "width": 160.65625,
+      "height": 38
+    },
+    "above_header": true,
+    "right_aligned": true
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "page": 2,
+    "badge": {
+      "x": 209.34375,
+      "y": 85.1875,
+      "width": 160.65625,
+      "height": 38
+    },
+    "above_header": true,
+    "right_aligned": true
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "page": 3,
+    "badge": {
+      "x": 209.34375,
+      "y": 85.1875,
+      "width": 160.65625,
+      "height": 38
+    },
+    "above_header": true,
+    "right_aligned": true
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "page": 4,
+    "badge": {
+      "x": 209.34375,
+      "y": 85.1875,
+      "width": 160.65625,
+      "height": 38
+    },
+    "above_header": true,
+    "right_aligned": true
+  }
+]

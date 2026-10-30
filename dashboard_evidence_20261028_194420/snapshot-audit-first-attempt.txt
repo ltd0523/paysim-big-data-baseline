@@ -1,0 +1,24 @@
+docker : 2026-10-28 12:48:20.585 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': 
+missing ScriptRunContext! This warning can be ignored when running in bare mode.
+At line:2 char:1
++ docker exec paysim-track9-20261028-194420 /tmp/track9-venv/bin/python ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2026-10-28 12:4...g in bare mode.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Traceback (most recent call last):
+  File "/evidence/audit_snapshot.py", line 64, in <module>
+    pd.testing.assert_frame_equal(table.reset_index(drop=True), expected.reset_index(drop=True))
+  File "/usr/local/lib/python3.11/site-packages/pandas/_testing/asserters.py", line 1279, in assert_frame_equal
+    assert_series_equal(
+  File "/usr/local/lib/python3.11/site-packages/pandas/_testing/asserters.py", line 975, in assert_series_equal
+    assert_attr_equal("dtype", left, right, obj=f"Attributes of {obj}")
+  File "/usr/local/lib/python3.11/site-packages/pandas/_testing/asserters.py", line 421, in assert_attr_equal
+    raise_assert_detail(obj, msg, left_attr, right_attr)
+  File "/usr/local/lib/python3.11/site-packages/pandas/_testing/asserters.py", line 614, in raise_assert_detail
+    raise AssertionError(msg)
+AssertionError: Attributes of DataFrame.iloc[:, 0] (column name="scored_at") are different
+
+Attribute "dtype" are different
+[left]:  datetime64[ns, UTC]
+[right]: datetime64[ns, FixedOffset(datetime.timedelta(0), 'UTC')]

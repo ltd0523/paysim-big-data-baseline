@@ -1,0 +1,149 @@
+{
+  "observed_at": {
+    "$date": "2026-10-28T12:45:05.809Z"
+  },
+  "python": "3.11.18",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.41",
+  "mongo_ping": {
+    "ok": 1.0
+  },
+  "mongo_version": "8.0.29",
+  "run": {
+    "_id": "run-20261028-042515",
+    "run_id": "run-20261028-042515",
+    "status": "stopped",
+    "started_at": {
+      "$date": "2026-10-28T04:25:15.371Z"
+    },
+    "source_file": "paysim.csv",
+    "dataset_rows": 6362620,
+    "start_row": 1,
+    "max_events": 0,
+    "loop_dataset": true,
+    "events_per_second": 50.0,
+    "random_seed": 2026,
+    "duplicate_rate": 0.0,
+    "null_rate": 0.0,
+    "late_event_rate": 0.0,
+    "source_rows": 6400,
+    "unique_events_emitted": 6400,
+    "events_emitted": 6400,
+    "duplicates_injected": 0,
+    "delivery_errors": 0,
+    "source_cycle": 1,
+    "source_progress_pct": 0.0010058749383115761,
+    "actual_emission_rate": 49.35251900042825,
+    "instant_emission_rate": 49.99073329275498,
+    "last_event_at": {
+      "$date": "2026-10-28T04:27:25.039Z"
+    },
+    "source_row": 6400,
+    "updated_at": {
+      "$date": "2026-10-28T04:27:25.047Z"
+    },
+    "completed_at": {
+      "$date": "2026-10-28T04:27:25.047Z"
+    }
+  },
+  "evaluation": {
+    "_id": "run-20261028-042515",
+    "created_at": {
+      "$date": "2026-10-28T04:25:35.995Z"
+    },
+    "ground_truth_missing": 0,
+    "latest_ranking": {
+      "pr_auc": 0.7044973544973544,
+      "top_k": 100,
+      "fraud_in_top_k": 6,
+      "precision_at_k": 0.06,
+      "recall_at_k": 1.0
+    },
+    "model": {
+      "fn": 0,
+      "fp": 1186,
+      "tn": 4962,
+      "tp": 52
+    },
+    "processed": 6200,
+    "rule": {
+      "fn": 44,
+      "fp": 64,
+      "tn": 6084,
+      "tp": 8
+    },
+    "run_id": "run-20261028-042515",
+    "updated_at": {
+      "$date": "2026-10-28T12:43:17.108Z"
+    }
+  },
+  "latest_metric": {
+    "_id": {
+      "$oid": "6ae1ede52bd5bc5eb2046f21"
+    },
+    "run_id": "run-20261028-042515",
+    "batch_id": 198,
+    "aggregate_correctness": true,
+    "alerts": 94,
+    "batch_duration_seconds": 12.447966226000005,
+    "bronze_bytes": 20177670,
+    "bronze_write_seconds": 2.095860148,
+    "compression_ratio": 0.11822291671932389,
+    "consumer_lag": 200,
+    "created_at": {
+      "$date": "2026-10-28T12:43:17.601Z"
+    },
+    "cumulative_raw_bytes": 2385463,
+    "duplicate_removed": 0,
+    "emitted_snapshot": 6400,
+    "event_completeness": 1.0,
+    "gold_bytes": 21054871,
+    "gold_write_seconds": 1.2015207379999993,
+    "ingest_latency_p95_ms": 28.0,
+    "ingest_throughput": 49.99073329275498,
+    "input_rows": 500,
+    "invalid_rows": 0,
+    "late_event_rows": 0,
+    "latency_p50_ms": 29759769.0,
+    "latency_p95_ms": 29763813.0,
+    "mongo_write_latency_ms": 496.11244600001214,
+    "mongo_write_operations": 299,
+    "mongo_write_success_rate": 1.0,
+    "processed_rows": 500,
+    "processed_total": 6200,
+    "processing_throughput": 40.16720409761817,
+    "scoring_latency_ms_per_1k": 3535.690348000003,
+    "silver_bytes": 24502736,
+    "silver_write_seconds": 1.1242643469999933,
+    "small_file_count": 1972,
+    "sql_query_duration_ms": 344.35986200000457,
+    "storage_size_bytes": 65735277,
+    "storage_write_seconds": 4.4216452329999925,
+    "transformation_correctness": true
+  },
+  "source_counts": {
+    "pipeline_metrics": 13,
+    "live_aggregates": 5,
+    "fraud_alerts": 1238,
+    "recent_transactions": 2000
+  },
+  "versions": {
+    "streamlit": "1.50.0",
+    "pymongo": "4.10.1",
+    "pandas": "2.2.3",
+    "altair": "5.5.0"
+  },
+  "source_sha256": {
+    "dashboard/app.py": "45049efe8632f5b88bd03656f36abf4a7be1742f1093c1b4f462929e05a192fc",
+    "dashboard/dashboard_core.py": "b556177b5d83b1e56d1ea3e09d976944583f8ee91c29d9ea699b7d551527e959",
+    "dashboard/view_operations.py": "eaae0dce0533be11cf18cfd01e6bad6f2938e2f13e7729a552bcdffd5f16228f",
+    "dashboard/view_report.py": "9bf392bcf1995d1db4431169ac145cae3cd7d49021a3ff1551cc748d31d9537a",
+    "dashboard/view_studio.py": "bc822147bbe6344fe46ecf9b4eb04e318e641d719a5e14cbac6c60c2051e24e9",
+    "tests/test_dashboard.py": "771861dec141b0b25d708cffcb23afe2e569dc58141e4761aeb363e5b7d993b4",
+    "tests/snapshot_dashboard.py": "dfb130f9892c10ed05b84cd5dfc580dcadfa580de943a7fca1bc84f84ac51bee",
+    "tests/capture_dashboard.py": "3c4d5f829b075b45ab859133e76ef5f2f995107b105268b8ee1e2a119f036110",
+    "spark/pipeline.py": "6774589943823fee9200408f0eb34017bc884463d925a28f2e8afdc3066eb2fd",
+    "docker-compose.yml": "e3c04a4c7bdddecd715ea2c531283db67b473a06d06885526ea883a67d6ee89a",
+    "docs/05_Huong_Dan_Cai_Tien_Dashboard.md": "8aa2538c8165c6d8c81e8ae282dd802b0af1253cee6aa505445a768e3c699cd2",
+    "docs/06_Kiem_Thu_Dashboard_Va_Khoi_Dong.md": "ea28507a62b494e57509174c71c843fca3139b3df3ee2680e384cc4764a21ff2"
+  }
+}

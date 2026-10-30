@@ -1,0 +1,36 @@
+{
+  "fraud_pages": [
+    {
+      "view": "baseline",
+      "all_300_alert_scatter_values_equal_snapshot": true,
+      "confusion_matrix_rendered_values_equal_snapshot": true
+    },
+    {
+      "view": "operations",
+      "all_300_alert_scatter_values_equal_snapshot": true,
+      "confusion_matrix_rendered_values_equal_snapshot": true
+    },
+    {
+      "view": "report",
+      "all_300_alert_scatter_values_equal_snapshot": true,
+      "confusion_matrix_rendered_values_equal_snapshot": true
+    },
+    {
+      "view": "studio",
+      "all_300_alert_scatter_values_equal_snapshot": true,
+      "confusion_matrix_rendered_values_equal_snapshot": true
+    }
+  ],
+  "studio_selections": [
+    {
+      "index": 0,
+      "event_id": "run-20261028-042515-c001-e000000005775",
+      "amount_and_scored_at_equal_snapshot": true
+    },
+    {
+      "index": 59,
+      "event_id": "run-20261028-042515-c001-e000000005759",
+      "amount_and_scored_at_equal_snapshot": true
+    }
+  ]
+}

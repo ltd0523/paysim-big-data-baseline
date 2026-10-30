@@ -1,0 +1,19 @@
+{
+  "captured_at": {
+    "$date": "2026-10-28T12:45:54.977Z"
+  },
+  "source": "real Kafka/Spark/HDFS/MongoDB pipeline",
+  "database": "paysim_ui_evidence_20261028_194420",
+  "run_id": "run-20261028-042515",
+  "processed": 6200,
+  "alerts": 1238,
+  "counts": {
+    "runs": 1,
+    "evaluation_totals": 1,
+    "pipeline_metrics": 13,
+    "live_aggregates": 5,
+    "fraud_alerts": 1238,
+    "recent_transactions": 60,
+    "system_metrics": 1
+  }
+}

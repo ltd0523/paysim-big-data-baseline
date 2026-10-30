@@ -1,0 +1,72 @@
+{
+  "checked_at": "2026-10-28T12:45:55.435060+00:00",
+  "before": {
+    "run_id": "run-20261028-042515",
+    "collections": {
+      "runs": {
+        "count": 1,
+        "sha256": "6b1fdd42a8ae979558e8391e99a44d0afd18084956af7ec8bb12ad24a26018b6"
+      },
+      "evaluation_totals": {
+        "count": 1,
+        "sha256": "1ef47e7d6c24fd9f16eca35fce7184853d0600f86913cdc66526d54748b8ccd3"
+      },
+      "pipeline_metrics": {
+        "count": 13,
+        "sha256": "4503b7e9da23a7808fdd586c2815ec64a87c9e05e2da321f603a154c9f683991"
+      },
+      "live_aggregates": {
+        "count": 5,
+        "sha256": "f5b085248ad360f60e494073da01eb0c6d1820e3ceae84b907ad247c870fb913"
+      },
+      "fraud_alerts": {
+        "count": 1238,
+        "sha256": "4350f756ca13311d23ce679ea14dc6a6669fe006c2a5256846a005a67657c7b5"
+      },
+      "recent_transactions": {
+        "count": 2000,
+        "sha256": "38e709c141c6b8539421304b9e77060ec842e9935f20811dee5eb0e57de34131"
+      },
+      "system_metrics": {
+        "count": 1,
+        "sha256": "cae724a4e33edca13241f07f8f3edd1abf3e21a2b448884334a65ec0f0cd5380"
+      }
+    }
+  },
+  "after": {
+    "run_id": "run-20261028-042515",
+    "collections": {
+      "runs": {
+        "count": 1,
+        "sha256": "6b1fdd42a8ae979558e8391e99a44d0afd18084956af7ec8bb12ad24a26018b6"
+      },
+      "evaluation_totals": {
+        "count": 1,
+        "sha256": "1ef47e7d6c24fd9f16eca35fce7184853d0600f86913cdc66526d54748b8ccd3"
+      },
+      "pipeline_metrics": {
+        "count": 13,
+        "sha256": "4503b7e9da23a7808fdd586c2815ec64a87c9e05e2da321f603a154c9f683991"
+      },
+      "live_aggregates": {
+        "count": 5,
+        "sha256": "f5b085248ad360f60e494073da01eb0c6d1820e3ceae84b907ad247c870fb913"
+      },
+      "fraud_alerts": {
+        "count": 1238,
+        "sha256": "4350f756ca13311d23ce679ea14dc6a6669fe006c2a5256846a005a67657c7b5"
+      },
+      "recent_transactions": {
+        "count": 2000,
+        "sha256": "38e709c141c6b8539421304b9e77060ec842e9935f20811dee5eb0e57de34131"
+      },
+      "system_metrics": {
+        "count": 1,
+        "sha256": "cae724a4e33edca13241f07f8f3edd1abf3e21a2b448884334a65ec0f0cd5380"
+      }
+    }
+  },
+  "source_unchanged_during_copy": true,
+  "snapshot_tool_exit_code": 0,
+  "writers": "Spark and replayer stopped before copy; no source writes by this script"
+}

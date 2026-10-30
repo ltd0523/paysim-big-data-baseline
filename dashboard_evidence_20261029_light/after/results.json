@@ -1,0 +1,2872 @@
+[
+  {
+    "page": 1,
+    "viewport": [
+      1366,
+      768
+    ],
+    "errors": [],
+    "background": "rgb(245, 247, 251)",
+    "sidebar": "rgb(237, 242, 248)",
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ",
+        "overflow": false
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Alert rate",
+        "value": "19.97%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": "",
+        "overflow": false
+      }
+    ],
+    "menu": [
+      {
+        "label": "sensors\n\nLive Control Room",
+        "selected": true,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "sensors"
+        ]
+      },
+      {
+        "label": "analytics\n\nMetrics theo 10 tracks",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "analytics"
+        ]
+      },
+      {
+        "label": "shield\n\nFraud & Business",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "shield"
+        ]
+      },
+      {
+        "label": "receipt_long\n\nDòng dữ liệu mới",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "receipt_long"
+        ]
+      }
+    ],
+    "help": [
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)"
+    ],
+    "rounded": [],
+    "pageOverflow": false,
+    "csv": {
+      "rows": 13,
+      "columns": [
+        "batch_id",
+        "created_at",
+        "input_rows",
+        "processed_rows",
+        "consumer_lag",
+        "processing_throughput",
+        "latency_p95_ms",
+        "invalid_rows",
+        "duplicate_removed",
+        "alerts"
+      ]
+    }
+  },
+  {
+    "page": 2,
+    "viewport": [
+      1366,
+      768
+    ],
+    "errors": [],
+    "background": "rgb(245, 247, 251)",
+    "sidebar": "rgb(237, 242, 248)",
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ",
+        "overflow": false
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Ingest throughput",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Consumer lag",
+        "value": "200",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Ingest latency p95",
+        "value": "28 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Storage size",
+        "value": "62.7 MB",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Read duration",
+        "value": "Benchmark-only",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Compression ratio",
+        "value": "0.12×",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Small files",
+        "value": "1,972",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Write duration",
+        "value": "4.42 s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Bad record rate",
+        "value": "0.00%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Event completeness",
+        "value": "100.00%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Duplicates removed",
+        "value": "0",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Transformation",
+        "value": "PASS",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Late event rate",
+        "value": "0.00%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Micro-batch",
+        "value": "12.45 s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Late events handled",
+        "value": "0",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Processing latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Query duration",
+        "value": "344.4 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Partition pruning",
+        "value": "run_id / type",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Aggregate correctness",
+        "value": "PASS",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Scan size",
+        "value": "Benchmark-only",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "PR-AUC",
+        "value": "70.45%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "F1",
+        "value": "8.06%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Recall@K",
+        "value": "100.00%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Scoring latency",
+        "value": "3,535.7 ms/1K",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Precision@K",
+        "value": "6.00%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Precision@K",
+        "value": "6.00%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Alert volume",
+        "value": "1,238",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Recall@K",
+        "value": "100.00%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Alert rate",
+        "value": "19.97%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Fraud in Top-K",
+        "value": "6/100",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Mongo write latency",
+        "value": "496.1 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Query latency",
+        "value": "48.5 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Write success",
+        "value": "100.00%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Dashboard freshness",
+        "value": "86,325.8 s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Snapshot response",
+        "value": "48.5 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Display correctness",
+        "value": "PASS",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Recovery time",
+        "value": "16.3 s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Pipeline status",
+        "value": "RUNNING",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Event loss",
+        "value": "0",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Spark starts",
+        "value": "3",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Duplicates after restart",
+        "value": "0",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Alert rate",
+        "value": "19.97%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": "",
+        "overflow": false
+      }
+    ],
+    "menu": [
+      {
+        "label": "sensors\n\nLive Control Room",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "sensors"
+        ]
+      },
+      {
+        "label": "analytics\n\nMetrics theo 10 tracks",
+        "selected": true,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "analytics"
+        ]
+      },
+      {
+        "label": "shield\n\nFraud & Business",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "shield"
+        ]
+      },
+      {
+        "label": "receipt_long\n\nDòng dữ liệu mới",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "receipt_long"
+        ]
+      }
+    ],
+    "help": [
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)"
+    ],
+    "rounded": [],
+    "pageOverflow": false
+  },
+  {
+    "page": 3,
+    "viewport": [
+      1366,
+      768
+    ],
+    "errors": [],
+    "background": "rgb(245, 247, 251)",
+    "sidebar": "rgb(237, 242, 248)",
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ",
+        "overflow": false
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Alert rate",
+        "value": "19.97%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": "",
+        "overflow": false
+      }
+    ],
+    "menu": [
+      {
+        "label": "sensors\n\nLive Control Room",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "sensors"
+        ]
+      },
+      {
+        "label": "analytics\n\nMetrics theo 10 tracks",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "analytics"
+        ]
+      },
+      {
+        "label": "shield\n\nFraud & Business",
+        "selected": true,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "shield"
+        ]
+      },
+      {
+        "label": "receipt_long\n\nDòng dữ liệu mới",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "receipt_long"
+        ]
+      }
+    ],
+    "help": [
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)"
+    ],
+    "rounded": [
+      "15px",
+      "15px",
+      "15px"
+    ],
+    "pageOverflow": false,
+    "csv": {
+      "rows": 2,
+      "columns": [
+        "Detector",
+        "TP",
+        "FP",
+        "TN",
+        "FN",
+        "Precision",
+        "Recall",
+        "F1",
+        "Alert rate"
+      ]
+    }
+  },
+  {
+    "page": 4,
+    "viewport": [
+      1366,
+      768
+    ],
+    "errors": [],
+    "background": "rgb(245, 247, 251)",
+    "sidebar": "rgb(237, 242, 248)",
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ",
+        "overflow": false
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Alert rate",
+        "value": "19.97%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": "",
+        "overflow": false
+      }
+    ],
+    "menu": [
+      {
+        "label": "sensors\n\nLive Control Room",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "sensors"
+        ]
+      },
+      {
+        "label": "analytics\n\nMetrics theo 10 tracks",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "analytics"
+        ]
+      },
+      {
+        "label": "shield\n\nFraud & Business",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "shield"
+        ]
+      },
+      {
+        "label": "receipt_long\n\nDòng dữ liệu mới",
+        "selected": true,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "receipt_long"
+        ]
+      }
+    ],
+    "help": [
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)"
+    ],
+    "rounded": [
+      "15px"
+    ],
+    "pageOverflow": false,
+    "csv": {
+      "rows": 60,
+      "columns": [
+        "scored_at",
+        "event_id",
+        "source_cycle",
+        "source_row",
+        "type",
+        "amount",
+        "risk_score",
+        "prediction",
+        "end_to_end_latency_ms"
+      ]
+    }
+  },
+  {
+    "page": 1,
+    "viewport": [
+      1440,
+      900
+    ],
+    "errors": [],
+    "background": "rgb(245, 247, 251)",
+    "sidebar": "rgb(237, 242, 248)",
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ",
+        "overflow": false
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Alert rate",
+        "value": "19.97%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": "",
+        "overflow": false
+      }
+    ],
+    "menu": [
+      {
+        "label": "sensors\n\nLive Control Room",
+        "selected": true,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "sensors"
+        ]
+      },
+      {
+        "label": "analytics\n\nMetrics theo 10 tracks",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "analytics"
+        ]
+      },
+      {
+        "label": "shield\n\nFraud & Business",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "shield"
+        ]
+      },
+      {
+        "label": "receipt_long\n\nDòng dữ liệu mới",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "receipt_long"
+        ]
+      }
+    ],
+    "help": [
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)"
+    ],
+    "rounded": [],
+    "pageOverflow": false
+  },
+  {
+    "page": 2,
+    "viewport": [
+      1440,
+      900
+    ],
+    "errors": [],
+    "background": "rgb(245, 247, 251)",
+    "sidebar": "rgb(237, 242, 248)",
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ",
+        "overflow": false
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Ingest throughput",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Consumer lag",
+        "value": "200",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Ingest latency p95",
+        "value": "28 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Storage size",
+        "value": "62.7 MB",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Read duration",
+        "value": "Benchmark-only",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Compression ratio",
+        "value": "0.12×",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Small files",
+        "value": "1,972",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Write duration",
+        "value": "4.42 s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Bad record rate",
+        "value": "0.00%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Event completeness",
+        "value": "100.00%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Duplicates removed",
+        "value": "0",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Transformation",
+        "value": "PASS",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Late event rate",
+        "value": "0.00%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Micro-batch",
+        "value": "12.45 s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Late events handled",
+        "value": "0",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Processing latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Query duration",
+        "value": "344.4 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Partition pruning",
+        "value": "run_id / type",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Aggregate correctness",
+        "value": "PASS",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Scan size",
+        "value": "Benchmark-only",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "PR-AUC",
+        "value": "70.45%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "F1",
+        "value": "8.06%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Recall@K",
+        "value": "100.00%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Scoring latency",
+        "value": "3,535.7 ms/1K",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Precision@K",
+        "value": "6.00%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Precision@K",
+        "value": "6.00%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Alert volume",
+        "value": "1,238",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Recall@K",
+        "value": "100.00%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Alert rate",
+        "value": "19.97%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Fraud in Top-K",
+        "value": "6/100",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Mongo write latency",
+        "value": "496.1 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Query latency",
+        "value": "57.1 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Write success",
+        "value": "100.00%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Dashboard freshness",
+        "value": "86,338.0 s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Snapshot response",
+        "value": "57.1 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Display correctness",
+        "value": "PASS",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Recovery time",
+        "value": "16.3 s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Pipeline status",
+        "value": "RUNNING",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Event loss",
+        "value": "0",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Spark starts",
+        "value": "3",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Duplicates after restart",
+        "value": "0",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Alert rate",
+        "value": "19.97%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": "",
+        "overflow": false
+      }
+    ],
+    "menu": [
+      {
+        "label": "sensors\n\nLive Control Room",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "sensors"
+        ]
+      },
+      {
+        "label": "analytics\n\nMetrics theo 10 tracks",
+        "selected": true,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "analytics"
+        ]
+      },
+      {
+        "label": "shield\n\nFraud & Business",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "shield"
+        ]
+      },
+      {
+        "label": "receipt_long\n\nDòng dữ liệu mới",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "receipt_long"
+        ]
+      }
+    ],
+    "help": [
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)"
+    ],
+    "rounded": [],
+    "pageOverflow": false
+  },
+  {
+    "page": 3,
+    "viewport": [
+      1440,
+      900
+    ],
+    "errors": [],
+    "background": "rgb(245, 247, 251)",
+    "sidebar": "rgb(237, 242, 248)",
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ",
+        "overflow": false
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Alert rate",
+        "value": "19.97%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": "",
+        "overflow": false
+      }
+    ],
+    "menu": [
+      {
+        "label": "sensors\n\nLive Control Room",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "sensors"
+        ]
+      },
+      {
+        "label": "analytics\n\nMetrics theo 10 tracks",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "analytics"
+        ]
+      },
+      {
+        "label": "shield\n\nFraud & Business",
+        "selected": true,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "shield"
+        ]
+      },
+      {
+        "label": "receipt_long\n\nDòng dữ liệu mới",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "receipt_long"
+        ]
+      }
+    ],
+    "help": [
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)"
+    ],
+    "rounded": [
+      "15px",
+      "15px",
+      "15px"
+    ],
+    "pageOverflow": false
+  },
+  {
+    "page": 4,
+    "viewport": [
+      1440,
+      900
+    ],
+    "errors": [],
+    "background": "rgb(245, 247, 251)",
+    "sidebar": "rgb(237, 242, 248)",
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ",
+        "overflow": false
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Alert rate",
+        "value": "19.97%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": "",
+        "overflow": false
+      }
+    ],
+    "menu": [
+      {
+        "label": "sensors\n\nLive Control Room",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "sensors"
+        ]
+      },
+      {
+        "label": "analytics\n\nMetrics theo 10 tracks",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "analytics"
+        ]
+      },
+      {
+        "label": "shield\n\nFraud & Business",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "shield"
+        ]
+      },
+      {
+        "label": "receipt_long\n\nDòng dữ liệu mới",
+        "selected": true,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "receipt_long"
+        ]
+      }
+    ],
+    "help": [
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)"
+    ],
+    "rounded": [
+      "15px"
+    ],
+    "pageOverflow": false
+  },
+  {
+    "page": 1,
+    "viewport": [
+      1600,
+      900
+    ],
+    "errors": [],
+    "background": "rgb(245, 247, 251)",
+    "sidebar": "rgb(237, 242, 248)",
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ",
+        "overflow": false
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Alert rate",
+        "value": "19.97%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": "",
+        "overflow": false
+      }
+    ],
+    "menu": [
+      {
+        "label": "sensors\n\nLive Control Room",
+        "selected": true,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "sensors"
+        ]
+      },
+      {
+        "label": "analytics\n\nMetrics theo 10 tracks",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "analytics"
+        ]
+      },
+      {
+        "label": "shield\n\nFraud & Business",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "shield"
+        ]
+      },
+      {
+        "label": "receipt_long\n\nDòng dữ liệu mới",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "receipt_long"
+        ]
+      }
+    ],
+    "help": [
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)"
+    ],
+    "rounded": [],
+    "pageOverflow": false
+  },
+  {
+    "page": 2,
+    "viewport": [
+      1600,
+      900
+    ],
+    "errors": [],
+    "background": "rgb(245, 247, 251)",
+    "sidebar": "rgb(237, 242, 248)",
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ",
+        "overflow": false
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Ingest throughput",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Consumer lag",
+        "value": "200",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Ingest latency p95",
+        "value": "28 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Storage size",
+        "value": "62.7 MB",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Read duration",
+        "value": "Benchmark-only",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Compression ratio",
+        "value": "0.12×",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Small files",
+        "value": "1,972",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Write duration",
+        "value": "4.42 s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Bad record rate",
+        "value": "0.00%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Event completeness",
+        "value": "100.00%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Duplicates removed",
+        "value": "0",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Transformation",
+        "value": "PASS",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Late event rate",
+        "value": "0.00%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Micro-batch",
+        "value": "12.45 s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Late events handled",
+        "value": "0",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Processing latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Query duration",
+        "value": "344.4 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Partition pruning",
+        "value": "run_id / type",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Aggregate correctness",
+        "value": "PASS",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Scan size",
+        "value": "Benchmark-only",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "PR-AUC",
+        "value": "70.45%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "F1",
+        "value": "8.06%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Recall@K",
+        "value": "100.00%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Scoring latency",
+        "value": "3,535.7 ms/1K",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Precision@K",
+        "value": "6.00%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Precision@K",
+        "value": "6.00%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Alert volume",
+        "value": "1,238",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Recall@K",
+        "value": "100.00%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Alert rate",
+        "value": "19.97%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Fraud in Top-K",
+        "value": "6/100",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Mongo write latency",
+        "value": "496.1 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Query latency",
+        "value": "16.4 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Write success",
+        "value": "100.00%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Dashboard freshness",
+        "value": "86,349.4 s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Snapshot response",
+        "value": "16.4 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Display correctness",
+        "value": "PASS",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Recovery time",
+        "value": "16.3 s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Pipeline status",
+        "value": "RUNNING",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Event loss",
+        "value": "0",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Spark starts",
+        "value": "3",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Duplicates after restart",
+        "value": "0",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Alert rate",
+        "value": "19.97%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": "",
+        "overflow": false
+      }
+    ],
+    "menu": [
+      {
+        "label": "sensors\n\nLive Control Room",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "sensors"
+        ]
+      },
+      {
+        "label": "analytics\n\nMetrics theo 10 tracks",
+        "selected": true,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "analytics"
+        ]
+      },
+      {
+        "label": "shield\n\nFraud & Business",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "shield"
+        ]
+      },
+      {
+        "label": "receipt_long\n\nDòng dữ liệu mới",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "receipt_long"
+        ]
+      }
+    ],
+    "help": [
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)"
+    ],
+    "rounded": [],
+    "pageOverflow": false
+  },
+  {
+    "page": 3,
+    "viewport": [
+      1600,
+      900
+    ],
+    "errors": [],
+    "background": "rgb(245, 247, 251)",
+    "sidebar": "rgb(237, 242, 248)",
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ",
+        "overflow": false
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Alert rate",
+        "value": "19.97%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": "",
+        "overflow": false
+      }
+    ],
+    "menu": [
+      {
+        "label": "sensors\n\nLive Control Room",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "sensors"
+        ]
+      },
+      {
+        "label": "analytics\n\nMetrics theo 10 tracks",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "analytics"
+        ]
+      },
+      {
+        "label": "shield\n\nFraud & Business",
+        "selected": true,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "shield"
+        ]
+      },
+      {
+        "label": "receipt_long\n\nDòng dữ liệu mới",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "receipt_long"
+        ]
+      }
+    ],
+    "help": [
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)"
+    ],
+    "rounded": [
+      "15px",
+      "15px",
+      "15px"
+    ],
+    "pageOverflow": false
+  },
+  {
+    "page": 4,
+    "viewport": [
+      1600,
+      900
+    ],
+    "errors": [],
+    "background": "rgb(245, 247, 251)",
+    "sidebar": "rgb(237, 242, 248)",
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ",
+        "overflow": false
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Alert rate",
+        "value": "19.97%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": "",
+        "overflow": false
+      }
+    ],
+    "menu": [
+      {
+        "label": "sensors\n\nLive Control Room",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "sensors"
+        ]
+      },
+      {
+        "label": "analytics\n\nMetrics theo 10 tracks",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "analytics"
+        ]
+      },
+      {
+        "label": "shield\n\nFraud & Business",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "shield"
+        ]
+      },
+      {
+        "label": "receipt_long\n\nDòng dữ liệu mới",
+        "selected": true,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "receipt_long"
+        ]
+      }
+    ],
+    "help": [
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)"
+    ],
+    "rounded": [
+      "15px"
+    ],
+    "pageOverflow": false
+  },
+  {
+    "page": 1,
+    "viewport": [
+      390,
+      844
+    ],
+    "errors": [],
+    "background": "rgb(245, 247, 251)",
+    "sidebar": "rgb(237, 242, 248)",
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ",
+        "overflow": false
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Alert rate",
+        "value": "19.97%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": "",
+        "overflow": false
+      }
+    ],
+    "menu": [
+      {
+        "label": "sensors\n\nLive Control Room",
+        "selected": true,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "sensors"
+        ]
+      },
+      {
+        "label": "analytics\n\nMetrics theo 10 tracks",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "analytics"
+        ]
+      },
+      {
+        "label": "shield\n\nFraud & Business",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "shield"
+        ]
+      },
+      {
+        "label": "receipt_long\n\nDòng dữ liệu mới",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "receipt_long"
+        ]
+      }
+    ],
+    "help": [
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)"
+    ],
+    "rounded": [],
+    "pageOverflow": false,
+    "csv": {
+      "rows": 13,
+      "columns": [
+        "batch_id",
+        "created_at",
+        "input_rows",
+        "processed_rows",
+        "consumer_lag",
+        "processing_throughput",
+        "latency_p95_ms",
+        "invalid_rows",
+        "duplicate_removed",
+        "alerts"
+      ]
+    }
+  },
+  {
+    "page": 2,
+    "viewport": [
+      390,
+      844
+    ],
+    "errors": [],
+    "background": "rgb(245, 247, 251)",
+    "sidebar": "rgb(237, 242, 248)",
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ",
+        "overflow": false
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Ingest throughput",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Consumer lag",
+        "value": "200",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Ingest latency p95",
+        "value": "28 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Storage size",
+        "value": "62.7 MB",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Read duration",
+        "value": "Benchmark-only",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Compression ratio",
+        "value": "0.12×",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Small files",
+        "value": "1,972",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Write duration",
+        "value": "4.42 s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Bad record rate",
+        "value": "0.00%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Event completeness",
+        "value": "100.00%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Duplicates removed",
+        "value": "0",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Transformation",
+        "value": "PASS",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Late event rate",
+        "value": "0.00%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Micro-batch",
+        "value": "12.45 s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Late events handled",
+        "value": "0",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Processing latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Query duration",
+        "value": "344.4 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Partition pruning",
+        "value": "run_id / type",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Aggregate correctness",
+        "value": "PASS",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Scan size",
+        "value": "Benchmark-only",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "PR-AUC",
+        "value": "70.45%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "F1",
+        "value": "8.06%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Recall@K",
+        "value": "100.00%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Scoring latency",
+        "value": "3,535.7 ms/1K",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Precision@K",
+        "value": "6.00%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Precision@K",
+        "value": "6.00%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Alert volume",
+        "value": "1,238",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Recall@K",
+        "value": "100.00%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Alert rate",
+        "value": "19.97%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Fraud in Top-K",
+        "value": "6/100",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Mongo write latency",
+        "value": "496.1 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Query latency",
+        "value": "20.0 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Write success",
+        "value": "100.00%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Dashboard freshness",
+        "value": "86,361.1 s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Snapshot response",
+        "value": "20.0 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Display correctness",
+        "value": "PASS",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Recovery time",
+        "value": "16.3 s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Pipeline status",
+        "value": "RUNNING",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Event loss",
+        "value": "0",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Spark starts",
+        "value": "3",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Duplicates after restart",
+        "value": "0",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Alert rate",
+        "value": "19.97%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": "",
+        "overflow": false
+      }
+    ],
+    "menu": [
+      {
+        "label": "sensors\n\nLive Control Room",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "sensors"
+        ]
+      },
+      {
+        "label": "analytics\n\nMetrics theo 10 tracks",
+        "selected": true,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "analytics"
+        ]
+      },
+      {
+        "label": "shield\n\nFraud & Business",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "shield"
+        ]
+      },
+      {
+        "label": "receipt_long\n\nDòng dữ liệu mới",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "receipt_long"
+        ]
+      }
+    ],
+    "help": [
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)"
+    ],
+    "rounded": [],
+    "pageOverflow": false
+  },
+  {
+    "page": 3,
+    "viewport": [
+      390,
+      844
+    ],
+    "errors": [],
+    "background": "rgb(245, 247, 251)",
+    "sidebar": "rgb(237, 242, 248)",
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ",
+        "overflow": false
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Alert rate",
+        "value": "19.97%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": "",
+        "overflow": false
+      }
+    ],
+    "menu": [
+      {
+        "label": "sensors\n\nLive Control Room",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "sensors"
+        ]
+      },
+      {
+        "label": "analytics\n\nMetrics theo 10 tracks",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "analytics"
+        ]
+      },
+      {
+        "label": "shield\n\nFraud & Business",
+        "selected": true,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "shield"
+        ]
+      },
+      {
+        "label": "receipt_long\n\nDòng dữ liệu mới",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "receipt_long"
+        ]
+      }
+    ],
+    "help": [
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)"
+    ],
+    "rounded": [
+      "15px",
+      "15px",
+      "15px"
+    ],
+    "pageOverflow": false,
+    "csv": {
+      "rows": 2,
+      "columns": [
+        "Detector",
+        "TP",
+        "FP",
+        "TN",
+        "FN",
+        "Precision",
+        "Recall",
+        "F1",
+        "Alert rate"
+      ]
+    }
+  },
+  {
+    "page": 4,
+    "viewport": [
+      390,
+      844
+    ],
+    "errors": [],
+    "background": "rgb(245, 247, 251)",
+    "sidebar": "rgb(237, 242, 248)",
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ",
+        "overflow": false
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Alert rate",
+        "value": "19.97%",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": "",
+        "overflow": false
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": "",
+        "overflow": false
+      }
+    ],
+    "menu": [
+      {
+        "label": "sensors\n\nLive Control Room",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "sensors"
+        ]
+      },
+      {
+        "label": "analytics\n\nMetrics theo 10 tracks",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "analytics"
+        ]
+      },
+      {
+        "label": "shield\n\nFraud & Business",
+        "selected": false,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "shield"
+        ]
+      },
+      {
+        "label": "receipt_long\n\nDòng dữ liệu mới",
+        "selected": true,
+        "font": "16px",
+        "leftBorder": "1px",
+        "icons": [
+          "receipt_long"
+        ]
+      }
+    ],
+    "help": [
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)"
+    ],
+    "rounded": [
+      "15px"
+    ],
+    "pageOverflow": false,
+    "csv": {
+      "rows": 60,
+      "columns": [
+        "scored_at",
+        "event_id",
+        "source_cycle",
+        "source_row",
+        "type",
+        "amount",
+        "risk_score",
+        "prediction",
+        "end_to_end_latency_ms"
+      ]
+    }
+  }
+]

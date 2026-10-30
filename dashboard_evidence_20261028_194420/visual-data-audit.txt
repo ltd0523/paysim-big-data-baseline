@@ -1,0 +1,17 @@
+docker : 2026-10-28 13:07:00.278 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': 
+missing ScriptRunContext! This warning can be ignored when running in bare mode.
+At line:2 char:167
++ ... ttempt.txt; docker exec paysim-track9-20261028-194420 /tmp/track9-ven ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2026-10-28 13:0...g in bare mode.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+2026-10-28 13:07:00.812 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in 
+bare mode.
+2026-10-28 13:07:01.152 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in 
+bare mode.
+2026-10-28 13:07:01.627 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in 
+bare mode.
+2026-10-28 13:07:02.196 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in 
+bare mode.
+PASS: exact 300-alert scatter and four-cell confusion payloads in all 4 UIs; Studio first/last selection

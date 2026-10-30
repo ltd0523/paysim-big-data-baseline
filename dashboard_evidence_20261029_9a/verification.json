@@ -1,0 +1,58 @@
+{
+  "original_tests": "7 passed",
+  "browser_before": 16,
+  "browser_after": 16,
+  "six_kpis_and_deltas_equal_in_all_browser_pairs": true,
+  "all_20_markers_preserved": true,
+  "snapshot_fingerprints_equal_across_before_after": true,
+  "responsive_assertions_passed": true,
+  "edge_cases": [
+    {
+      "scenario": "normal",
+      "viewport": [
+        1366,
+        768
+      ],
+      "browser_errors": [],
+      "streamlit_exceptions": 0,
+      "passed": true
+    },
+    {
+      "scenario": "large",
+      "viewport": [
+        1366,
+        768
+      ],
+      "browser_errors": [],
+      "streamlit_exceptions": 0,
+      "passed": true
+    },
+    {
+      "scenario": "large",
+      "viewport": [
+        390,
+        844
+      ],
+      "browser_errors": [],
+      "streamlit_exceptions": 0,
+      "passed": true
+    },
+    {
+      "scenario": "empty",
+      "viewport": [
+        390,
+        844
+      ],
+      "browser_errors": [],
+      "streamlit_exceptions": 0,
+      "passed": true
+    }
+  ],
+  "streamlit": "1.50.0",
+  "altair": "5.5.0",
+  "source_sha256": {
+    "dashboard/view_operations.py": "9f0ca557a6cccf989c6c735e55d7a2f4cec077516a812e6c0512124e9571b116",
+    "dashboard/dashboard_core.py": "b556177b5d83b1e56d1ea3e09d976944583f8ee91c29d9ea699b7d551527e959",
+    "dashboard/app.py": "45049efe8632f5b88bd03656f36abf4a7be1742f1093c1b4f462929e05a192fc"
+  }
+}

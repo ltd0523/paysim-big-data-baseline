@@ -1,0 +1,209 @@
+{
+  "database": "paysim_ui_evidence_20261028_194420",
+  "collections": {
+    "runs": {
+      "documents_equal_original_snapshot": true,
+      "count": 1
+    },
+    "evaluation_totals": {
+      "documents_equal_original_snapshot": true,
+      "count": 1
+    },
+    "pipeline_metrics": {
+      "documents_equal_original_snapshot": true,
+      "count": 13
+    },
+    "live_aggregates": {
+      "documents_equal_original_snapshot": true,
+      "count": 5
+    },
+    "fraud_alerts": {
+      "documents_equal_original_snapshot": true,
+      "count": 1238
+    },
+    "recent_transactions": {
+      "documents_equal_original_snapshot": true,
+      "count": 60
+    },
+    "system_metrics": {
+      "documents_equal_original_snapshot": true,
+      "count": 1
+    }
+  },
+  "pages": [
+    {
+      "page": "📡 Live Control Room",
+      "six_kpis_and_deltas_equal": true,
+      "all_table_values_equal": true,
+      "all_chart_data_values_equal": true,
+      "core_chart_specs_unchanged": false,
+      "metrics": [
+        [
+          "End-to-end latency p95",
+          "29,763,813 ms",
+          ""
+        ],
+        [
+          "Fraud alerts",
+          "1,238",
+          "19.97%"
+        ],
+        [
+          "Ingest hiện tại",
+          "50.0 ev/s",
+          ""
+        ],
+        [
+          "Nguồn đã phát",
+          "6,400",
+          ""
+        ],
+        [
+          "Processing throughput",
+          "40.2 ev/s",
+          ""
+        ],
+        [
+          "Spark đã xử lý",
+          "6,200",
+          "200 đang chờ"
+        ]
+      ]
+    },
+    {
+      "page": "🎯 Metrics theo 10 tracks",
+      "six_kpis_and_deltas_equal": true,
+      "all_table_values_equal": true,
+      "all_chart_data_values_equal": true,
+      "core_chart_specs_unchanged": true,
+      "metrics": [
+        [
+          "End-to-end latency p95",
+          "29,763,813 ms",
+          ""
+        ],
+        [
+          "Fraud alerts",
+          "1,238",
+          "19.97%"
+        ],
+        [
+          "Ingest hiện tại",
+          "50.0 ev/s",
+          ""
+        ],
+        [
+          "Nguồn đã phát",
+          "6,400",
+          ""
+        ],
+        [
+          "Processing throughput",
+          "40.2 ev/s",
+          ""
+        ],
+        [
+          "Processing throughput",
+          "40.2 ev/s",
+          ""
+        ],
+        [
+          "Spark đã xử lý",
+          "6,200",
+          "200 đang chờ"
+        ]
+      ]
+    },
+    {
+      "page": "🛡️ Fraud & Business",
+      "six_kpis_and_deltas_equal": true,
+      "all_table_values_equal": true,
+      "all_chart_data_values_equal": true,
+      "core_chart_specs_unchanged": true,
+      "metrics": [
+        [
+          "End-to-end latency p95",
+          "29,763,813 ms",
+          ""
+        ],
+        [
+          "Fraud alerts",
+          "1,238",
+          "19.97%"
+        ],
+        [
+          "Ingest hiện tại",
+          "50.0 ev/s",
+          ""
+        ],
+        [
+          "Nguồn đã phát",
+          "6,400",
+          ""
+        ],
+        [
+          "Processing throughput",
+          "40.2 ev/s",
+          ""
+        ],
+        [
+          "Spark đã xử lý",
+          "6,200",
+          "200 đang chờ"
+        ]
+      ]
+    },
+    {
+      "page": "🔎 Dòng dữ liệu mới",
+      "six_kpis_and_deltas_equal": true,
+      "all_table_values_equal": true,
+      "all_chart_data_values_equal": true,
+      "core_chart_specs_unchanged": true,
+      "metrics": [
+        [
+          "End-to-end latency p95",
+          "29,763,813 ms",
+          ""
+        ],
+        [
+          "Fraud alerts",
+          "1,238",
+          "19.97%"
+        ],
+        [
+          "Ingest hiện tại",
+          "50.0 ev/s",
+          ""
+        ],
+        [
+          "Nguồn đã phát",
+          "6,400",
+          ""
+        ],
+        [
+          "Processing throughput",
+          "40.2 ev/s",
+          ""
+        ],
+        [
+          "Spark đã xử lý",
+          "6,200",
+          "200 đang chờ"
+        ]
+      ]
+    }
+  ],
+  "empty_telemetry_waits_without_fake_charts": true,
+  "large_latency_value_preserved": true,
+  "header_html_escaped": true,
+  "protected_source_sha256": {
+    "dashboard/dashboard_core.py": "b556177b5d83b1e56d1ea3e09d976944583f8ee91c29d9ea699b7d551527e959",
+    "dashboard/app.py": "45049efe8632f5b88bd03656f36abf4a7be1742f1093c1b4f462929e05a192fc",
+    "tests/test_dashboard.py": "771861dec141b0b25d708cffcb23afe2e569dc58141e4761aeb363e5b7d993b4"
+  },
+  "limits": {
+    "transactions": 60,
+    "alerts": 300,
+    "micro_batches_in_original_snapshot": 13
+  }
+}

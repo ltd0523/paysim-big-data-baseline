@@ -1,0 +1,1 @@
+PASS: 16 mobile pages with six KPI and zero exceptions

@@ -1,0 +1,18 @@
+diff --git a/dashboard/app.py b/dashboard/app.py
+index 7f03d5f..8faeaec 100644
+--- a/dashboard/app.py
++++ b/dashboard/app.py
+@@ -2,11 +2,11 @@
+ from dashboard_core import render
+ 
+ # BEFORE Start — 9: dashboard gốc
+-# view = None
++view = None
+ # BEFORE END — 9
+ 
+ # AFTER Start — 9A: Operations / 5 thay đổi giao diện
+-import view_operations as view
++# import view_operations as view
+ # AFTER END — 9A
+ 
+ # AFTER Start — 9B: Report / 5 thay đổi giao diện

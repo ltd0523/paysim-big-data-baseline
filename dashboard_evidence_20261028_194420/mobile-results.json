@@ -1,0 +1,710 @@
+[
+  {
+    "view": "baseline",
+    "page": "📡 Live Control Room",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "metrics": [
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": ""
+      },
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ"
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "19.97%"
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": ""
+      }
+    ],
+    "browser_errors": [],
+    "streamlit_exceptions": 0,
+    "screenshot": "captures/baseline-1-mobile.png"
+  },
+  {
+    "view": "baseline",
+    "page": "🎯 Metrics theo 10 tracks",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "metrics": [
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": ""
+      },
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ"
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "19.97%"
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": ""
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": ""
+      }
+    ],
+    "browser_errors": [],
+    "streamlit_exceptions": 0,
+    "screenshot": "captures/baseline-2-mobile.png"
+  },
+  {
+    "view": "baseline",
+    "page": "🛡️ Fraud & Business",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "metrics": [
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": ""
+      },
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ"
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "19.97%"
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": ""
+      }
+    ],
+    "browser_errors": [],
+    "streamlit_exceptions": 0,
+    "screenshot": "captures/baseline-3-mobile.png"
+  },
+  {
+    "view": "baseline",
+    "page": "🔎 Dòng dữ liệu mới",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "metrics": [
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": ""
+      },
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ"
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "19.97%"
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": ""
+      }
+    ],
+    "browser_errors": [],
+    "streamlit_exceptions": 0,
+    "screenshot": "captures/baseline-4-mobile.png"
+  },
+  {
+    "view": "operations",
+    "page": "📡 Live Control Room",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ"
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "19.97%"
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": ""
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": ""
+      }
+    ],
+    "browser_errors": [],
+    "streamlit_exceptions": 0,
+    "screenshot": "captures/operations-1-mobile.png"
+  },
+  {
+    "view": "operations",
+    "page": "🎯 Metrics theo 10 tracks",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ"
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "19.97%"
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": ""
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": ""
+      }
+    ],
+    "browser_errors": [],
+    "streamlit_exceptions": 0,
+    "screenshot": "captures/operations-2-mobile.png"
+  },
+  {
+    "view": "operations",
+    "page": "🛡️ Fraud & Business",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ"
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "19.97%"
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": ""
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": ""
+      }
+    ],
+    "browser_errors": [],
+    "streamlit_exceptions": 0,
+    "screenshot": "captures/operations-3-mobile.png"
+  },
+  {
+    "view": "operations",
+    "page": "🔎 Dòng dữ liệu mới",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ"
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "19.97%"
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": ""
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": ""
+      }
+    ],
+    "browser_errors": [],
+    "streamlit_exceptions": 0,
+    "screenshot": "captures/operations-4-mobile.png"
+  },
+  {
+    "view": "report",
+    "page": "📡 Live Control Room",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ"
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "19.97%"
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": ""
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": ""
+      }
+    ],
+    "browser_errors": [],
+    "streamlit_exceptions": 0,
+    "screenshot": "captures/report-1-mobile.png"
+  },
+  {
+    "view": "report",
+    "page": "🎯 Metrics theo 10 tracks",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ"
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "19.97%"
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": ""
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": ""
+      }
+    ],
+    "browser_errors": [],
+    "streamlit_exceptions": 0,
+    "screenshot": "captures/report-2-mobile.png"
+  },
+  {
+    "view": "report",
+    "page": "🛡️ Fraud & Business",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ"
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "19.97%"
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": ""
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": ""
+      }
+    ],
+    "browser_errors": [],
+    "streamlit_exceptions": 0,
+    "screenshot": "captures/report-3-mobile.png"
+  },
+  {
+    "view": "report",
+    "page": "🔎 Dòng dữ liệu mới",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "metrics": [
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ"
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "19.97%"
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": ""
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": ""
+      }
+    ],
+    "browser_errors": [],
+    "streamlit_exceptions": 0,
+    "screenshot": "captures/report-4-mobile.png"
+  },
+  {
+    "view": "studio",
+    "page": "📡 Live Control Room",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "metrics": [
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": ""
+      },
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ"
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "19.97%"
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": ""
+      }
+    ],
+    "browser_errors": [],
+    "streamlit_exceptions": 0,
+    "screenshot": "captures/studio-1-mobile.png"
+  },
+  {
+    "view": "studio",
+    "page": "🎯 Metrics theo 10 tracks",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "metrics": [
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": ""
+      },
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ"
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "19.97%"
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": ""
+      }
+    ],
+    "browser_errors": [],
+    "streamlit_exceptions": 0,
+    "screenshot": "captures/studio-2-mobile.png"
+  },
+  {
+    "view": "studio",
+    "page": "🛡️ Fraud & Business",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "metrics": [
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": ""
+      },
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ"
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "19.97%"
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": ""
+      }
+    ],
+    "browser_errors": [],
+    "streamlit_exceptions": 0,
+    "screenshot": "captures/studio-3-mobile.png"
+  },
+  {
+    "view": "studio",
+    "page": "🔎 Dòng dữ liệu mới",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "metrics": [
+      {
+        "label": "Nguồn đã phát",
+        "value": "6,400",
+        "delta": ""
+      },
+      {
+        "label": "Spark đã xử lý",
+        "value": "6,200",
+        "delta": "200 đang chờ"
+      },
+      {
+        "label": "Fraud alerts",
+        "value": "1,238",
+        "delta": "19.97%"
+      },
+      {
+        "label": "Ingest hiện tại",
+        "value": "50.0 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "Processing throughput",
+        "value": "40.2 ev/s",
+        "delta": ""
+      },
+      {
+        "label": "End-to-end latency p95",
+        "value": "29,763,813 ms",
+        "delta": ""
+      }
+    ],
+    "browser_errors": [],
+    "streamlit_exceptions": 0,
+    "screenshot": "captures/studio-4-mobile.png"
+  }
+]

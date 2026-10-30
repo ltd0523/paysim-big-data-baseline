@@ -1,0 +1,240 @@
+spark-1  | 2026-10-28T12:42:50.118146989Z 26/10/28 12:42:50 INFO Utils: /tmp/spark-7d49a61e-23a9-4027-af3b-5cd9a5bbff30/userFiles-a67a0b8f-328e-409b-b23d-c3e60e3cd157/fetchFileTemp8588233474874305695.tmp has been previously copied to /tmp/spark-7d49a61e-23a9-4027-af3b-5cd9a5bbff30/userFiles-a67a0b8f-328e-409b-b23d-c3e60e3cd157/org.apache.hadoop_hadoop-client-runtime-3.4.1.jar
+spark-1  | 2026-10-28T12:42:50.132885607Z 26/10/28 12:42:50 INFO Executor: Adding file:/tmp/spark-7d49a61e-23a9-4027-af3b-5cd9a5bbff30/userFiles-a67a0b8f-328e-409b-b23d-c3e60e3cd157/org.apache.hadoop_hadoop-client-runtime-3.4.1.jar to class loader default
+spark-1  | 2026-10-28T12:42:50.143782160Z 26/10/28 12:42:50 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 45719.
+spark-1  | 2026-10-28T12:42:50.145502345Z 26/10/28 12:42:50 INFO NettyBlockTransferService: Server created on spark:45719
+spark-1  | 2026-10-28T12:42:50.145791970Z 26/10/28 12:42:50 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+spark-1  | 2026-10-28T12:42:50.159480501Z 26/10/28 12:42:50 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, spark, 45719, None)
+spark-1  | 2026-10-28T12:42:50.166237954Z 26/10/28 12:42:50 INFO BlockManagerMasterEndpoint: Registering block manager spark:45719 with 1048.8 MiB RAM, BlockManagerId(driver, spark, 45719, None)
+spark-1  | 2026-10-28T12:42:50.169119547Z 26/10/28 12:42:50 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, spark, 45719, None)
+spark-1  | 2026-10-28T12:42:50.170748751Z 26/10/28 12:42:50 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, spark, 45719, None)
+spark-1  | 2026-10-28T12:42:54.480484975Z Loading Spark MLlib model from hdfs://namenode:9000/data/paysim/models/baseline-decision-tree-v1
+spark-1  | 2026-10-28T12:43:03.925038961Z 26/10/28 12:43:03 WARN ResolveWriteToStream: spark.sql.adaptive.enabled is not supported in streaming DataFrames/Datasets and will be disabled.
+spark-1  | 2026-10-28T12:43:04.078044890Z PaySim streaming pipeline is ready.
+spark-1  | 2026-10-28T12:43:12.120924045Z 26/10/28 12:43:12 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+spark-1  | 2026-10-28T12:43:17.625464202Z batch=198 input=500 valid=500 alerts=94 duration=12.45s
+spark-1  | 2026-10-28T12:43:17.715401590Z 26/10/28 12:43:17 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 10000} milliseconds, but spent 13219 milliseconds
+spark-1  | 2026-10-28T12:43:19.722651643Z 26/10/28 12:43:19 ERROR MicroBatchExecution: Query [id = 7dc75279-47bd-484c-8bfc-b514371a987c, runId = 971d1346-e334-4ca0-9af3-e37ecd4eda3a] terminated with error
+spark-1  | 2026-10-28T12:43:19.722696348Z org.apache.spark.sql.execution.streaming.sources.ForeachBatchUserFuncException: [FOREACH_BATCH_USER_FUNCTION_ERROR] An error occurred in the user provided function in foreach batch sink. Reason: An exception was raised by the Python Proxy. Return Message: Traceback (most recent call last):
+spark-1  | 2026-10-28T12:43:19.722710288Z   File "/opt/spark/python/lib/py4j-0.10.9.9-src.zip/py4j/clientserver.py", line 644, in _call_proxy
+spark-1  | 2026-10-28T12:43:19.722713945Z     return_value = getattr(self.pool[obj_id], method)(*params)
+spark-1  | 2026-10-28T12:43:19.722717122Z   File "/opt/spark/python/lib/pyspark.zip/pyspark/sql/utils.py", line 165, in call
+spark-1  | 2026-10-28T12:43:19.722720149Z     raise e
+spark-1  | 2026-10-28T12:43:19.722723135Z   File "/opt/spark/python/lib/pyspark.zip/pyspark/sql/utils.py", line 162, in call
+spark-1  | 2026-10-28T12:43:19.722725570Z     self.func(DataFrame(jdf, wrapped_session_jdf), batch_id)
+spark-1  | 2026-10-28T12:43:19.722728075Z   File "/opt/app/pipeline.py", line 468, in process_batch
+spark-1  | 2026-10-28T12:43:19.722730431Z     well_formed = batch.filter(valid_condition).persist()
+spark-1  | 2026-10-28T12:43:19.722732826Z   File "/opt/spark/python/lib/pyspark.zip/pyspark/sql/classic/dataframe.py", line 484, in persist
+spark-1  | 2026-10-28T12:43:19.722735241Z     self._jdf.persist(javaStorageLevel)
+spark-1  | 2026-10-28T12:43:19.722742025Z   File "/opt/spark/python/lib/py4j-0.10.9.9-src.zip/py4j/java_gateway.py", line 1362, in __call__
+spark-1  | 2026-10-28T12:43:19.722745072Z     return_value = get_return_value(
+spark-1  | 2026-10-28T12:43:19.722747447Z   File "/opt/spark/python/lib/pyspark.zip/pyspark/errors/exceptions/captured.py", line 282, in deco
+spark-1  | 2026-10-28T12:43:19.722749962Z     return f(*a, **kw)
+spark-1  | 2026-10-28T12:43:19.722753600Z   File "/opt/spark/python/lib/py4j-0.10.9.9-src.zip/py4j/protocol.py", line 327, in get_return_value
+spark-1  | 2026-10-28T12:43:19.722756195Z     raise Py4JJavaError(
+spark-1  | 2026-10-28T12:43:19.722758971Z py4j.protocol.Py4JJavaError: An error occurred while calling o722.persist.
+spark-1  | 2026-10-28T12:43:19.722762078Z : java.lang.NullPointerException: Cannot invoke "org.apache.spark.sql.classic.SparkSession.sparkContext()" because the return value of "org.apache.spark.sql.execution.SparkPlan.session()" is null
+spark-1  | 2026-10-28T12:43:19.722766427Z 	at org.apache.spark.sql.execution.columnar.CachedRDDBuilder.<init>(InMemoryRelation.scala:216)
+spark-1  | 2026-10-28T12:43:19.722772400Z 	at org.apache.spark.sql.execution.columnar.InMemoryRelation$.apply(InMemoryRelation.scala:364)
+spark-1  | 2026-10-28T12:43:19.722778112Z 	at org.apache.spark.sql.execution.CacheManager.$anonfun$cacheQueryInternal$2(CacheManager.scala:138)
+spark-1  | 2026-10-28T12:43:19.722781259Z 	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+spark-1  | 2026-10-28T12:43:19.722783914Z 	at org.apache.spark.sql.execution.CacheManager.cacheQueryInternal(CacheManager.scala:132)
+spark-1  | 2026-10-28T12:43:19.722786700Z 	at org.apache.spark.sql.execution.CacheManager.cacheQuery(CacheManager.scala:102)
+spark-1  | 2026-10-28T12:43:19.722789767Z 	at org.apache.spark.sql.classic.Dataset.persist(Dataset.scala:1550)
+spark-1  | 2026-10-28T12:43:19.722792523Z 	at org.apache.spark.sql.classic.Dataset.persist(Dataset.scala:232)
+spark-1  | 2026-10-28T12:43:19.722795379Z 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+spark-1  | 2026-10-28T12:43:19.722798495Z 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+spark-1  | 2026-10-28T12:43:19.722801151Z 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+spark-1  | 2026-10-28T12:43:19.722803757Z 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+spark-1  | 2026-10-28T12:43:19.722810621Z 	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+spark-1  | 2026-10-28T12:43:19.722813207Z 	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+spark-1  | 2026-10-28T12:43:19.722815953Z 	at py4j.Gateway.invoke(Gateway.java:282)
+spark-1  | 2026-10-28T12:43:19.722818929Z 	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+spark-1  | 2026-10-28T12:43:19.722821675Z 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+spark-1  | 2026-10-28T12:43:19.722824571Z 	at py4j.ClientServerConnection.sendCommand(ClientServerConnection.java:246)
+spark-1  | 2026-10-28T12:43:19.722827277Z 	at py4j.CallbackClient.sendCommand(CallbackClient.java:384)
+spark-1  | 2026-10-28T12:43:19.722843992Z 	at py4j.CallbackClient.sendCommand(CallbackClient.java:356)
+spark-1  | 2026-10-28T12:43:19.722847780Z 	at py4j.reflection.PythonProxyHandler.invoke(PythonProxyHandler.java:106)
+spark-1  | 2026-10-28T12:43:19.722850446Z 	at jdk.proxy3/jdk.proxy3.$Proxy51.call(Unknown Source)
+spark-1  | 2026-10-28T12:43:19.722853011Z 	at org.apache.spark.sql.execution.streaming.sources.PythonForeachBatchHelper$.$anonfun$callForeachBatch$1(ForeachBatchSink.scala:87)
+spark-1  | 2026-10-28T12:43:19.722855817Z 	at org.apache.spark.sql.execution.streaming.sources.PythonForeachBatchHelper$.$anonfun$callForeachBatch$1$adapted(ForeachBatchSink.scala:87)
+spark-1  | 2026-10-28T12:43:19.722858563Z 	at org.apache.spark.sql.execution.streaming.sources.ForeachBatchSink.callBatchWriter(ForeachBatchSink.scala:56)
+spark-1  | 2026-10-28T12:43:19.722861269Z 	at org.apache.spark.sql.execution.streaming.sources.ForeachBatchSink.addBatch(ForeachBatchSink.scala:49)
+spark-1  | 2026-10-28T12:43:19.722863834Z 	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runBatch$17(MicroBatchExecution.scala:879)
+spark-1  | 2026-10-28T12:43:19.722867693Z 	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$8(SQLExecution.scala:162)
+spark-1  | 2026-10-28T12:43:19.722870829Z 	at org.apache.spark.sql.execution.SQLExecution$.withSessionTagsApplied(SQLExecution.scala:268)
+spark-1  | 2026-10-28T12:43:19.722873555Z 	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$7(SQLExecution.scala:124)
+spark-1  | 2026-10-28T12:43:19.722879738Z 	at org.apache.spark.JobArtifactSet$.withActiveJobArtifactState(JobArtifactSet.scala:94)
+spark-1  | 2026-10-28T12:43:19.722882945Z 	at org.apache.spark.sql.artifact.ArtifactManager.$anonfun$withResources$1(ArtifactManager.scala:112)
+spark-1  | 2026-10-28T12:43:19.722885651Z 	at org.apache.spark.sql.artifact.ArtifactManager.withClassLoaderIfNeeded(ArtifactManager.scala:106)
+spark-1  | 2026-10-28T12:43:19.722888337Z 	at org.apache.spark.sql.artifact.ArtifactManager.withResources(ArtifactManager.scala:111)
+spark-1  | 2026-10-28T12:43:19.722890872Z 	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$6(SQLExecution.scala:124)
+spark-1  | 2026-10-28T12:43:19.722893458Z 	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:291)
+spark-1  | 2026-10-28T12:43:19.722896153Z 	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$1(SQLExecution.scala:123)
+spark-1  | 2026-10-28T12:43:19.722898839Z 	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+spark-1  | 2026-10-28T12:43:19.722904611Z 	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId0(SQLExecution.scala:77)
+spark-1  | 2026-10-28T12:43:19.722907407Z 	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:233)
+spark-1  | 2026-10-28T12:43:19.722910213Z 	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runBatch$16(MicroBatchExecution.scala:876)
+spark-1  | 2026-10-28T12:43:19.722912969Z 	at org.apache.spark.sql.execution.streaming.ProgressContext.reportTimeTaken(ProgressReporter.scala:186)
+spark-1  | 2026-10-28T12:43:19.722915444Z 	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.runBatch(MicroBatchExecution.scala:876)
+spark-1  | 2026-10-28T12:43:19.722918030Z 	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$executeOneBatch$2(MicroBatchExecution.scala:394)
+spark-1  | 2026-10-28T12:43:19.722920846Z 	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+spark-1  | 2026-10-28T12:43:19.722923732Z 	at org.apache.spark.sql.execution.streaming.ProgressContext.reportTimeTaken(ProgressReporter.scala:186)
+spark-1  | 2026-10-28T12:43:19.722926588Z 	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.executeOneBatch(MicroBatchExecution.scala:364)
+spark-1  | 2026-10-28T12:43:19.722930536Z 	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$1(MicroBatchExecution.scala:344)
+spark-1  | 2026-10-28T12:43:19.722933894Z 	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$1$adapted(MicroBatchExecution.scala:344)
+spark-1  | 2026-10-28T12:43:19.722936569Z 	at org.apache.spark.sql.execution.streaming.TriggerExecutor.runOneBatch(TriggerExecutor.scala:39)
+spark-1  | 2026-10-28T12:43:19.722939606Z 	at org.apache.spark.sql.execution.streaming.TriggerExecutor.runOneBatch$(TriggerExecutor.scala:37)
+spark-1  | 2026-10-28T12:43:19.722949968Z 	at org.apache.spark.sql.execution.streaming.ProcessingTimeExecutor.runOneBatch(TriggerExecutor.scala:70)
+spark-1  | 2026-10-28T12:43:19.722953175Z 	at org.apache.spark.sql.execution.streaming.ProcessingTimeExecutor.execute(TriggerExecutor.scala:82)
+spark-1  | 2026-10-28T12:43:19.722960721Z 	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.runActivatedStream(MicroBatchExecution.scala:344)
+spark-1  | 2026-10-28T12:43:19.722963166Z 	at org.apache.spark.sql.execution.streaming.StreamExecution.$anonfun$runStream$1(StreamExecution.scala:337)
+spark-1  | 2026-10-28T12:43:19.722965541Z 	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+spark-1  | 2026-10-28T12:43:19.722968207Z 	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+spark-1  | 2026-10-28T12:43:19.722971053Z 	at org.apache.spark.sql.execution.streaming.StreamExecution.org$apache$spark$sql$execution$streaming$StreamExecution$$runStream(StreamExecution.scala:311)
+spark-1  | 2026-10-28T12:43:19.722974260Z 	at org.apache.spark.sql.execution.streaming.StreamExecution$$anon$1.run(StreamExecution.scala:226)
+spark-1  | 2026-10-28T12:43:19.722976735Z 
+spark-1  | 2026-10-28T12:43:19.722979250Z  SQLSTATE: 39000
+spark-1  | 2026-10-28T12:43:19.722982186Z 	at org.apache.spark.sql.execution.streaming.sources.ForeachBatchSink.callBatchWriter(ForeachBatchSink.scala:60)
+spark-1  | 2026-10-28T12:43:19.722984932Z 	at org.apache.spark.sql.execution.streaming.sources.ForeachBatchSink.addBatch(ForeachBatchSink.scala:49)
+spark-1  | 2026-10-28T12:43:19.722987397Z 	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runBatch$17(MicroBatchExecution.scala:879)
+spark-1  | 2026-10-28T12:43:19.722990344Z 	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$8(SQLExecution.scala:162)
+spark-1  | 2026-10-28T12:43:19.722992959Z 	at org.apache.spark.sql.execution.SQLExecution$.withSessionTagsApplied(SQLExecution.scala:268)
+spark-1  | 2026-10-28T12:43:19.722995605Z 	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$7(SQLExecution.scala:124)
+spark-1  | 2026-10-28T12:43:19.722998621Z 	at org.apache.spark.JobArtifactSet$.withActiveJobArtifactState(JobArtifactSet.scala:94)
+spark-1  | 2026-10-28T12:43:19.723001618Z 	at org.apache.spark.sql.artifact.ArtifactManager.$anonfun$withResources$1(ArtifactManager.scala:112)
+spark-1  | 2026-10-28T12:43:19.723004694Z 	at org.apache.spark.sql.artifact.ArtifactManager.withClassLoaderIfNeeded(ArtifactManager.scala:106)
+spark-1  | 2026-10-28T12:43:19.723007380Z 	at org.apache.spark.sql.artifact.ArtifactManager.withResources(ArtifactManager.scala:111)
+spark-1  | 2026-10-28T12:43:19.723010006Z 	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$6(SQLExecution.scala:124)
+spark-1  | 2026-10-28T12:43:19.723012731Z 	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:291)
+spark-1  | 2026-10-28T12:43:19.723015768Z 	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$1(SQLExecution.scala:123)
+spark-1  | 2026-10-28T12:43:19.723018464Z 	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+spark-1  | 2026-10-28T12:43:19.723021320Z 	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId0(SQLExecution.scala:77)
+spark-1  | 2026-10-28T12:43:19.723024025Z 	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:233)
+spark-1  | 2026-10-28T12:43:19.723026691Z 	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runBatch$16(MicroBatchExecution.scala:876)
+spark-1  | 2026-10-28T12:43:19.723029507Z 	at org.apache.spark.sql.execution.streaming.ProgressContext.reportTimeTaken(ProgressReporter.scala:186)
+spark-1  | 2026-10-28T12:43:19.723032113Z 	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.runBatch(MicroBatchExecution.scala:876)
+spark-1  | 2026-10-28T12:43:19.723034838Z 	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$executeOneBatch$2(MicroBatchExecution.scala:394)
+spark-1  | 2026-10-28T12:43:19.723037564Z 	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+spark-1  | 2026-10-28T12:43:19.723040200Z 	at org.apache.spark.sql.execution.streaming.ProgressContext.reportTimeTaken(ProgressReporter.scala:186)
+spark-1  | 2026-10-28T12:43:19.723042846Z 	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.executeOneBatch(MicroBatchExecution.scala:364)
+spark-1  | 2026-10-28T12:43:19.723052346Z 	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$1(MicroBatchExecution.scala:344)
+spark-1  | 2026-10-28T12:43:19.723055623Z 	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$1$adapted(MicroBatchExecution.scala:344)
+spark-1  | 2026-10-28T12:43:19.723058118Z 	at org.apache.spark.sql.execution.streaming.TriggerExecutor.runOneBatch(TriggerExecutor.scala:39)
+spark-1  | 2026-10-28T12:43:19.723061385Z 	at org.apache.spark.sql.execution.streaming.TriggerExecutor.runOneBatch$(TriggerExecutor.scala:37)
+spark-1  | 2026-10-28T12:43:19.723070965Z 	at org.apache.spark.sql.execution.streaming.ProcessingTimeExecutor.runOneBatch(TriggerExecutor.scala:70)
+spark-1  | 2026-10-28T12:43:19.723077259Z 	at org.apache.spark.sql.execution.streaming.ProcessingTimeExecutor.execute(TriggerExecutor.scala:82)
+spark-1  | 2026-10-28T12:43:19.723080125Z 	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.runActivatedStream(MicroBatchExecution.scala:344)
+spark-1  | 2026-10-28T12:43:19.723082630Z 	at org.apache.spark.sql.execution.streaming.StreamExecution.$anonfun$runStream$1(StreamExecution.scala:337)
+spark-1  | 2026-10-28T12:43:19.723085045Z 	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+spark-1  | 2026-10-28T12:43:19.723087511Z 	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+spark-1  | 2026-10-28T12:43:19.723089816Z 	at org.apache.spark.sql.execution.streaming.StreamExecution.org$apache$spark$sql$execution$streaming$StreamExecution$$runStream(StreamExecution.scala:311)
+spark-1  | 2026-10-28T12:43:19.723092391Z 	at org.apache.spark.sql.execution.streaming.StreamExecution$$anon$1.run(StreamExecution.scala:226)
+spark-1  | 2026-10-28T12:43:19.723094966Z Caused by: py4j.Py4JException: An exception was raised by the Python Proxy. Return Message: Traceback (most recent call last):
+spark-1  | 2026-10-28T12:43:19.723097492Z   File "/opt/spark/python/lib/py4j-0.10.9.9-src.zip/py4j/clientserver.py", line 644, in _call_proxy
+spark-1  | 2026-10-28T12:43:19.723100248Z     return_value = getattr(self.pool[obj_id], method)(*params)
+spark-1  | 2026-10-28T12:43:19.723103314Z   File "/opt/spark/python/lib/pyspark.zip/pyspark/sql/utils.py", line 165, in call
+spark-1  | 2026-10-28T12:43:19.723106010Z     raise e
+spark-1  | 2026-10-28T12:43:19.723108986Z   File "/opt/spark/python/lib/pyspark.zip/pyspark/sql/utils.py", line 162, in call
+spark-1  | 2026-10-28T12:43:19.723111802Z     self.func(DataFrame(jdf, wrapped_session_jdf), batch_id)
+spark-1  | 2026-10-28T12:43:19.723114678Z   File "/opt/app/pipeline.py", line 468, in process_batch
+spark-1  | 2026-10-28T12:43:19.723117224Z     well_formed = batch.filter(valid_condition).persist()
+spark-1  | 2026-10-28T12:43:19.723123056Z   File "/opt/spark/python/lib/pyspark.zip/pyspark/sql/classic/dataframe.py", line 484, in persist
+spark-1  | 2026-10-28T12:43:19.723126343Z     self._jdf.persist(javaStorageLevel)
+spark-1  | 2026-10-28T12:43:19.723129520Z   File "/opt/spark/python/lib/py4j-0.10.9.9-src.zip/py4j/java_gateway.py", line 1362, in __call__
+spark-1  | 2026-10-28T12:43:19.723135914Z     return_value = get_return_value(
+spark-1  | 2026-10-28T12:43:19.723139822Z   File "/opt/spark/python/lib/pyspark.zip/pyspark/errors/exceptions/captured.py", line 282, in deco
+spark-1  | 2026-10-28T12:43:19.723146025Z     return f(*a, **kw)
+spark-1  | 2026-10-28T12:43:19.723149242Z   File "/opt/spark/python/lib/py4j-0.10.9.9-src.zip/py4j/protocol.py", line 327, in get_return_value
+spark-1  | 2026-10-28T12:43:19.723151928Z     raise Py4JJavaError(
+spark-1  | 2026-10-28T12:43:19.723154623Z py4j.protocol.Py4JJavaError: An error occurred while calling o722.persist.
+spark-1  | 2026-10-28T12:43:19.723160626Z : java.lang.NullPointerException: Cannot invoke "org.apache.spark.sql.classic.SparkSession.sparkContext()" because the return value of "org.apache.spark.sql.execution.SparkPlan.session()" is null
+spark-1  | 2026-10-28T12:43:19.723163843Z 	at org.apache.spark.sql.execution.columnar.CachedRDDBuilder.<init>(InMemoryRelation.scala:216)
+spark-1  | 2026-10-28T12:43:19.723166900Z 	at org.apache.spark.sql.execution.columnar.InMemoryRelation$.apply(InMemoryRelation.scala:364)
+spark-1  | 2026-10-28T12:43:19.723169876Z 	at org.apache.spark.sql.execution.CacheManager.$anonfun$cacheQueryInternal$2(CacheManager.scala:138)
+spark-1  | 2026-10-28T12:43:19.723172802Z 	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+spark-1  | 2026-10-28T12:43:19.723175628Z 	at org.apache.spark.sql.execution.CacheManager.cacheQueryInternal(CacheManager.scala:132)
+spark-1  | 2026-10-28T12:43:19.723185970Z 	at org.apache.spark.sql.execution.CacheManager.cacheQuery(CacheManager.scala:102)
+spark-1  | 2026-10-28T12:43:19.723193015Z 	at org.apache.spark.sql.classic.Dataset.persist(Dataset.scala:1550)
+spark-1  | 2026-10-28T12:43:19.723195751Z 	at org.apache.spark.sql.classic.Dataset.persist(Dataset.scala:232)
+spark-1  | 2026-10-28T12:43:19.723198326Z 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+spark-1  | 2026-10-28T12:43:19.723200892Z 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+spark-1  | 2026-10-28T12:43:19.723203497Z 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+spark-1  | 2026-10-28T12:43:19.723206494Z 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+spark-1  | 2026-10-28T12:43:19.723209490Z 	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+spark-1  | 2026-10-28T12:43:19.723212166Z 	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+spark-1  | 2026-10-28T12:43:19.723214992Z 	at py4j.Gateway.invoke(Gateway.java:282)
+spark-1  | 2026-10-28T12:43:19.723217618Z 	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+spark-1  | 2026-10-28T12:43:19.723220373Z 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+spark-1  | 2026-10-28T12:43:19.723222989Z 	at py4j.ClientServerConnection.sendCommand(ClientServerConnection.java:246)
+spark-1  | 2026-10-28T12:43:19.723225574Z 	at py4j.CallbackClient.sendCommand(CallbackClient.java:384)
+spark-1  | 2026-10-28T12:43:19.723231748Z 	at py4j.CallbackClient.sendCommand(CallbackClient.java:356)
+spark-1  | 2026-10-28T12:43:19.723235035Z 	at py4j.reflection.PythonProxyHandler.invoke(PythonProxyHandler.java:106)
+spark-1  | 2026-10-28T12:43:19.723237861Z 	at jdk.proxy3/jdk.proxy3.$Proxy51.call(Unknown Source)
+spark-1  | 2026-10-28T12:43:19.723240376Z 	at org.apache.spark.sql.execution.streaming.sources.PythonForeachBatchHelper$.$anonfun$callForeachBatch$1(ForeachBatchSink.scala:87)
+spark-1  | 2026-10-28T12:43:19.723244555Z 	at org.apache.spark.sql.execution.streaming.sources.PythonForeachBatchHelper$.$anonfun$callForeachBatch$1$adapted(ForeachBatchSink.scala:87)
+spark-1  | 2026-10-28T12:43:19.723247421Z 	at org.apache.spark.sql.execution.streaming.sources.ForeachBatchSink.callBatchWriter(ForeachBatchSink.scala:56)
+spark-1  | 2026-10-28T12:43:19.723250257Z 	at org.apache.spark.sql.execution.streaming.sources.ForeachBatchSink.addBatch(ForeachBatchSink.scala:49)
+spark-1  | 2026-10-28T12:43:19.723256681Z 	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runBatch$17(MicroBatchExecution.scala:879)
+spark-1  | 2026-10-28T12:43:19.723260028Z 	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$8(SQLExecution.scala:162)
+spark-1  | 2026-10-28T12:43:19.723262653Z 	at org.apache.spark.sql.execution.SQLExecution$.withSessionTagsApplied(SQLExecution.scala:268)
+spark-1  | 2026-10-28T12:43:19.723265820Z 	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$7(SQLExecution.scala:124)
+spark-1  | 2026-10-28T12:43:19.723268436Z 	at org.apache.spark.JobArtifactSet$.withActiveJobArtifactState(JobArtifactSet.scala:94)
+spark-1  | 2026-10-28T12:43:19.723271242Z 	at org.apache.spark.sql.artifact.ArtifactManager.$anonfun$withResources$1(ArtifactManager.scala:112)
+spark-1  | 2026-10-28T12:43:19.723274298Z 	at org.apache.spark.sql.artifact.ArtifactManager.withClassLoaderIfNeeded(ArtifactManager.scala:106)
+spark-1  | 2026-10-28T12:43:19.723276834Z 	at org.apache.spark.sql.artifact.ArtifactManager.withResources(ArtifactManager.scala:111)
+spark-1  | 2026-10-28T12:43:19.723279449Z 	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$6(SQLExecution.scala:124)
+spark-1  | 2026-10-28T12:43:19.723282005Z 	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:291)
+spark-1  | 2026-10-28T12:43:19.723284490Z 	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$1(SQLExecution.scala:123)
+spark-1  | 2026-10-28T12:43:19.723286985Z 	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+spark-1  | 2026-10-28T12:43:19.723289781Z 	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId0(SQLExecution.scala:77)
+spark-1  | 2026-10-28T12:43:19.723292166Z 	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:233)
+spark-1  | 2026-10-28T12:43:19.723301276Z 	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runBatch$16(MicroBatchExecution.scala:876)
+spark-1  | 2026-10-28T12:43:19.723304152Z 	at org.apache.spark.sql.execution.streaming.ProgressContext.reportTimeTaken(ProgressReporter.scala:186)
+spark-1  | 2026-10-28T12:43:19.723307058Z 	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.runBatch(MicroBatchExecution.scala:876)
+spark-1  | 2026-10-28T12:43:19.723310415Z 	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$executeOneBatch$2(MicroBatchExecution.scala:394)
+spark-1  | 2026-10-28T12:43:19.723313171Z 	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+spark-1  | 2026-10-28T12:43:19.723316227Z 	at org.apache.spark.sql.execution.streaming.ProgressContext.reportTimeTaken(ProgressReporter.scala:186)
+spark-1  | 2026-10-28T12:43:19.723322721Z 	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.executeOneBatch(MicroBatchExecution.scala:364)
+spark-1  | 2026-10-28T12:43:19.723326199Z 	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$1(MicroBatchExecution.scala:344)
+spark-1  | 2026-10-28T12:43:19.723328854Z 	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$1$adapted(MicroBatchExecution.scala:344)
+spark-1  | 2026-10-28T12:43:19.723331670Z 	at org.apache.spark.sql.execution.streaming.TriggerExecutor.runOneBatch(TriggerExecutor.scala:39)
+spark-1  | 2026-10-28T12:43:19.723337643Z 	at org.apache.spark.sql.execution.streaming.TriggerExecutor.runOneBatch$(TriggerExecutor.scala:37)
+spark-1  | 2026-10-28T12:43:19.723340750Z 	at org.apache.spark.sql.execution.streaming.ProcessingTimeExecutor.runOneBatch(TriggerExecutor.scala:70)
+spark-1  | 2026-10-28T12:43:19.723343335Z 	at org.apache.spark.sql.execution.streaming.ProcessingTimeExecutor.execute(TriggerExecutor.scala:82)
+spark-1  | 2026-10-28T12:43:19.723345931Z 	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.runActivatedStream(MicroBatchExecution.scala:344)
+spark-1  | 2026-10-28T12:43:19.723348506Z 	at org.apache.spark.sql.execution.streaming.StreamExecution.$anonfun$runStream$1(StreamExecution.scala:337)
+spark-1  | 2026-10-28T12:43:19.723350961Z 	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+spark-1  | 2026-10-28T12:43:19.723354038Z 	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+spark-1  | 2026-10-28T12:43:19.723356623Z 	at org.apache.spark.sql.execution.streaming.StreamExecution.org$apache$spark$sql$execution$streaming$StreamExecution$$runStream(StreamExecution.scala:311)
+spark-1  | 2026-10-28T12:43:19.723359149Z 	at org.apache.spark.sql.execution.streaming.StreamExecution$$anon$1.run(StreamExecution.scala:226)
+spark-1  | 2026-10-28T12:43:19.723361684Z 
+spark-1  | 2026-10-28T12:43:19.723366915Z 
+spark-1  | 2026-10-28T12:43:19.723370082Z 	at py4j.Protocol.getReturnValue(Protocol.java:476)
+spark-1  | 2026-10-28T12:43:19.723372738Z 	at py4j.reflection.PythonProxyHandler.invoke(PythonProxyHandler.java:108)
+spark-1  | 2026-10-28T12:43:19.723375133Z 	at jdk.proxy3/jdk.proxy3.$Proxy51.call(Unknown Source)
+spark-1  | 2026-10-28T12:43:19.723377728Z 	at org.apache.spark.sql.execution.streaming.sources.PythonForeachBatchHelper$.$anonfun$callForeachBatch$1(ForeachBatchSink.scala:87)
+spark-1  | 2026-10-28T12:43:19.723382388Z 	at org.apache.spark.sql.execution.streaming.sources.PythonForeachBatchHelper$.$anonfun$callForeachBatch$1$adapted(ForeachBatchSink.scala:87)
+spark-1  | 2026-10-28T12:43:19.723385525Z 	at org.apache.spark.sql.execution.streaming.sources.ForeachBatchSink.callBatchWriter(ForeachBatchSink.scala:56)
+spark-1  | 2026-10-28T12:43:19.723388351Z 	... 34 more
+spark-1  | 2026-10-28T12:43:19.732398751Z 26/10/28 12:43:19 WARN NettyRpcEnv: Ignored failure: java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@55b853b4[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@5d5b1f5e[Wrapped task = org.apache.spark.rpc.netty.NettyRpcEnv$$anon$1@6f910254]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@213446ad[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+spark-1  | 2026-10-28T12:43:19.733066281Z Exception in thread "stream execution thread for [id = 7dc75279-47bd-484c-8bfc-b514371a987c, runId = 971d1346-e334-4ca0-9af3-e37ecd4eda3a]" org.apache.spark.SparkException: Exception thrown in awaitResult: 
+spark-1  | 2026-10-28T12:43:19.733130878Z 	at org.apache.spark.util.SparkThreadUtils$.awaitResult(SparkThreadUtils.scala:53)
+spark-1  | 2026-10-28T12:43:19.733137482Z 	at org.apache.spark.util.ThreadUtils$.awaitResult(ThreadUtils.scala:342)
+spark-1  | 2026-10-28T12:43:19.733140649Z 	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:75)
+spark-1  | 2026-10-28T12:43:19.733142733Z 	at org.apache.spark.rpc.RpcEndpointRef.askSync(RpcEndpointRef.scala:101)
+spark-1  | 2026-10-28T12:43:19.733144818Z 	at org.apache.spark.rpc.RpcEndpointRef.askSync(RpcEndpointRef.scala:85)
+spark-1  | 2026-10-28T12:43:19.733146792Z 	at org.apache.spark.sql.execution.streaming.state.StateStoreCoordinatorRef.deactivateInstances(StateStoreCoordinator.scala:119)
+spark-1  | 2026-10-28T12:43:19.733149027Z 	at org.apache.spark.sql.classic.StreamingQueryManager.notifyQueryTermination(StreamingQueryManager.scala:361)
+spark-1  | 2026-10-28T12:43:19.733151672Z 	at org.apache.spark.sql.execution.streaming.StreamExecution.$anonfun$runStream$4(StreamExecution.scala:407)
+spark-1  | 2026-10-28T12:43:19.733153807Z 	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+spark-1  | 2026-10-28T12:43:19.733199214Z 	at org.apache.spark.util.UninterruptibleThread.runUninterruptibly(UninterruptibleThread.scala:149)
+spark-1  | 2026-10-28T12:43:19.733205097Z 	at org.apache.spark.sql.execution.streaming.StreamExecution.org$apache$spark$sql$execution$streaming$StreamExecution$$runStream(StreamExecution.scala:386)
+spark-1  | 2026-10-28T12:43:19.733207502Z 	at org.apache.spark.sql.execution.streaming.StreamExecution$$anon$1.run(StreamExecution.scala:226)
+spark-1  | 2026-10-28T12:43:19.733508383Z Caused by: org.apache.spark.rpc.RpcEnvStoppedException: RpcEnv already stopped.
+spark-1  | 2026-10-28T12:43:19.733516460Z 	at org.apache.spark.rpc.netty.Dispatcher.postMessage(Dispatcher.scala:179)
+spark-1  | 2026-10-28T12:43:19.733518775Z 	at org.apache.spark.rpc.netty.Dispatcher.postLocalMessage(Dispatcher.scala:146)
+spark-1  | 2026-10-28T12:43:19.733521000Z 	at org.apache.spark.rpc.netty.NettyRpcEnv.askAbortable(NettyRpcEnv.scala:245)
+spark-1  | 2026-10-28T12:43:19.733523204Z 	at org.apache.spark.rpc.netty.NettyRpcEndpointRef.askAbortable(NettyRpcEnv.scala:561)
+spark-1  | 2026-10-28T12:43:19.733526301Z 	at org.apache.spark.rpc.netty.NettyRpcEndpointRef.ask(NettyRpcEnv.scala:565)
+spark-1  | 2026-10-28T12:43:19.733528526Z 	at org.apache.spark.rpc.RpcEndpointRef.askSync(RpcEndpointRef.scala:100)
+spark-1  | 2026-10-28T12:43:19.733530710Z 	... 8 more

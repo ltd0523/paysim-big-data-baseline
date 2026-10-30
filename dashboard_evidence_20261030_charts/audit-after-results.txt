@@ -1,0 +1,5 @@
+PASS after: 16 view/page combinations; collections match original snapshot
+2026-10-30 07:09:00.319 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-30 07:09:00.744 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-30 07:09:01.396 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-30 07:09:02.070 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.

@@ -1,0 +1,7 @@
+PASS: four original/new 9A pages; six KPI/deltas, all tables and chart data identical; core chart specs unchanged
+PASS: exact 300-alert payload, 60 transactions, confusion matrix, empty telemetry, large latency, escaped metadata
+2026-10-29 09:18:10.696 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-29 09:18:10.886 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-29 09:18:11.494 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-29 09:18:11.504 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-29 09:18:11.518 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.

@@ -1,0 +1,3 @@
+2026-10-29 12:40:31.442 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-29 12:40:31.798 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+PASS: original frozen collections, 7 KPIs on all 4 pages, every table/chart dataset, chart semantics, 300 alerts, 60 transactions, 13 batches, option menu state

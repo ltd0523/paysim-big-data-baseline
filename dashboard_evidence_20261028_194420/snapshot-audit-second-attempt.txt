@@ -1,0 +1,19 @@
+docker : 2026-10-28 12:49:09.315 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': 
+missing ScriptRunContext! This warning can be ignored when running in bare mode.
+At line:2 char:160
++ ... ttempt.txt; docker exec paysim-track9-20261028-194420 /tmp/track9-ven ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2026-10-28 12:4...g in bare mode.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+2026-10-28 12:49:10.072 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in 
+bare mode.
+2026-10-28 12:49:10.607 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in 
+bare mode.
+2026-10-28 12:49:11.449 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in 
+bare mode.
+Traceback (most recent call last):
+  File "/evidence/audit_snapshot.py", line 89, in <module>
+    assert output['source_hashes_unchanged']
+           ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

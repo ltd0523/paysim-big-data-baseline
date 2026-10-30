@@ -1,0 +1,42 @@
+[
+  {
+    "scenario": "normal",
+    "viewport": [
+      1366,
+      768
+    ],
+    "browser_errors": [],
+    "streamlit_exceptions": 0,
+    "passed": true
+  },
+  {
+    "scenario": "large",
+    "viewport": [
+      1366,
+      768
+    ],
+    "browser_errors": [],
+    "streamlit_exceptions": 0,
+    "passed": true
+  },
+  {
+    "scenario": "large",
+    "viewport": [
+      390,
+      844
+    ],
+    "browser_errors": [],
+    "streamlit_exceptions": 0,
+    "passed": true
+  },
+  {
+    "scenario": "empty",
+    "viewport": [
+      390,
+      844
+    ],
+    "browser_errors": [],
+    "streamlit_exceptions": 0,
+    "passed": true
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "viewport": [
+      1366,
+      768
+    ],
+    "fraud": [
+      {
+        "x": 1104.5,
+        "y": 431.953125,
+        "font": "24px",
+        "width": 100.25,
+        "overflow": false
+      },
+      {
+        "x": 1216.75,
+        "y": 431.953125,
+        "font": "24px",
+        "width": 100.25,
+        "overflow": false
+      }
+    ],
+    "exports": [
+      {
+        "table": "history",
+        "rows": 13,
+        "columns": [
+          "batch_id",
+          "created_at",
+          "input_rows",
+          "processed_rows",
+          "consumer_lag",
+          "processing_throughput",
+          "latency_p95_ms",
+          "invalid_rows",
+          "duplicate_removed",
+          "alerts"
+        ],
+        "file": "history-1366.csv"
+      },
+      {
+        "table": "detectors",
+        "rows": 2,
+        "columns": [
+          "Detector",
+          "TP",
+          "FP",
+          "TN",
+          "FN",
+          "Precision",
+          "Recall",
+          "F1",
+          "Alert rate"
+        ],
+        "file": "detectors-1366.csv"
+      },
+      {
+        "table": "transactions",
+        "rows": 60,
+        "columns": [
+          "scored_at",
+          "event_id",
+          "source_cycle",
+          "source_row",
+          "type",
+          "amount",
+          "risk_score",
+          "prediction",
+          "end_to_end_latency_ms"
+        ],
+        "file": "transactions-1366.csv"
+      }
+    ],
+    "codes_hidden_other_text_retained": true,
+    "browser_errors": []
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "fraud": [
+      {
+        "x": 41,
+        "y": 404.3125,
+        "font": "24px",
+        "width": 148,
+        "overflow": false
+      },
+      {
+        "x": 201,
+        "y": 404.3125,
+        "font": "24px",
+        "width": 148,
+        "overflow": false
+      }
+    ],
+    "exports": [
+      {
+        "table": "history",
+        "rows": 13,
+        "columns": [
+          "batch_id",
+          "created_at",
+          "input_rows",
+          "processed_rows",
+          "consumer_lag",
+          "processing_throughput",
+          "latency_p95_ms",
+          "invalid_rows",
+          "duplicate_removed",
+          "alerts"
+        ],
+        "file": "history-390.csv"
+      },
+      {
+        "table": "detectors",
+        "rows": 2,
+        "columns": [
+          "Detector",
+          "TP",
+          "FP",
+          "TN",
+          "FN",
+          "Precision",
+          "Recall",
+          "F1",
+          "Alert rate"
+        ],
+        "file": "detectors-390.csv"
+      },
+      {
+        "table": "transactions",
+        "rows": 60,
+        "columns": [
+          "scored_at",
+          "event_id",
+          "source_cycle",
+          "source_row",
+          "type",
+          "amount",
+          "risk_score",
+          "prediction",
+          "end_to_end_latency_ms"
+        ],
+        "file": "transactions-390.csv"
+      }
+    ],
+    "codes_hidden_other_text_retained": true,
+    "browser_errors": []
+  }
+]
